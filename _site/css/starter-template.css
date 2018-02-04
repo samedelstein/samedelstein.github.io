@@ -1,0 +1,45 @@
+body {
+  padding-top: 50px;
+}
+.text {
+  padding: 40px 15px;
+  text-align: left;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+
+img {
+  border-radius: 15px;
+  padding-right: 10px;
+  max-width: 50%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+    padding-left: 20px;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+
+  .mastfoot {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .mastfoot{
+    width: 700px;
+  }
+}

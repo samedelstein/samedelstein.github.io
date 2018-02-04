@@ -1,0 +1,161 @@
+---
+layout: default
+title: Projects
+---
+
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Sam Edelstein</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="https://www.linkedin.com/in/samedelstein">LinkedIn</a></li>
+            <li class="active"><a href="projects">Projects</a></li>
+            <li><a href="blog">Blog</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<!---Change to work projects, reduce length of school projects.-->
+
+    <div class="container">
+        <h2>Projects</h2>
+            <p>Below are some of the projects I've worked on as Chief Data Officer for the City of Syracuse.
+
+            <br>For more, you can check out my <a href="http://github.com/samedelstein">Github</a> page.</p>
+
+            <hr>
+            <h3>Open Data Policy and Portal</h3>
+            <a href="http://data.syrgov.net" class="btn btn-info" role="button">DataCuse</a>
+            <p> In May 2017 the City of Syracuse released a draft Open Data Policy I authored with input from department heads and commissioners and help from the Sunlight Foundation and Center for Government Excellence and Johns Hopkins University as part of the City's agreement with the Bloomberg Philanthropies funded What Works Cities program. The policy was released for public comment on the Madison platform created by the Open Government Foundation. The draft policy and comments are located <a href="https://mymadison.io/documents/city-of-syracuse-open-data-policy" target = "_blank">here.</a>
+<br>
+            <br>Following the public comment period, we finalized the policy - available <a href = "http://data.syrgov.net/pages/open-data-policy" target="_blank">here.</a>
+<br>
+            <br>In July 2017, the City of Syracuse launched its first Open Data Portal, called <a href="http://data.syrgov.net" target = "_blank">DataCuse.</a> The portal includes data about a variety of topics, including housing, infrastructure, and city boundaries. Additionally, the website has pages dedicated to making the data more understandable for users who might not want to only see raw data, and would rather see maps and charts. 
+            </p>
+            
+
+            <hr>
+
+            <h3>Housing Data Warehouse</h3>
+            <p>The City of Syracuse has data about its housing, building, and parcels that live in a variety of data sources. Various efforts have been made to centralize this data, much of which has been time consuming. 
+<br>
+            <br>In the summer of 2017, along with an intern, we build data pipelines using SQL, Python, and Microsoft SSIS to automate the extraction, transformation, and loading of data into a central data warehouse. City departments can now use this data, it is used to power the Open Data Portal, as well as other data applications. 
+<br>
+            <br>Building the data warehouse likely saves time for many, but specifically it saves at least eight to 16 hours per month for one department that used to rely on an employee to create a dataset that incorporates data from different sources.
+<br>
+            <br>This data warehouse includes data from the Codes department, assessment, police, water billing, tax and finance, census, and zoning.
+            </p>
+            <hr>
+
+            <h3>Automated pothole collection</h3>
+            <p>The City of Syracuse fills a lot of potholes. Many of the potholes filled are based on complaints, but the crews fill others that they see while out in the field. There had not been a way to collect digital data about where they were filling potholes, which meant they could not report how much work they were doing.
+            <br>
+            <br>The City places GPS units on all of its Department of Public Works vehicles. These GPS units show where the truck is, and also log when it performs and action. When the pothole filling trucks fill a pothole, the crew member triggers a hose that shoots emulsion. When that trigger is pulled, the GPS unit logs a row of data. 
+            <br>
+            <br>As a result of a script I wrote, each night, data from the GPS unit is filtered and transformed so we can see where and when every pothole was filled. It result in a map like <a href="http://dashboards.syrgov.net/data/PotholeMap.html" target="_blank">this.</a>
+            <br>
+            <br>We now know that the city is filling thousands of potholes per year, and we can say exactly where they were filled. This data can also be used to assess road quality and help plan for future repairs. </p>
+
+            <hr>
+
+            <h3>Data Science for Water Infrastructure</h3>
+            <hr>
+            <h3>Building Blocks</h3>
+            <hr>
+
+
+</div>
+<!--
+
+Data Warehouse
+Open data Portal and policy
+DSSG model
+Dashboards
+Building Blocks
+Automated pothole collection
+
+-->
+
+
+ <!--   <div class="container"> 
+
+      <div class="text">
+        <h2> School and side projects</h2>
+        <p>Below are some of the projects I've worked on both as part of my Masters Degree, and as side projects.
+
+        For more, you can check out my <a href="http://github.com/samedelstein">Github</a> page.</p>
+
+        <hr>
+
+        <h2>Projects</h2>
+
+        <h3>Bikeshare</h3>
+
+        <a href="assets/Bikeshareposter.pdf">Poster</a>
+
+        <p>For this project, I used data made available by <a href="http://www.capitalbikeshare.com/system-data">Capital Bikeshare</a>. The purpose was to analyze how the system has grown, and what the main stressors to the system are. We used the data available through Capital Bikeshare, but then also had to merge in station location data, as well as scraped and merged weather data for each day of the system's history.
+        <br>
+        <br>First, we looked at which bike stations are most popular for beginning and ending a trip. We saw that generally the start and end stations are close together, and there is a network of stations that are visited most. This helps to know which stations are likely to be busiest, and where new stations would get the most use.
+        <br>
+        <br>We also looked at ridership levels throughout the day on a weekday and weekend. There are two types of riders in the system: registered (who pay a subscription fee) and casual (no subscription). During the week, registered users spike a great deal around rush hour commute times, the casual riders slowly grow throughout the day. The weekend rides are basically the same for casual and registered riders. This means that the system needs to be prepared for heavy usage around work schedules during the week.
+        <br>
+        <br>Weather also has a large effect on ridership. More riders rent bikes as the temperature warms up, to a point. Beyond about 75 degrees, the ridership goes down because it is too hot or uncomfortable to ride.
+        <br>
+        <br>We also saw that from the most frequently rented from stations, some of the stations have more bikes being rented than returned, while others have more bikes being returned than rented. Capital Bikeshare could learn about how to better distribute and move bikes during the day based on this information so there is always a bike or space available for someone who needs it.
+        </p>
+
+        <hr>
+
+        <h3>Data Warehousing</h3>
+
+        <a href="assets/DataWarehousePaper.pdf">Final Paper</a>
+        <br><a href="assets/DataWarehousePoster.pdf">Poster</a>
+
+        <p>This group project focused on taking randomized data maintained by the School of Information Studies at Syracuse University and eventually creating a data warehouse that focused on enrollment practices at the school.
+        <br>
+        <br>The group determined a business purpose for the project (to more efficiently allocate course sections) and then went to work building on the data warehouse lifecycle. We identified attributes that we would include in the data warehouse, as well as where each piece of data was coming from, then we created snowflake diagrams to show how our data would be joined together, then we staged the data, performed an ETL flow from the source database to the target database. We did this using SQL as well as Microsoft SSIS.
+        <br>
+        <br>Once the data was in the data warehouse, we were able to create a MOLAP cube and then bring it into Microsoft Excel and used PowerPivot tools to create business intelligence dashboards that showed which courses were under-enrolled, which had long waitlists, and which professors were the most popular.
+        </p>
+
+        <hr>
+
+        <h2>Papers and Presentations</h2>
+
+        <a href="assets/DatabaseBusinessRules.pdf">Best Practices: Business Rules</a>
+        <br><a href="assets/DatabaseDataMining.pdf">Best Practices: Data Mining</a>
+        <br><a href="https://webconference.syr.edu/p1nwlpskp4k/">Overview of Shiny for R</a>
+        <br><a href="assets/IssueBriefMunicipalWifi.pdf">Should Congress provide funding to municipalities expressly for the establishment of public Wi-Fi networks?</a> and <a href="https://webconference.syr.edu/p48ryt5c09q/">Presentation</a>
+
+      </div>
+
+    </div>
+-->
+
+
+    <!-- /.container -->
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
