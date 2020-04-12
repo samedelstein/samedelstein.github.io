@@ -1,6 +1,7 @@
 ---
 layout: main
 ---
+<<<<<<< HEAD
 {% for post in paginator.posts %}
 <article class="post">
   {% if post.img %}
@@ -17,3 +18,55 @@ layout: main
 {% endfor %}
 
 {% include pagination.html %}
+=======
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Sam Edelstein</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="https://www.linkedin.com/in/samedelstein">LinkedIn</a></li>
+            <li><a href="blog">Blog</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <img src="img/SamEdelstein.png" alt="photo by Addison Spears" align="center">
+        <h1>Hi, I'm Sam</h1>
+        <p class="lead">Chief Data Officer for the City of Syracuse and member of the <a href="http://innovatesyracuse.com">Office of Accountability, Performance, and Innovation</a></p>.
+
+        <p>Member of the Board of Trustees at the <a href="https://www.most.org/">Museum of Science and Technology</a> and <a href="https://www.onlib.org/">Onondaga County Public Libraries</a> and member of the Le Moyne College Business Analytics Advisory Board.</p>
+
+        <p>Adjunct Professor at the School of Information Studies at Syracuse University and the Maxwell School of Citizenship and Public Affairs at Syracuse University.</p>
+      </div>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+>>>>>>> 1f8379a1b89fe2026078f9c58a646248745b8b3e
