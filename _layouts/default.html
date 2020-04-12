@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-{% include head.html %}
-<body>
-=======
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,17 +61,40 @@
             <li><a href="/">Home</a></li>
             <li><a href="about">About</a></li>
             <li><a href="https://www.linkedin.com/in/samedelstein">LinkedIn</a></li>
+            <li><a href="projects">Projects</a></li>
             <li class="active"><a href="blog">Blog</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
->>>>>>> 1f8379a1b89fe2026078f9c58a646248745b8b3e
 
-  <div class="wrapper">
     {{ content }}
+<div class="container">
+  <div class="row">
+    <div class="mastfoot">
+      <div class="inner">
+						<a href="mailto:sam.i.edelstein@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
+						<a href="https://github.com/samedelstein"><i class="fa fa-github fa-2x"></i></a>
+						<a href="http://twitter.com/samedelstein"><i class="fa fa-twitter fa-2x"></i></a>
+						<a href="http://linkedin.com/in/samedelstein"><i class="fa fa-linkedin fa-2x"></i></a>
+
+      </div>
+    </div>
   </div>
-  
-  {% include analytics.html %}
-</body>
+</div>
+<div class="container">
+  <div class="row">
+    {% include footer.html %}
+  </div>
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>

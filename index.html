@@ -1,24 +1,7 @@
 ---
-layout: main
+layout: default
+title: Home
 ---
-<<<<<<< HEAD
-{% for post in paginator.posts %}
-<article class="post">
-  {% if post.img %}
-    <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
-  {% else %}
-  {% endif %}
-  <div class="post-content">
-    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
-    <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
-    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
-  </div>
-</article>
-{% endfor %}
-
-{% include pagination.html %}
-=======
 <body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -37,7 +20,7 @@ layout: main
             <li class="active"><a href="/">Home</a></li>
             <li><a href="about">About</a></li>
             <li><a href="https://www.linkedin.com/in/samedelstein">LinkedIn</a></li>
-            <li><a href="blog">Blog</a></li>
+            <li><a href="https://medium.com/@samedelstein">Blog</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -47,12 +30,10 @@ layout: main
 
       <div class="starter-template">
         <img src="img/SamEdelstein.png" alt="photo by Addison Spears" align="center">
-        <h1>Hi, I'm Sam</h1>
-        <p class="lead">Chief Data Officer for the City of Syracuse and member of the <a href="http://innovatesyracuse.com">Office of Accountability, Performance, and Innovation</a></p>.
+        <h1>Hi, I'm Sam.</h1>
+        <p class="lead">Chief Data Officer for the City of Syracuse and member of the <a href="http://innovatesyracuse.com">City's Office of Accountability, Performance, and Innovation.</a>.
 
-        <p>Member of the Board of Trustees at the <a href="https://www.most.org/">Museum of Science and Technology</a> and <a href="https://www.onlib.org/">Onondaga County Public Libraries</a> and member of the Le Moyne College Business Analytics Advisory Board.</p>
-
-        <p>Adjunct Professor at the School of Information Studies at Syracuse University and the Maxwell School of Citizenship and Public Affairs at Syracuse University.</p>
+        <br>Adjunct professor at the <a href="http://ischool.syr.edu">School of Information Studies</a> at Syracuse University.</p>
       </div>
 
     </div><!-- /.container -->
@@ -69,4 +50,3 @@ layout: main
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
->>>>>>> 1f8379a1b89fe2026078f9c58a646248745b8b3e
