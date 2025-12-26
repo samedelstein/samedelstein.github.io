@@ -48,10 +48,10 @@ const App = () => {
 
   const experience = [
     {
-      role: "Vice President, Data & Analytics",
+      role: "Senior Vice President, Data & AI",
       company: "Insight Partners",
       period: "Present",
-      description: "Leading data strategy and analytics initiatives for a premier global venture capital and private equity firm.",
+      description: "Leading data & AI strategy and analytics initiatives for a premier global venture capital and private equity firm.",
       icon: <Database className="w-5 h-5" />
     },
     {
@@ -64,7 +64,7 @@ const App = () => {
     {
       role: "Adjunct Professor",
       company: "Syracuse University",
-      period: "Ongoing",
+      period: "Previous",
       description: "Teaching at the School of Information Studies (iSchool) and the Maxwell School of Citizenship and Public Affairs.",
       icon: <GraduationCap className="w-5 h-5" />
     }
@@ -72,15 +72,15 @@ const App = () => {
 
   const blogPosts = [
     {
-      title: "First Impressions of OpenAI's Deep Research",
-      date: "Feb 2024",
-      link: "https://medium.com/@samedelstein",
+      title: "What it Means to be AI-Ready",
+      date: "April 2025",
+      link: "https://samedelstein.medium.com/what-it-means-to-be-ai-ready-data-access-interoperability-and-the-future-of-software-part-1-a9abc8e0d03c",
       excerpt: "Exploring the capabilities and implications of the latest reasoning models in the data space."
     },
     {
-      title: "How Data Teams Unearthed Value in Infrastructure",
-      date: "2023",
-      link: "https://medium.com/@samedelstein",
+      title: "5 Years Later: How Generative AI Could (or Couldn’t) Have Helped My Chief Data Officer Work",
+      date: "January 2025",
+      link: "https://samedelstein.medium.com/5-years-later-how-generative-ai-could-or-couldnt-have-helped-my-chief-data-officer-work-1234567890ab",
       excerpt: "Lessons learned from city-wide data coordination and ROI in local government."
     }
   ];
@@ -154,7 +154,7 @@ const App = () => {
               Leveraging data to build <span className="text-blue-600 italic">smarter</span> organizations.
             </h1>
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              I am the Vice President of Data & Analytics at Insight Partners and the former Chief Data Officer for the City of Syracuse. I bridge the gap between complex data infrastructure and real-world impact.
+              I am the Senior Vice President of Data & Analytics at Insight Partners and the former Chief Data Officer for the City of Syracuse. I bridge the gap between complex data infrastructure and real-world impact.
             </p>
             <div className="flex flex-wrap gap-4">
               <a 
@@ -240,17 +240,8 @@ const App = () => {
                     <Award size={20} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-slate-900">Museum of Science & Tech</h4>
-                    <p className="text-sm text-slate-500">Board of Trustees</p>
-                  </div>
-                </li>
-                <li className="flex space-x-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 font-bold">
-                    <Award size={20} />
-                  </div>
-                  <div>
                     <h4 className="font-bold text-slate-900">Onondaga County Libraries</h4>
-                    <p className="text-sm text-slate-500">Board of Trustees</p>
+                    <p className="text-sm text-slate-500">President - Board of Trustees</p>
                   </div>
                 </li>
                 <li className="flex space-x-4">
@@ -285,7 +276,6 @@ const App = () => {
 
             <div className="text-slate-400 text-sm px-4">
               <p>© {new Date().getFullYear()} Sam Edelstein</p>
-              <p className="mt-2 leading-snug">Built with modern data and design principles.</p>
             </div>
           </div>
         </div>
