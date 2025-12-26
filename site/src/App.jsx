@@ -151,10 +151,10 @@ const App = () => {
         <section id="home" className="mb-24 scroll-mt-32">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
-              Leveraging data to build <span className="text-blue-600 italic">smarter</span> organizations.
+              Leveraging data & AI to build <span className="text-blue-600 italic">smarter</span> organizations.
             </h1>
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              I am the Senior Vice President of Data & Analytics at Insight Partners and the former Chief Data Officer for the City of Syracuse. I bridge the gap between complex data infrastructure and real-world impact.
+              I am the Senior Vice President of Data & AI at Insight Partners and the former Chief Data Officer for the City of Syracuse. I bridge the gap between complex data infrastructure and real-world impact.
             </p>
             <div className="flex flex-wrap gap-4">
               <a 
