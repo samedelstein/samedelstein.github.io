@@ -61,7 +61,7 @@ const App = () => {
       tools: ["Socrata", "SQL", "Policy Design"],
       links: [
         { label: "GovTech Coverage", url: "http://www.govtech.com/civic/Whats-New-in-Civic-Tech-07272017.html" },
-        { label: "StateScoop Profile", url: "http://statescoop.com/n-y-city-teams-with-data-science-researchers-to-help-predict-prevent-water-main-breaks" }
+        { label: "WSYR Coverage", url: "https://www.localsyr.com/news/local-news/city-of-syracuse-opens-data-portal-for-potholes-other-infrastructure-issues/" }
       ]
     },
     {
@@ -70,7 +70,7 @@ const App = () => {
       description: "Co-authored research on using Machine Learning to assess risk and prevent water main breaks, shifting the city from reactive to proactive maintenance.",
       tools: ["Python", "Scikit-Learn", "GIS"],
       links: [
-        { label: "Read arXiv Paper", url: "https://arxiv.org/abs/1805.03565" },
+        { label: "Read arXiv Paper", url: "https://ar5iv.labs.arxiv.org/html/1805.03597" },
         { label: "Politico Feature", url: "http://www.politico.com/magazine/story/2017/04/20/syracuse-infrastructure-water-system-pipe-breaks-215054" }
       ]
     },
@@ -282,7 +282,6 @@ const App = () => {
                 {[
                   { org: "Onondaga County Libraries", role: "President - Board of Trustees" },
                   { org: "Le Moyne College", role: "Analytics Advisory Board" },
-                  { org: "Museum of Science and Tech", role: "Board of Trustees" }
                 ].map((item, i) => (
                   <li key={i} className="flex space-x-4">
                     <div className="w-8 h-8 rounded bg-blue-50 flex items-center justify-center text-blue-600"><Award size={16} /></div>
@@ -290,18 +289,6 @@ const App = () => {
                   </li>
                 ))}
               </ul>
-            </section>
-
-            <section className="bg-slate-900 p-8 rounded-[2.5rem] text-white">
-              <h3 className="text-lg font-bold mb-6 flex items-center"><Users size={18} className="mr-2 text-blue-400" /> Speaking</h3>
-              <div className="space-y-6">
-                {[
-                  { title: "MIT CDOIQ Symposium", event: "Government Data Strategy" },
-                  { title: "Smart Cities Symposium", event: "Leveraging Big & Small Data" }
-                ].map((s, i) => (
-                  <div key={i}><h4 className="font-bold text-xs text-blue-400">{s.title}</h4><p className="text-[10px] text-slate-400 uppercase mt-1">{s.event}</p></div>
-                ))}
-              </div>
             </section>
 
             <section className="p-8 bg-blue-600 rounded-[2.5rem] text-white text-center">
