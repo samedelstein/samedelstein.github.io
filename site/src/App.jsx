@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { 
   Linkedin, 
   BookOpen, 
@@ -27,6 +27,7 @@ const App = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [pressSearch, setPressSearch] = useState('');
+  const [showStickyHeader, setShowStickyHeader] = useState(false);
 
   const sections = [
     { id: 'home', label: 'Overview' },
@@ -35,6 +36,16 @@ const App = () => {
     { id: 'writing', label: 'Writing' },
     { id: 'press', label: 'Press' }
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowStickyHeader(window.scrollY > 12);
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToSection = (sectionId) => {
     setActiveSection(sectionId);
@@ -156,24 +167,63 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-blue-100">
-      <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+      <nav
+        className={`fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300 ${
+          showStickyHeader ? 'translate-y-0 opacity-100 shadow-sm' : '-translate-y-full opacity-0'
+        }`}
+      >
         <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-          <button onClick={() => scrollToSection('home')} className="font-bold text-xl tracking-tight text-blue-600">SAM EDELSTEIN</button>
+          <button
+            onClick={() => scrollToSection('home')}
+            className="font-bold text-xl tracking-tight text-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded"
+          >
+            SAM EDELSTEIN
+          </button>
           <div className="hidden md:flex space-x-6">
             {sections.map(s => (
-              <button key={s.id} onClick={() => scrollToSection(s.id)} className={`text-sm font-semibold ${activeSection === s.id ? 'text-blue-600' : 'text-slate-500 hover:text-slate-900'}`}>{s.label}</button>
+              <button
+                key={s.id}
+                onClick={() => scrollToSection(s.id)}
+                className={`text-sm font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded ${
+                  activeSection === s.id ? 'text-blue-600' : 'text-slate-500 hover:text-slate-900'
+                }`}
+              >
+                {s.label}
+              </button>
             ))}
           </div>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3">
             <a
-              href="mailto:sam.i.edelstein@gmail.com?subject=Recruiter%20inquiry%20—%20SVP%20Data%20%26%20AI&body=Role:%0ACompany:%0ATiming:%0ARemote%20/%20Hybrid:%0AComp:%0A%0AAdditional%20details:%0A"
-              className="hidden md:inline-flex items-center space-x-2 bg-slate-900 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-600 transition-all shadow-lg shadow-blue-200"
+              href="/assets/Edelstein_S_Resume_315.pdf"
+              download
+              className="inline-flex items-center justify-center space-x-2 bg-slate-900 text-white px-3 sm:px-4 h-11 rounded-full text-xs sm:text-sm font-semibold hover:bg-blue-600 transition-all shadow-lg shadow-blue-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+            >
+              <FileText size={16} />
+              <span>Download Resume (PDF)</span>
+            </a>
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="inline-flex items-center justify-center space-x-2 bg-white border border-slate-200 text-slate-700 px-3 sm:px-4 h-11 rounded-full text-xs sm:text-sm font-semibold hover:border-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
             >
               <Mail size={16} />
-              <span>Contact Me</span>
+              <span>Contact</span>
+            </button>
+            <a
+              href="https://www.linkedin.com/in/samedelstein"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-400 hover:text-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded h-11 w-11 inline-flex items-center justify-center"
+              aria-label="LinkedIn profile"
+            >
+              <Linkedin size={20} />
             </a>
-             <a href="https://www.linkedin.com/in/samedelstein" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-blue-600"><Linkedin size={20} /></a>
-             <button className="md:hidden text-slate-600" onClick={() => setIsMenuOpen(!isMenuOpen)}>{isMenuOpen ? <X /> : <Menu />}</button>
+            <button
+              className="md:hidden text-slate-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded h-11 w-11 inline-flex items-center justify-center"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle navigation menu"
+            >
+              {isMenuOpen ? <X /> : <Menu />}
+            </button>
           </div>
         </div>
       </nav>
@@ -312,6 +362,31 @@ const App = () => {
           </div>
         </div>
       </main>
+      <section id="contact" className="max-w-5xl mx-auto px-6 pb-24 scroll-mt-24">
+        <div className="bg-white border border-slate-100 rounded-[2.5rem] p-10 text-center shadow-sm">
+          <h2 className="text-2xl font-bold text-slate-900 mb-3">Contact</h2>
+          <p className="text-slate-600 mb-6">
+            Let’s connect about data, AI strategy, or speaking opportunities.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="mailto:sam.i.edelstein@gmail.com?subject=Hello%20Sam&body=Hi%20Sam%2C%0A%0A"
+              className="inline-flex items-center justify-center space-x-2 bg-slate-900 text-white px-6 h-11 rounded-full text-sm font-semibold hover:bg-blue-600 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+            >
+              <Mail size={16} />
+              <span>Email Sam</span>
+            </a>
+            <a
+              href="/assets/Edelstein_S_Resume_315.pdf"
+              download
+              className="inline-flex items-center justify-center space-x-2 bg-white border border-slate-200 text-slate-700 px-6 h-11 rounded-full text-sm font-semibold hover:border-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+            >
+              <FileText size={16} />
+              <span>Download Resume (PDF)</span>
+            </a>
+          </div>
+        </div>
+      </section>
       <footer className="py-12 text-center text-slate-400 text-sm">© {new Date().getFullYear()} Sam Edelstein</footer>
     </div>
   );
