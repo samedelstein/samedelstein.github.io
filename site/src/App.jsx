@@ -6,6 +6,7 @@ import {
   ExternalLink, 
   MapPin, 
   Briefcase, 
+  Mail,
   GraduationCap, 
   Award,
   ChevronRight,
@@ -164,6 +165,13 @@ const App = () => {
             ))}
           </div>
           <div className="flex items-center space-x-4">
+            <a
+              href="mailto:sam.i.edelstein@gmail.com?subject=Recruiter%20inquiry%20—%20SVP%20Data%20%26%20AI&body=Role:%0ACompany:%0ATiming:%0ARemote%20/%20Hybrid:%0AComp:%0A%0AAdditional%20details:%0A"
+              className="hidden md:inline-flex items-center space-x-2 bg-slate-900 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-600 transition-all shadow-lg shadow-blue-200"
+            >
+              <Mail size={16} />
+              <span>Contact Me</span>
+            </a>
              <a href="https://www.linkedin.com/in/samedelstein" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-blue-600"><Linkedin size={20} /></a>
              <button className="md:hidden text-slate-600" onClick={() => setIsMenuOpen(!isMenuOpen)}>{isMenuOpen ? <X /> : <Menu />}</button>
           </div>
@@ -182,6 +190,12 @@ const App = () => {
             <div className="flex flex-wrap gap-4">
               <a href="https://docs.google.com/document/d/e/2PACX-1vTs3WwrJMp1Lif09iYsuXadtaKJ0hhIBVpk_mdzSRtPtTmf9IhwnHtXpJsSw-ZcmxH3WlmrWrqasMCX/pub" target="_blank" className="flex items-center space-x-2 bg-slate-900 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-all shadow-lg">
                 <FileText size={18} /><span>View Resume</span>
+              </a>
+              <a
+                href="mailto:sam.i.edelstein@gmail.com?subject=Recruiter%20inquiry%20—%20SVP%20Data%20%26%20AI&body=Role:%0ACompany:%0ATiming:%0ARemote%20/%20Hybrid:%0AComp:%0A%0AAdditional%20details:%0A"
+                className="flex items-center space-x-2 bg-white border border-slate-200 text-slate-700 px-6 py-3 rounded-full hover:border-blue-300"
+              >
+                <Mail size={18} /><span>Contact Me</span>
               </a>
               <button onClick={() => scrollToSection('writing')} className="flex items-center space-x-2 bg-white border border-slate-200 text-slate-700 px-6 py-3 rounded-full hover:border-blue-300">
                 <BookOpen size={18} /><span>Read Articles</span>
