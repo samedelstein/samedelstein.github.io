@@ -33,6 +33,9 @@ const App = () => {
     if (hash.startsWith('#/case-studies')) {
       return { page: 'case-studies' };
     }
+    if (hash.startsWith('#/resume')) {
+      return { page: 'resume' };
+    }
     return { page: 'home' };
   });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,6 +50,8 @@ const App = () => {
     { id: 'writing', label: 'Writing', type: 'section' },
     { id: 'press', label: 'Press', type: 'section' }
   ];
+  const resumePdfUrl = 'https://docs.google.com/document/d/e/2PACX-1vTs3WwrJMp1Lif09iYsuXadtaKJ0hhIBVpk_mdzSRtPtTmf9IhwnHtXpJsSw-ZcmxH3WlmrWrqasMCX/pub?output=pdf';
+  const resumeDocUrl = 'https://docs.google.com/document/d/e/2PACX-1vTs3WwrJMp1Lif09iYsuXadtaKJ0hhIBVpk_mdzSRtPtTmf9IhwnHtXpJsSw-ZcmxH3WlmrWrqasMCX/pub';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,6 +72,10 @@ const App = () => {
       }
       if (hash.startsWith('#/case-studies')) {
         setRoute({ page: 'case-studies' });
+        return;
+      }
+      if (hash.startsWith('#/resume')) {
+        setRoute({ page: 'resume' });
         return;
       }
       setRoute({ page: 'home' });
@@ -378,7 +387,7 @@ const App = () => {
           </div>
           <div className="flex items-center space-x-3">
             <a
-              href="/assets/Edelstein_S_Resume_315.pdf"
+              href={resumePdfUrl}
               download
               className="inline-flex items-center justify-center space-x-2 bg-slate-900 text-white px-3 sm:px-4 h-11 rounded-full text-xs sm:text-sm font-semibold hover:bg-blue-600 transition-all shadow-lg shadow-blue-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
             >
@@ -424,7 +433,7 @@ const App = () => {
                   I am the Senior Vice President of Data & AI at Insight Partners and the former Chief Data Officer for the City of Syracuse.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <a href="https://docs.google.com/document/d/e/2PACX-1vTs3WwrJMp1Lif09iYsuXadtaKJ0hhIBVpk_mdzSRtPtTmf9IhwnHtXpJsSw-ZcmxH3WlmrWrqasMCX/pub" target="_blank" className="flex items-center space-x-2 bg-slate-900 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-all shadow-lg">
+                  <a href="#/resume" className="flex items-center space-x-2 bg-slate-900 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-all shadow-lg">
                     <FileText size={18} /><span>View Resume</span>
                   </a>
                   <a
@@ -592,7 +601,7 @@ const App = () => {
                   <span>Email Sam</span>
                 </a>
                 <a
-                  href="/assets/Edelstein_S_Resume_315.pdf"
+                  href={resumePdfUrl}
                   download
                   className="inline-flex items-center justify-center space-x-2 bg-white border border-slate-200 text-slate-700 px-6 h-11 rounded-full text-sm font-semibold hover:border-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                 >
@@ -629,6 +638,37 @@ const App = () => {
                 </a>
               </div>
             ))}
+          </div>
+        </main>
+      )}
+
+      {route.page === 'resume' && (
+        <main className="max-w-4xl mx-auto px-6 pt-32 pb-24">
+          <section className="mb-12">
+            <span className="text-xs font-bold uppercase tracking-widest text-blue-600">Resume</span>
+            <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mt-4 mb-4">Sam Edelstein</h1>
+            <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">
+              Download the latest PDF copy of my resume or view the online version.
+            </p>
+          </section>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href={resumePdfUrl}
+              download
+              className="inline-flex items-center justify-center space-x-2 bg-slate-900 text-white px-6 h-12 rounded-full text-sm font-semibold hover:bg-blue-600 transition-all shadow-lg shadow-blue-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+            >
+              <FileText size={18} />
+              <span>Download PDF</span>
+            </a>
+            <a
+              href={resumeDocUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center space-x-2 bg-white border border-slate-200 text-slate-700 px-6 h-12 rounded-full text-sm font-semibold hover:border-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+            >
+              <ExternalLink size={18} />
+              <span>View Online</span>
+            </a>
           </div>
         </main>
       )}
