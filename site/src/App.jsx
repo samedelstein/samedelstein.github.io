@@ -288,8 +288,13 @@ const App = () => {
     {
       role: "Senior Vice President, Data & AI",
       company: "Insight Partners",
-      period: "Present",
-      description: "Leading data & AI strategy and analytics initiatives for a premier global venture capital and private equity firm.",
+      period: "2021 – Present",
+      description: "Leading enterprise data and AI strategy for a global venture capital and private equity firm, focused on scaling AI capabilities and driving value across a diverse portfolio.",
+      bullets: [
+        "Designed and implemented AI enablement programs across the organization",
+        "Established governance frameworks and operating models for responsible AI deployment",
+        "Built and led cross-functional teams to deliver enterprise data infrastructure and applied AI solutions"
+      ],
       icon: <Database className="w-5 h-5" />
     },
     {
@@ -450,6 +455,47 @@ const App = () => {
             </section>
 
             <section className="mb-24">
+              <h2 className="text-2xl font-bold text-slate-900 mb-6 uppercase tracking-tight">Career Impact Snapshot</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-white border border-slate-100 p-6 rounded-2xl">
+                  <div className="flex items-center space-x-3 mb-2">
+                    <Database className="text-blue-600" size={24} />
+                    <h3 className="text-3xl font-bold text-slate-900">500</h3>
+                  </div>
+                  <p className="text-sm text-slate-600">Employees enabled with AI tools</p>
+                </div>
+                <div className="bg-white border border-slate-100 p-6 rounded-2xl">
+                  <div className="flex items-center space-x-3 mb-2">
+                    <MapPin className="text-blue-600" size={24} />
+                    <h3 className="text-3xl font-bold text-slate-900">5th</h3>
+                  </div>
+                  <p className="text-sm text-slate-600">Largest city in NY data-enabled</p>
+                </div>
+                <div className="bg-white border border-slate-100 p-6 rounded-2xl">
+                  <div className="flex items-center space-x-3 mb-2">
+                    <Activity className="text-blue-600" size={24} />
+                    <h3 className="text-3xl font-bold text-slate-900">10+</h3>
+                  </div>
+                  <p className="text-sm text-slate-600">Media features</p>
+                </div>
+                <div className="bg-white border border-slate-100 p-6 rounded-2xl">
+                  <div className="flex items-center space-x-3 mb-2">
+                    <GraduationCap className="text-blue-600" size={24} />
+                    <h3 className="text-3xl font-bold text-slate-900">100+</h3>
+                  </div>
+                  <p className="text-sm text-slate-600">Graduate students taught</p>
+                </div>
+                <div className="bg-white border border-slate-100 p-6 rounded-2xl">
+                  <div className="flex items-center space-x-3 mb-2">
+                    <Droplets className="text-blue-600" size={24} />
+                    <h3 className="text-3xl font-bold text-slate-900">ML-driven</h3>
+                  </div>
+                  <p className="text-sm text-slate-600">Infrastructure savings through predictive analytics</p>
+                </div>
+              </div>
+            </section>
+
+            <section className="mb-24">
               <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center space-x-3">
                   <Code className="text-blue-600" />
@@ -492,8 +538,46 @@ const App = () => {
                         <h3 className="text-xl font-bold mt-1 text-slate-900">{exp.role}</h3>
                         <p className="text-lg font-medium text-slate-700">{exp.company}</p>
                         <p className="text-slate-600 mt-3 leading-relaxed">{exp.description}</p>
+                        {exp.bullets && (
+                          <ul className="mt-4 space-y-2 text-slate-600">
+                            {exp.bullets.map((bullet, idx) => (
+                              <li key={idx} className="flex items-start">
+                                <span className="text-blue-600 mr-2">•</span>
+                                <span className="leading-relaxed">{bullet}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
                       </div>
                     ))}
+                  </div>
+                </section>
+
+                {/* Core Competencies */}
+                <section id="competencies" className="scroll-mt-24">
+                  <div className="flex items-center space-x-3 mb-8">
+                    <Users className="text-blue-600" />
+                    <h2 className="text-2xl font-bold uppercase tracking-tight">Core Competencies</h2>
+                  </div>
+                  <div className="space-y-6">
+                    <div className="bg-white border border-slate-100 p-6 rounded-3xl">
+                      <h3 className="text-lg font-bold text-slate-900 mb-3">Leadership & Strategy</h3>
+                      <p className="text-slate-600 leading-relaxed">
+                        Enterprise AI/Data Strategy | Organizational Transformation | Team Building & Talent Development | Stakeholder Management | Product Management | Change Management
+                      </p>
+                    </div>
+                    <div className="bg-white border border-slate-100 p-6 rounded-3xl">
+                      <h3 className="text-lg font-bold text-slate-900 mb-3">Technical Domains</h3>
+                      <p className="text-slate-600 leading-relaxed">
+                        Machine Learning & Predictive Analytics | Data Engineering | Data Governance & Privacy | Cloud Infrastructure (AWS/Azure) | Business Intelligence & Dashboards
+                      </p>
+                    </div>
+                    <div className="bg-white border border-slate-100 p-6 rounded-3xl">
+                      <h3 className="text-lg font-bold text-slate-900 mb-3">Technologies</h3>
+                      <p className="text-slate-600 leading-relaxed">
+                        Python, R, SQL | TensorFlow, scikit-learn | Power BI, R Shiny | PostgreSQL, Snowflake | GIS (ArcGIS, QGIS) | APIs & Data Integration
+                      </p>
+                    </div>
                   </div>
                 </section>
 
@@ -588,10 +672,28 @@ const App = () => {
           </main>
           <section id="contact" className="max-w-5xl mx-auto px-6 pb-24 scroll-mt-24">
             <div className="bg-white border border-slate-100 rounded-[2.5rem] p-10 text-center shadow-sm">
-              <h2 className="text-2xl font-bold text-slate-900 mb-3">Contact</h2>
-              <p className="text-slate-600 mb-6">
-                Let’s connect about data, AI strategy, or speaking opportunities.
+              <h2 className="text-2xl font-bold text-slate-900 mb-3">Let's Connect</h2>
+              <p className="text-slate-600 mb-4">
+                I'm always interested in conversations about:
               </p>
+              <ul className="text-slate-600 mb-6 text-left max-w-2xl mx-auto space-y-2">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Data and AI leadership opportunities at mission-driven organizations</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Board advisory and consulting engagements</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Speaking opportunities and thought leadership collaborations</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  <span>Partnerships in the public sector innovation space</span>
+                </li>
+              </ul>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
                   href="mailto:sam.i.edelstein@gmail.com?subject=Hello%20Sam&body=Hi%20Sam%2C%0A%0A"
