@@ -279,14 +279,11 @@ const App = () => {
             <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,2fr)_minmax(280px,1fr)] gap-16">
               <div className="space-y-28">
                 <section>
-                  <SectionTitle icon={<Briefcase className="text-blue-600" />} title="Executive Bio" eyebrow="Overview" />
+                  <SectionTitle icon={<Briefcase className="text-blue-600" />} title="Leadership Profile" />
                   <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
-                    <p>I currently serve as Senior Vice President, Data &amp; AI at Insight Partners, where I lead firm-wide AI and data strategy across investment, HR, compliance, finance, and operations. My work focuses on building the systems behind durable adoption: modern data platforms, practical AI workflows, governance, and change management.</p>
-                    <p>Previously, I was the City of Syracuse&apos;s first Chief Data Officer, where I built the city&apos;s first analytics office and led programs that improved public services, modernized operations, and generated millions in savings. Across both public and private sector settings, my work has centered on making data and AI useful, operational, and aligned with real organizational goals.</p>
-                    <p>Hi, I&apos;m Sam Edelstein. I&apos;m a data and AI executive focused on building practical, high-impact programs at the intersection of technology, strategy, and execution.</p>
-                    <p>A large part of my work is helping organizations move from interest in AI to actual operating capability: defining priorities, building data foundations, setting guardrails, creating adoption pathways, and making sure the end result is something people trust and use.</p>
-                    <p>Before joining Insight, I built and led Syracuse&apos;s first analytics team, launched DataCuse, authored the city&apos;s first open data policy, and led projects that generated meaningful operational and financial impact.</p>
-                    <p>I&apos;ve also taught graduate courses at Syracuse University and continue to be interested in how institutions build durable capability around data, analytics, and AI.</p>
+                    <p>I&apos;m a data and AI executive who builds the operating foundations that turn analytics and AI into real business outcomes. At Insight Partners, I lead firm-wide AI and data strategy across investment, HR, compliance, finance, and operations, with a focus on platforms, governance, adoption, and organizational execution.</p>
+                    <p>My work is strongest where strategy and implementation need to meet. I help organizations prioritize the right opportunities, modernize data foundations, establish practical guardrails, and create adoption models that make AI useful, trusted, and sustainable at scale.</p>
+                    <p>Before Insight, I served as the City of Syracuse&apos;s first Chief Data Officer, where I built the city&apos;s first analytics office, launched DataCuse, authored the city&apos;s first open data policy, and led high-impact operational programs in the public sector. I&apos;ve also taught graduate courses at Syracuse University, which continues to shape how I think about capability-building, leadership, and applied data work.</p>
                   </div>
                 </section>
 
