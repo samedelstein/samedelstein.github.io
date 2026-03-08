@@ -35,6 +35,13 @@ const workOnItems = [
   ['Team and operating model design', 'Shape teams, delivery processes, and decision rights that scale beyond a single project.'],
 ];
 
+const impactStats = [
+  ['80%+', 'weekly AI usage across all employees'],
+  ['15', 'person blended Data & AI team'],
+  ['12+', 'integrated data sources'],
+  ['1B+', 'rows unified for analytics and AI'],
+];
+
 const experience = [
   {
     role: 'Senior Vice President, Data & AI',
@@ -281,9 +288,21 @@ const App = () => {
                 <section>
                   <SectionTitle icon={<Briefcase className="text-blue-600" />} title="Leadership Profile" />
                   <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
-                    <p>I&apos;m a data and AI executive who builds the operating foundations that turn analytics and AI into real business outcomes. At Insight Partners, I lead firm-wide AI and data strategy across investment, HR, compliance, finance, and operations, with a focus on platforms, governance, adoption, and organizational execution.</p>
-                    <p>My work is strongest where strategy and implementation need to meet. I help organizations prioritize the right opportunities, modernize data foundations, establish practical guardrails, and create adoption models that make AI useful, trusted, and sustainable at scale.</p>
-                    <p>Before Insight, I served as the City of Syracuse&apos;s first Chief Data Officer, where I built the city&apos;s first analytics office, launched DataCuse, authored the city&apos;s first open data policy, and led high-impact operational programs in the public sector. I&apos;ve also taught graduate courses at Syracuse University, which continues to shape how I think about capability-building, leadership, and applied data work.</p>
+                    <p>I currently serve as Senior Vice President, Data &amp; AI at Insight Partners, where I lead firm-wide AI and data strategy across investment, HR, compliance, finance, and operations. My work focuses on building the systems behind durable adoption: modern data platforms, practical AI workflows, governance, and change management.</p>
+                    <p>At Insight, I&apos;ve helped drive 80%+ weekly AI usage across all employees, built a blended 15-person Data &amp; AI team across engineering and enablement, and modernized the firm&apos;s data foundation by integrating more than a dozen sources spanning 1B+ rows.</p>
+                    <p>Previously, I was the City of Syracuse&apos;s first Chief Data Officer, where I built the city&apos;s first analytics office and led programs that improved public services, modernized operations, and generated millions in savings. Across both public and private sector settings, my work has centered on making data and AI useful, operational, and aligned with real organizational goals.</p>
+                  </div>
+                </section>
+
+                <section className="scroll-mt-24 py-10 px-8 md:px-10 bg-white rounded-[2.5rem] border border-slate-200/70 shadow-sm">
+                  <SectionTitle icon={<Zap className="text-blue-600" />} title="Selected Impact" eyebrow="Proof Points" />
+                  <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+                    {impactStats.map(([value, label]) => (
+                      <div key={label} className="border-l-2 border-blue-100 pl-4">
+                        <div className="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">{value}</div>
+                        <p className="mt-2 text-sm leading-relaxed text-slate-600">{label}</p>
+                      </div>
+                    ))}
                   </div>
                 </section>
 
