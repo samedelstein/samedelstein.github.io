@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import resumePdf from './assets/Edelstein_S_Resume_315.pdf';
 import {
   Activity,
   ArrowUpRight,
@@ -20,6 +21,11 @@ import {
   Zap,
 } from 'lucide-react';
 
+const externalLinkProps = {
+  target: '_blank',
+  rel: 'noopener noreferrer',
+};
+
 const navItems = [
   { id: 'home', label: 'Overview', type: 'section' },
   { id: 'work', label: 'What I Work On', type: 'section' },
@@ -40,6 +46,12 @@ const impactStats = [
   ['15', 'person blended Data & AI team'],
   ['12+', 'integrated data sources'],
   ['1B+', 'rows unified for analytics and AI'],
+];
+
+const recruiterSignals = [
+  ['Current scope', 'Firm-wide Data & AI strategy across investment, HR, compliance, finance, and operations.'],
+  ['Best fit', 'Executive data and AI leadership, transformation, governance, and platform modernization roles.'],
+  ['Operating style', 'Hands-on builder who can translate executive priorities into teams, systems, adoption, and measurable outcomes.'],
 ];
 
 const experience = [
@@ -110,7 +122,7 @@ const caseStudies = [
     role: 'Led the data inventory, defined governance standards, and coordinated stakeholder alignment across city agencies.',
     shipped: ['Launched a Socrata-based open data portal.', 'Published a standardized data dictionary and intake workflow.', "Established the city's first open data policy."],
     impact: ['Enabled public visibility into city operations.', 'Improved cross-department analytics.', 'Created a durable foundation for civic technology partnerships.'],
-    links: [{ label: 'GovTech Coverage', url: 'http://www.govtech.com/civic/Whats-New-in-Civic-Tech-07272017.html' }],
+    links: [{ label: 'GovTech Coverage', url: 'https://www.govtech.com/civic/Whats-New-in-Civic-Tech-07272017.html' }],
   },
   {
     slug: 'predictive-water-main-analytics',
@@ -135,16 +147,16 @@ const caseStudies = [
 ];
 
 const pressLinks = [
-  { title: 'Mayor Miner names new employees of Syracuse innovation office', outlet: 'Syracuse.com', url: 'http://www.syracuse.com/news/index.ssf/2015/05/mayor_miner_announces_four_new_hires_for_syracuse_innovation_team.html' },
-  { title: 'Syracuse firefighters to get smoke detectors into high-risk homes', outlet: 'Syracuse.com', url: 'http://www.syracuse.com/news/index.ssf/2017/01/syracuse_fire_department_takes_data-driven_approach_to_getting_smoke_detectors_i.html' },
-  { title: 'How Mathematicians in Chicago Are Stopping Water Leaks in Syracuse', outlet: 'Politico', url: 'http://www.politico.com/magazine/story/2017/04/20/syracuse-infrastructure-water-system-pipe-breaks-215054' },
-  { title: 'Open data comes to Syracuse', outlet: 'WRVO', url: 'http://wrvo.org/post/open-data-comes-syracuse' },
+  { title: 'Mayor Miner names new employees of Syracuse innovation office', outlet: 'Syracuse.com', url: 'https://www.syracuse.com/news/index.ssf/2015/05/mayor_miner_announces_four_new_hires_for_syracuse_innovation_team.html' },
+  { title: 'Syracuse firefighters to get smoke detectors into high-risk homes', outlet: 'Syracuse.com', url: 'https://www.syracuse.com/news/index.ssf/2017/01/syracuse_fire_department_takes_data-driven_approach_to_getting_smoke_detectors_i.html' },
+  { title: 'How Mathematicians in Chicago Are Stopping Water Leaks in Syracuse', outlet: 'Politico', url: 'https://www.politico.com/magazine/story/2017/04/20/syracuse-infrastructure-water-system-pipe-breaks-215054' },
+  { title: 'Open data comes to Syracuse', outlet: 'WRVO', url: 'https://www.wrvo.org/post/open-data-comes-syracuse' },
 ];
 
 const speakingLinks = [
   { title: 'Open Data: What It Is, How It Can Help You, and Where to Start', outlet: 'New York State Local Government Innovation Conference', url: 'https://www.dos.ny.gov/lg/pdf/LGIC2016_Workshops.pdf' },
-  { title: 'Smart Insights: Leveraging Data (Big and Small) in Moving Towards a Smarter City', outlet: 'Smart Cities International Symposium', url: 'http://www.smartcities-symposium.com/' },
-  { title: 'Government Could Be the Mother of Your Data', outlet: 'MIT CDOIQ Symposium', url: 'http://www.mitcdoiq.org/' },
+  { title: 'Smart Insights: Leveraging Data (Big and Small) in Moving Towards a Smarter City', outlet: 'Smart Cities International Symposium', url: 'https://www.smartcities-symposium.com/' },
+  { title: 'Government Could Be the Mother of Your Data', outlet: 'MIT CDOIQ Symposium', url: 'https://www.mitcdoiq.org/' },
 ];
 
 const blogPosts = [
@@ -180,7 +192,7 @@ const App = () => {
   const [pressSearch, setPressSearch] = useState('');
   const [showStickyHeader, setShowStickyHeader] = useState(false);
 
-  const resumePdfUrl = 'https://docs.google.com/document/d/e/2PACX-1vTs3WwrJMp1Lif09iYsuXadtaKJ0hhIBVpk_mdzSRtPtTmf9IhwnHtXpJsSw-ZcmxH3WlmrWrqasMCX/pub?output=pdf';
+  const resumePdfUrl = resumePdf;
   const resumeDocUrl = 'https://docs.google.com/document/d/e/2PACX-1vTs3WwrJMp1Lif09iYsuXadtaKJ0hhIBVpk_mdzSRtPtTmf9IhwnHtXpJsSw-ZcmxH3WlmrWrqasMCX/pub';
 
   useEffect(() => {
@@ -214,12 +226,12 @@ const App = () => {
   const featuredCaseStudies = caseStudies.slice(0, 2);
   const activeCaseStudy = caseStudies.find((study) => study.slug === route.slug);
 
-  const scrollToSection = (sectionId) => {
-    if (route.page !== 'home') {
-      window.location.hash = '#/';
-      setTimeout(() => scrollToSection(sectionId), 120);
-      return;
-    }
+  const navigateToHash = (hash) => {
+    window.location.assign(hash);
+    setIsMenuOpen(false);
+  };
+
+  const scrollHomeSection = (sectionId) => {
     setActiveSection(sectionId);
     const element = document.getElementById(sectionId);
     if (!element) return;
@@ -229,8 +241,17 @@ const App = () => {
     setIsMenuOpen(false);
   };
 
+  const scrollToSection = (sectionId) => {
+    if (route.page !== 'home') {
+      navigateToHash('#/');
+      setTimeout(() => scrollHomeSection(sectionId), 120);
+      return;
+    }
+    scrollHomeSection(sectionId);
+  };
+
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-blue-100">
+    <div className="min-h-screen bg-[#f7f3eb] text-slate-900 font-sans selection:bg-amber-200">
       <nav className={`fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300 ${showStickyHeader || route.page !== 'home' ? 'translate-y-0 opacity-100 shadow-sm' : '-translate-y-full opacity-0'}`}>
         <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
           <button onClick={() => scrollToSection('home')} className="font-bold text-xl tracking-tight text-blue-600">SAM EDELSTEIN</button>
@@ -238,7 +259,7 @@ const App = () => {
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => (item.type === 'route' ? (window.location.hash = '#/case-studies') : scrollToSection(item.id))}
+                onClick={() => (item.type === 'route' ? navigateToHash('#/case-studies') : scrollToSection(item.id))}
                 className={`text-sm font-semibold ${activeSection === item.id && route.page === 'home' ? 'text-blue-600' : 'text-slate-500 hover:text-slate-900'}`}
               >
                 {item.label}
@@ -250,7 +271,7 @@ const App = () => {
               <FileText size={16} />
               <span>Download Resume</span>
             </a>
-            <a href="https://www.linkedin.com/in/samedelstein" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-blue-600 h-11 w-11 inline-flex items-center justify-center" aria-label="LinkedIn profile">
+            <a href="https://www.linkedin.com/in/samedelstein" {...externalLinkProps} className="text-slate-400 hover:text-blue-600 h-11 w-11 inline-flex items-center justify-center" aria-label="LinkedIn profile">
               <Linkedin size={20} />
             </a>
             <button className="md:hidden text-slate-600 h-11 w-11 inline-flex items-center justify-center" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle navigation menu">
@@ -261,7 +282,7 @@ const App = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-slate-200 bg-white px-6 py-4 space-y-3">
             {navItems.map((item) => (
-              <button key={item.id} onClick={() => (item.type === 'route' ? (window.location.hash = '#/case-studies') : scrollToSection(item.id))} className="block text-left w-full text-sm font-semibold text-slate-700 hover:text-blue-600">
+              <button key={item.id} onClick={() => (item.type === 'route' ? navigateToHash('#/case-studies') : scrollToSection(item.id))} className="block text-left w-full text-sm font-semibold text-slate-700 hover:text-blue-600">
                 {item.label}
               </button>
             ))}
@@ -271,16 +292,32 @@ const App = () => {
 
       {route.page === 'home' && (
         <>
-          <main className="max-w-5xl mx-auto px-6 pt-32 pb-20">
-            <section id="home" className="mb-24 scroll-mt-32 max-w-[52rem]">
-              <p className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-3">Sam Edelstein</p>
-              <h1 className="text-2xl md:text-3xl font-semibold text-blue-600 mb-6 leading-tight">Senior Vice President, Data &amp; AI</h1>
-              <p className="text-xl md:text-2xl text-slate-600 mb-8 leading-relaxed max-w-[42rem]">I lead enterprise AI and data strategy, helping organizations build the platforms, governance, and operating models that turn modern analytics and AI into measurable business outcomes.</p>
-              <p className="text-base md:text-lg text-slate-500 mb-10 max-w-[38rem]">I&apos;m particularly interested in executive conversations around enterprise AI transformation, data platform strategy, and scaling high-impact teams.</p>
-              <div className="flex flex-wrap gap-4">
-                <a href="#/resume" className="flex items-center space-x-2 bg-slate-900 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-all"><FileText size={18} /><span>View Resume</span></a>
-                <a href="mailto:sam.i.edelstein@gmail.com?subject=Executive%20conversation&body=Hi%20Sam%2C%0A%0A" className="flex items-center space-x-2 bg-white border border-slate-200 text-slate-700 px-6 py-3 rounded-full hover:border-blue-300"><Mail size={18} /><span>Contact Me</span></a>
-                <button onClick={() => scrollToSection('writing')} className="flex items-center space-x-2 bg-white border border-slate-200 text-slate-700 px-6 py-3 rounded-full hover:border-blue-300"><BookOpen size={18} /><span>Read Articles</span></button>
+          <main className="max-w-6xl mx-auto px-6 pt-32 pb-20">
+            <section id="home" className="mb-24 scroll-mt-32 grid grid-cols-1 lg:grid-cols-[minmax(0,1.35fr)_minmax(320px,0.75fr)] gap-10 items-end">
+              <div className="max-w-[54rem]">
+                <p className="inline-flex items-center rounded-full bg-slate-900 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-amber-100 mb-6">Enterprise AI, data strategy, operating models</p>
+                <p className="text-5xl md:text-7xl font-black tracking-[-0.06em] text-slate-950 mb-4 leading-[0.92]">Sam Edelstein</p>
+                <h1 className="text-2xl md:text-4xl font-semibold text-blue-700 mb-6 leading-tight">Senior Vice President, Data &amp; AI</h1>
+                <p className="text-xl md:text-2xl text-slate-700 mb-8 leading-relaxed max-w-[46rem]">I help organizations turn AI ambition into operating capability: governed platforms, adopted workflows, strong teams, and measurable business outcomes.</p>
+                <p className="text-base md:text-lg text-slate-600 mb-10 max-w-[42rem]">I&apos;m interested in executive conversations around enterprise AI transformation, data platform strategy, and scaling high-impact teams.</p>
+                <div className="flex flex-wrap gap-4">
+                  <a href="#/resume" className="flex items-center space-x-2 bg-slate-900 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all"><FileText size={18} /><span>View Resume</span></a>
+                  <a href="mailto:sam.i.edelstein@gmail.com?subject=Executive%20conversation&body=Hi%20Sam%2C%0A%0A" className="flex items-center space-x-2 bg-white border border-slate-200 text-slate-700 px-6 py-3 rounded-full hover:border-blue-300"><Mail size={18} /><span>Contact Me</span></a>
+                  <button onClick={() => scrollToSection('case-studies-preview')} className="flex items-center space-x-2 bg-white border border-slate-200 text-slate-700 px-6 py-3 rounded-full hover:border-blue-300"><ArrowUpRight size={18} /><span>See Impact</span></button>
+                </div>
+              </div>
+              <div className="bg-slate-950 text-white rounded-[2rem] p-7 shadow-2xl shadow-slate-300/70 relative overflow-hidden">
+                <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-blue-500/30 blur-2xl" />
+                <div className="absolute -left-8 bottom-0 h-28 w-28 rounded-full bg-amber-300/20 blur-2xl" />
+                <p className="text-xs font-bold uppercase tracking-[0.24em] text-amber-200 mb-6 relative">Recruiter Snapshot</p>
+                <div className="space-y-5 relative">
+                  {recruiterSignals.map(([label, body]) => (
+                    <div key={label} className="border-t border-white/10 pt-4">
+                      <h2 className="text-sm font-bold text-white">{label}</h2>
+                      <p className="text-sm leading-relaxed text-slate-300 mt-1">{body}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </section>
             <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,2fr)_minmax(280px,1fr)] gap-16">
@@ -294,7 +331,7 @@ const App = () => {
                   </div>
                 </section>
 
-                <section className="scroll-mt-24 py-10 px-8 md:px-10 bg-white rounded-[2.5rem] border border-slate-200/70 shadow-sm">
+                <section id="case-studies-preview" className="scroll-mt-24 py-10 px-8 md:px-10 bg-white rounded-[2.5rem] border border-slate-200/70 shadow-sm">
                   <SectionTitle icon={<Zap className="text-blue-600" />} title="Selected Impact" eyebrow="Proof Points" />
                   <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
                     {impactStats.map(([value, label]) => (
@@ -327,7 +364,7 @@ const App = () => {
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {filteredPress.map((item) => (
-                        <a key={item.url} href={item.url} target="_blank" rel="noreferrer" className="p-4 bg-slate-50 border border-slate-100 rounded-2xl hover:border-blue-200 flex flex-col justify-between">
+                        <a key={item.url} href={item.url} {...externalLinkProps} className="p-4 bg-slate-50 border border-slate-100 rounded-2xl hover:border-blue-200 flex flex-col justify-between">
                           <div>
                             <span className="text-[9px] font-black uppercase text-blue-600 block mb-1">{item.outlet}</span>
                             <h4 className="font-bold text-slate-800 text-sm leading-snug">{item.title}</h4>
@@ -341,7 +378,7 @@ const App = () => {
                     <SectionTitle icon={<BookOpen className="text-blue-600" />} title="Speaking" eyebrow="Talks" compact />
                     <div className="space-y-4">
                       {speakingLinks.map((item) => (
-                        <a key={item.url} href={item.url} target="_blank" rel="noreferrer" className="block p-4 bg-slate-50 border border-slate-100 rounded-2xl hover:border-blue-200">
+                        <a key={item.url} href={item.url} {...externalLinkProps} className="block p-4 bg-slate-50 border border-slate-100 rounded-2xl hover:border-blue-200">
                           <span className="text-[10px] font-black uppercase text-blue-600 block mb-2">{item.outlet}</span>
                           <span className="font-bold text-slate-800 text-sm leading-snug">{item.title}</span>
                         </a>
@@ -353,7 +390,7 @@ const App = () => {
                 <section>
                   <div className="flex items-center justify-between mb-8">
                     <SectionTitle icon={<Code className="text-blue-600" />} title="Featured Case Studies" eyebrow="Selected Work" />
-                    <button onClick={() => { window.location.hash = '#/case-studies'; }} className="text-sm font-semibold text-blue-600 hover:underline mb-8">View all <ChevronRight size={16} className="inline" /></button>
+                    <button onClick={() => navigateToHash('#/case-studies')} className="text-sm font-semibold text-blue-600 hover:underline mb-8">View all <ChevronRight size={16} className="inline" /></button>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {featuredCaseStudies.map((study) => (
@@ -391,11 +428,11 @@ const App = () => {
                 <section id="writing" className="scroll-mt-24">
                   <div className="flex items-center justify-between mb-8">
                     <SectionTitle icon={<BookOpen className="text-blue-600" />} title="Latest Writing" eyebrow="Articles" />
-                    <a href="https://medium.com/@samedelstein" target="_blank" rel="noreferrer" className="text-sm font-semibold text-blue-600 hover:underline mb-8">All Posts <ChevronRight size={16} className="inline" /></a>
+                    <a href="https://medium.com/@samedelstein" {...externalLinkProps} className="text-sm font-semibold text-blue-600 hover:underline mb-8">All Posts <ChevronRight size={16} className="inline" /></a>
                   </div>
                   <div className="grid grid-cols-1 gap-6">
                     {blogPosts.map((post) => (
-                      <a key={post.link} href={post.link} target="_blank" rel="noreferrer" className="group block p-8 bg-white border border-slate-100 rounded-3xl hover:shadow-2xl hover:-translate-y-1 transition-all">
+                      <a key={post.link} href={post.link} {...externalLinkProps} className="group block p-8 bg-white border border-slate-100 rounded-3xl hover:shadow-2xl hover:-translate-y-1 transition-all">
                         <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">{post.date}</span>
                         <h3 className="text-xl font-bold mt-2 group-hover:text-blue-600">{post.title}</h3>
                         <p className="text-slate-600 mt-2 leading-relaxed">{post.excerpt}</p>
@@ -434,8 +471,8 @@ const App = () => {
                   <h3 className="text-xl font-bold mb-4">Let&apos;s Connect</h3>
                   <p className="text-sm leading-relaxed text-blue-50 mb-6">I&apos;m interested in conversations about enterprise AI transformation, data platform strategy, executive leadership roles, and advisory work.</p>
                   <div className="space-y-3">
-                    <a href="https://www.linkedin.com/in/samedelstein" target="_blank" rel="noreferrer" className="block py-4 bg-white text-blue-600 font-bold rounded-2xl text-center">LinkedIn Profile</a>
-                    <a href={resumeDocUrl} target="_blank" rel="noreferrer" className="block py-4 border border-blue-300 text-white font-bold rounded-2xl text-center">View Resume Online</a>
+                    <a href="https://www.linkedin.com/in/samedelstein" {...externalLinkProps} className="block py-4 bg-white text-blue-600 font-bold rounded-2xl text-center">LinkedIn Profile</a>
+                    <a href={resumeDocUrl} {...externalLinkProps} className="block py-4 border border-blue-300 text-white font-bold rounded-2xl text-center">View Resume Online</a>
                   </div>
                 </section>
               </aside>
@@ -491,7 +528,7 @@ const App = () => {
           </section>
           <div className="flex flex-wrap gap-4">
             <a href={resumePdfUrl} download className="inline-flex items-center justify-center space-x-2 bg-slate-900 text-white px-6 h-12 rounded-full text-sm font-semibold hover:bg-blue-600 transition-all"><FileText size={18} /><span>Download PDF</span></a>
-            <a href={resumeDocUrl} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center space-x-2 bg-white border border-slate-200 text-slate-700 px-6 h-12 rounded-full text-sm font-semibold hover:border-blue-300"><ExternalLink size={18} /><span>View Online</span></a>
+            <a href={resumeDocUrl} {...externalLinkProps} className="inline-flex items-center justify-center space-x-2 bg-white border border-slate-200 text-slate-700 px-6 h-12 rounded-full text-sm font-semibold hover:border-blue-300"><ExternalLink size={18} /><span>View Online</span></a>
           </div>
         </main>
       )}
@@ -501,7 +538,7 @@ const App = () => {
           {activeCaseStudy ? (
             <>
               <div className="mb-10">
-                <button onClick={() => { window.location.hash = '#/case-studies'; }} className="text-sm font-semibold text-blue-600 hover:underline"><ChevronRight size={16} className="inline rotate-180" /> Back to case studies</button>
+                <button onClick={() => navigateToHash('#/case-studies')} className="text-sm font-semibold text-blue-600 hover:underline"><ChevronRight size={16} className="inline rotate-180" /> Back to case studies</button>
                 <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mt-4">{activeCaseStudy.title}</h1>
                 <p className="text-lg text-slate-600 mt-4 leading-relaxed">{activeCaseStudy.blurb}</p>
               </div>
@@ -512,7 +549,7 @@ const App = () => {
                 <div><h2 className="text-xl font-bold mb-2">Impact</h2><ul className="list-disc list-inside text-slate-600 space-y-2">{activeCaseStudy.impact.map((item) => <li key={item}>{item}</li>)}</ul></div>
                 <div>
                   <h2 className="text-xl font-bold mb-2">Links</h2>
-                  {activeCaseStudy.links.length > 0 ? <ul className="space-y-2">{activeCaseStudy.links.map((link) => <li key={link.url}><a href={link.url} target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-semibold text-blue-600 hover:underline">{link.label} <ArrowUpRight size={14} className="ml-1" /></a></li>)}</ul> : <p className="text-slate-600">Details available in conversation.</p>}
+                  {activeCaseStudy.links.length > 0 ? <ul className="space-y-2">{activeCaseStudy.links.map((link) => <li key={link.url}><a href={link.url} {...externalLinkProps} className="inline-flex items-center text-sm font-semibold text-blue-600 hover:underline">{link.label} <ArrowUpRight size={14} className="ml-1" /></a></li>)}</ul> : <p className="text-slate-600">Details available in conversation.</p>}
                 </div>
               </div>
             </>
