@@ -195,12 +195,10 @@ function App() {
             </div>
 
             <aside className="rounded-lg border border-[#e5edf5] bg-white p-6 shadow-[rgba(50,50,93,0.16)_0px_22px_36px_-28px,rgba(0,0,0,0.08)_0px_12px_24px_-18px]">
-              <div className="flex items-center gap-4 border-b border-[#e5edf5] pb-5">
-                <img src="/work/sam-edelstein.png" alt="Sam Edelstein" className="h-20 w-20 flex-none rounded object-cover object-top" />
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#533afd]">Current and past work</p>
-                  <p className="mt-2 text-sm leading-6 text-slate-500">Enterprise Data &amp; AI now; Syracuse data work before that.</p>
-                </div>
+              <div className="border-b border-[#e5edf5] pb-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#533afd]">Current and past work</p>
+                <p className="mt-2 text-base font-light leading-7 text-[#061b31]">Enterprise Data &amp; AI now; public data and city systems before that.</p>
+                <p className="mt-3 text-sm leading-6 text-slate-500">I tend to come back to the same questions: what is actually happening, what data would make it clearer, and what would make the next decision easier?</p>
               </div>
               <div className="pt-5">
                 <div className="space-y-4">
