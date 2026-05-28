@@ -41,7 +41,7 @@ const publicRecord = [
     icon: <BriefcaseIcon />,
   },
   {
-    label: 'Civic record',
+    label: 'Public data record',
     title: 'Syracuse data office and DataCuse',
     body: "Syracuse University Libraries notes the city's first open data policy, data privacy policy, Open Data Portal - DataCuse, and performance management office.",
     href: 'https://library.syracuse.edu/news/syracuse-surge-the-path-to-becoming-a-smart-city-with-su-alum-sam-edelstein/',
@@ -58,7 +58,7 @@ const publicRecord = [
   },
   {
     label: 'Public artifacts',
-    title: 'Applied ML, open-source civic tooling, and local data products',
+    title: 'Applied ML, open-source public data tools, and local data products',
     body: 'GitHub, DataCuse, Medium, and cited public work show the same habit: make data useful, legible, and explainable.',
     href: 'https://github.com/samedelstein',
     source: 'GitHub / DataCuse / Medium',
@@ -70,7 +70,7 @@ const impactStats = [
   ['90%+', 'AI adoption across enterprise functions'],
   ['1B+', 'rows unified into governed data foundations'],
   ['Cross-functional', 'work across investment, HR, compliance, finance, and operations'],
-  ['Civic background', 'Syracuse open data, analytics, and service delivery work'],
+  ['Public data background', 'Syracuse open data, analytics, and service delivery work'],
 ];
 
 const workThemes = [
@@ -85,7 +85,7 @@ const workThemes = [
     icon: <Database className="h-5 w-5" />,
   },
   {
-    title: 'Civic data background',
+    title: 'Public data background',
     body: 'A public-sector background in open data, service delivery, infrastructure analytics, and public dashboards.',
     icon: <Building2 className="h-5 w-5" />,
   },
@@ -131,7 +131,7 @@ const timeline = [
   ['Now', 'Senior VP, Data & AI', 'Insight Partners'],
   ['2020', 'Senior Consultant', 'BlueGranite'],
   ['2015', 'Chief Data Officer', 'City of Syracuse'],
-  ['Earlier', 'Adjunct / civic / higher-ed roles', 'Syracuse University and prior organizations'],
+  ['Earlier', 'Adjunct / public-sector / higher-ed roles', 'Syracuse University and prior organizations'],
 ];
 
 function BriefcaseIcon() {
@@ -283,7 +283,7 @@ function App() {
             <SectionHeader
               eyebrow="Selected work"
               title="A few projects I&apos;m proud of."
-              body="What I like about these projects is that they had to work for real people: enterprise teams, city staff, public officials, residents, students, and civic institutions."
+              body="What I like about these projects is that they had to work for real people: enterprise teams, city staff, public officials, residents, students, and public institutions."
             />
             <div className="space-y-4">
               {selectedWork.map((item) => (
@@ -332,7 +332,7 @@ function App() {
                 </p>
               </div>
               <ul className="space-y-3 text-sm text-white/75">
-                {['Enterprise AI strategy', 'Data governance and platforms', 'Public-sector data work', 'Hands-on civic data experimentation'].map((item) => (
+                {['Enterprise AI strategy', 'Data governance and platforms', 'Public-sector data work', 'Hands-on public data experimentation'].map((item) => (
                   <li key={item} className="flex items-start gap-3"><CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-[#b9b9f9]" /> {item}</li>
                 ))}
               </ul>

@@ -70,7 +70,7 @@ Enterprise AI Enablement at Scale
 - Defined a phased delivery approach, delivered prioritized use cases, and established a data readiness program and enablement playbook.
 
 DataCuse: Open Data Platform
-- Built Syracuse's first open data program, turning scattered civic data into a governed transparency and analytics capability.
+- Built Syracuse's first open data program, turning scattered public data into a governed transparency and analytics capability.
 - Launched a Socrata-based open data portal, published a standardized data dictionary and intake workflow, and established the city's first open data policy.
 
 Predictive Water Main Analytics
