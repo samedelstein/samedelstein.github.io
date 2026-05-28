@@ -154,8 +154,8 @@ const experience = [
 ];
 
 const competencies = [
-  ['Leadership and Strategy', 'Enterprise AI strategy and roadmaps | AI enablement and adoption | Team building | Organizational transformation | Stakeholder management'],
-  ['Governance and Delivery', 'AI governance and risk | AI assurance | Data governance and quality | Information delivery | Data ops and reliability'],
+  ['Leadership and Strategy', 'Enterprise AI strategy and roadmaps | Executive AI transformation | AI operating model design | AI enablement and adoption | Team building | Stakeholder management'],
+  ['Governance and Delivery', 'AI governance and risk | AI assurance | AI readiness | Data governance and quality | Data product leadership | Data ops and reliability'],
   ['Platforms and Tools', 'Snowflake | dbt | Azure | GenAI and RAG | MLOps | Python | SQL | APIs and data integration'],
 ];
 

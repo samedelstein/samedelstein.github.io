@@ -1,6 +1,6 @@
 # Sam Edelstein
 
-Sam Edelstein is a Data & AI executive focused on enterprise AI strategy, governed data foundations, scaled adoption, and operating model design.
+Sam Edelstein is a Data & AI executive focused on enterprise AI strategy, executive AI transformation, governed data foundations, scaled adoption, and operating model design.
 
 Primary site: https://samedelstein.com/
 Recruiter packet: https://samedelstein.com/recruiter/
@@ -23,6 +23,8 @@ Contact: sam.i.edelstein@gmail.com
 LinkedIn: https://www.linkedin.com/in/samedelstein
 
 Best-fit roles include Chief Data Officer, VP / Head of Data & AI, Head of AI Enablement, Data Platform Strategy leader, and Executive AI transformation leader.
+
+Relevant recruiter sourcing terms include enterprise AI strategy, executive AI transformation, AI operating model design, AI readiness, responsible AI adoption, AI governance, data platform strategy, data product leadership, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, and APIs.
 
 Key proof points include 90%+ AI adoption across enterprise functions, 40%+ active AI builders, 12+ data sources integrated, and 1B+ rows unified into trusted data foundations.
 
