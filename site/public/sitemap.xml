@@ -121,6 +121,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://samedelstein.com/sam-edelstein.vcf</loc>
+    <lastmod>2026-05-28</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://samedelstein.com/llms.txt</loc>
     <lastmod>2026-05-28</lastmod>
     <priority>0.6</priority>

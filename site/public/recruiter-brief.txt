@@ -17,6 +17,7 @@ Resume: https://samedelstein.com/sam-edelstein-resume.pdf
 ATS resume text: https://samedelstein.com/sam-edelstein-resume.txt
 Short resume aliases: https://samedelstein.com/resume.pdf and https://samedelstein.com/resume.txt
 Structured resume JSON: https://samedelstein.com/resume.json
+vCard: https://samedelstein.com/sam-edelstein.vcf
 Email: sam.i.edelstein@gmail.com
 LinkedIn: https://www.linkedin.com/in/samedelstein
 Location: Syracuse, New York, United States
