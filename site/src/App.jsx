@@ -171,6 +171,8 @@ const caseStudies = [
     slug: 'datacuse-open-data-platform',
     title: 'DataCuse: Open Data Platform',
     blurb: "Built Syracuse's first open data program, turning scattered civic data into a governed transparency and analytics capability.",
+    image: '/work/datacuse.png',
+    imageAlt: 'DataCuse open data portal screenshot',
     problem: 'City datasets lived in disconnected systems, slowing coordination between departments and limiting resident access to public information.',
     role: 'Led the data inventory, defined governance standards, and coordinated stakeholder alignment across city agencies.',
     shipped: ['Launched a Socrata-based open data portal.', 'Published a standardized data dictionary and intake workflow.', "Established the city's first open data policy."],
@@ -181,6 +183,8 @@ const caseStudies = [
     slug: 'predictive-water-main-analytics',
     title: 'Predictive Water Main Analytics',
     blurb: 'Translated machine learning research into an operational risk model for prioritizing aging water infrastructure.',
+    image: '/work/water-main.png',
+    imageAlt: 'Water main break analysis map',
     problem: 'Water infrastructure failures were difficult to anticipate, leading to costly emergency repairs.',
     role: 'Defined the operational problem, provided municipal data, and aligned outputs with field crews.',
     shipped: ['Built an ML pipeline with asset, maintenance, and geospatial features.', 'Developed a risk score to prioritize inspections.', 'Published findings in academic and civic technology channels.'],
@@ -191,6 +195,8 @@ const caseStudies = [
     slug: 'confidential-ai-portfolio',
     title: 'Enterprise AI Enablement at Scale',
     blurb: 'Led an enterprise AI enablement portfolio spanning operating model, infrastructure, governance, adoption, and applied workflows.',
+    image: '/work/hackathon.jpg',
+    imageAlt: 'Sam Edelstein speaking at a civic technology event',
     problem: 'A global firm needed to coordinate AI adoption across teams without compromising confidentiality.',
     role: 'Led discovery with executive stakeholders and built a cross-functional roadmap balancing governance, delivery, and change management.',
     shipped: ['Defined a phased AI operating model.', 'Delivered prioritized use cases.', 'Established a data readiness program and enablement playbook.'],
@@ -277,7 +283,7 @@ const App = () => {
     [pressSearch],
   );
 
-  const featuredCaseStudies = [caseStudies[2], caseStudies[0]];
+  const featuredCaseStudies = [caseStudies[0], caseStudies[1]];
   const orderedCaseStudies = [caseStudies[2], caseStudies[0], caseStudies[1]];
   const activeCaseStudy = caseStudies.find((study) => study.slug === route.slug);
 
@@ -370,6 +376,7 @@ const App = () => {
                   </div>
                 </div>
                 <div className="min-w-0 max-w-full border border-slate-950 bg-slate-950 text-white shadow-2xl shadow-slate-200">
+                  <img src="/work/sam-edelstein.png" alt="Sam Edelstein" className="h-64 w-full object-cover object-top" />
                   <div className="border-b border-white/20 px-5 py-5">
                     <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">A Few Things</p>
                     <h2 className="mt-2 text-2xl font-semibold tracking-tight">Some work I keep coming back to</h2>
@@ -481,10 +488,13 @@ const App = () => {
               </div>
               <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
                 {featuredCaseStudies.map((study) => (
-                  <article key={study.slug} className="bg-slate-50 p-6">
-                    <h3 className="text-xl font-semibold text-slate-950">{study.title}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-slate-600">{study.blurb}</p>
-                    <a href={`/proof/${study.slug}/`} className="mt-6 inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">Read record <ArrowUpRight size={14} /></a>
+                  <article key={study.slug} className="bg-slate-50">
+                    {study.image && <img src={study.image} alt={study.imageAlt} className="h-48 w-full object-cover" />}
+                    <div className="p-6">
+                      <h3 className="text-xl font-semibold text-slate-950">{study.title}</h3>
+                      <p className="mt-3 text-sm leading-relaxed text-slate-600">{study.blurb}</p>
+                      <a href={`/proof/${study.slug}/`} className="mt-6 inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">Read more <ArrowUpRight size={14} /></a>
+                    </div>
                   </article>
                 ))}
               </div>
@@ -594,7 +604,7 @@ const App = () => {
                 <a href="/executive-brief/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Executive Brief</span></a>
                 <a href="/roles/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Target size={16} /><span>Work Themes</span></a>
                 <a href="/skills/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Zap size={16} /><span>Skills</span></a>
-                <a href="/proof/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Award size={16} /><span>Proof</span></a>
+                <a href="/proof/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Award size={16} /><span>Selected Work</span></a>
                 <a href="/executive-brief.txt" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><ExternalLink size={16} /><span>Plain Text Brief</span></a>
                 <a href="/sam-edelstein.vcf" download className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Download size={16} /><span>Save Contact</span></a>
                 <a href="/resume/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><ExternalLink size={16} /><span>Resume Page</span></a>
@@ -670,7 +680,7 @@ const App = () => {
           </section>
 
           <section className="border-b border-slate-200 py-12">
-            <SectionTitle icon={<BarChart3 className="h-5 w-5" />} title="Proof Points" eyebrow="Fast Scan" compact />
+            <SectionTitle icon={<BarChart3 className="h-5 w-5" />} title="Quick Scan" eyebrow="Fast Scan" compact />
             <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-4">
               {impactStats.map(([value, label]) => (
                 <div key={label} className="bg-white p-5">
@@ -694,7 +704,7 @@ const App = () => {
               </ul>
             </div>
             <div>
-              <SectionTitle icon={<Briefcase className="h-5 w-5" />} title="Selected Records" eyebrow="Relevant Proof" compact />
+              <SectionTitle icon={<Briefcase className="h-5 w-5" />} title="Selected Projects" eyebrow="Work" compact />
               <div className="divide-y divide-slate-200 border border-slate-200 bg-slate-50">
                 {featuredCaseStudies.map((study) => (
                 <a key={study.slug} href={`/proof/${study.slug}/`} className="block p-5 transition-colors hover:bg-white">
