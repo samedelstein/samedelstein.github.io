@@ -328,16 +328,16 @@ function App() {
           <div className="rounded-lg border border-[#061b31] bg-[#061b31] p-8 text-white shadow-[rgba(50,50,93,0.25)_0px_30px_45px_-30px,rgba(0,0,0,0.1)_0px_18px_36px_-18px] sm:p-10 lg:p-12">
             <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(300px,0.55fr)] lg:items-end">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b9b9f9]">How I work</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b9b9f9]">What keeps showing up</p>
                 <h2 className="mt-3 max-w-4xl text-4xl font-light leading-tight tracking-normal sm:text-5xl">
-                  Make the work easier to see.
+                  I like work that makes messy systems easier to understand.
                 </h2>
                 <p className="mt-5 max-w-3xl text-lg font-light leading-8 text-white/70">
-                  The work I like most makes complex systems easier to see, explain, govern, and improve.
+                  That can be enterprise data, a city dataset, a library board packet, or a small tool for a recurring annoyance. The technology matters, but only if it makes the next useful thing easier.
                 </p>
               </div>
               <ul className="space-y-3 text-sm text-white/75">
-                {['Find the real workflow', 'Get the data into shape', 'Build the useful version', 'Explain the tradeoffs'].map((item) => (
+                {['Start with the real workflow', 'Make the data explainable', 'Leave behind something people can reuse', 'Keep the tone human'].map((item) => (
                   <li key={item} className="flex items-start gap-3"><CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-[#b9b9f9]" /> {item}</li>
                 ))}
               </ul>
