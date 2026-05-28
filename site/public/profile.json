@@ -50,7 +50,7 @@
     "knowsAbout": [
       "Governed data foundations",
       "Useful AI workflows",
-      "Enterprise AI strategy",
+      "Enterprise data and AI strategy",
       "Useful public-minded tools",
       "AI readiness",
       "AI governance",
@@ -73,7 +73,7 @@
         "@type": "Country",
         "name": "United States"
       },
-      "skills": "Enterprise AI strategy, AI workflow design, AI governance, data platform modernization, data governance, data readiness, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, APIs"
+      "skills": "Enterprise data and AI strategy, AI workflow design, AI governance, data platform modernization, data governance, data readiness, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, APIs"
     }
   },
   "workThemes": [
@@ -93,13 +93,13 @@
       "name": "Useful public-minded tools"
     }
   ],
-  "workScope": "Work involving enterprise AI strategy, data foundations, governance, data readiness, and useful AI workflows.",
+  "workScope": "Work involving enterprise data and AI strategy, data foundations, governance, data readiness, and useful AI workflows.",
   "workSignals": [
-    "90%+ AI adoption across enterprise functions.",
+    "90%+ AI use across enterprise functions.",
     "40%+ of the organization actively building with AI.",
     "12+ enterprise data sources integrated across cloud and on-prem systems.",
     "1B+ rows unified into governed, accessible data foundations.",
-    "Experience connecting AI and data work across strategy, platform, governance, adoption, and delivery.",
+    "Experience connecting AI and data work across strategy, platform, governance, use, and delivery.",
     "Experience connecting AI ideas to data readiness, governance, delivery, and real workflows."
   ],
   "selectedWork": [

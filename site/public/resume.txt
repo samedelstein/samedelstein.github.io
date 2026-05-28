@@ -16,12 +16,12 @@ Focus Areas
 - Useful public-minded tools
 
 Summary
-Data and AI work focused on governed data foundations, useful AI workflows, practical tools, and public data background. Relevant work includes AI strategy, governed data foundations, data readiness, platform modernization, and useful delivery.
+Data and AI work focused on governed data foundations, useful AI workflows, practical tools, and public data background. Relevant work includes data and AI strategy, governed data foundations, data readiness, platform modernization, and useful delivery.
 
 Current Role
 Senior Vice President, Data & AI, Insight Partners, 2021-Present
 - Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.
-- Builds enterprise AI and data systems connecting platform, governance, delivery, and adoption.
+- Builds enterprise AI and data systems connecting platform, governance, delivery, and use.
 - Scales practical AI workflows and self-service access across business functions.
 - Leads teams spanning analytics, engineering, and data product execution.
 
@@ -43,14 +43,14 @@ Adjunct Professor and Earlier Roles, Syracuse University and prior organizations
 - Brought public-sector, academic, and operational perspectives into applied analytics work.
 
 Selected Markers
-- 90%+ AI adoption across enterprise functions.
+- 90%+ AI use across enterprise functions.
 - 40%+ of the organization actively building with AI.
 - 12+ enterprise data sources integrated across cloud and on-prem systems.
 - 1B+ rows unified into governed, accessible data foundations.
-- Experience connecting AI and data work across strategy, platform, governance, adoption, and delivery.
+- Experience connecting AI and data work across strategy, platform, governance, use, and delivery.
 
 Core Strengths
-- Enterprise AI strategy and roadmaps
+- Enterprise data and AI roadmaps
 - AI workflow design
 - AI governance, assurance, and risk management
 - Data platform modernization
@@ -58,7 +58,7 @@ Core Strengths
 - Data product and analytics leadership
 - Stakeholder communication
 - Team building and delivery rhythms
-- Change management for practical AI adoption
+- Change management for practical AI use
 - Information delivery, data operations, and reliability
 
 Platforms and Tools
@@ -67,7 +67,7 @@ Snowflake, dbt, Azure, GenAI and RAG, MLOps, Python, SQL, APIs, data integration
 Selected Work
 Enterprise AI in Practice
 - Work on turning AI ideas into useful workflows across data foundations, governance, delivery, and applied use cases.
-- Defined a phased delivery approach, delivered prioritized use cases, and established a data readiness materials and delivery playbook.
+- Defined a phased delivery approach, delivered prioritized use cases, and established data readiness materials and a delivery playbook.
 
 DataCuse: Open Data Platform
 - Built Syracuse's first open data program, turning scattered public data into a governed transparency and analytics capability.
@@ -86,4 +86,4 @@ Onondaga County Public Library, President, Board of Trustees.
 Le Moyne College Madden School of Business, Advisory Board Member, Business Analytics.
 
 Work Scope
-Work involving enterprise AI strategy, data foundations, governance, data readiness, and useful AI workflows.
+Work involving enterprise data and AI strategy, data foundations, governance, data readiness, and useful AI workflows.

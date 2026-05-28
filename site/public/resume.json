@@ -47,7 +47,7 @@
     "Public data background",
     "Useful public-minded tools"
   ],
-  "workScope": "Work involving enterprise AI strategy, data foundations, governance, data readiness, and useful AI workflows.",
+  "workScope": "Work involving enterprise data and AI strategy, data foundations, governance, data readiness, and useful AI workflows.",
   "work": [
     {
       "name": "Insight Partners",
@@ -55,7 +55,7 @@
       "startDate": "2021",
       "summary": "Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.",
       "highlights": [
-        "Builds enterprise AI and data systems connecting platform, governance, delivery, and adoption.",
+        "Builds enterprise AI and data systems connecting platform, governance, delivery, and use.",
         "Scales practical AI workflows and self-service access across business functions.",
         "Leads teams spanning analytics, engineering, and data product execution."
       ]
@@ -111,11 +111,11 @@
     {
       "name": "Leadership and Strategy",
       "keywords": [
-        "Enterprise AI strategy",
+        "Enterprise data and AI strategy",
         "AI workflow design",
         "Enterprise data and AI",
         "AI workflow design",
-        "AI adoption",
+        "AI use",
         "AI readiness",
         "Data product leadership",
         "Team building",
@@ -130,7 +130,7 @@
         "AI governance",
         "AI assurance",
         "AI risk management",
-        "Responsible AI adoption",
+        "Responsible AI use",
         "Data governance",
         "Data quality",
         "Information delivery",
@@ -155,11 +155,11 @@
     }
   ],
   "workSignals": [
-    "90%+ AI adoption across enterprise functions.",
+    "90%+ AI use across enterprise functions.",
     "40%+ of the organization actively building with AI.",
     "12+ enterprise data sources integrated across cloud and on-prem systems.",
     "1B+ rows unified into governed, accessible data foundations.",
-    "Experience connecting AI and data work across strategy, platform, governance, adoption, and delivery.",
+    "Experience connecting AI and data work across strategy, platform, governance, use, and delivery.",
     "Experience connecting AI ideas to data readiness, governance, delivery, and real workflows."
   ],
   "selectedWork": [

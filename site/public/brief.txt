@@ -27,17 +27,17 @@ Current role:
 Senior Vice President, Data & AI at Insight Partners. Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.
 
 Selected markers:
-- 90%+ AI adoption across enterprise functions
+- 90%+ AI use across enterprise functions
 - 40%+ of the organization actively building with AI
 - 12+ enterprise data sources integrated across cloud and on-prem systems
 - 1B+ rows unified into governed, accessible foundations
-- Experience connecting AI and data work across strategy, platform, governance, adoption, and delivery
+- Experience connecting AI and data work across strategy, platform, governance, use, and delivery
 
 Core strengths:
-- Enterprise AI strategy and roadmaps
-- AI adoption
-- AI readiness and responsible adoption
-- AI governance, assurance, and risk-aware adoption
+- Enterprise data and AI roadmaps
+- AI use
+- AI readiness and responsible use
+- AI governance, assurance, and risk-aware use
 - Data platform modernization
 - Data governance and quality
 - Data product and analytics leadership
@@ -56,7 +56,7 @@ Chief Data Officer, City of Syracuse, 2015-2020
 Built the city's first analytics office, launched DataCuse, authored the first open data policy, and led operational analytics programs with public-sector impact.
 
 Work scope:
-Work involving enterprise AI strategy, data foundations, governance, data readiness, and useful AI workflows.
+Work involving enterprise data and AI strategy, data foundations, governance, data readiness, and useful AI workflows.
 
 Useful starting points:
 - Enterprise data and AI work
