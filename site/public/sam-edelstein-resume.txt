@@ -32,7 +32,7 @@ Senior Consultant, BlueGranite, 2020-2021
 - Led stakeholder-facing implementation work across data engineering and BI delivery.
 
 Chief Data Officer, City of Syracuse, 2015-2020
-- Built the city's first analytics office and operating model.
+- Built the city's first analytics office and durable data practices.
 - Launched DataCuse, the city's first open data portal.
 - Authored the city's first open data policy.
 - Delivered predictive infrastructure and transparency programs with measurable public-sector impact.
@@ -66,8 +66,8 @@ Snowflake, dbt, Azure, GenAI and RAG, MLOps, Python, SQL, APIs, data integration
 
 Selected Work
 Enterprise AI Enablement at Scale
-- Led an enterprise AI enablement portfolio spanning operating model, infrastructure, governance, adoption, and applied workflows.
-- Defined a phased AI operating model, delivered prioritized use cases, and established a data readiness program and enablement playbook.
+- Led an enterprise AI enablement portfolio spanning delivery approach, infrastructure, governance, adoption, and applied workflows.
+- Defined a phased delivery approach, delivered prioritized use cases, and established a data readiness program and enablement playbook.
 
 DataCuse: Open Data Platform
 - Built Syracuse's first open data program, turning scattered civic data into a governed transparency and analytics capability.
