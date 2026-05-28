@@ -120,6 +120,36 @@
       "description": "Translated machine learning research into an operational risk model for prioritizing aging water infrastructure."
     }
   ],
+  "subjectOf": [
+    {
+      "@type": "Article",
+      "name": "Syracuse Turns To Data to Fix Its Faulty Water System",
+      "publisher": "Politico",
+      "url": "https://www.politico.com/magazine/story/2017/04/20/syracuse-infrastructure-water-system-pipe-breaks-215054",
+      "about": "Predictive water main analytics and public infrastructure work in Syracuse."
+    },
+    {
+      "@type": "Article",
+      "name": "GovTech open data coverage",
+      "publisher": "Government Technology",
+      "url": "https://www.govtech.com/civic/Whats-New-in-Civic-Tech-07272017.html",
+      "about": "Syracuse open data work and DataCuse."
+    },
+    {
+      "@type": "Article",
+      "name": "Open data comes to Syracuse",
+      "publisher": "WRVO",
+      "url": "https://www.wrvo.org/politics-and-government/2017-07-27/open-data-comes-to-syracuse",
+      "about": "Syracuse open data policy and portal work."
+    },
+    {
+      "@type": "WebPage",
+      "name": "Local Government Innovation Award Winners",
+      "publisher": "New York Department of State",
+      "url": "https://dos.ny.gov/news/nys-secretary-state-rosado-announces-local-government-innovation-award-winners",
+      "about": "Recognition for Syracuse local government innovation work."
+    }
+  ],
   "contactActions": [
     {
       "name": "Email Sam",

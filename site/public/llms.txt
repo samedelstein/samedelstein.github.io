@@ -34,3 +34,10 @@ Selected markers include 90%+ AI adoption across enterprise functions, 40%+ acti
 Selected work includes DataCuse: Open Data Platform, Predictive Water Main Analytics, and Enterprise AI Enablement at Scale.
 
 Selected public references include Politico, GovTech, Syracuse.com, WRVO, New York State Local Government Innovation Conference, Smart Cities International Symposium, and MIT CDOIQ Symposium references.
+
+Source-backed references:
+- Politico water main analytics story: https://www.politico.com/magazine/story/2017/04/20/syracuse-infrastructure-water-system-pipe-breaks-215054
+- GovTech DataCuse/open data coverage: https://www.govtech.com/civic/Whats-New-in-Civic-Tech-07272017.html
+- WRVO open data coverage: https://www.wrvo.org/politics-and-government/2017-07-27/open-data-comes-to-syracuse
+- New York Department of State innovation award reference: https://dos.ny.gov/news/nys-secretary-state-rosado-announces-local-government-innovation-award-winners
+- MIT CDOIQ Symposium reference: https://mitcdoiq.org/
