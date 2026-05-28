@@ -34,7 +34,7 @@ const publicRecord = [
   {
     label: 'Current role',
     title: 'Senior Vice President, Data & AI at Insight Partners',
-    body: 'Current work spans data and AI strategy, governance, enablement, and practical adoption across enterprise functions.',
+    body: 'Current work includes data and AI strategy, governance, enablement, and practical adoption across enterprise functions.',
     href: 'https://www.linkedin.com/in/samedelstein',
     source: 'LinkedIn',
     icon: <BriefcaseIcon />,
@@ -58,7 +58,7 @@ const publicRecord = [
   {
     label: 'Public artifacts',
     title: 'Applied ML, open-source civic tooling, and local data products',
-    body: 'GitHub, DataCuse, Medium, and cited public work show the same pattern: make data useful, public, explainable, and operational.',
+    body: 'GitHub, DataCuse, Medium, and cited public work show the same pattern: make data useful, public, and explainable.',
     href: 'https://github.com/samedelstein',
     source: 'GitHub / DataCuse / Medium',
     icon: <Github className="h-5 w-5" />,
@@ -75,7 +75,7 @@ const impactStats = [
 const workThemes = [
   {
     title: 'Enterprise AI adoption',
-    body: 'Making AI useful in everyday work through governance, delivery platforms, workflows, data readiness, measurement, and change management.',
+    body: 'Making AI useful in everyday work through governance, delivery platforms, workflows, data readiness, and practical enablement.',
     icon: <Sparkles className="h-5 w-5" />,
   },
   {
@@ -252,10 +252,10 @@ function App() {
           <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8">
             <div className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b9b9f9]">Operating range</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b9b9f9]">Working range</p>
                 <h2 className="mt-3 text-4xl font-light tracking-normal text-white sm:text-5xl">Making data and AI useful in real work.</h2>
                 <p className="mt-5 text-lg font-light leading-8 text-white/70">
-                  Across city government, consulting, and private-market enterprise work, the pattern is the same: turn fragmented data and emerging technology into durable systems people understand and use.
+                  Across city government, consulting, and private-market work, the pattern is the same: turn fragmented data and emerging technology into durable systems people understand and use.
                 </p>
                 <div className="mt-7 flex flex-wrap gap-2">
                   <Pill tone="dark">Governance</Pill>
@@ -302,8 +302,8 @@ function App() {
           <div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 sm:px-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
             <SectionHeader
               eyebrow="Point of view"
-              title="Writing that connects AI readiness back to real operating work."
-              body="The public writing matters because it shows how the same CDO instincts translate into the AI era: access, interoperability, usefulness, and adoption."
+              title="Writing about AI readiness and real work."
+              body="The public writing is where I think through access, interoperability, usefulness, and adoption."
             />
             <div className="grid gap-px overflow-hidden rounded-lg border border-[#e5edf5] bg-[#e5edf5] md:grid-cols-2">
               {writing.map((post) => (
@@ -331,7 +331,7 @@ function App() {
                 </p>
               </div>
               <ul className="space-y-3 text-sm text-white/75">
-                {['Enterprise AI strategy', 'Data governance and platforms', 'Public-sector data credibility', 'Hands-on civic data experimentation'].map((item) => (
+                {['Enterprise AI strategy', 'Data governance and platforms', 'Public-sector data work', 'Hands-on civic data experimentation'].map((item) => (
                   <li key={item} className="flex items-start gap-3"><CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-[#b9b9f9]" /> {item}</li>
                 ))}
               </ul>
