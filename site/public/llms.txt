@@ -25,7 +25,7 @@ Medium: https://medium.com/@samedelstein
 
 Current work includes enterprise Data & AI strategy, governed data foundations, practical AI adoption, data governance, data platform modernization, enablement, and useful internal tools.
 
-Earlier public-sector work includes Syracuse open data, DataCuse, water main analytics, civic analytics, public dashboards, teaching, and civic technology.
+Earlier public-sector work includes Syracuse open data, DataCuse, water main analytics, civic analytics, public dashboards, teaching, and practical civic technology.
 
 Relevant work themes include enterprise AI strategy, AI adoption, AI governance, data platform strategy, data product leadership, open data, civic technology, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, and APIs.
 

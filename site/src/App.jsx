@@ -69,7 +69,7 @@ const impactStats = [
   ['90%+', 'AI adoption across enterprise functions'],
   ['1B+', 'rows unified into governed data foundations'],
   ['Cross-functional', 'work across investment, HR, compliance, finance, and operations'],
-  ['Public-sector', 'foundation from Syracuse open data, analytics, and service delivery work'],
+  ['Civic background', 'Syracuse open data, analytics, and service delivery work'],
 ];
 
 const workThemes = [
@@ -344,8 +344,8 @@ function App() {
         <div className="mx-auto grid max-w-7xl gap-8 px-5 py-12 sm:px-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#533afd]">Contact</p>
-            <h2 className="mt-3 text-3xl font-light tracking-normal text-[#061b31]">Data, AI, civic technology, libraries, or Syracuse datasets?</h2>
-            <p className="mt-3 text-slate-600">Reach out for thoughtful conversations about data and AI work, civic technology, and public-minded tools.</p>
+            <h2 className="mt-3 text-3xl font-light tracking-normal text-[#061b31]">Data, AI, public-minded tools, or Syracuse datasets?</h2>
+            <p className="mt-3 text-slate-600">Reach out for thoughtful conversations about enterprise data and AI work, useful tools, and the public data work that still shapes how I think.</p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">
             <a href={contactMailto} className="inline-flex h-12 items-center justify-center gap-2 rounded bg-[#533afd] px-5 text-base font-medium text-white transition hover:bg-[#4434d4]"><Mail className="h-4 w-4" /> Email Sam</a>

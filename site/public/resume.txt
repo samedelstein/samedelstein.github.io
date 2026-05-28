@@ -16,7 +16,7 @@ Focus Areas
 - Useful public-facing tools
 
 Summary
-Data and AI work focused on practical adoption, governed data foundations, civic technology, and useful tools and workflows. Relevant work includes AI strategy, governed data foundations, adoption, platform modernization, and practical business value.
+Data and AI work focused on practical adoption, governed data foundations, useful tools and workflows, and public data background. Relevant work includes AI strategy, governed data foundations, adoption, platform modernization, and practical business value.
 
 Current Role
 Senior Vice President, Data & AI, Insight Partners, 2021-Present
