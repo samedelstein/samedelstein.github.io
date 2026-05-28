@@ -42,7 +42,7 @@ Adjunct Professor and Earlier Roles, Syracuse University and prior organizations
 - Taught graduate courses in data-driven government, data visualization, and data science.
 - Brought public-sector, academic, and operational perspectives into applied analytics work.
 
-Leadership Signals
+Selected Markers
 - 90%+ AI adoption across enterprise functions.
 - 40%+ of the organization actively building with AI.
 - 12+ enterprise data sources integrated across cloud and on-prem systems.
