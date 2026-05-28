@@ -58,9 +58,9 @@ const publicRecord = [
     icon: <ShieldCheck className="h-5 w-5" />,
   },
   {
-    label: 'Public artifacts',
-    title: 'Applied ML, open-source public data tools, and local data products',
-    body: 'GitHub, DataCuse, Medium, and cited public work show the same habit: make data useful, legible, and explainable.',
+    label: 'Things made public',
+    title: 'Code, essays, datasets, and local data projects',
+    body: 'GitHub, DataCuse, Medium, and older public work show the parts of the work that are easier to share: tools, notes, and practical experiments.',
     href: 'https://github.com/samedelstein',
     source: 'GitHub / DataCuse / Medium',
     icon: <Github className="h-5 w-5" />,
@@ -233,7 +233,7 @@ function App() {
           <SectionHeader
             eyebrow="Public record"
             title="A few links behind the work."
-            body="A few public references: Syracuse University Libraries, Politico, GitHub, Medium, DataCuse, and this site."
+            body="A few outside links, plus some of the artifacts that still explain how I think about data, tools, and institutions."
           />
           <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-[#e5edf5] bg-[#e5edf5] lg:grid-cols-4">
             {publicRecord.map((item) => (
@@ -331,7 +331,7 @@ function App() {
                 </p>
               </div>
               <ul className="space-y-3 text-sm text-white/75">
-                {['Enterprise AI strategy', 'Data governance and platforms', 'Public-sector data work', 'Hands-on public data experimentation'].map((item) => (
+                {['Find the real workflow', 'Get the data into shape', 'Build the useful version', 'Explain the tradeoffs'].map((item) => (
                   <li key={item} className="flex items-start gap-3"><CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-[#b9b9f9]" /> {item}</li>
                 ))}
               </ul>
