@@ -44,10 +44,10 @@ const navItems = [
 ];
 
 const workOnItems = [
-  ['Enterprise AI strategy', 'Set direction for AI investments and connect experimentation to durable operating capability.'],
-  ['AI governance and adoption', 'Build practical guardrails, training, and rollout pathways so systems are trusted and used.'],
-  ['Data platform modernization', 'Design the platforms and delivery layers that support self-service analytics and production AI.'],
-  ['Team and operating model design', 'Shape teams, delivery processes, and decision rights that scale beyond a single project.'],
+  ['Data people can trust', 'Put governance, quality, access, and context close enough to the work that leaders can actually use it.'],
+  ['AI people actually use', 'Move past demos by pairing tools with workflow design, enablement, ownership, and practical guardrails.'],
+  ['Platforms that reduce friction', 'Shape the data, analytics, and integration layers that let teams move faster without losing control.'],
+  ['Change that shows up in operations', 'Connect strategy, delivery rhythm, adoption, and measurement so the work survives beyond launch.'],
 ];
 
 const impactStats = [
@@ -59,39 +59,46 @@ const impactStats = [
 
 const leadershipFocus = [
   {
-    label: 'Trusted data foundations',
+    label: 'Data people can trust',
     body: 'Make enterprise data usable, governed, and close enough to operations to shape decisions.',
     href: '/roles/chief-data-officer/',
   },
   {
-    label: 'Applied AI operating models',
+    label: 'AI people actually use',
     body: 'Turn pilots into repeatable systems with ownership, training, guardrails, and delivery rhythm.',
     href: '/roles/vp-data-ai/',
   },
   {
-    label: 'Responsible adoption',
+    label: 'Governance that travels',
     body: 'Help teams use AI well through practical enablement, workflow design, and risk-aware rollout.',
     href: '/roles/head-of-ai-enablement/',
   },
   {
-    label: 'Modern delivery platforms',
+    label: 'Platforms that reduce friction',
     body: 'Shape the data, analytics, and integration layers that let product and business teams move faster.',
     href: '/roles/data-platform-strategy/',
   },
   {
-    label: 'Measurable operating change',
+    label: 'Change that shows up',
     body: 'Connect strategy, platforms, governance, and adoption to outcomes people can see and manage.',
     href: '/roles/executive-ai-transformation/',
   },
 ];
 
 const leadershipReasons = [
-  'Enterprise AI strategy aligned to business outcomes.',
-  'Governed data foundations that scale with trust.',
-  'Adoption at scale through products, platforms, and people.',
-  'Executive operating models that accelerate delivery.',
-  'Measurable ROI with clear KPIs and value tracking.',
-  'Risk-aware execution across security, privacy, and compliance.',
+  'AI strategy grounded in the work people actually do.',
+  'Data foundations built for trust, access, and reuse.',
+  'Adoption systems that combine products, platforms, and people.',
+  'Operating models that clarify ownership and speed up delivery.',
+  'Measurement that connects capability to visible outcomes.',
+  'Governance that manages risk without freezing useful work.',
+];
+
+const operatingPrinciples = [
+  ['AI adoption is an operating model problem first.', 'Tools matter, but durable adoption depends on ownership, workflow fit, governance, support, and the rhythm of delivery.'],
+  ['Governance should make good work easier.', 'The best controls clarify what teams can do, what needs review, and how to move responsibly without turning every decision into theater.'],
+  ['Data platforms fail when they sit too far from decisions.', 'A trusted foundation is not just storage. It is context, access, quality, lineage, and a product mindset around the decisions it supports.'],
+  ['The useful question is what changes on Monday morning.', 'AI and data work should eventually show up in operating cadence, decision quality, service levels, cost, speed, or risk reduction.'],
 ];
 
 const availabilitySignals = [
@@ -349,8 +356,8 @@ const App = () => {
               <div className="grid min-w-0 grid-cols-1 lg:grid-cols-[minmax(0,1.16fr)_minmax(360px,0.84fr)] gap-10 lg:gap-14 items-stretch">
                 <div className="flex min-w-0 flex-col justify-between">
                   <div>
-                    <h1 className="max-w-full break-words text-4xl font-semibold leading-[0.98] tracking-tight text-slate-950 sm:text-5xl md:max-w-4xl md:text-7xl">Data &amp; AI executive for teams turning AI ambition into operating capability.</h1>
-                    <p className="mt-7 max-w-full break-words text-lg leading-relaxed text-slate-600 md:max-w-2xl md:text-xl">I lead enterprise AI strategy, data platform modernization, governance, and enablement systems that turn experimentation into trusted workflows and measurable business results.</p>
+                    <h1 className="max-w-full break-words text-4xl font-semibold leading-[0.98] tracking-tight text-slate-950 sm:text-5xl md:max-w-4xl md:text-7xl">AI becomes useful when the data, governance, workflows, and people systems are built together.</h1>
+                    <p className="mt-7 max-w-full break-words text-lg leading-relaxed text-slate-600 md:max-w-2xl md:text-xl">I work on the operating systems behind enterprise AI: trusted data foundations, practical adoption, governance that can travel, and measurable change in how teams make decisions.</p>
                   </div>
                   <div className="mt-10">
                     <div className="flex flex-wrap gap-3">
@@ -359,13 +366,13 @@ const App = () => {
                       <a href="/executive-brief/" className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><FileText size={17} /><span>Executive Brief</span></a>
                       <button onClick={() => scrollToSection('case-studies-preview')} className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><ArrowUpRight size={17} /><span>See Proof</span></button>
                     </div>
-                    <p className="mt-5 max-w-full break-words text-sm leading-relaxed text-slate-500 md:max-w-2xl">Current focus: enterprise AI strategy, data foundations, governance, adoption, and operating model design for teams turning AI into durable capability.</p>
+                    <p className="mt-5 max-w-full break-words text-sm leading-relaxed text-slate-500 md:max-w-2xl">Current work spans enterprise AI strategy, data foundations, governance, enablement, and operating model design across investment, HR, compliance, finance, and operations.</p>
                   </div>
                 </div>
                 <div className="min-w-0 max-w-full border border-slate-950 bg-slate-950 text-white shadow-2xl shadow-slate-200">
                   <div className="border-b border-white/20 px-5 py-5">
-                    <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">Operating Themes</p>
-                    <h2 className="mt-2 text-2xl font-semibold tracking-tight">Where the work tends to concentrate</h2>
+                    <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">The Work</p>
+                    <h2 className="mt-2 text-2xl font-semibold tracking-tight">Where hard AI programs usually get real</h2>
                   </div>
                   <div className="divide-y divide-white/15">
                     {leadershipFocus.map((role) => (
@@ -395,7 +402,7 @@ const App = () => {
 
             <section className="grid grid-cols-1 gap-12 border-b border-slate-200 py-16 lg:grid-cols-[minmax(0,1.55fr)_minmax(300px,0.85fr)]">
               <div>
-                <SectionTitle icon={<Briefcase className="h-5 w-5" />} title="Why Teams Call" eyebrow="Leadership Snapshot" />
+                <SectionTitle icon={<Briefcase className="h-5 w-5" />} title="The Pattern" eyebrow="Leadership Snapshot" />
                 <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
                   {leadershipReasons.map((reason, index) => (
                     <div key={reason} className="bg-white p-5">
@@ -437,8 +444,25 @@ const App = () => {
               </aside>
             </section>
 
+            <section className="border-b border-slate-200 py-16">
+              <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.4fr)]">
+                <div>
+                  <SectionTitle icon={<ShieldCheck className="h-5 w-5" />} title="How I Think" eyebrow="Operating Principles" />
+                  <p className="max-w-xl text-lg leading-relaxed text-slate-700">The common thread across public-sector analytics, enterprise AI adoption, governance, and platform work is not novelty. It is making complex systems usable enough, trusted enough, and well-owned enough to change how work happens.</p>
+                </div>
+                <div className="divide-y divide-slate-200 border-y border-slate-200">
+                  {operatingPrinciples.map(([title, body]) => (
+                    <article key={title} className="grid grid-cols-1 gap-3 py-6 md:grid-cols-[minmax(180px,0.6fr)_minmax(0,1fr)]">
+                      <h3 className="text-base font-semibold leading-snug text-slate-950">{title}</h3>
+                      <p className="text-base leading-relaxed text-slate-600">{body}</p>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            </section>
+
             <section id="work" className="scroll-mt-24 border-b border-slate-200 py-16">
-              <SectionTitle icon={<Users className="h-5 w-5" />} title="How I Create Leverage" eyebrow="Focus Areas" />
+              <SectionTitle icon={<Users className="h-5 w-5" />} title="The Work In Practice" eyebrow="Focus Areas" />
               <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
                 {workOnItems.map(([title, description], index) => (
                   <div key={title} className="bg-slate-50 p-6">
@@ -452,7 +476,7 @@ const App = () => {
 
             <section className="border-b border-slate-200 py-16">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-                <SectionTitle icon={<Code className="h-5 w-5" />} title="Proof Records" eyebrow="Selected Work" />
+                <SectionTitle icon={<Code className="h-5 w-5" />} title="Evidence From The Work" eyebrow="Selected Work" />
                 <a href="/proof/" className="inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">View all <ChevronRight size={16} /></a>
               </div>
               <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
