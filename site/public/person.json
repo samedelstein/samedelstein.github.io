@@ -6,6 +6,17 @@
   "url": "https://samedelstein.com/",
   "email": "mailto:sam.i.edelstein@gmail.com",
   "jobTitle": "Senior Vice President, Data & AI",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "professional contact",
+    "email": "sam.i.edelstein@gmail.com",
+    "areaServed": [
+      "United States",
+      "New York",
+      "Distributed teams"
+    ],
+    "availableLanguage": "English"
+  },
   "worksFor": {
     "@type": "Organization",
     "name": "Insight Partners"
@@ -29,6 +40,9 @@
     "https://samedelstein.medium.com/",
     "https://samedelstein.com/profile.json",
     "https://samedelstein.com/resume.json",
+    "https://samedelstein.com/sam-edelstein.vcf",
+    "https://samedelstein.com/sam-edelstein-resume.pdf",
+    "https://samedelstein.com/sam-edelstein-resume.txt",
     "https://samedelstein.com/brief/",
     "https://samedelstein.com/now/",
     "https://samedelstein.com/proof/",
@@ -78,9 +92,27 @@
     },
     {
       "@type": "DigitalDocument",
+      "name": "Sam Edelstein Structured Profile",
+      "url": "https://samedelstein.com/profile.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DigitalDocument",
       "name": "Sam Edelstein Resume JSON",
       "url": "https://samedelstein.com/resume.json",
       "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "Sam Edelstein Resume PDF",
+      "url": "https://samedelstein.com/sam-edelstein-resume.pdf",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "Sam Edelstein Resume Text",
+      "url": "https://samedelstein.com/sam-edelstein-resume.txt",
+      "encodingFormat": "text/plain"
     },
     {
       "@type": "DigitalDocument",
