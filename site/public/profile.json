@@ -43,9 +43,9 @@
       "availableLanguage": "English"
     },
     "knowsAbout": [
-      "Chief Data Officer leadership",
+      "Trusted data foundations",
       "VP Data and AI leadership",
-      "Head of AI Enablement",
+      "Responsible AI adoption",
       "Enterprise AI strategy",
       "Executive AI transformation",
       "AI operating model design",
@@ -73,25 +73,25 @@
       "skills": "Enterprise AI strategy, executive AI transformation, AI governance, data platform modernization, AI enablement, data governance, executive operating model design, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, APIs"
     }
   },
-  "leadershipFocus": [
+  "workThemes": [
     {
-      "name": "Chief Data Officer",
+      "name": "Trusted Data Foundations",
       "url": "https://samedelstein.com/roles/chief-data-officer/"
     },
     {
-      "name": "VP / Head of Data & AI",
+      "name": "Applied AI Operating Models",
       "url": "https://samedelstein.com/roles/vp-data-ai/"
     },
     {
-      "name": "Head of AI Enablement",
+      "name": "Responsible Adoption",
       "url": "https://samedelstein.com/roles/head-of-ai-enablement/"
     },
     {
-      "name": "Data Platform Strategy Leader",
+      "name": "Modern Delivery Platforms",
       "url": "https://samedelstein.com/roles/data-platform-strategy/"
     },
     {
-      "name": "Executive AI Transformation Leader",
+      "name": "Measurable Operating Change",
       "url": "https://samedelstein.com/roles/executive-ai-transformation/"
     }
   ],

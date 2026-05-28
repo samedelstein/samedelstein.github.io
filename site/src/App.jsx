@@ -36,7 +36,7 @@ const executiveMailto = 'mailto:sam.i.edelstein@gmail.com?subject=Executive%20Da
 
 const navItems = [
   { id: 'home', label: 'Overview', type: 'section' },
-  { id: 'roles', label: 'Focus', type: 'link', href: '/roles/' },
+  { id: 'roles', label: 'Work', type: 'link', href: '/roles/' },
   { id: 'skills', label: 'Skills', type: 'link', href: '/skills/' },
   { id: 'case-studies', label: 'Proof', type: 'link', href: '/proof/' },
   { id: 'experience', label: 'Experience', type: 'section' },
@@ -59,28 +59,28 @@ const impactStats = [
 
 const leadershipFocus = [
   {
-    label: 'Chief Data Officer',
-    body: 'Own enterprise data strategy, governance, and measurable business value.',
+    label: 'Trusted Data Foundations',
+    body: 'Make enterprise data usable, governed, and close enough to operations to shape decisions.',
     href: '/roles/chief-data-officer/',
   },
   {
-    label: 'VP / Head of Data & AI',
-    body: 'Build and scale Data & AI organizations that deliver consistent impact.',
+    label: 'Applied AI Operating Models',
+    body: 'Turn pilots into repeatable systems with ownership, training, guardrails, and delivery rhythm.',
     href: '/roles/vp-data-ai/',
   },
   {
-    label: 'Head of AI Enablement',
-    body: 'Drive adoption, capability building, and change at enterprise scale.',
+    label: 'Responsible Adoption',
+    body: 'Help teams use AI well through practical enablement, workflow design, and risk-aware rollout.',
     href: '/roles/head-of-ai-enablement/',
   },
   {
-    label: 'Data Platform Strategy',
-    body: 'Design modern data foundations that are secure, governed, and built for AI.',
+    label: 'Modern Delivery Platforms',
+    body: 'Shape the data, analytics, and integration layers that let product and business teams move faster.',
     href: '/roles/data-platform-strategy/',
   },
   {
-    label: 'Executive AI Transformation',
-    body: 'Move AI strategy into governed adoption, operating models, and measurable business impact.',
+    label: 'Measurable Operating Change',
+    body: 'Connect strategy, platforms, governance, and adoption to outcomes people can see and manage.',
     href: '/roles/executive-ai-transformation/',
   },
 ];
@@ -95,7 +95,7 @@ const leadershipReasons = [
 ];
 
 const availabilitySignals = [
-  ['Best fit', 'Work where strategy, platform, governance, adoption, and AI transformation all matter.'],
+  ['Work shape', 'Strategy, platform, governance, adoption, and AI transformation treated as one operating system.'],
   ['Location', 'Syracuse / New York; experienced with distributed and hybrid executive teams.'],
   ['Conversation', 'Useful for founder, operating partner, board, and executive team conversations.'],
 ];
@@ -365,8 +365,8 @@ const App = () => {
                 </div>
                 <div className="min-w-0 max-w-full border border-slate-950 bg-slate-950 text-white shadow-2xl shadow-slate-200">
                   <div className="border-b border-white/20 px-5 py-5">
-                    <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">Executive fit</p>
-                    <h2 className="mt-2 text-2xl font-semibold tracking-tight">Leadership work I focus on</h2>
+                    <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">Operating Themes</p>
+                    <h2 className="mt-2 text-2xl font-semibold tracking-tight">The work behind durable AI adoption</h2>
                   </div>
                   <div className="divide-y divide-white/15">
                     {leadershipFocus.map((role) => (
@@ -569,7 +569,7 @@ const App = () => {
                 <a href="https://www.linkedin.com/in/samedelstein" {...externalLinkProps} className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Linkedin size={16} /><span>LinkedIn</span></a>
                 <a href={resumePdfUrl} download className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Download Resume</span></a>
                 <a href="/executive-brief/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Executive Brief</span></a>
-                <a href="/roles/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Target size={16} /><span>Leadership Focus</span></a>
+                <a href="/roles/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Target size={16} /><span>Work Themes</span></a>
                 <a href="/skills/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Zap size={16} /><span>Skills</span></a>
                 <a href="/proof/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Award size={16} /><span>Proof</span></a>
                 <a href="/executive-brief.txt" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><ExternalLink size={16} /><span>Plain Text Brief</span></a>
@@ -622,7 +622,7 @@ const App = () => {
           <section className="mb-10 border-y border-slate-200 py-10">
             <span className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-700">Executive Brief</span>
             <h1 className="mt-4 max-w-full break-words text-4xl font-semibold tracking-tight text-slate-950 md:max-w-4xl md:text-6xl">Sam Edelstein: executive Data &amp; AI leadership brief.</h1>
-            <p className="mt-5 max-w-full break-words text-lg leading-relaxed text-slate-600 md:max-w-3xl">A concise summary of leadership focus, selected proof, operating range, and contact details for Data &amp; AI conversations.</p>
+            <p className="mt-5 max-w-full break-words text-lg leading-relaxed text-slate-600 md:max-w-3xl">A concise summary of operating themes, selected proof, working range, and contact details for Data &amp; AI conversations.</p>
           </section>
 
           <section className="grid grid-cols-1 gap-8 border-b border-slate-200 pb-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(300px,0.8fr)]">

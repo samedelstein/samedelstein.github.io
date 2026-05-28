@@ -3,12 +3,12 @@
 Website: https://samedelstein.com/
 Executive brief: https://samedelstein.com/executive-brief/
 Structured executive brief JSON: https://samedelstein.com/profile.json
-Leadership focus: https://samedelstein.com/roles/
-Chief Data Officer leadership focus: https://samedelstein.com/roles/chief-data-officer/
-VP Data & AI leadership focus: https://samedelstein.com/roles/vp-data-ai/
-Head of AI Enablement leadership focus: https://samedelstein.com/roles/head-of-ai-enablement/
-Data Platform Strategy leadership focus: https://samedelstein.com/roles/data-platform-strategy/
-Executive AI Transformation leadership focus: https://samedelstein.com/roles/executive-ai-transformation/
+Work themes: https://samedelstein.com/roles/
+Trusted data foundations: https://samedelstein.com/roles/chief-data-officer/
+Applied AI operating models: https://samedelstein.com/roles/vp-data-ai/
+Responsible adoption: https://samedelstein.com/roles/head-of-ai-enablement/
+Modern delivery platforms: https://samedelstein.com/roles/data-platform-strategy/
+Measurable operating change: https://samedelstein.com/roles/executive-ai-transformation/
 Skills and keyword fit: https://samedelstein.com/skills/
 Proof records: https://samedelstein.com/proof/
 Press and speaking: https://samedelstein.com/press/
@@ -22,12 +22,12 @@ Email: sam.i.edelstein@gmail.com
 LinkedIn: https://www.linkedin.com/in/samedelstein
 Location: Syracuse, New York, United States
 
-Leadership focus areas:
-- Chief Data Officer
-- VP / Head of Data & AI
-- Head of AI Enablement
-- Data Platform Strategy leader
-- Executive AI transformation leader
+Work themes:
+- Trusted data foundations
+- Applied AI operating models
+- Responsible adoption
+- Modern delivery platforms
+- Measurable operating change
 
 Positioning:
 Sam Edelstein is a Data & AI executive focused on turning AI ambition into operating capability. He leads enterprise AI strategy, executive AI transformation, governed data foundations, AI enablement, scaled adoption, and operating model design.
@@ -35,7 +35,7 @@ Sam Edelstein is a Data & AI executive focused on turning AI ambition into opera
 Current role:
 Senior Vice President, Data & AI at Insight Partners. Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.
 
-Search Partner signals:
+Leadership signals:
 - 90%+ AI adoption across enterprise functions
 - 40%+ of the organization actively building with AI
 - 12+ enterprise data sources integrated across cloud and on-prem systems

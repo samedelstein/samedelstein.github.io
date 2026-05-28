@@ -5,12 +5,12 @@ Sam Edelstein is a Data & AI executive focused on enterprise AI strategy, execut
 Primary site: https://samedelstein.com/
 Executive brief: https://samedelstein.com/executive-brief/
 Structured executive brief JSON: https://samedelstein.com/profile.json
-Leadership focus: https://samedelstein.com/roles/
-Chief Data Officer leadership focus: https://samedelstein.com/roles/chief-data-officer/
-VP Data & AI leadership focus: https://samedelstein.com/roles/vp-data-ai/
-Head of AI Enablement leadership focus: https://samedelstein.com/roles/head-of-ai-enablement/
-Data Platform Strategy leadership focus: https://samedelstein.com/roles/data-platform-strategy/
-Executive AI Transformation leadership focus: https://samedelstein.com/roles/executive-ai-transformation/
+Work themes: https://samedelstein.com/roles/
+Trusted data foundations: https://samedelstein.com/roles/chief-data-officer/
+Applied AI operating models: https://samedelstein.com/roles/vp-data-ai/
+Responsible adoption: https://samedelstein.com/roles/head-of-ai-enablement/
+Modern delivery platforms: https://samedelstein.com/roles/data-platform-strategy/
+Measurable operating change: https://samedelstein.com/roles/executive-ai-transformation/
 Skills and keyword fit: https://samedelstein.com/skills/
 Executive brief: https://samedelstein.com/executive-brief.txt
 Proof records: https://samedelstein.com/proof/
@@ -24,9 +24,9 @@ vCard: https://samedelstein.com/sam-edelstein.vcf
 Contact: sam.i.edelstein@gmail.com
 LinkedIn: https://www.linkedin.com/in/samedelstein
 
-Leadership focus includes Chief Data Officer, VP / Head of Data & AI, Head of AI Enablement, Data Platform Strategy leader, and Executive AI transformation leader.
+Work themes include trusted data foundations, applied AI operating models, responsible adoption, modern delivery platforms, and measurable operating change.
 
-Relevant leadership focus terms include enterprise AI strategy, executive AI transformation, AI operating model design, AI readiness, responsible AI adoption, AI governance, data platform strategy, data product leadership, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, and APIs.
+Relevant work themes include enterprise AI strategy, executive AI transformation, AI operating model design, AI readiness, responsible AI adoption, AI governance, data platform strategy, data product leadership, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, and APIs.
 
 Key proof points include 90%+ AI adoption across enterprise functions, 40%+ active AI builders, 12+ data sources integrated, and 1B+ rows unified into trusted data foundations.
 
