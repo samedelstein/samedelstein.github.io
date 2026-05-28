@@ -51,15 +51,15 @@
     "Public data background",
     "Useful public-minded tools"
   ],
-  "workScope": "Work involving enterprise data and AI strategy, data foundations, governance, data readiness, and useful AI workflows.",
+  "workScope": "Work involving enterprise data and AI strategy, data foundations, governance, data readiness, adoption, and useful AI workflows.",
   "work": [
     {
       "name": "Insight Partners",
       "position": "Senior Vice President, Data & AI",
       "startDate": "2021",
-      "summary": "Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.",
+      "summary": "Works across investment, HR, compliance, finance, and operations on data foundations, AI workflows, tools, and governance.",
       "highlights": [
-        "Builds data and AI systems connecting platform, governance, delivery, and use.",
+        "Builds data and AI systems connecting platform, governance, adoption, delivery, and use.",
         "Scales practical AI workflows and self-service access across business functions.",
         "Leads teams spanning analytics, engineering, and data product execution."
       ]
@@ -162,7 +162,7 @@
     "40%+ of the organization actively building with AI.",
     "12+ enterprise data sources integrated across cloud and on-prem systems.",
     "1B+ rows unified into governed, accessible data foundations.",
-    "Experience connecting AI and data work across strategy, platform, governance, use, and delivery.",
+    "Experience connecting AI and data work across strategy, platform, governance, adoption, use, and delivery.",
     "Experience connecting AI ideas to data readiness, governance, delivery, and real workflows."
   ],
   "selectedWork": [

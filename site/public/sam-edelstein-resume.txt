@@ -20,8 +20,8 @@ Data and AI work focused on governed data foundations, useful AI workflows, prac
 
 Current Role
 Senior Vice President, Data & AI, Insight Partners, 2021-Present
-- Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.
-- Builds data and AI systems connecting platform, governance, delivery, and use.
+- Works across investment, HR, compliance, finance, and operations on data foundations, AI workflows, tools, and governance.
+- Builds data and AI systems connecting platform, governance, adoption, delivery, and use.
 - Scales practical AI workflows and self-service access across business functions.
 - Leads teams spanning analytics, engineering, and data product execution.
 
@@ -47,7 +47,7 @@ Selected Markers
 - 40%+ of the organization actively building with AI.
 - 12+ enterprise data sources integrated across cloud and on-prem systems.
 - 1B+ rows unified into governed, accessible data foundations.
-- Experience connecting AI and data work across strategy, platform, governance, use, and delivery.
+- Experience connecting AI and data work across strategy, platform, governance, adoption, use, and delivery.
 
 Core Strengths
 - Enterprise data and AI roadmaps
@@ -66,7 +66,7 @@ Snowflake, dbt, Azure, GenAI and RAG, MLOps, Python, SQL, APIs, data integration
 
 Selected Work
 AI in Practice
-- Work on turning AI ideas into useful workflows across data foundations, governance, delivery, and applied use cases.
+- Work on turning enterprise AI ideas into useful workflows across data foundations, governance, adoption, delivery, and applied use cases.
 - Defined a phased delivery approach, delivered prioritized use cases, and established data readiness materials and a delivery playbook.
 
 DataCuse: Open Data Platform
@@ -86,4 +86,4 @@ Onondaga County Public Library, President, Board of Trustees.
 Le Moyne College Madden School of Business, Advisory Board Member, Business Analytics.
 
 Work Scope
-Work involving enterprise data and AI strategy, data foundations, governance, data readiness, and useful AI workflows.
+Work involving enterprise data and AI strategy, data foundations, governance, data readiness, adoption, and useful AI workflows.
