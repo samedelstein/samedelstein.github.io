@@ -1,6 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://samedelstein.com/#sam-edelstein",
   "name": "Sam Edelstein",
   "url": "https://samedelstein.com/",
   "email": "mailto:sam.i.edelstein@gmail.com",
