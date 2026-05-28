@@ -76,6 +76,7 @@
     "https://github.com/samedelstein",
     "https://samedelstein.medium.com/",
     "https://samedelstein.com/profile.json",
+    "https://samedelstein.com/site-index.json",
     "https://samedelstein.com/resume.json",
     "https://samedelstein.com/sam-edelstein.vcf",
     "https://samedelstein.com/sam-edelstein-resume.pdf",
@@ -168,6 +169,12 @@
       "@type": "DigitalDocument",
       "name": "Sam Edelstein Structured Profile",
       "url": "https://samedelstein.com/profile.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "Sam Edelstein Site Index",
+      "url": "https://samedelstein.com/site-index.json",
       "encodingFormat": "application/json"
     },
     {

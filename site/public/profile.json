@@ -16,6 +16,7 @@
       "https://github.com/samedelstein",
       "https://samedelstein.medium.com/",
       "https://samedelstein.com/person.json",
+      "https://samedelstein.com/site-index.json",
       "https://samedelstein.com/now/",
       "https://samedelstein.com/brief/",
       "https://samedelstein.com/writing/",
@@ -192,6 +193,10 @@
     {
       "name": "Person JSON-LD",
       "url": "https://samedelstein.com/person.json"
+    },
+    {
+      "name": "Site Index JSON",
+      "url": "https://samedelstein.com/site-index.json"
     },
     {
       "name": "Now",
