@@ -18,7 +18,7 @@ vCard: https://samedelstein.com/sam-edelstein.vcf
 Contact: sam.i.edelstein@gmail.com
 LinkedIn: https://www.linkedin.com/in/samedelstein
 GitHub: https://github.com/samedelstein
-Medium: https://medium.com/@samedelstein
+Medium: https://samedelstein.medium.com/
 
 Current work includes enterprise Data & AI strategy, governed data foundations, AI workflow design, data governance, data platform modernization, and useful internal tools across investment, HR, compliance, finance, and operations.
 

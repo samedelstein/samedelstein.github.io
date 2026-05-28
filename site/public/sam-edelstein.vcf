@@ -11,7 +11,7 @@ URL;TYPE=Profile JSON:https://samedelstein.com/profile.json
 URL;TYPE=Resume:https://samedelstein.com/resume/
 URL;TYPE=LinkedIn:https://www.linkedin.com/in/samedelstein
 URL;TYPE=GitHub:https://github.com/samedelstein
-URL;TYPE=Medium:https://medium.com/@samedelstein
+URL;TYPE=Medium:https://samedelstein.medium.com/
 ADR;TYPE=WORK:;;Syracuse;NY;;;United States
 NOTE:Enterprise Data & AI work focused on data foundations, useful AI workflows, governance, platforms, practical delivery, and public data background.
 END:VCARD
