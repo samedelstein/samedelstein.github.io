@@ -109,7 +109,7 @@ const selectedWork = [
     href: '/proof/predictive-water-main-analytics/',
   },
   {
-    title: 'Enterprise AI in practice',
+    title: 'AI in Practice',
     body: 'Confidential enterprise work focused on making AI useful across real workflows while keeping data, controls, and delivery connected.',
     href: '/proof/enterprise-ai-in-practice/',
   },

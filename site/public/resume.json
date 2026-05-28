@@ -55,7 +55,7 @@
       "startDate": "2021",
       "summary": "Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.",
       "highlights": [
-        "Builds enterprise AI and data systems connecting platform, governance, delivery, and use.",
+        "Builds data and AI systems connecting platform, governance, delivery, and use.",
         "Scales practical AI workflows and self-service access across business functions.",
         "Leads teams spanning analytics, engineering, and data product execution."
       ]
@@ -164,7 +164,7 @@
   ],
   "selectedWork": [
     {
-      "title": "Enterprise AI in Practice",
+      "title": "AI in Practice",
       "url": "https://samedelstein.com/proof/enterprise-ai-in-practice/",
       "summary": "Work on turning AI ideas into useful workflows across data foundations, governance, delivery, and applied use cases."
     },

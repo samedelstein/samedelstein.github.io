@@ -21,7 +21,7 @@ Data and AI work focused on governed data foundations, useful AI workflows, prac
 Current Role
 Senior Vice President, Data & AI, Insight Partners, 2021-Present
 - Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.
-- Builds enterprise AI and data systems connecting platform, governance, delivery, and use.
+- Builds data and AI systems connecting platform, governance, delivery, and use.
 - Scales practical AI workflows and self-service access across business functions.
 - Leads teams spanning analytics, engineering, and data product execution.
 
@@ -65,7 +65,7 @@ Platforms and Tools
 Snowflake, dbt, Azure, GenAI and RAG, MLOps, Python, SQL, APIs, data integration, analytics engineering, cloud data platforms.
 
 Selected Work
-Enterprise AI in Practice
+AI in Practice
 - Work on turning AI ideas into useful workflows across data foundations, governance, delivery, and applied use cases.
 - Defined a phased delivery approach, delivered prioritized use cases, and established data readiness materials and a delivery playbook.
 
