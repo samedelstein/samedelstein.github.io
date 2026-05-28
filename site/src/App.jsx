@@ -58,9 +58,9 @@ const publicRecord = [
   {
     label: 'Public artifacts',
     title: 'Applied ML, open-source civic tooling, and local data products',
-    body: 'Google Scholar, GitHub, DataCuse, and Medium show the same pattern: make data useful, public, explainable, and operational.',
+    body: 'GitHub, DataCuse, Medium, and cited public work show the same pattern: make data useful, public, explainable, and operational.',
     href: 'https://github.com/samedelstein',
-    source: 'GitHub / Scholar / Medium',
+    source: 'GitHub / DataCuse / Medium',
     icon: <Github className="h-5 w-5" />,
   },
 ];
@@ -233,7 +233,7 @@ function App() {
           <SectionHeader
             eyebrow="Public record"
             title="A few links behind the work."
-            body="Some of the public trail: first-party profiles, Syracuse University Libraries, Politico, Google Scholar, GitHub, Medium, and this site."
+            body="A few public references: Syracuse University Libraries, Politico, GitHub, Medium, DataCuse, and this site."
           />
           <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-[#e5edf5] bg-[#e5edf5] lg:grid-cols-4">
             {publicRecord.map((item) => (
@@ -322,9 +322,9 @@ function App() {
           <div className="rounded-lg border border-[#061b31] bg-[#061b31] p-8 text-white shadow-[rgba(50,50,93,0.25)_0px_30px_45px_-30px,rgba(0,0,0,0.1)_0px_18px_36px_-18px] sm:p-10 lg:p-12">
             <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(300px,0.55fr)] lg:items-end">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b9b9f9]">Through line</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b9b9f9]">How I work</p>
                 <h2 className="mt-3 max-w-4xl text-4xl font-light leading-tight tracking-normal sm:text-5xl">
-                  Useful systems, not theater.
+                  Make the work easier to see.
                 </h2>
                 <p className="mt-5 max-w-3xl text-lg font-light leading-8 text-white/70">
                   The work I like most makes complex systems easier to see, explain, govern, and improve.
