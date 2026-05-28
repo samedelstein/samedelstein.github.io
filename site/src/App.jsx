@@ -117,14 +117,19 @@ const selectedWork = [
 
 const writing = [
   {
+    title: "What's Missing in AI + BI",
+    body: 'Why chat interfaces and structured data tools still need a better shared loop.',
+    href: 'https://samedelstein.medium.com/whats-missing-in-ai-bi-the-case-for-bi-directional-interfaces-bcba1849b8a4',
+  },
+  {
+    title: 'How I Use Voice Recordings and AI',
+    body: 'A lightweight workflow for turning loose thinking into proposals, posts, and clearer notes.',
+    href: 'https://samedelstein.medium.com/how-i-use-voice-recordings-and-ai-to-draft-proposals-posts-and-work-through-ideas-f1ed8e94e835',
+  },
+  {
     title: 'What it Means to be AI-Ready',
     body: 'Data access, interoperability, and what software changes when reasoning models become part of everyday workflows.',
     href: 'https://samedelstein.medium.com/what-it-means-to-be-ai-ready-data-access-interoperability-and-the-future-of-software-part-1-a9abc8e0d03c',
-  },
-  {
-    title: '5 Years Later: How Generative AI Could Have Helped My CDO Work',
-    body: 'A reflection on city data coordination, local government workflows, and where AI could have helped or missed the point.',
-    href: 'https://samedelstein.medium.com/5-years-later-how-generative-ai-could-or-couldnt-have-helped-my-chief-data-officer-work-86cd3b6dfbe9',
   },
 ];
 
@@ -305,7 +310,7 @@ function App() {
               title="Writing about AI readiness and real work."
               body="The public writing is where I think through access, interoperability, usefulness, and what makes new tools stick."
             />
-            <div className="grid gap-px overflow-hidden rounded-lg border border-[#e5edf5] bg-[#e5edf5] md:grid-cols-2">
+            <div className="grid gap-px overflow-hidden rounded-lg border border-[#e5edf5] bg-[#e5edf5] md:grid-cols-3">
               {writing.map((post) => (
                 <a key={post.title} href={post.href} {...externalLinkProps} className="group bg-white p-6 transition hover:bg-[#f6f9fc]">
                   <BookOpen className="h-5 w-5 text-[#533afd]" />
