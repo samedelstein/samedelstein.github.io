@@ -21,7 +21,7 @@ const externalLinkProps = {
   rel: 'noopener noreferrer',
 };
 
-const contactMailto = 'mailto:sam.i.edelstein@gmail.com?subject=Data%20%26%20AI%20conversation&body=Hi%20Sam%2C%0A%0AI%27m%20reaching%20out%20about%20data%20and%20AI%20work.%0A%0A';
+const contactMailto = 'mailto:sam.i.edelstein@gmail.com?subject=Data%20%26%20AI%20conversation';
 
 const navItems = [
   ['Record', '#record'],
