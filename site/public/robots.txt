@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /roles/
-Disallow: /recruiter/
-Disallow: /executive-brief/
 
 Sitemap: https://samedelstein.com/sitemap.xml
