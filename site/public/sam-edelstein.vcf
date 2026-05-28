@@ -2,7 +2,7 @@ BEGIN:VCARD
 VERSION:3.0
 FN:Sam Edelstein
 N:Edelstein;Sam;;;
-TITLE:Data & AI leader
+TITLE:Senior Vice President, Data & AI
 ORG:Insight Partners
 EMAIL;TYPE=INTERNET:sam.i.edelstein@gmail.com
 URL:https://samedelstein.com/
@@ -11,5 +11,5 @@ URL;TYPE=Profile JSON:https://samedelstein.com/profile.json
 URL;TYPE=Resume:https://samedelstein.com/sam-edelstein-resume.pdf
 URL;TYPE=LinkedIn:https://www.linkedin.com/in/samedelstein
 ADR;TYPE=WORK:;;Syracuse;NY;;;United States
-NOTE:Data & AI leader focused on data foundations, AI adoption, governance, platforms, civic technology, and operating change.
+NOTE:Enterprise Data & AI work focused on data foundations, AI adoption, governance, platforms, civic technology, and operating change.
 END:VCARD
