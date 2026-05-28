@@ -10,7 +10,7 @@ Resume PDF: https://samedelstein.com/sam-edelstein-resume.pdf
 
 Target Roles
 - Chief Data Officer
-- VP / Head of Data & AI
+- Applied AI operating models
 - Head of AI Enablement
 - Data Platform Strategy leader
 - Executive AI transformation leader
