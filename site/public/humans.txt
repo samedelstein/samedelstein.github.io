@@ -22,3 +22,4 @@ Press and speaking: https://samedelstein.com/press/
 Contact: https://samedelstein.com/contact/
 AI-readable profile: https://samedelstein.com/llms.txt
 Structured profile: https://samedelstein.com/profile.json
+Person JSON-LD: https://samedelstein.com/person.json
