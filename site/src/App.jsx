@@ -240,7 +240,6 @@ const App = () => {
   const [showStickyHeader, setShowStickyHeader] = useState(false);
 
   const resumePdfUrl = '/sam-edelstein-resume.pdf';
-  const resumeDocUrl = 'https://docs.google.com/document/d/e/2PACX-1vTs3WwrJMp1Lif09iYsuXadtaKJ0hhIBVpk_mdzSRtPtTmf9IhwnHtXpJsSw-ZcmxH3WlmrWrqasMCX/pub';
 
   useEffect(() => {
     const handleScroll = () => setShowStickyHeader(window.scrollY > 12);
@@ -561,7 +560,7 @@ const App = () => {
               <div>
                 <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">Contact</p>
                 <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight md:text-5xl">Executive conversations about Data &amp; AI leadership.</h2>
-              <p className="mt-5 max-w-2xl leading-relaxed text-slate-300">I welcome thoughtful conversations about enterprise AI strategy, trusted data foundations, operating model design, and scaled adoption.</p>
+                <p className="mt-5 max-w-2xl leading-relaxed text-slate-300">I welcome thoughtful conversations about enterprise AI strategy, trusted data foundations, operating model design, and scaled adoption.</p>
               </div>
               <div className="grid content-start gap-3">
                 <a href={executiveMailto} className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-950 transition-colors hover:bg-blue-100"><Mail size={16} /><span>Email Sam</span></a>
@@ -574,7 +573,7 @@ const App = () => {
                 <a href="/proof/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Award size={16} /><span>Proof</span></a>
                 <a href="/executive-brief.txt" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><ExternalLink size={16} /><span>Plain Text Brief</span></a>
                 <a href="/sam-edelstein.vcf" download className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Download size={16} /><span>Save Contact</span></a>
-                <a href={resumeDocUrl} {...externalLinkProps} className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><ExternalLink size={16} /><span>Online Resume</span></a>
+                <a href="/resume/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><ExternalLink size={16} /><span>Resume Page</span></a>
               </div>
             </div>
           </section>
@@ -607,12 +606,12 @@ const App = () => {
           <section className="mb-12 border-y border-slate-200 py-10">
             <span className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-700">Resume</span>
             <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-slate-950 mt-4 mb-4">Sam Edelstein</h1>
-            <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">Download the latest PDF copy of my resume or view the current online version.</p>
+            <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">Download the current PDF resume or use the plain text version for a quick scan.</p>
           </section>
           <div className="flex flex-wrap gap-3">
             <a href={executiveMailto} className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-slate-950 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:bg-blue-700"><Mail size={18} /><span>Email Sam</span></a>
             <a href={resumePdfUrl} download className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-slate-300 bg-slate-50 px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700"><FileText size={18} /><span>Download PDF</span></a>
-            <a href={resumeDocUrl} {...externalLinkProps} className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-slate-300 bg-slate-50 px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700"><ExternalLink size={18} /><span>View Online</span></a>
+            <a href="/sam-edelstein-resume.txt" className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-slate-300 bg-slate-50 px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700"><ExternalLink size={18} /><span>Plain Text</span></a>
           </div>
         </main>
       )}
