@@ -2,102 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://samedelstein.com/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/recruiter/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/roles/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/roles/chief-data-officer/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/roles/vp-data-ai/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/roles/head-of-ai-enablement/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/roles/data-platform-strategy/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/roles/executive-ai-transformation/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/skills/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/proof/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/proof/enterprise-ai-enablement-at-scale/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/proof/datacuse-open-data-platform/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/proof/predictive-water-main-analytics/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/press/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/contact/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/about/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/resume/</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/recruiter-brief.txt</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/recruiter.json</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/sam-edelstein-resume.pdf</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/resume.pdf</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/sam-edelstein-resume.txt</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/resume.txt</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/resume.json</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/llms.txt</loc>
+    <lastmod>2026-05-28</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>
