@@ -30,33 +30,11 @@
     "resumeText": "https://samedelstein.com/sam-edelstein-resume.txt"
   },
   "workThemes": [
-    "Chief Data Officer",
+    "Governed data foundations",
     "Applied AI operating models",
-    "Head of AI Enablement",
-    "Data Platform Strategy leader",
+    "Responsible adoption",
+    "Modern delivery platforms",
     "Measurable operating change"
-  ],
-  "roleLandingPages": [
-    {
-      "role": "Chief Data Officer",
-      "url": "https://samedelstein.com/roles/chief-data-officer/"
-    },
-    {
-      "role": "Applied AI operating models",
-      "url": "https://samedelstein.com/roles/vp-data-ai/"
-    },
-    {
-      "role": "Head of AI Enablement",
-      "url": "https://samedelstein.com/roles/head-of-ai-enablement/"
-    },
-    {
-      "role": "Data Platform Strategy leader",
-      "url": "https://samedelstein.com/roles/data-platform-strategy/"
-    },
-    {
-      "role": "Measurable operating change",
-      "url": "https://samedelstein.com/roles/executive-ai-transformation/"
-    }
   ],
   "workScope": "Work involving enterprise AI strategy, data foundations, operating model design, governance, and practical adoption.",
   "work": [
