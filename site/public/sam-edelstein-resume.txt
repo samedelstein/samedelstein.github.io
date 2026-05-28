@@ -65,8 +65,8 @@ Platforms and Tools
 Snowflake, dbt, Azure, GenAI and RAG, MLOps, Python, SQL, APIs, data integration, analytics engineering, cloud data platforms.
 
 Selected Work
-Enterprise AI Enablement at Scale
-- Led an enterprise AI enablement portfolio spanning delivery approach, infrastructure, governance, adoption, and applied workflows.
+Enterprise AI in Practice
+- Work on turning AI ideas into useful workflows across delivery approach, infrastructure, governance, data readiness, and applied use cases.
 - Defined a phased delivery approach, delivered prioritized use cases, and established a data readiness program and enablement playbook.
 
 DataCuse: Open Data Platform

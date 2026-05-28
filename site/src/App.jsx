@@ -35,7 +35,7 @@ const publicRecord = [
   {
     label: 'Current role',
     title: 'Senior Vice President, Data & AI at Insight Partners',
-    body: 'Current work includes data and AI strategy, governance, enablement, and practical adoption across enterprise functions.',
+    body: 'Current work spans data foundations, AI enablement, governance, and practical tools across investment, HR, compliance, finance, and operations.',
     href: 'https://www.linkedin.com/in/samedelstein',
     source: 'LinkedIn',
     icon: <BriefcaseIcon />,
@@ -75,8 +75,8 @@ const impactStats = [
 
 const workThemes = [
   {
-    title: 'Enterprise AI adoption',
-    body: 'Making AI useful in everyday work through governance, delivery platforms, workflows, data readiness, and practical enablement.',
+    title: 'AI in everyday work',
+    body: 'Moving from AI ideas to useful workflows: the data, controls, platforms, training, and habits that make new tools stick.',
     icon: <Sparkles className="h-5 w-5" />,
   },
   {
@@ -108,8 +108,8 @@ const selectedWork = [
     href: '/proof/predictive-water-main-analytics/',
   },
   {
-    title: 'Enterprise AI enablement',
-    body: 'Confidential enterprise work focused on scaling useful AI adoption without letting governance drift away from delivery.',
+    title: 'Enterprise AI in practice',
+    body: 'Confidential enterprise work focused on making AI useful across real workflows while keeping data, controls, and delivery connected.',
     href: '/proof/enterprise-ai-enablement-at-scale/',
   },
 ];
@@ -186,7 +186,7 @@ function App() {
                 Hi, I&apos;m Sam. I work on enterprise data and AI.
               </h1>
               <p className="mt-7 max-w-3xl text-xl font-light leading-8 text-slate-600 sm:text-2xl sm:leading-9">
-                At Insight Partners, I work across investment, HR, compliance, finance, and operations on AI enablement, data foundations, governance, and tools people actually use. Before that, I was Syracuse&apos;s first Chief Data Officer; that work still shapes how I think about public accountability, messy systems, and practical analytics.
+                At Insight Partners, I work across investment, HR, compliance, finance, and operations on data foundations, AI systems, governance, and tools people actually use. Before that, I was Syracuse&apos;s first Chief Data Officer; that work still shapes how I think about public accountability, messy systems, and practical analytics.
               </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <a href={contactMailto} className="inline-flex h-12 items-center justify-center gap-2 rounded bg-[#533afd] px-5 text-base font-medium text-white shadow-[rgba(50,50,93,0.25)_0px_30px_45px_-30px,rgba(0,0,0,0.1)_0px_18px_36px_-18px] transition hover:bg-[#4434d4]"><Mail className="h-4 w-4" /> Email Sam</a>
@@ -256,7 +256,7 @@ function App() {
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b9b9f9]">Working range</p>
                 <h2 className="mt-3 text-4xl font-light tracking-normal text-white sm:text-5xl">Making data and AI useful in real work.</h2>
                 <p className="mt-5 text-lg font-light leading-8 text-white/70">
-                  Across city government, consulting, and private-market work, the pattern is the same: turn fragmented data and emerging technology into durable systems people understand and use.
+                  Across city government, consulting, and private-market work, the pattern is the same: take messy information, new technology, and real organizational constraints, then turn them into systems people understand and use.
                 </p>
                 <div className="mt-7 flex flex-wrap gap-2">
                   <Pill tone="dark">Governance</Pill>
@@ -304,7 +304,7 @@ function App() {
             <SectionHeader
               eyebrow="Point of view"
               title="Writing about AI readiness and real work."
-              body="The public writing is where I think through access, interoperability, usefulness, and adoption."
+              body="The public writing is where I think through access, interoperability, usefulness, and what makes new tools stick."
             />
             <div className="grid gap-px overflow-hidden rounded-lg border border-[#e5edf5] bg-[#e5edf5] md:grid-cols-2">
               {writing.map((post) => (

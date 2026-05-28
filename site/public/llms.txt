@@ -28,7 +28,7 @@ Relevant work themes include enterprise AI strategy, AI adoption, AI governance,
 
 Selected markers include 90%+ AI adoption across enterprise functions, 40%+ active AI builders, 12+ data sources integrated, and 1B+ rows unified into governed data foundations.
 
-Selected work includes DataCuse: Open Data Platform, Predictive Water Main Analytics, and Enterprise AI Enablement at Scale.
+Selected work includes DataCuse: Open Data Platform, Predictive Water Main Analytics, and Enterprise AI in Practice.
 
 Selected public references include Politico, GovTech, Syracuse.com, WRVO, New York State Local Government Innovation Conference, Smart Cities International Symposium, and MIT CDOIQ Symposium references.
 
