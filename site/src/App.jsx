@@ -21,7 +21,7 @@ const externalLinkProps = {
   rel: 'noopener noreferrer',
 };
 
-const contactMailto = 'mailto:sam.i.edelstein@gmail.com?subject=Data%20%26%20AI%20conversation&body=Hi%20Sam%2C%0A%0AI%27m%20reaching%20out%20about%20data%2C%20AI%2C%20or%20civic%20technology.%0A%0A';
+const contactMailto = 'mailto:sam.i.edelstein@gmail.com?subject=Data%20%26%20AI%20conversation&body=Hi%20Sam%2C%0A%0AI%27m%20reaching%20out%20about%20data%20and%20AI%20work.%0A%0A';
 
 const navItems = [
   ['Record', '#record'],
@@ -345,7 +345,7 @@ function App() {
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#533afd]">Contact</p>
             <h2 className="mt-3 text-3xl font-light tracking-normal text-[#061b31]">Data, AI, civic technology, libraries, or Syracuse datasets?</h2>
-            <p className="mt-3 text-slate-600">Reach out for thoughtful conversations about useful systems, governed adoption, and public-minded technology.</p>
+            <p className="mt-3 text-slate-600">Reach out for thoughtful conversations about data and AI work, civic technology, and public-minded tools.</p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">
             <a href={contactMailto} className="inline-flex h-12 items-center justify-center gap-2 rounded bg-[#533afd] px-5 text-base font-medium text-white transition hover:bg-[#4434d4]"><Mail className="h-4 w-4" /> Email Sam</a>
