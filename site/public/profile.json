@@ -4,7 +4,7 @@
   "name": "Sam Edelstein Brief",
   "url": "https://samedelstein.com/profile.json",
   "dateModified": "2026-05-28",
-  "description": "Structured brief for Sam Edelstein, an Data & AI leader focused on enterprise AI strategy, AI transformation, governed data foundations, AI enablement, scaled adoption, and operating model design.",
+  "description": "Structured brief for Sam Edelstein, an Data & AI leader focused on enterprise AI strategy, AI adoption, governed data foundations, AI enablement, scaled adoption, and operating model design.",
   "mainEntity": {
     "@type": "Person",
     "name": "Sam Edelstein",
@@ -70,7 +70,7 @@
         "@type": "Country",
         "name": "United States"
       },
-      "skills": "Enterprise AI strategy, AI transformation, AI governance, data platform modernization, AI enablement, data governance, executive operating model design, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, APIs"
+      "skills": "Enterprise AI strategy, AI adoption, AI governance, data platform modernization, AI enablement, data governance, executive operating model design, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, APIs"
     }
   },
   "workThemes": [
@@ -102,7 +102,7 @@
     "12+ enterprise data sources integrated across cloud and on-prem systems.",
     "1B+ rows unified into trusted, governed, accessible foundations.",
     "Experience building AI and data operating models across strategy, platform, governance, adoption, and delivery.",
-    "Experience leading AI transformation from strategy through adoption, operating model design, and measurable business impact."
+    "Experience leading AI adoption from strategy through adoption, operating model design, and measurable business impact."
   ],
   "proofRecords": [
     {

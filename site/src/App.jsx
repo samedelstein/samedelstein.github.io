@@ -1,30 +1,19 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React from 'react';
 import {
-  Activity,
   ArrowUpRight,
-  Award,
-  BarChart3,
   BookOpen,
-  Briefcase,
   Building2,
-  ChevronRight,
   CheckCircle2,
-  Code,
   Database,
-  Download,
-  ExternalLink,
   FileText,
-  GraduationCap,
+  Github,
+  Landmark,
   Linkedin,
   Mail,
-  MapPin,
-  Menu,
   Network,
   ShieldCheck,
-  Target,
+  Sparkles,
   Users,
-  X,
-  Zap,
 } from 'lucide-react';
 
 const externalLinkProps = {
@@ -32,735 +21,344 @@ const externalLinkProps = {
   rel: 'noopener noreferrer',
 };
 
-const executiveMailto = 'mailto:sam.i.edelstein@gmail.com?subject=Data%20%26%20AI%20conversation&body=Hi%20Sam%2C%0A%0AI%27m%20reaching%20out%20about%20a%20Data%20%26%20AI%20leadership%20conversation.%0A%0A';
+const contactMailto = 'mailto:sam.i.edelstein@gmail.com?subject=Data%20%26%20AI%20conversation&body=Hi%20Sam%2C%0A%0AI%27m%20reaching%20out%20about%20data%2C%20AI%2C%20or%20civic%20technology.%0A%0A';
 
 const navItems = [
-  { id: 'home', label: 'Overview', type: 'section' },
-  { id: 'roles', label: 'Work', type: 'link', href: '/roles/' },
-  { id: 'case-studies', label: 'Projects', type: 'link', href: '/proof/' },
-  { id: 'experience', label: 'Experience', type: 'section' },
-  { id: 'writing', label: 'Writing', type: 'section' },
-  { id: 'contact', label: 'Contact', type: 'link', href: '/contact/' },
+  ['Record', '#record'],
+  ['Work', '#work'],
+  ['Writing', '#writing'],
+  ['Contact', '#contact'],
 ];
 
-const workOnItems = [
-  ['Open data and transparency', 'Launched DataCuse and helped make city data easier for residents, reporters, researchers, and staff to use.'],
-  ['Analytics for public services', 'Worked on projects like smoke alarm outreach, infrastructure coordination, and water main risk modeling.'],
-  ['Enterprise data and AI', 'Lead data and AI work across investment, HR, compliance, finance, and operations at Insight Partners.'],
-  ['Teaching and civic work', 'Taught graduate courses at Syracuse University and serve on local library and analytics boards.'],
+const publicRecord = [
+  {
+    label: 'Current role',
+    title: 'Senior Vice President, Data & AI at Insight Partners',
+    body: 'Current work spans data and AI strategy, governance, enablement, and practical adoption across enterprise functions.',
+    href: 'https://www.linkedin.com/in/samedelstein',
+    source: 'LinkedIn',
+    icon: <BriefcaseIcon />,
+  },
+  {
+    label: 'Civic institution builder',
+    title: 'Syracuse Chief Data Officer and DataCuse founder',
+    body: "Syracuse University Libraries cites the city's first open data policy, data privacy policy, Open Data Portal - DataCuse, and performance management office.",
+    href: 'https://library.syracuse.edu/news/syracuse-surge-the-path-to-becoming-a-smart-city-with-su-alum-sam-edelstein/',
+    source: 'Syracuse University Libraries',
+    icon: <Landmark className="h-5 w-5" />,
+  },
+  {
+    label: 'Coverage',
+    title: 'First CDO heading from Syracuse to private sector',
+    body: 'Government Technology covered the public-sector data arc and described the work as broader than a neat technical category.',
+    href: 'https://www.govtech.com/people/Syracuse-Data-Chief-Sam-Edelstein-to-Depart-City-Service.html',
+    source: 'Government Technology',
+    icon: <ShieldCheck className="h-5 w-5" />,
+  },
+  {
+    label: 'Public artifacts',
+    title: 'Applied ML, open-source civic tooling, and local data products',
+    body: 'Google Scholar, GitHub, DataCuse, and Medium show the same pattern: make data useful, public, explainable, and operational.',
+    href: 'https://github.com/samedelstein',
+    source: 'GitHub / Scholar / Medium',
+    icon: <Github className="h-5 w-5" />,
+  },
 ];
 
 const impactStats = [
   ['90%+', 'AI adoption across enterprise functions'],
-  ['40%+', 'actively building with AI across business and IT teams'],
-  ['12+', 'data sources integrated across cloud and on-prem systems'],
-  ['1B+', 'rows unified into trusted, governed, accessible foundations'],
+  ['1B+', 'rows unified into trusted data foundations'],
+  ['Cross-functional', 'work across investment, HR, compliance, finance, and operations'],
+  ['Public-sector', 'foundation from Syracuse open data, analytics, and service delivery work'],
 ];
 
-const leadershipFocus = [
+const workThemes = [
   {
-    label: 'DataCuse',
-    body: "Syracuse's first open data program and public data portal.",
+    title: 'Enterprise AI adoption',
+    body: 'Making AI useful in everyday work through governance, delivery platforms, workflows, data readiness, measurement, and change management.',
+    icon: <Sparkles className="h-5 w-5" />,
+  },
+  {
+    title: 'Data foundations',
+    body: 'Modernizing fragmented data into governed, accessible systems that support decisions across finance, operations, compliance, investment, and HR.',
+    icon: <Database className="h-5 w-5" />,
+  },
+  {
+    title: 'Civic data institutions',
+    body: 'Building public data programs that residents, reporters, researchers, and staff can actually use, from DataCuse to public dashboards.',
+    icon: <Building2 className="h-5 w-5" />,
+  },
+  {
+    title: 'Translation across audiences',
+    body: 'Working between senior leaders, analysts, engineers, public officials, residents, boards, and students without losing the thread of the work.',
+    icon: <Users className="h-5 w-5" />,
+  },
+];
+
+const selectedWork = [
+  {
+    title: 'DataCuse open data platform',
+    body: "Syracuse's open data program and public portal, built around transparency, data standards, intake workflows, and durable governance.",
     href: '/proof/datacuse-open-data-platform/',
   },
   {
-    label: 'Water main analytics',
-    body: 'A data science project to better understand water main break risk.',
+    title: 'Predictive water main analytics',
+    body: 'A city operations and machine-learning project using data science to assess and prevent water main breaks.',
     href: '/proof/predictive-water-main-analytics/',
   },
   {
-    label: 'Enterprise AI enablement',
-    body: 'Practical adoption, governance, and workflow work inside a global firm.',
+    title: 'Enterprise AI enablement',
+    body: 'Confidential enterprise work focused on scaling useful AI adoption while keeping governance and trust close to delivery.',
     href: '/proof/enterprise-ai-enablement-at-scale/',
   },
-  {
-    label: 'Writing and teaching',
-    body: 'Notes, talks, and graduate teaching on data, visualization, and government.',
-    href: '#writing',
-  },
-  {
-    label: 'Civic boards',
-    body: 'Library, museum, and business analytics board service in Central New York.',
-    href: '#experience',
-  },
 ];
 
-const leadershipReasons = [
-  "Built Syracuse's first analytics office and open data program.",
-  'Worked on civic analytics projects with visible public-service impact.',
-  'Led enterprise data and AI work in a complex investment firm environment.',
-  'Comfortable moving between strategy, technical teams, and nontechnical stakeholders.',
-  'Still close to the details: data quality, workflow, adoption, and communication.',
-  'Long-standing ties to Syracuse, public institutions, teaching, and civic boards.',
-];
-
-const operatingPrinciples = [
-  ['Start with the actual work.', 'The useful data and AI questions usually show up in service delivery, staff workflow, public reporting, compliance, finance, or other everyday operations.'],
-  ['Make things understandable.', 'Whether the audience is a department head, analyst, board member, or resident, the work gets better when people can see what is happening and why.'],
-  ['Build enough structure to keep going.', 'A good data program needs standards, governance, documentation, and ownership, but it also needs room for people to try things and learn.'],
-  ['Share what can be shared.', 'Open data, public writing, talks, and reusable analysis have been a through line in my work since Syracuse.'],
-];
-
-const availabilitySignals = [
-  ['Current work', 'Senior Vice President, Data & AI at Insight Partners.'],
-  ['Location', 'Syracuse / New York; used to working with distributed teams.'],
-  ['Also', 'Library board president, former adjunct professor, and longtime civic data person.'],
-];
-
-const experience = [
+const writing = [
   {
-    role: 'Senior Vice President, Data & AI',
-    company: 'Insight Partners',
-    period: '2021 - Present',
-    description:
-      'Lead firm-wide AI and data strategy across investment, HR, compliance, finance, and operations, with a focus on durable adoption through platforms, governance, and change management.',
-    bullets: [
-      'Built enterprise AI and data operating models that connect platform, governance, and delivery.',
-      'Scaled practical AI workflows and self-service access across business functions.',
-      'Led teams spanning analytics, engineering, and data product execution.',
-    ],
-    icon: <Database className="w-5 h-5" />,
+    title: 'What it Means to be AI-Ready',
+    body: 'Data access, interoperability, and what software changes when reasoning models become part of everyday workflows.',
+    href: 'https://samedelstein.medium.com/what-it-means-to-be-ai-ready-data-access-interoperability-and-the-future-of-software-part-1-a9abc8e0d03c',
   },
   {
-    role: 'Senior Consultant',
-    company: 'BlueGranite',
-    period: '2020 - 2021',
-    description:
-      'Delivered Azure-based analytics modernization work for public and private sector clients, improving data delivery speed, reliability, and governance.',
-    bullets: [
-      'Modernized analytics stacks and cloud data workflows for client programs.',
-      'Led stakeholder-facing implementation work across data engineering and BI delivery.',
-    ],
-    icon: <Code className="w-5 h-5" />,
-  },
-  {
-    role: 'Chief Data Officer',
-    company: 'City of Syracuse',
-    period: '2015 - 2020',
-    description:
-      "Built the city's first analytics office, launched DataCuse, authored the first open data policy, and led programs that improved services, modernized operations, and generated millions in savings.",
-    bullets: [
-      "Built and led the city's first analytics team and operating model.",
-      'Delivered predictive infrastructure and transparency programs with measurable public-sector impact.',
-      'Established durable data practices across departments and public-facing products.',
-    ],
-    icon: <MapPin className="w-5 h-5" />,
-  },
-  {
-    role: 'Adjunct Professor and Earlier Roles',
-    company: 'Syracuse University and prior organizations',
-    period: 'Earlier',
-    description:
-      'Taught graduate courses at Syracuse University and held earlier roles in higher education, communications, and research.',
-    bullets: [
-      'Taught graduate courses in data-driven government, data visualization, and data science.',
-      'Brought public-sector, academic, and operational perspectives into applied analytics work.',
-    ],
-    icon: <GraduationCap className="w-5 h-5" />,
+    title: '5 Years Later: How Generative AI Could Have Helped My CDO Work',
+    body: 'A reflection on city data coordination, local government workflows, and where AI could have helped or missed the point.',
+    href: 'https://samedelstein.medium.com/5-years-later-how-generative-ai-could-or-couldnt-have-helped-my-chief-data-officer-work-86cd3b6dfbe9',
   },
 ];
 
-const competencies = [
-  ['Leadership and Strategy', 'Enterprise AI strategy and roadmaps | AI operating model design | AI enablement and adoption | Team building | Stakeholder communication'],
-  ['Governance and Delivery', 'AI governance and risk | AI assurance | AI readiness | Data governance and quality | Data product leadership | Data ops and reliability'],
-  ['Platforms and Tools', 'Snowflake | dbt | Azure | GenAI and RAG | MLOps | Python | SQL | APIs and data integration'],
+const timeline = [
+  ['Now', 'Senior VP, Data & AI', 'Insight Partners'],
+  ['2020', 'Senior Consultant', 'BlueGranite'],
+  ['2015', 'Chief Data Officer', 'City of Syracuse'],
+  ['Earlier', 'Adjunct / civic / higher-ed roles', 'Syracuse University and prior organizations'],
 ];
 
-const caseStudies = [
-  {
-    slug: 'datacuse-open-data-platform',
-    title: 'DataCuse: Open Data Platform',
-    blurb: "Built Syracuse's first open data program, turning scattered civic data into a governed transparency and analytics capability.",
-    image: '/work/datacuse.png',
-    imageAlt: 'DataCuse open data portal screenshot',
-    problem: 'City datasets lived in disconnected systems, slowing coordination between departments and limiting resident access to public information.',
-    role: 'Led the data inventory, defined governance standards, and coordinated stakeholder alignment across city agencies.',
-    shipped: ['Launched a Socrata-based open data portal.', 'Published a standardized data dictionary and intake workflow.', "Established the city's first open data policy."],
-    impact: ['Enabled public visibility into city operations.', 'Improved cross-department analytics.', 'Created a durable foundation for civic technology partnerships.'],
-    links: [{ label: 'GovTech Coverage', url: 'https://www.govtech.com/civic/whats-new-in-civic-tech-07272017.html' }],
-  },
-  {
-    slug: 'predictive-water-main-analytics',
-    title: 'Predictive Water Main Analytics',
-    blurb: 'Translated machine learning research into an operational risk model for prioritizing aging water infrastructure.',
-    image: '/work/water-main.png',
-    imageAlt: 'Water main break analysis map',
-    problem: 'Water infrastructure failures were difficult to anticipate, leading to costly emergency repairs.',
-    role: 'Defined the operational problem, provided municipal data, and aligned outputs with field crews.',
-    shipped: ['Built an ML pipeline with asset, maintenance, and geospatial features.', 'Developed a risk score to prioritize inspections.', 'Published findings in academic and civic technology channels.'],
-    impact: ['Gave operations teams a defensible prioritization model.', 'Strengthened the case for proactive infrastructure investment.'],
-    links: [{ label: 'Read arXiv Paper', url: 'https://ar5iv.labs.arxiv.org/html/1805.03597' }],
-  },
-  {
-    slug: 'confidential-ai-portfolio',
-    title: 'Enterprise AI Enablement at Scale',
-    blurb: 'Led an enterprise AI enablement portfolio spanning operating model, infrastructure, governance, adoption, and applied workflows.',
-    image: '/work/hackathon.jpg',
-    imageAlt: 'Sam Edelstein speaking at a civic technology event',
-    problem: 'A global firm needed to coordinate AI adoption across teams without compromising confidentiality.',
-    role: 'Led discovery with executive stakeholders and built a cross-functional roadmap balancing governance, delivery, and change management.',
-    shipped: ['Defined a phased AI operating model.', 'Delivered prioritized use cases.', 'Established a data readiness program and enablement playbook.'],
-    impact: ['Accelerated AI adoption while maintaining governance.', 'Created a repeatable approach to scaling AI across business units.'],
-    links: [],
-  },
-];
+function BriefcaseIcon() {
+  return <Network className="h-5 w-5" />;
+}
 
-const pressLinks = [
-  { title: 'Mayor Miner names new employees of Syracuse innovation office', outlet: 'Syracuse.com', url: 'https://www.syracuse.com/news/index.ssf/2015/05/mayor_miner_announces_four_new_hires_for_syracuse_innovation_team.html' },
-  { title: 'Syracuse firefighters to get smoke detectors into high-risk homes', outlet: 'Syracuse.com', url: 'https://www.syracuse.com/news/index.ssf/2017/01/syracuse_fire_department_takes_data-driven_approach_to_getting_smoke_detectors_i.html' },
-  { title: 'How Mathematicians in Chicago Are Stopping Water Leaks in Syracuse', outlet: 'Politico', url: 'https://www.politico.com/magazine/story/2017/04/20/syracuse-infrastructure-water-system-pipe-breaks-215054' },
-  { title: 'Open data comes to Syracuse', outlet: 'WRVO', url: 'https://www.wrvo.org/politics-and-government/2017-07-27/open-data-comes-to-syracuse' },
-];
+function Pill({ children, tone = 'light' }) {
+  const className = tone === 'dark'
+    ? 'border border-white/15 bg-white/10 text-white/85'
+    : 'border border-indigo-100 bg-white text-slate-700 shadow-[rgba(50,50,93,0.08)_0px_8px_20px_-12px]';
+  return <span className={`inline-flex rounded px-2.5 py-1 text-xs font-medium ${className}`}>{children}</span>;
+}
 
-const speakingLinks = [
-  { title: 'Open Data: What It Is, How It Can Help You, and Where to Start', outlet: 'New York State Local Government Innovation Conference', url: 'https://www.dos.ny.gov/lg/pdf/LGIC2016_Workshops.pdf' },
-  { title: 'Smart Insights: Leveraging Data (Big and Small) in Moving Towards a Smarter City', outlet: 'Smart Cities International Symposium', url: 'https://www.smartcities-symposium.com/' },
-  { title: 'Government Could Be the Mother of Your Data', outlet: 'MIT CDOIQ Symposium', url: 'https://www.mitcdoiq.org/' },
-];
-
-const blogPosts = [
-  { title: 'What it Means to be AI-Ready', date: 'April 2025', link: 'https://samedelstein.medium.com/what-it-means-to-be-ai-ready-data-access-interoperability-and-the-future-of-software-part-1-a9abc8e0d03c', excerpt: 'Exploring data access, interoperability, and the future of software in the age of reasoning models.' },
-  { title: '5 Years Later: How Generative AI Could Have Helped My CDO Work', date: 'January 2025', link: 'https://samedelstein.medium.com/5-years-later-how-generative-ai-could-or-couldnt-have-helped-my-chief-data-officer-work-86cd3b6dfbe9', excerpt: "Lessons learned from city-wide data coordination and reflecting on modern AI's potential in local government." },
-];
-
-const leadershipRoles = [
-  ['Onondaga County Public Library', 'President, Board of Trustees'],
-  ['Le Moyne College Madden School of Business', 'Advisory Board Member, Business Analytics'],
-];
-
-const SectionTitle = ({ icon, title, eyebrow, compact = false }) => (
-  <div className={`${compact ? 'mb-5' : 'mb-7'} border-t border-slate-200 pt-4`}>
-    {eyebrow && <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-700 mb-2">{eyebrow}</p>}
-    <div className="flex items-center gap-3">
-      <span className="text-slate-500">{icon}</span>
-      <h2 className={`${compact ? 'text-lg' : 'text-2xl'} font-semibold tracking-tight text-slate-950`}>{title}</h2>
-    </div>
-  </div>
-);
-
-const App = () => {
-  const [activeSection, setActiveSection] = useState('home');
-  const [route, setRoute] = useState(() => {
-    const hash = window.location.hash;
-    if (hash.startsWith('#/case-studies/')) return { page: 'case-study', slug: hash.replace('#/case-studies/', '') };
-    if (hash.startsWith('#/case-studies')) return { page: 'case-studies' };
-    if (hash.startsWith('#/resume')) return { page: 'resume' };
-    if (hash.startsWith('#/executive-brief')) return { page: 'executive-brief' };
-    return { page: 'home' };
-  });
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [pressSearch, setPressSearch] = useState('');
-  const [showStickyHeader, setShowStickyHeader] = useState(false);
-
-  const resumePdfUrl = '/sam-edelstein-resume.pdf';
-
-  useEffect(() => {
-    const handleScroll = () => setShowStickyHeader(window.scrollY > 12);
-    handleScroll();
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash;
-      if (hash.startsWith('#/case-studies/')) return setRoute({ page: 'case-study', slug: hash.replace('#/case-studies/', '') });
-      if (hash.startsWith('#/case-studies')) return setRoute({ page: 'case-studies' });
-      if (hash.startsWith('#/resume')) return setRoute({ page: 'resume' });
-      if (hash.startsWith('#/executive-brief')) return setRoute({ page: 'executive-brief' });
-      setRoute({ page: 'home' });
-    };
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
-  }, []);
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'auto' });
-  }, [route.page, route.slug]);
-
-  const filteredPress = useMemo(
-    () => pressLinks.filter((item) => item.title.toLowerCase().includes(pressSearch.toLowerCase()) || item.outlet.toLowerCase().includes(pressSearch.toLowerCase())),
-    [pressSearch],
-  );
-
-  const featuredCaseStudies = [caseStudies[0], caseStudies[1]];
-  const orderedCaseStudies = [caseStudies[2], caseStudies[0], caseStudies[1]];
-  const activeCaseStudy = caseStudies.find((study) => study.slug === route.slug);
-
-  const navigateToHash = (hash) => {
-    window.location.assign(hash);
-    setIsMenuOpen(false);
-  };
-
-  const scrollHomeSection = (sectionId) => {
-    setActiveSection(sectionId);
-    const element = document.getElementById(sectionId);
-    if (!element) return;
-    const offset = 80;
-    const top = element.getBoundingClientRect().top - document.body.getBoundingClientRect().top - offset;
-    window.scrollTo({ top, behavior: 'smooth' });
-    setIsMenuOpen(false);
-  };
-
-  const scrollToSection = (sectionId) => {
-    if (route.page !== 'home') {
-      navigateToHash('#/');
-      setTimeout(() => scrollHomeSection(sectionId), 120);
-      return;
-    }
-    scrollHomeSection(sectionId);
-  };
-
+function SectionHeader({ eyebrow, title, body }) {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-white text-slate-950 font-sans selection:bg-blue-200">
-      <nav className={`fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-shadow duration-300 ${showStickyHeader || route.page !== 'home' ? 'shadow-sm' : 'shadow-none'}`}>
-        <div className="mx-auto flex h-16 w-full max-w-[350px] items-center justify-between px-5 sm:max-w-6xl md:px-6">
-          <button onClick={() => scrollToSection('home')} className="font-semibold text-[15px] tracking-tight text-slate-950">Sam Edelstein</button>
-          <div className="hidden md:flex space-x-5">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => (item.type === 'link' ? window.location.assign(item.href) : scrollToSection(item.id))}
-                className={`text-xs font-bold uppercase tracking-[0.12em] ${activeSection === item.id && route.page === 'home' ? 'text-blue-700' : 'text-slate-500 hover:text-slate-950'}`}
-              >
-                {item.label}
-              </button>
+    <div className="max-w-3xl">
+      <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#533afd]">{eyebrow}</p>
+      <h2 className="mt-3 text-3xl font-light tracking-normal text-[#061b31] sm:text-4xl">{title}</h2>
+      {body && <p className="mt-4 text-lg font-light leading-8 text-slate-600">{body}</p>}
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div className="min-h-screen bg-white font-sans text-[#061b31] selection:bg-indigo-200">
+      <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/85 backdrop-blur-xl">
+        <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
+          <a href="#top" className="text-sm font-semibold tracking-normal text-[#061b31]">Sam Edelstein</a>
+          <div className="hidden items-center gap-7 md:flex">
+            {navItems.map(([label, href]) => (
+              <a key={label} href={href} className="text-sm font-medium text-slate-500 transition hover:text-[#533afd]">{label}</a>
             ))}
           </div>
-          <div className="flex items-center space-x-2">
-            <a href={executiveMailto} className="hidden sm:inline-flex items-center justify-center space-x-2 border border-slate-200 text-slate-900 px-4 h-10 rounded-md text-xs font-bold uppercase tracking-[0.08em] hover:border-blue-700 hover:text-blue-700 transition-colors">
-              <Mail size={16} />
-              <span>Contact</span>
-            </a>
-            <a href={resumePdfUrl} download className="hidden h-10 items-center justify-center space-x-2 rounded-md bg-slate-950 px-3 text-xs font-bold uppercase tracking-[0.08em] text-white transition-colors hover:bg-blue-700 sm:inline-flex sm:px-4">
-              <Download size={16} />
-              <span className="hidden sm:inline">Resume</span>
-            </a>
-            <a href="https://www.linkedin.com/in/samedelstein" {...externalLinkProps} className="hidden h-10 w-10 items-center justify-center text-slate-500 hover:text-blue-700 sm:inline-flex" aria-label="LinkedIn profile">
-              <Linkedin size={20} />
-            </a>
-            <button className="md:hidden text-slate-600 h-10 w-10 inline-flex items-center justify-center" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle navigation menu">
-              {isMenuOpen ? <X /> : <Menu />}
-            </button>
+          <div className="flex items-center gap-2">
+            <a href="https://www.linkedin.com/in/samedelstein" {...externalLinkProps} aria-label="LinkedIn" className="hidden h-9 w-9 items-center justify-center rounded border border-slate-200 text-slate-500 transition hover:border-[#b9b9f9] hover:text-[#533afd] sm:inline-flex"><Linkedin className="h-4 w-4" /></a>
+            <a href={contactMailto} className="inline-flex h-9 items-center gap-2 rounded bg-[#533afd] px-3 text-sm font-medium text-white shadow-[rgba(50,50,93,0.25)_0px_18px_30px_-18px] transition hover:bg-[#4434d4]"><Mail className="h-4 w-4" /> Contact</a>
           </div>
-        </div>
-        {isMenuOpen && (
-          <div className="md:hidden border-t border-slate-200 bg-white px-6 py-4 space-y-3">
-            {navItems.map((item) => (
-              <button key={item.id} onClick={() => (item.type === 'link' ? window.location.assign(item.href) : scrollToSection(item.id))} className="block text-left w-full text-sm font-semibold text-slate-700 hover:text-blue-700">
-                {item.label}
-              </button>
-            ))}
-          </div>
-        )}
-      </nav>
+        </nav>
+      </header>
 
-      {route.page === 'home' && (
-        <>
-          <main className="mx-auto w-full max-w-[350px] px-5 pt-24 pb-20 sm:max-w-6xl md:px-6">
-            <section id="home" className="scroll-mt-28 border-b border-slate-200 py-10 md:py-16">
-              <div className="grid min-w-0 grid-cols-1 lg:grid-cols-[minmax(0,1.16fr)_minmax(360px,0.84fr)] gap-10 lg:gap-14 items-stretch">
-                <div className="flex min-w-0 flex-col justify-between">
-                  <div>
-                    <p className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">Hi, I&apos;m Sam.</p>
-                    <h1 className="max-w-full break-words text-4xl font-semibold leading-[0.98] tracking-tight text-slate-950 sm:text-5xl md:max-w-4xl md:text-7xl">I work on data, AI, and public-service-minded technology.</h1>
-                    <p className="mt-7 max-w-full break-words text-lg leading-relaxed text-slate-600 md:max-w-2xl md:text-xl">I am Senior Vice President, Data &amp; AI at Insight Partners. Before that, I was the City of Syracuse&apos;s first Chief Data Officer, where I helped launch DataCuse, built the city&apos;s first analytics office, and worked on projects from open data to water main risk.</p>
-                  </div>
-                  <div className="mt-10">
-                    <div className="flex flex-wrap gap-3">
-                      <a href={executiveMailto} className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-slate-950 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:bg-blue-700 sm:w-auto"><Mail size={17} /><span>Email Sam</span></a>
-                      <a href={resumePdfUrl} download className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><Download size={17} /><span>Resume</span></a>
-                      <button onClick={() => scrollToSection('work')} className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><ArrowUpRight size={17} /><span>My Work</span></button>
-                    </div>
-                    <p className="mt-5 max-w-full break-words text-sm leading-relaxed text-slate-500 md:max-w-2xl">Syracuse, New York. Data and AI at work, civic technology, libraries, teaching, hiking, and the occasional local dataset rabbit hole.</p>
-                  </div>
-                </div>
-                <div className="min-w-0 max-w-full border border-slate-950 bg-slate-950 text-white shadow-2xl shadow-slate-200">
-                  <img src="/work/sam-edelstein.png" alt="Sam Edelstein" className="h-64 w-full object-cover object-top" />
-                  <div className="border-b border-white/20 px-5 py-5">
-                    <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">A Few Things</p>
-                    <h2 className="mt-2 text-2xl font-semibold tracking-tight">Some work I keep coming back to</h2>
-                  </div>
-                  <div className="divide-y divide-white/15">
-                    {leadershipFocus.map((role) => (
-                      <a key={role.label} href={role.href} className="grid grid-cols-[46px_minmax(0,1fr)] gap-4 px-5 py-5 transition-colors hover:bg-white/5">
-                        <span className="flex h-10 w-10 items-center justify-center rounded-md border border-white/15 text-blue-200"><Target size={18} /></span>
-                        <div className="min-w-0">
-                        <h3 className="text-sm font-semibold text-white">{role.label}</h3>
-                        <p className="text-sm leading-relaxed text-slate-100">{role.body}</p>
-                        </div>
-                      </a>
-                    ))}
-                  </div>
-                </div>
+      <main id="top">
+        <section className="relative isolate overflow-hidden">
+          <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 md:py-24 lg:grid-cols-[minmax(0,1.12fr)_minmax(360px,0.88fr)] lg:items-center">
+            <div>
+              <div className="mb-7 flex flex-wrap gap-2">
+                <Pill>Enterprise Data & AI</Pill>
+                <Pill>Insight Partners</Pill>
+                <Pill>Syracuse, NY</Pill>
               </div>
-            </section>
-
-            <section id="case-studies-preview" className="scroll-mt-24 border-b border-slate-200 py-8">
-              <div className="grid grid-cols-2 gap-px overflow-hidden border border-slate-200 bg-slate-200 lg:grid-cols-4">
-                {impactStats.map(([value, label]) => (
-                  <div key={label} className="bg-slate-50 p-5 md:p-6">
-                    <div className="text-4xl font-semibold tracking-tight text-slate-950">{value}</div>
-                    <p className="mt-3 text-sm leading-relaxed text-slate-600">{label}</p>
-                  </div>
-                ))}
+              <h1 className="max-w-5xl text-5xl font-light leading-[0.95] tracking-normal text-[#061b31] sm:text-6xl lg:text-7xl">
+                Hi, I&apos;m Sam. I work on enterprise data and AI.
+              </h1>
+              <p className="mt-7 max-w-3xl text-xl font-light leading-8 text-slate-600 sm:text-2xl sm:leading-9">
+                I lead Data &amp; AI work at Insight Partners, focused on practical adoption, governed data foundations, and tools that help teams use information well. Earlier, I was the City of Syracuse&apos;s first Chief Data Officer, where I helped build the city&apos;s first data office, open data policy, DataCuse portal, and civic analytics work.
+              </p>
+              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+                <a href={contactMailto} className="inline-flex h-12 items-center justify-center gap-2 rounded bg-[#533afd] px-5 text-base font-medium text-white shadow-[rgba(50,50,93,0.25)_0px_30px_45px_-30px,rgba(0,0,0,0.1)_0px_18px_36px_-18px] transition hover:bg-[#4434d4]"><Mail className="h-4 w-4" /> Email Sam</a>
+                <a href="/proof/" className="inline-flex h-12 items-center justify-center gap-2 rounded border border-[#b9b9f9] bg-white px-5 text-base font-medium text-[#533afd] transition hover:bg-indigo-50"><FileText className="h-4 w-4" /> Selected work</a>
               </div>
-            </section>
+            </div>
 
-            <section className="grid grid-cols-1 gap-12 border-b border-slate-200 py-16 lg:grid-cols-[minmax(0,1.55fr)_minmax(300px,0.85fr)]">
-              <div>
-                <SectionTitle icon={<Briefcase className="h-5 w-5" />} title="About My Work" eyebrow="Background" />
-                <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
-                  {leadershipReasons.map((reason, index) => (
-                    <div key={reason} className="bg-white p-5">
-                      <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-md bg-blue-50 text-blue-700">
-                        {[<Building2 key="0" />, <ShieldCheck key="1" />, <Network key="2" />, <Users key="3" />, <BarChart3 key="4" />, <CheckCircle2 key="5" />][index]}
-                      </div>
-                      <p className="text-base font-semibold leading-snug text-slate-900">{reason}</p>
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-8 space-y-5 text-lg leading-relaxed text-slate-700">
-                  <p>I currently lead data and AI work at Insight Partners across investment, HR, compliance, finance, and operations. It is a mix of strategy, governance, platforms, workflow design, and helping people use new tools in practical ways.</p>
-                  <p>Earlier in my career, I worked in city government. That shaped a lot of how I think: make the work useful, explain it clearly, build trust, and remember that data systems are only valuable if they help people make better decisions.</p>
-                </div>
-              </div>
-              <aside className="space-y-6">
-                <section>
-                  <SectionTitle icon={<Target className="h-5 w-5" />} title="Short Version" eyebrow="Context" compact />
-                  <div className="divide-y divide-slate-200 border border-slate-200 bg-slate-50">
-                    {availabilitySignals.map(([title, body]) => (
-                      <div key={title} className="p-5">
-                        <h3 className="text-sm font-bold uppercase tracking-[0.12em] text-slate-950">{title}</h3>
-                        <p className="mt-3 text-sm leading-relaxed text-slate-600">{body}</p>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-                <section>
-                  <SectionTitle icon={<Users className="h-5 w-5" />} title="Capabilities" eyebrow="Operating Range" compact />
-                  <div className="divide-y divide-slate-200 border border-slate-200 bg-white">
-                    {competencies.map(([title, body]) => (
-                      <div key={title} className="p-5">
-                        <h3 className="text-sm font-bold uppercase tracking-[0.12em] text-slate-950">{title}</h3>
-                        <p className="mt-3 text-sm leading-relaxed text-slate-600">{body}</p>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              </aside>
-            </section>
-
-            <section className="border-b border-slate-200 py-16">
-              <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.4fr)]">
+            <aside className="rounded-lg border border-[#e5edf5] bg-white p-6 shadow-[rgba(50,50,93,0.16)_0px_22px_36px_-28px,rgba(0,0,0,0.08)_0px_12px_24px_-18px]">
+              <div className="flex items-center gap-4 border-b border-[#e5edf5] pb-5">
+                <img src="/work/sam-edelstein.png" alt="Sam Edelstein" className="h-20 w-20 flex-none rounded object-cover object-top" />
                 <div>
-                  <SectionTitle icon={<ShieldCheck className="h-5 w-5" />} title="A Few Notes" eyebrow="Point of View" />
-                  <p className="max-w-xl text-lg leading-relaxed text-slate-700">The older posts on this site were mostly me sharing things I built, datasets I was exploring, or ideas from city government. I still like that mode: plain language, useful work, and enough detail that someone else can follow along.</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#533afd]">Current and past work</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-500">Enterprise Data &amp; AI now; Syracuse data work before that.</p>
                 </div>
-                <div className="divide-y divide-slate-200 border-y border-slate-200">
-                  {operatingPrinciples.map(([title, body]) => (
-                    <article key={title} className="grid grid-cols-1 gap-3 py-6 md:grid-cols-[minmax(180px,0.6fr)_minmax(0,1fr)]">
-                      <h3 className="text-base font-semibold leading-snug text-slate-950">{title}</h3>
-                      <p className="text-base leading-relaxed text-slate-600">{body}</p>
-                    </article>
+              </div>
+              <div className="pt-5">
+                <div className="space-y-4">
+                  {timeline.map(([year, role, org]) => (
+                    <div key={`${year}-${role}`} className="grid grid-cols-[58px_minmax(0,1fr)] gap-4">
+                      <span className="font-mono text-xs text-slate-400">{year}</span>
+                      <div>
+                        <p className="text-sm font-semibold text-[#061b31]">{role}</p>
+                        <p className="text-sm text-slate-500">{org}</p>
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
-            </section>
+            </aside>
+          </div>
+        </section>
 
-            <section id="work" className="scroll-mt-24 border-b border-slate-200 py-16">
-              <SectionTitle icon={<Users className="h-5 w-5" />} title="My Work" eyebrow="Focus Areas" />
-              <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
-                {workOnItems.map(([title, description], index) => (
-                  <div key={title} className="bg-slate-50 p-6">
-                    <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-md border border-slate-200 text-blue-700">{[<Zap key="0" />, <Activity key="1" />, <Database key="2" />, <Users key="3" />][index]}</div>
-                    <h3 className="text-xl font-semibold text-slate-950">{title}</h3>
-                    <p className="mt-3 leading-relaxed text-slate-600">{description}</p>
-                  </div>
-                ))}
+        <section className="border-y border-[#e5edf5] bg-[#f6f9fc]">
+          <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-[#e5edf5] px-0 sm:grid-cols-4">
+            {impactStats.map(([value, label]) => (
+              <div key={label} className="bg-[#f6f9fc] p-6 sm:p-8">
+                <div className="text-4xl font-light tracking-normal text-[#061b31]">{value}</div>
+                <p className="mt-3 text-sm leading-6 text-slate-600">{label}</p>
               </div>
-            </section>
+            ))}
+          </div>
+        </section>
 
-            <section className="border-b border-slate-200 py-16">
-              <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-                <SectionTitle icon={<Code className="h-5 w-5" />} title="Selected Projects" eyebrow="Built Things" />
-                <a href="/proof/" className="inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">View all <ChevronRight size={16} /></a>
+        <section id="record" className="mx-auto max-w-7xl px-5 py-20 sm:px-8">
+          <SectionHeader
+            eyebrow="Public record"
+            title="A few links behind the work."
+            body="Some of the public trail: first-party profiles, Syracuse University Libraries, Government Technology, Google Scholar, GitHub, Medium, and this site."
+          />
+          <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-[#e5edf5] bg-[#e5edf5] lg:grid-cols-4">
+            {publicRecord.map((item) => (
+              <a key={item.title} href={item.href} {...externalLinkProps} className="group flex min-h-[310px] flex-col bg-white p-6 transition hover:bg-[#f6f9fc]">
+                <div className="flex h-10 w-10 items-center justify-center rounded border border-[#d6d9fc] text-[#533afd]">{item.icon}</div>
+                <p className="mt-6 text-xs font-semibold uppercase tracking-[0.18em] text-[#533afd]">{item.label}</p>
+                <h3 className="mt-3 text-xl font-light leading-7 tracking-normal text-[#061b31]">{item.title}</h3>
+                <p className="mt-4 flex-1 text-sm leading-6 text-slate-600">{item.body}</p>
+                <span className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-[#533afd]">{item.source} <ArrowUpRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" /></span>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <section id="work" className="bg-[#1c1e54] text-white">
+          <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8">
+            <div className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b9b9f9]">Operating range</p>
+                <h2 className="mt-3 text-4xl font-light tracking-normal text-white sm:text-5xl">Making data and AI useful in real work.</h2>
+                <p className="mt-5 text-lg font-light leading-8 text-white/70">
+                  Across city government, consulting, and private-market enterprise work, the pattern is the same: turn fragmented data and emerging technology into durable systems people understand, trust, and use.
+                </p>
+                <div className="mt-7 flex flex-wrap gap-2">
+                  <Pill tone="dark">Governance</Pill>
+                  <Pill tone="dark">Platforms</Pill>
+                  <Pill tone="dark">Workflow design</Pill>
+                  <Pill tone="dark">Public artifacts</Pill>
+                </div>
               </div>
-              <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
-                {featuredCaseStudies.map((study) => (
-                  <article key={study.slug} className="bg-slate-50">
-                    {study.image && <img src={study.image} alt={study.imageAlt} className="h-48 w-full object-cover" />}
-                    <div className="p-6">
-                      <h3 className="text-xl font-semibold text-slate-950">{study.title}</h3>
-                      <p className="mt-3 text-sm leading-relaxed text-slate-600">{study.blurb}</p>
-                      <a href={`/proof/${study.slug}/`} className="mt-6 inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">Read more <ArrowUpRight size={14} /></a>
-                    </div>
+              <div className="grid gap-px overflow-hidden rounded-lg border border-white/15 bg-white/15 sm:grid-cols-2">
+                {workThemes.map((item) => (
+                  <article key={item.title} className="bg-[#1c1e54] p-6">
+                    <div className="flex h-10 w-10 items-center justify-center rounded border border-white/20 text-[#b9b9f9]">{item.icon}</div>
+                    <h3 className="mt-5 text-xl font-light tracking-normal text-white">{item.title}</h3>
+                    <p className="mt-3 text-sm leading-6 text-white/65">{item.body}</p>
                   </article>
                 ))}
               </div>
-            </section>
-
-            <div className="grid grid-cols-1 gap-12 border-b border-slate-200 py-16 lg:grid-cols-[minmax(0,1.6fr)_minmax(280px,0.8fr)]">
-              <section id="experience" className="scroll-mt-24">
-                <SectionTitle icon={<Briefcase className="h-5 w-5" />} title="Experience" eyebrow="Background" />
-                <div className="divide-y divide-slate-200 border-y border-slate-200">
-                  {experience.map((exp) => (
-                    <div key={exp.role} className="grid grid-cols-1 gap-4 py-6 md:grid-cols-[150px_minmax(0,1fr)]">
-                      <div>
-                        <span className="text-xs font-bold uppercase tracking-[0.14em] text-blue-700">{exp.period}</span>
-                      </div>
-                      <div>
-                        <div className="flex items-center gap-2"><span className="text-slate-500">{exp.icon}</span><h3 className="text-xl font-semibold text-slate-950">{exp.role}</h3></div>
-                        <p className="mt-1 font-medium text-slate-700">{exp.company}</p>
-                        <p className="mt-3 leading-relaxed text-slate-600">{exp.description}</p>
-                        <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                          {exp.bullets.map((bullet) => (
-                            <li key={bullet} className="flex items-start gap-2">
-                              <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-blue-700" />
-                              <span>{bullet}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-              <aside>
-                <SectionTitle icon={<Award className="h-5 w-5" />} title="Civic Leadership" eyebrow="Boards" compact />
-                <ul className="divide-y divide-slate-200 border border-slate-200 bg-slate-50">
-                  {leadershipRoles.map(([org, role]) => (
-                    <li key={org} className="p-5">
-                      <h4 className="text-sm font-bold text-slate-950">{org}</h4>
-                      <p className="mt-1 text-sm text-slate-600">{role}</p>
-                    </li>
-                  ))}
-                </ul>
-              </aside>
             </div>
-
-            <section id="writing" className="scroll-mt-24 border-b border-slate-200 py-16">
-              <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-                <SectionTitle icon={<BookOpen className="h-5 w-5" />} title="Selected Writing" eyebrow="Point of View" />
-                <a href="https://medium.com/@samedelstein" {...externalLinkProps} className="inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">All Posts <ChevronRight size={16} /></a>
-              </div>
-              <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
-                {blogPosts.map((post) => (
-                  <a key={post.link} href={post.link} {...externalLinkProps} className="group block bg-slate-50 p-6 transition-colors hover:bg-white">
-                    <span className="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">{post.date}</span>
-                    <h3 className="mt-3 text-xl font-semibold text-slate-950 group-hover:text-blue-700">{post.title}</h3>
-                    <p className="mt-3 leading-relaxed text-slate-600">{post.excerpt}</p>
-                  </a>
-                ))}
-              </div>
-            </section>
-
-            <section id="press" className="scroll-mt-24 border-b border-slate-200 py-16">
-              <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(280px,0.8fr)]">
-                <div>
-                  <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-                    <SectionTitle icon={<Activity className="h-5 w-5" />} title="Press & Media" eyebrow="Selected Coverage" />
-                    <input type="text" placeholder="Search press..." className="h-10 w-full rounded-md border border-slate-200 bg-slate-50 px-3 text-sm text-slate-700 outline-none focus:border-blue-700 md:w-48" onChange={(event) => setPressSearch(event.target.value)} />
-                  </div>
-                  <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 sm:grid-cols-2">
-                    {filteredPress.map((item) => (
-                      <a key={item.url} href={item.url} {...externalLinkProps} className="flex min-h-36 flex-col justify-between bg-slate-50 p-5 transition-colors hover:bg-white">
-                        <div>
-                          <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-blue-700">{item.outlet}</span>
-                          <h4 className="mt-2 text-sm font-semibold leading-snug text-slate-900">{item.title}</h4>
-                        </div>
-                        <ArrowUpRight size={15} className="mt-5 text-slate-500" />
-                      </a>
-                    ))}
-                  </div>
-                </div>
-                <div>
-                  <SectionTitle icon={<BookOpen className="h-5 w-5" />} title="Speaking" eyebrow="Talks" />
-                  <div className="divide-y divide-slate-200 border border-slate-200 bg-slate-50">
-                    {speakingLinks.map((item) => (
-                      <a key={item.url} href={item.url} {...externalLinkProps} className="block p-5 transition-colors hover:bg-white">
-                        <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-blue-700">{item.outlet}</span>
-                        <span className="mt-2 block text-sm font-semibold leading-snug text-slate-900">{item.title}</span>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </section>
-          </main>
-
-          <section id="contact" className="scroll-mt-24 bg-slate-950 text-white">
-            <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-5 py-12 md:px-6 lg:grid-cols-[minmax(0,1.3fr)_minmax(280px,0.7fr)] lg:py-16">
-              <div>
-                <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">Contact</p>
-                <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight md:text-5xl">Conversations about data, AI, and useful public-minded technology.</h2>
-                <p className="mt-5 max-w-2xl leading-relaxed text-slate-300">I welcome thoughtful notes about data work, AI adoption, civic technology, libraries, teaching, and practical ways to make complex systems easier to use.</p>
-              </div>
-              <div className="grid content-start gap-3">
-                <a href={executiveMailto} className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-950 transition-colors hover:bg-blue-100"><Mail size={16} /><span>Email Sam</span></a>
-                <a href="mailto:sam.i.edelstein@gmail.com" className="text-center text-sm font-medium text-blue-100 underline-offset-4 hover:text-white hover:underline">sam.i.edelstein@gmail.com</a>
-                <a href="https://www.linkedin.com/in/samedelstein" {...externalLinkProps} className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Linkedin size={16} /><span>LinkedIn</span></a>
-                <a href={resumePdfUrl} download className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Download Resume</span></a>
-                <a href="/executive-brief/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Brief</span></a>
-                <a href="/roles/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Target size={16} /><span>Work Themes</span></a>
-                <a href="/skills/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Zap size={16} /><span>Skills</span></a>
-                <a href="/proof/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Award size={16} /><span>Selected Work</span></a>
-                <a href="/executive-brief.txt" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><ExternalLink size={16} /><span>Plain Text Brief</span></a>
-                <a href="/sam-edelstein.vcf" download className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Download size={16} /><span>Save Contact</span></a>
-                <a href="/resume/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><ExternalLink size={16} /><span>Resume Page</span></a>
-              </div>
-            </div>
-          </section>
-
-          <footer className="bg-slate-950 px-6 pb-10 text-center text-sm text-slate-500">(c) {new Date().getFullYear()} Sam Edelstein</footer>
-        </>
-      )}
-
-      {route.page === 'case-studies' && (
-        <main className="max-w-5xl mx-auto px-5 md:px-6 pt-32 pb-20">
-          <section className="mb-12 border-y border-slate-200 py-10">
-            <span className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-700">Case Studies</span>
-            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-slate-950 mt-4 mb-4">Case Studies</h1>
-            <p className="text-lg text-slate-600 leading-relaxed max-w-3xl">Selected examples of turning data, analytics, and AI strategy into governed platforms, adopted workflows, and measurable operational impact.</p>
-          </section>
-          <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
-            {orderedCaseStudies.map((study) => (
-              <div key={study.slug} className="bg-slate-50 p-6 transition-colors hover:bg-white">
-                <h2 className="text-xl font-semibold text-slate-950 mb-3">{study.title}</h2>
-                <p className="text-slate-600 mb-6 leading-relaxed text-sm">{study.blurb}</p>
-                <a href={`/proof/${study.slug}/`} className="inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">Read record <ArrowUpRight size={14} /></a>
-              </div>
-            ))}
           </div>
-        </main>
-      )}
+        </section>
 
-      {route.page === 'resume' && (
-        <main className="max-w-4xl mx-auto px-5 md:px-6 pt-32 pb-24">
-          <section className="mb-12 border-y border-slate-200 py-10">
-            <span className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-700">Resume</span>
-            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-slate-950 mt-4 mb-4">Sam Edelstein</h1>
-            <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">Download the current PDF resume or use the plain text version for a quick scan.</p>
-          </section>
-          <div className="flex flex-wrap gap-3">
-            <a href={executiveMailto} className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-slate-950 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:bg-blue-700"><Mail size={18} /><span>Email Sam</span></a>
-            <a href={resumePdfUrl} download className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-slate-300 bg-slate-50 px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700"><FileText size={18} /><span>Download PDF</span></a>
-            <a href="/sam-edelstein-resume.txt" className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-slate-300 bg-slate-50 px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700"><ExternalLink size={18} /><span>Plain Text</span></a>
-          </div>
-        </main>
-      )}
-
-      {route.page === 'executive-brief' && (
-        <main className="mx-auto w-full max-w-[350px] px-5 pt-32 pb-24 sm:max-w-5xl md:px-6">
-          <section className="mb-10 border-y border-slate-200 py-10">
-            <span className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-700">Brief</span>
-            <h1 className="mt-4 max-w-full break-words text-4xl font-semibold tracking-tight text-slate-950 md:max-w-4xl md:text-6xl">Sam Edelstein: Data &amp; AI brief.</h1>
-            <p className="mt-5 max-w-full break-words text-lg leading-relaxed text-slate-600 md:max-w-3xl">A concise summary of work themes, selected projects, background, and contact details.</p>
-          </section>
-
-          <section className="grid grid-cols-1 gap-8 border-b border-slate-200 pb-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(300px,0.8fr)]">
-            <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
-              {leadershipFocus.map((role) => (
-                <a key={role.label} href={role.href} className="bg-slate-50 p-5 transition-colors hover:bg-white">
-                  <h2 className="text-base font-semibold text-slate-950">{role.label}</h2>
-                  <p className="mt-3 break-words text-sm leading-relaxed text-slate-600">{role.body}</p>
+        <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8">
+          <div className="grid gap-12 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
+            <SectionHeader
+              eyebrow="Selected work"
+              title="A few projects I&apos;m proud of."
+              body="The connective tissue is data work that people can understand and actually use: in city government, enterprise teams, teaching, and civic institutions."
+            />
+            <div className="space-y-4">
+              {selectedWork.map((item) => (
+                <a key={item.title} href={item.href} className="group grid gap-4 rounded-lg border border-[#e5edf5] bg-white p-6 shadow-[rgba(23,23,23,0.06)_0px_3px_6px] transition hover:border-[#b9b9f9] hover:shadow-[rgba(50,50,93,0.25)_0px_30px_45px_-30px,rgba(0,0,0,0.1)_0px_18px_36px_-18px] sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
+                  <div>
+                    <h3 className="text-2xl font-light tracking-normal text-[#061b31]">{item.title}</h3>
+                    <p className="mt-2 text-base leading-7 text-slate-600">{item.body}</p>
+                  </div>
+                  <ArrowUpRight className="h-5 w-5 text-[#533afd] transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </a>
               ))}
             </div>
-            <aside className="border border-slate-950 bg-slate-950 p-6 text-white">
-              <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">Current Scope</p>
-              <p className="mt-4 break-words text-lg leading-relaxed text-slate-100">Senior Vice President, Data &amp; AI at Insight Partners. Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.</p>
-              <div className="mt-6 grid gap-3">
-                <a href={executiveMailto} className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-950 transition-colors hover:bg-blue-100"><Mail size={16} /><span>Email Sam</span></a>
-                <a href={resumePdfUrl} download className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Download size={16} /><span>Resume PDF</span></a>
-                <a href="/executive-brief.txt" className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Plain Text Brief</span></a>
-                <a href="/sam-edelstein.vcf" download className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Download size={16} /><span>Save Contact</span></a>
-              </div>
-            </aside>
-          </section>
+          </div>
+        </section>
 
-          <section className="border-b border-slate-200 py-12">
-            <SectionTitle icon={<BarChart3 className="h-5 w-5" />} title="Quick Scan" eyebrow="Fast Scan" compact />
-            <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-4">
-              {impactStats.map(([value, label]) => (
-                <div key={label} className="bg-white p-5">
-                  <div className="text-3xl font-semibold tracking-tight text-slate-950">{value}</div>
-                  <p className="mt-3 text-sm leading-relaxed text-slate-600">{label}</p>
-                </div>
+        <section id="writing" className="border-y border-[#e5edf5] bg-[#f6f9fc]">
+          <div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 sm:px-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
+            <SectionHeader
+              eyebrow="Point of view"
+              title="Writing that connects AI readiness back to real operating work."
+              body="The public writing matters because it shows how the same CDO instincts translate into the AI era: access, interoperability, usefulness, and adoption."
+            />
+            <div className="grid gap-px overflow-hidden rounded-lg border border-[#e5edf5] bg-[#e5edf5] md:grid-cols-2">
+              {writing.map((post) => (
+                <a key={post.title} href={post.href} {...externalLinkProps} className="group bg-white p-6 transition hover:bg-[#f6f9fc]">
+                  <BookOpen className="h-5 w-5 text-[#533afd]" />
+                  <h3 className="mt-5 text-xl font-light leading-7 tracking-normal text-[#061b31]">{post.title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-slate-600">{post.body}</p>
+                  <span className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-[#533afd]">Read on Medium <ArrowUpRight className="h-3.5 w-3.5" /></span>
+                </a>
               ))}
             </div>
-          </section>
+          </div>
+        </section>
 
-          <section className="grid grid-cols-1 gap-8 border-b border-slate-200 py-12 lg:grid-cols-2">
-            <div>
-              <SectionTitle icon={<CheckCircle2 className="h-5 w-5" />} title="Why Connect" eyebrow="Leadership Signals" compact />
-              <ul className="divide-y divide-slate-200 border border-slate-200 bg-slate-50">
-                {leadershipReasons.map((reason) => (
-                  <li key={reason} className="flex items-start gap-3 p-4">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-blue-700" />
-                    <span className="text-sm font-medium leading-relaxed text-slate-800">{reason}</span>
-                  </li>
+        <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8">
+          <div className="rounded-lg border border-[#061b31] bg-[#061b31] p-8 text-white shadow-[rgba(50,50,93,0.25)_0px_30px_45px_-30px,rgba(0,0,0,0.1)_0px_18px_36px_-18px] sm:p-10 lg:p-12">
+            <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(300px,0.55fr)] lg:items-end">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b9b9f9]">Through line</p>
+                <h2 className="mt-3 max-w-4xl text-4xl font-light leading-tight tracking-normal sm:text-5xl">
+                  Useful systems, not theater.
+                </h2>
+                <p className="mt-5 max-w-3xl text-lg font-light leading-8 text-white/70">
+                  The work I like most makes complex systems easier to see, explain, govern, and improve.
+                </p>
+              </div>
+              <ul className="space-y-3 text-sm text-white/75">
+                {['Enterprise AI strategy', 'Data governance and platforms', 'Public-sector data credibility', 'Hands-on civic data experimentation'].map((item) => (
+                  <li key={item} className="flex items-start gap-3"><CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-[#b9b9f9]" /> {item}</li>
                 ))}
               </ul>
             </div>
-            <div>
-              <SectionTitle icon={<Briefcase className="h-5 w-5" />} title="Selected Projects" eyebrow="Work" compact />
-              <div className="divide-y divide-slate-200 border border-slate-200 bg-slate-50">
-                {featuredCaseStudies.map((study) => (
-                <a key={study.slug} href={`/proof/${study.slug}/`} className="block p-5 transition-colors hover:bg-white">
-                    <h3 className="text-base font-semibold text-slate-950">{study.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-slate-600">{study.blurb}</p>
-                  </a>
-                ))}
-              </div>
-            </div>
-          </section>
+          </div>
+        </section>
+      </main>
 
-          <section className="pt-12">
-            <SectionTitle icon={<Users className="h-5 w-5" />} title="Operating Range" eyebrow="Capabilities" compact />
-            <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-3">
-              {competencies.map(([title, body]) => (
-                <div key={title} className="bg-white p-5">
-                  <h3 className="text-sm font-bold uppercase tracking-[0.12em] text-slate-950">{title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-slate-600">{body}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-        </main>
-      )}
-
-      {route.page === 'case-study' && (
-        <main className="max-w-3xl mx-auto px-5 md:px-6 pt-32 pb-24">
-          {activeCaseStudy ? (
-            <>
-              <div className="mb-10 border-y border-slate-200 py-10">
-                <a href="/proof/" className="inline-flex items-center text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950"><ChevronRight size={16} className="rotate-180" /> Back to proof</a>
-                <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-slate-950 mt-4">{activeCaseStudy.title}</h1>
-                <p className="text-lg text-slate-600 mt-4 leading-relaxed">{activeCaseStudy.blurb}</p>
-              </div>
-              <div className="divide-y divide-slate-200 border-y border-slate-200">
-                <div className="py-7"><h2 className="text-xl font-semibold mb-2">Problem</h2><p className="text-slate-600 leading-relaxed">{activeCaseStudy.problem}</p></div>
-                <div className="py-7"><h2 className="text-xl font-semibold mb-2">Role</h2><p className="text-slate-600 leading-relaxed">{activeCaseStudy.role}</p></div>
-                <div className="py-7"><h2 className="text-xl font-semibold mb-2">What shipped</h2><ul className="list-disc list-inside text-slate-600 space-y-2">{activeCaseStudy.shipped.map((item) => <li key={item}>{item}</li>)}</ul></div>
-                <div className="py-7"><h2 className="text-xl font-semibold mb-2">Impact</h2><ul className="list-disc list-inside text-slate-600 space-y-2">{activeCaseStudy.impact.map((item) => <li key={item}>{item}</li>)}</ul></div>
-                <div>
-                  <h2 className="text-xl font-semibold mb-2 pt-7">Links</h2>
-                  {activeCaseStudy.links.length > 0 ? <ul className="space-y-2 pb-7">{activeCaseStudy.links.map((link) => <li key={link.url}><a href={link.url} {...externalLinkProps} className="inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">{link.label} <ArrowUpRight size={14} /></a></li>)}</ul> : <p className="text-slate-600 pb-7">Details helpful in conversation.</p>}
-                </div>
-              </div>
-            </>
-          ) : (
-            <div className="border border-slate-200 bg-slate-50 p-8 text-center">
-              <h1 className="text-2xl font-semibold text-slate-950 mb-2">Case study not found</h1>
-              <p className="text-slate-600 mb-6">The requested case study could not be found.</p>
-              <a href="/proof/" className="text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">Back to proof</a>
-            </div>
-          )}
-        </main>
-      )}
+      <footer id="contact" className="border-t border-[#e5edf5] bg-white">
+        <div className="mx-auto grid max-w-7xl gap-8 px-5 py-12 sm:px-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#533afd]">Contact</p>
+            <h2 className="mt-3 text-3xl font-light tracking-normal text-[#061b31]">Data, AI, civic technology, libraries, or Syracuse datasets?</h2>
+            <p className="mt-3 text-slate-600">Reach out for thoughtful conversations about useful systems, governed adoption, and public-minded technology.</p>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <a href={contactMailto} className="inline-flex h-12 items-center justify-center gap-2 rounded bg-[#533afd] px-5 text-base font-medium text-white transition hover:bg-[#4434d4]"><Mail className="h-4 w-4" /> Email Sam</a>
+            <a href="https://www.linkedin.com/in/samedelstein" {...externalLinkProps} className="inline-flex h-12 items-center justify-center gap-2 rounded border border-[#b9b9f9] bg-white px-5 text-base font-medium text-[#533afd] transition hover:bg-indigo-50"><Linkedin className="h-4 w-4" /> LinkedIn</a>
+            <a href="https://github.com/samedelstein" {...externalLinkProps} className="inline-flex h-12 items-center justify-center gap-2 rounded border border-[#b9b9f9] bg-white px-5 text-base font-medium text-[#533afd] transition hover:bg-indigo-50"><Github className="h-4 w-4" /> GitHub</a>
+          </div>
+        </div>
+        <div className="border-t border-[#e5edf5] px-5 py-6 text-center text-sm text-slate-400">(c) {new Date().getFullYear()} Sam Edelstein</div>
+      </footer>
     </div>
   );
-};
+}
 
 export default App;
+
+

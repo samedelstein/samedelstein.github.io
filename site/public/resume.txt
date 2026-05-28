@@ -16,7 +16,7 @@ Target Roles
 - Measurable operating change
 
 Executive Summary
-Data & AI executive focused on turning AI ambition into operating capability. Leads enterprise AI strategy, governed data foundations, AI enablement, scaled adoption, and operating model design. Best fit for executive scopes where AI strategy, trusted data, governance, adoption, platform modernization, and measurable business value all matter.
+Data and AI work focused on practical adoption, governed data foundations, civic technology, and useful operating systems. Useful for work where AI strategy, trusted data, governance, adoption, platform modernization, and measurable business value all matter.
 
 Current Role
 Senior Vice President, Data & AI, Insight Partners, 2021-Present

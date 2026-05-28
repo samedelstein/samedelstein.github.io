@@ -30,7 +30,7 @@ Work themes:
 - Measurable operating change
 
 Positioning:
-Sam Edelstein is a Data & AI executive focused on turning AI ambition into operating capability. He leads enterprise AI strategy, AI transformation, governed data foundations, AI enablement, scaled adoption, and operating model design.
+Sam Edelstein is a Data & AI focused on making AI useful in real work. He leads enterprise AI strategy, AI adoption, governed data foundations, AI enablement, scaled adoption, and operating model design.
 
 Current role:
 Senior Vice President, Data & AI at Insight Partners. Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.
@@ -44,7 +44,7 @@ Leadership signals:
 
 Core strengths:
 - Enterprise AI strategy and roadmaps
-- Executive AI transformation
+- AI adoption
 - AI operating model design
 - AI readiness and responsible adoption
 - AI governance, assurance, and adoption
