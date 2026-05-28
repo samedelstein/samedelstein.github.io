@@ -1,6 +1,7 @@
 Sam Edelstein - Enterprise Data & AI
 
 Website: https://samedelstein.com/
+Now: https://samedelstein.com/now/
 Background: https://samedelstein.com/brief/
 Structured profile JSON: https://samedelstein.com/profile.json
 Skills and tools and topics: https://samedelstein.com/skills/
@@ -23,6 +24,9 @@ Work themes:
 
 Summary:
 Sam Edelstein works on enterprise Data & AI, with a focus on governed data foundations, useful AI workflows, and tools that help teams use information well.
+
+Now:
+Most day-to-day work is enterprise Data & AI at Insight Partners. Around the edges, Sam still follows public data, Syracuse, libraries, and small tools that make messy information easier to use.
 
 Current role:
 Senior Vice President, Data & AI at Insight Partners. Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.
