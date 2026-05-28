@@ -2,7 +2,7 @@ Sam Edelstein - Data & AI leader
 
 Website: https://samedelstein.com/
 Brief: https://samedelstein.com/executive-brief/
-Structured brief JSON: https://samedelstein.com/profile.json
+Structured profile JSON: https://samedelstein.com/profile.json
 Work themes: https://samedelstein.com/roles/
 Governed data foundations: https://samedelstein.com/roles/chief-data-officer/
 Applied AI operating models: https://samedelstein.com/roles/vp-data-ai/
