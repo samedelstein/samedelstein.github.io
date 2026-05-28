@@ -4,7 +4,7 @@
   "name": "Sam Edelstein Profile",
   "url": "https://samedelstein.com/profile.json",
   "dateModified": "2026-05-28",
-  "description": "Structured profile for Sam Edelstein, focused on enterprise Data & AI work, practical adoption, governed data foundations, and civic technology background.",
+  "description": "Structured profile for Sam Edelstein, focused on enterprise Data & AI work at Insight Partners, practical adoption, governed data foundations, and civic technology background.",
   "mainEntity": {
     "@type": "Person",
     "name": "Sam Edelstein",

@@ -58,7 +58,7 @@ const publicRecord = [
   {
     label: 'Public artifacts',
     title: 'Applied ML, open-source civic tooling, and local data products',
-    body: 'GitHub, DataCuse, Medium, and cited public work show the same pattern: make data useful, public, and explainable.',
+    body: 'GitHub, DataCuse, Medium, and cited public work show the same habit: make data useful, legible, and explainable.',
     href: 'https://github.com/samedelstein',
     source: 'GitHub / DataCuse / Medium',
     icon: <Github className="h-5 w-5" />,
@@ -85,7 +85,7 @@ const workThemes = [
   },
   {
     title: 'Civic data background',
-    body: 'A public-sector foundation in open data, service delivery, infrastructure analytics, and public dashboards.',
+    body: 'A public-sector background in open data, service delivery, infrastructure analytics, and public dashboards.',
     icon: <Building2 className="h-5 w-5" />,
   },
   {
@@ -108,7 +108,7 @@ const selectedWork = [
   },
   {
     title: 'Enterprise AI enablement',
-    body: 'Confidential enterprise work focused on scaling useful AI adoption while keeping governance and trust close to delivery.',
+    body: 'Confidential enterprise work focused on scaling useful AI adoption without letting governance drift away from delivery.',
     href: '/proof/enterprise-ai-enablement-at-scale/',
   },
 ];
@@ -185,7 +185,7 @@ function App() {
                 Hi, I&apos;m Sam. I work on enterprise data and AI.
               </h1>
               <p className="mt-7 max-w-3xl text-xl font-light leading-8 text-slate-600 sm:text-2xl sm:leading-9">
-                I lead Data &amp; AI work at Insight Partners, focused on practical adoption, governed data foundations, and tools that help teams use information well. Earlier, I was the City of Syracuse&apos;s first Chief Data Officer, where I helped build the city&apos;s first data office, open data policy, DataCuse portal, and civic analytics work.
+                At Insight Partners, I work across investment, HR, compliance, finance, and operations on AI enablement, data foundations, governance, and tools people actually use. Before that, I was Syracuse&apos;s first Chief Data Officer; that work still shapes how I think about public accountability, messy systems, and practical analytics.
               </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <a href={contactMailto} className="inline-flex h-12 items-center justify-center gap-2 rounded bg-[#533afd] px-5 text-base font-medium text-white shadow-[rgba(50,50,93,0.25)_0px_30px_45px_-30px,rgba(0,0,0,0.1)_0px_18px_36px_-18px] transition hover:bg-[#4434d4]"><Mail className="h-4 w-4" /> Email Sam</a>
@@ -282,7 +282,7 @@ function App() {
             <SectionHeader
               eyebrow="Selected work"
               title="A few projects I&apos;m proud of."
-              body="The connective tissue is data work that people can understand and actually use: in enterprise teams, city government, teaching, and civic institutions."
+              body="What I like about these projects is that they had to work for real people: enterprise teams, city staff, public officials, residents, students, and civic institutions."
             />
             <div className="space-y-4">
               {selectedWork.map((item) => (
