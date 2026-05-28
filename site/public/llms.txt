@@ -1,6 +1,6 @@
 # Sam Edelstein
 
-Sam Edelstein works on data, AI, civic technology, open data, analytics, and public-service-minded technology from Syracuse, New York.
+Sam Edelstein works on enterprise data and AI, with a public-sector foundation in open data, analytics, and civic technology.
 
 Primary site: https://samedelstein.com/
 Brief: https://samedelstein.com/executive-brief/
@@ -24,7 +24,7 @@ vCard: https://samedelstein.com/sam-edelstein.vcf
 Contact: sam.i.edelstein@gmail.com
 LinkedIn: https://www.linkedin.com/in/samedelstein
 
-Work themes include open data, civic analytics, enterprise data and AI, data governance, AI adoption, teaching, and civic technology.
+Work themes include enterprise data and AI, data governance, AI adoption, open data, civic analytics, teaching, and civic technology.
 
 Relevant work themes include enterprise AI strategy, AI adoption, AI governance, data platform strategy, data product leadership, open data, civic technology, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, and APIs.
 

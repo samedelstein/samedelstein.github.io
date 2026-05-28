@@ -40,9 +40,9 @@ const publicRecord = [
     icon: <BriefcaseIcon />,
   },
   {
-    label: 'Civic institution builder',
-    title: 'Syracuse Chief Data Officer and DataCuse founder',
-    body: "Syracuse University Libraries cites the city's first open data policy, data privacy policy, Open Data Portal - DataCuse, and performance management office.",
+    label: 'Civic record',
+    title: 'Syracuse data office and DataCuse',
+    body: "Syracuse University Libraries notes the city's first open data policy, data privacy policy, Open Data Portal - DataCuse, and performance management office.",
     href: 'https://library.syracuse.edu/news/syracuse-surge-the-path-to-becoming-a-smart-city-with-su-alum-sam-edelstein/',
     source: 'Syracuse University Libraries',
     icon: <Landmark className="h-5 w-5" />,
@@ -84,8 +84,8 @@ const workThemes = [
     icon: <Database className="h-5 w-5" />,
   },
   {
-    title: 'Civic data institutions',
-    body: 'Building public data programs that residents, reporters, researchers, and staff can actually use, from DataCuse to public dashboards.',
+    title: 'Civic data background',
+    body: 'A public-sector foundation in open data, service delivery, infrastructure analytics, and public dashboards.',
     icon: <Building2 className="h-5 w-5" />,
   },
   {
@@ -255,7 +255,7 @@ function App() {
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b9b9f9]">Operating range</p>
                 <h2 className="mt-3 text-4xl font-light tracking-normal text-white sm:text-5xl">Making data and AI useful in real work.</h2>
                 <p className="mt-5 text-lg font-light leading-8 text-white/70">
-                  Across city government, consulting, and private-market enterprise work, the pattern is the same: turn fragmented data and emerging technology into durable systems people understand, trust, and use.
+                  Across city government, consulting, and private-market enterprise work, the pattern is the same: turn fragmented data and emerging technology into durable systems people understand and use.
                 </p>
                 <div className="mt-7 flex flex-wrap gap-2">
                   <Pill tone="dark">Governance</Pill>
@@ -282,7 +282,7 @@ function App() {
             <SectionHeader
               eyebrow="Selected work"
               title="A few projects I&apos;m proud of."
-              body="The connective tissue is data work that people can understand and actually use: in city government, enterprise teams, teaching, and civic institutions."
+              body="The connective tissue is data work that people can understand and actually use: in enterprise teams, city government, teaching, and civic institutions."
             />
             <div className="space-y-4">
               {selectedWork.map((item) => (
