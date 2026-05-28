@@ -56,10 +56,26 @@ const impactStats = [
 ];
 
 const targetRoles = [
-  ['Chief Data Officer', 'Own enterprise data strategy, governance, and measurable business value.'],
-  ['VP / Head of Data & AI', 'Build and scale Data & AI organizations that deliver consistent impact.'],
-  ['Head of AI Enablement', 'Drive adoption, capability building, and change at enterprise scale.'],
-  ['Data Platform Strategy', 'Design modern data foundations that are secure, governed, and built for AI.'],
+  {
+    label: 'Chief Data Officer',
+    body: 'Own enterprise data strategy, governance, and measurable business value.',
+    href: '/roles/chief-data-officer/',
+  },
+  {
+    label: 'VP / Head of Data & AI',
+    body: 'Build and scale Data & AI organizations that deliver consistent impact.',
+    href: '/roles/vp-data-ai/',
+  },
+  {
+    label: 'Head of AI Enablement',
+    body: 'Drive adoption, capability building, and change at enterprise scale.',
+    href: '/roles/head-of-ai-enablement/',
+  },
+  {
+    label: 'Data Platform Strategy',
+    body: 'Design modern data foundations that are secure, governed, and built for AI.',
+    href: '/roles/data-platform-strategy/',
+  },
 ];
 
 const recruiterReasons = [
@@ -346,14 +362,14 @@ const App = () => {
                     <h2 className="mt-2 text-2xl font-semibold tracking-tight">Roles recruiters should call about</h2>
                   </div>
                   <div className="divide-y divide-white/15">
-                    {targetRoles.map(([label, body]) => (
-                      <div key={label} className="grid grid-cols-[46px_minmax(0,1fr)] gap-4 px-5 py-5">
+                    {targetRoles.map((role) => (
+                      <a key={role.label} href={role.href} className="grid grid-cols-[46px_minmax(0,1fr)] gap-4 px-5 py-5 transition-colors hover:bg-white/5">
                         <span className="flex h-10 w-10 items-center justify-center rounded-md border border-white/15 text-blue-200"><Target size={18} /></span>
                         <div className="min-w-0">
-                        <h3 className="text-sm font-semibold text-white">{label}</h3>
-                        <p className="text-sm leading-relaxed text-slate-100">{body}</p>
+                        <h3 className="text-sm font-semibold text-white">{role.label}</h3>
+                        <p className="text-sm leading-relaxed text-slate-100">{role.body}</p>
                         </div>
-                      </div>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -603,11 +619,11 @@ const App = () => {
 
           <section className="grid grid-cols-1 gap-8 border-b border-slate-200 pb-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(300px,0.8fr)]">
             <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
-              {targetRoles.map(([title, body]) => (
-                <div key={title} className="bg-slate-50 p-5">
-                  <h2 className="text-base font-semibold text-slate-950">{title}</h2>
-                  <p className="mt-3 break-words text-sm leading-relaxed text-slate-600">{body}</p>
-                </div>
+              {targetRoles.map((role) => (
+                <a key={role.label} href={role.href} className="bg-slate-50 p-5 transition-colors hover:bg-white">
+                  <h2 className="text-base font-semibold text-slate-950">{role.label}</h2>
+                  <p className="mt-3 break-words text-sm leading-relaxed text-slate-600">{role.body}</p>
+                </a>
               ))}
             </div>
             <aside className="border border-slate-950 bg-slate-950 p-6 text-white">
