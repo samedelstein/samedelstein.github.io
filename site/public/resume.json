@@ -5,7 +5,7 @@
     "label": "Enterprise Data & AI",
     "email": "sam.i.edelstein@gmail.com",
     "url": "https://samedelstein.com/",
-    "summary": "Data and AI work focused on practical adoption, governed data foundations, useful tools and workflows, and public data background.",
+    "summary": "Data and AI work focused on governed data foundations, useful AI workflows, practical tools, and public data background.",
     "location": {
       "city": "Syracuse",
       "region": "New York",
@@ -42,12 +42,12 @@
   },
   "workThemes": [
     "Governed data foundations",
-    "Practical AI adoption",
+    "Useful AI workflows",
     "Enterprise data and AI",
     "Public data background",
     "Useful public-minded tools"
   ],
-  "workScope": "Work involving enterprise AI strategy, data foundations, governance, and practical adoption.",
+  "workScope": "Work involving enterprise AI strategy, data foundations, governance, data readiness, and useful AI workflows.",
   "work": [
     {
       "name": "Insight Partners",
@@ -112,9 +112,9 @@
       "name": "Leadership and Strategy",
       "keywords": [
         "Enterprise AI strategy",
-        "Practical adoption",
+        "AI workflow design",
         "Enterprise data and AI",
-        "AI enablement",
+        "AI workflow design",
         "AI adoption",
         "AI readiness",
         "Data product leadership",

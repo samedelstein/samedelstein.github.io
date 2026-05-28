@@ -10,13 +10,13 @@ Resume PDF: https://samedelstein.com/sam-edelstein-resume.pdf
 
 Focus Areas
 - Enterprise data and AI
-- Practical AI adoption
+- Useful AI workflows
 - Governed data foundations
 - Public data background
 - Useful public-minded tools
 
 Summary
-Data and AI work focused on practical adoption, governed data foundations, useful tools and workflows, and public data background. Relevant work includes AI strategy, governed data foundations, adoption, platform modernization, and practical business value.
+Data and AI work focused on governed data foundations, useful AI workflows, practical tools, and public data background. Relevant work includes AI strategy, governed data foundations, data readiness, platform modernization, and useful delivery.
 
 Current Role
 Senior Vice President, Data & AI, Insight Partners, 2021-Present
@@ -51,7 +51,7 @@ Selected Markers
 
 Core Strengths
 - Enterprise AI strategy and roadmaps
-- AI enablement and adoption
+- AI workflow design
 - AI governance, assurance, and risk management
 - Data platform modernization
 - Data governance and data quality
@@ -86,4 +86,4 @@ Onondaga County Public Library, President, Board of Trustees.
 Le Moyne College Madden School of Business, Advisory Board Member, Business Analytics.
 
 Work Scope
-Work involving enterprise AI strategy, data foundations, governance, and practical adoption.
+Work involving enterprise AI strategy, data foundations, governance, data readiness, and useful AI workflows.

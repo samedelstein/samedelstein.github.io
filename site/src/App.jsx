@@ -187,7 +187,7 @@ function App() {
                 Hi, I&apos;m Sam. I work on enterprise data and AI.
               </h1>
               <p className="mt-7 max-w-3xl text-xl font-light leading-8 text-slate-600 sm:text-2xl sm:leading-9">
-                At Insight Partners, I work across investment, HR, compliance, finance, and operations on data foundations, AI systems, governance, and tools people actually use. Before that, I was Syracuse&apos;s first Chief Data Officer; that work still shapes how I think about public accountability, messy systems, and practical analytics.
+                At Insight Partners, I work across investment, HR, compliance, finance, and operations on data foundations, AI workflow design, governance, and tools people actually use. Before that, I was Syracuse&apos;s first Chief Data Officer; that work still shapes how I think about public accountability, messy systems, and practical analytics.
               </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <a href={contactMailto} className="inline-flex h-12 items-center justify-center gap-2 rounded bg-[#533afd] px-5 text-base font-medium text-white shadow-[rgba(50,50,93,0.25)_0px_30px_45px_-30px,rgba(0,0,0,0.1)_0px_18px_36px_-18px] transition hover:bg-[#4434d4]"><Mail className="h-4 w-4" /> Email Sam</a>
