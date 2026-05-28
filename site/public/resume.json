@@ -179,6 +179,23 @@
       "summary": "Translated machine learning research into an operational risk model for prioritizing aging water infrastructure."
     }
   ],
+  "selectedWriting": [
+    {
+      "title": "What's Missing in AI + BI",
+      "url": "https://samedelstein.medium.com/whats-missing-in-ai-bi-the-case-for-bi-directional-interfaces-bcba1849b8a4",
+      "summary": "A note on connecting chat interfaces with structured data exploration and BI workflows."
+    },
+    {
+      "title": "How I Use Voice Recordings and AI",
+      "url": "https://samedelstein.medium.com/how-i-use-voice-recordings-and-ai-to-draft-proposals-posts-and-work-through-ideas-f1ed8e94e835",
+      "summary": "A practical workflow for turning voice notes into structured proposals, posts, and thinking."
+    },
+    {
+      "title": "What it Means to be AI-Ready",
+      "url": "https://samedelstein.medium.com/what-it-means-to-be-ai-ready-data-access-interoperability-and-the-future-of-software-part-1-a9abc8e0d03c",
+      "summary": "A note on data access, interoperability, and software design for AI-ready work."
+    }
+  ],
   "leadership": [
     {
       "organization": "Onondaga County Public Library",

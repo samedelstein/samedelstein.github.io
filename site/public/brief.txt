@@ -58,6 +58,11 @@ Built the city's first analytics office, launched DataCuse, authored the first o
 Work scope:
 Work involving enterprise data and AI strategy, data foundations, governance, data readiness, and useful AI workflows.
 
+Selected writing:
+- What's Missing in AI + BI: https://samedelstein.medium.com/whats-missing-in-ai-bi-the-case-for-bi-directional-interfaces-bcba1849b8a4
+- How I Use Voice Recordings and AI: https://samedelstein.medium.com/how-i-use-voice-recordings-and-ai-to-draft-proposals-posts-and-work-through-ideas-f1ed8e94e835
+- What It Means to Be AI-Ready: https://samedelstein.medium.com/what-it-means-to-be-ai-ready-data-access-interoperability-and-the-future-of-software-part-1-a9abc8e0d03c
+
 Useful starting points:
 - Enterprise data and AI work
 - Data foundations
