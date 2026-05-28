@@ -610,7 +610,8 @@ const App = () => {
             <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">Download the latest PDF copy of my resume or view the current online version.</p>
           </section>
           <div className="flex flex-wrap gap-3">
-            <a href={resumePdfUrl} download className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-slate-950 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:bg-blue-700"><FileText size={18} /><span>Download PDF</span></a>
+            <a href={executiveMailto} className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-slate-950 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:bg-blue-700"><Mail size={18} /><span>Email Sam</span></a>
+            <a href={resumePdfUrl} download className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-slate-300 bg-slate-50 px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700"><FileText size={18} /><span>Download PDF</span></a>
             <a href={resumeDocUrl} {...externalLinkProps} className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-slate-300 bg-slate-50 px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700"><ExternalLink size={18} /><span>View Online</span></a>
           </div>
         </main>
