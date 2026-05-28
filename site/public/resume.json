@@ -36,6 +36,24 @@
     "Data Platform Strategy leader",
     "Executive AI transformation leader"
   ],
+  "roleLandingPages": [
+    {
+      "role": "Chief Data Officer",
+      "url": "https://samedelstein.com/roles/chief-data-officer/"
+    },
+    {
+      "role": "VP / Head of Data & AI",
+      "url": "https://samedelstein.com/roles/vp-data-ai/"
+    },
+    {
+      "role": "Head of AI Enablement",
+      "url": "https://samedelstein.com/roles/head-of-ai-enablement/"
+    },
+    {
+      "role": "Data Platform Strategy leader",
+      "url": "https://samedelstein.com/roles/data-platform-strategy/"
+    }
+  ],
   "bestFitMandate": "Executive roles where enterprise AI strategy, trusted data foundations, operating model design, governance, and scaled adoption are central to the work.",
   "work": [
     {
