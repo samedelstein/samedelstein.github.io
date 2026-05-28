@@ -5,6 +5,7 @@ Background: https://samedelstein.com/brief/
 Structured profile JSON: https://samedelstein.com/profile.json
 Skills and tools and topics: https://samedelstein.com/skills/
 Selected work: https://samedelstein.com/proof/
+Writing: https://samedelstein.com/writing/
 Press and speaking: https://samedelstein.com/press/
 Contact page: https://samedelstein.com/contact/
 Resume materials: https://samedelstein.com/resume/

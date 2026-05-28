@@ -26,7 +26,7 @@ const contactMailto = 'mailto:sam.i.edelstein@gmail.com?subject=Data%20%26%20AI%
 const navItems = [
   ['Record', '#record'],
   ['Work', '#work'],
-  ['Writing', '#writing'],
+  ['Writing', '/writing/'],
   ['Press', '/press/'],
   ['Background', '/brief/'],
   ['Contact', '#contact'],
