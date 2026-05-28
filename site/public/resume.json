@@ -38,6 +38,8 @@
     "contactPage": "https://samedelstein.com/contact/",
     "resumePdf": "https://samedelstein.com/sam-edelstein-resume.pdf",
     "resumeText": "https://samedelstein.com/sam-edelstein-resume.txt",
+    "now": "https://samedelstein.com/now/",
+    "tools": "https://samedelstein.com/skills/",
     "vCard": "https://samedelstein.com/sam-edelstein.vcf"
   },
   "workThemes": [
