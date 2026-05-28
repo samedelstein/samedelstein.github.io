@@ -42,12 +42,15 @@
       h2 { margin: 0; font-size: 24px; line-height: 1.15; }
       p { color: var(--muted); }
       .button { display: inline-flex; margin-top: 18px; min-height: 42px; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 6px; padding: 10px 14px; color: var(--blue); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
+      .button.primary { border-color: var(--ink); background: var(--ink); color: #ffffff; }
+      .footer-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
       footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font-size: 14px; }
       @media (max-width: 760px) {
         .wrap { width: calc(100vw - 48px); max-width: 320px; margin-left: 24px; margin-right: auto; }
         nav { align-items: flex-start; flex-direction: column; padding: 18px 0; }
         h1 { font-size: 40px; line-height: 1.04; }
         .grid { grid-template-columns: 1fr; }
+        .footer-actions .button { width: 100%; }
       }
     </style>
   </head>
@@ -85,7 +88,14 @@
       </section>
     </main>
     <footer>
-      <div class="wrap">For executive searches, start with the <a href="/recruiter/">recruiter packet</a> or <a href="/sam-edelstein-resume.pdf">resume PDF</a>.</div>
+      <div class="wrap">
+        For executive searches, start with the recruiter packet, resume, or a direct note.
+        <div class="footer-actions">
+          <a class="button primary" href="mailto:sam.i.edelstein@gmail.com?subject=Executive%20Data%20%26%20AI%20conversation&amp;body=Hi%20Sam%2C%0A%0AI%27m%20reaching%20out%20after%20reviewing%20your%20proof%20records.%0A%0ACompany%3A%20%0AMandate%3A%20%0AReporting%20line%3A%20%0ALocation%20model%3A%20%0ACompensation%20range%3A%20%0ATiming%3A%20%0A%0A">Email Sam</a>
+          <a class="button" href="/recruiter/">Recruiter Packet</a>
+          <a class="button" href="/sam-edelstein-resume.pdf">Resume PDF</a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
