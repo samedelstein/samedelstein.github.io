@@ -82,7 +82,11 @@
     "https://samedelstein.com/sam-edelstein-resume.txt",
     "https://samedelstein.com/brief/",
     "https://samedelstein.com/now/",
+    "https://samedelstein.com/skills/",
     "https://samedelstein.com/proof/",
+    "https://samedelstein.com/proof/enterprise-ai-in-practice/",
+    "https://samedelstein.com/proof/datacuse-open-data-platform/",
+    "https://samedelstein.com/proof/predictive-water-main-analytics/",
     "https://samedelstein.com/writing/",
     "https://samedelstein.com/press/",
     "https://samedelstein.com/contact/"
@@ -121,6 +125,29 @@
       "@type": "WebPage",
       "name": "Sam Edelstein - Background",
       "url": "https://samedelstein.com/brief/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Sam Edelstein - Tools and Vocabulary",
+      "url": "https://samedelstein.com/skills/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI in Practice",
+      "url": "https://samedelstein.com/proof/enterprise-ai-in-practice/",
+      "description": "Work on turning AI ideas into useful workflows across data foundations, governance, delivery, and applied use cases."
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "DataCuse: Open Data Platform",
+      "url": "https://samedelstein.com/proof/datacuse-open-data-platform/",
+      "description": "Built Syracuse's first open data program, turning scattered public data into a governed transparency and analytics capability."
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Predictive Water Main Analytics",
+      "url": "https://samedelstein.com/proof/predictive-water-main-analytics/",
+      "description": "Translated machine learning research into an operational risk model for prioritizing aging water infrastructure."
     },
     {
       "@type": "WebPage",
