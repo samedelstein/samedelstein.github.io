@@ -10,7 +10,7 @@ Trusted data foundations: https://samedelstein.com/roles/chief-data-officer/
 Applied AI operating models: https://samedelstein.com/roles/vp-data-ai/
 Responsible adoption: https://samedelstein.com/roles/head-of-ai-enablement/
 Modern delivery platforms: https://samedelstein.com/roles/data-platform-strategy/
-Measurable operating change: https://samedelstein.com/roles/executive-ai-transformation/
+Operating change: https://samedelstein.com/roles/executive-ai-transformation/
 Skills and tools: https://samedelstein.com/skills/
 Brief text: https://samedelstein.com/executive-brief.txt
 Selected work: https://samedelstein.com/proof/
