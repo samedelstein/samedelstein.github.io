@@ -4,7 +4,7 @@
   "name": "Sam Edelstein Profile",
   "url": "https://samedelstein.com/profile.json",
   "dateModified": "2026-05-28",
-  "description": "Structured profile for Sam Edelstein, focused on enterprise Data & AI work at Insight Partners, practical adoption, governed data foundations, and public data background.",
+  "description": "Structured profile for Sam Edelstein, focused on enterprise Data & AI work at Insight Partners, governed data foundations, useful AI workflows, and public data background.",
   "mainEntity": {
     "@type": "Person",
     "name": "Sam Edelstein",
@@ -49,10 +49,10 @@
     },
     "knowsAbout": [
       "Governed data foundations",
-      "Practical AI adoption",
+      "Useful AI workflows",
       "Enterprise AI strategy",
       "Useful public-minded tools",
-      "AI readiness and responsible adoption",
+      "AI readiness",
       "AI governance",
       "Data platform strategy",
       "Data product leadership",
@@ -73,7 +73,7 @@
         "@type": "Country",
         "name": "United States"
       },
-      "skills": "Enterprise AI strategy, AI adoption, AI governance, data platform modernization, AI enablement, data governance, practical adoption, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, APIs"
+      "skills": "Enterprise AI strategy, AI workflow design, AI governance, data platform modernization, data governance, data readiness, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, APIs"
     }
   },
   "workThemes": [
@@ -81,10 +81,10 @@
       "name": "Governed data foundations"
     },
     {
-      "name": "Practical AI adoption"
+      "name": "Useful AI workflows"
     },
     {
-      "name": "Responsible adoption"
+      "name": "AI readiness"
     },
     {
       "name": "Enterprise data and AI"
@@ -93,14 +93,14 @@
       "name": "Useful public-minded tools"
     }
   ],
-  "workScope": "Work involving enterprise AI strategy, data foundations, governance, and practical adoption.",
+  "workScope": "Work involving enterprise AI strategy, data foundations, governance, data readiness, and useful AI workflows.",
   "workSignals": [
     "90%+ AI adoption across enterprise functions.",
     "40%+ of the organization actively building with AI.",
     "12+ enterprise data sources integrated across cloud and on-prem systems.",
-    "1B+ rows unified into trusted, governed, accessible foundations.",
+    "1B+ rows unified into governed, accessible data foundations.",
     "Experience connecting AI and data work across strategy, platform, governance, adoption, and delivery.",
-    "Experience leading AI adoption from strategy through adoption, governance, and practical business impact."
+    "Experience connecting AI ideas to data readiness, governance, delivery, and real workflows."
   ],
   "selectedWork": [
     {

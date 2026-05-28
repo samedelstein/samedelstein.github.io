@@ -15,13 +15,13 @@ Location: Syracuse, New York, United States
 
 Work themes:
 - Governed data foundations
-- Practical AI adoption
+- Useful AI workflows
 - Enterprise data and AI
 - Public data background
 - Useful public-minded tools
 
 Summary:
-Sam Edelstein works on enterprise Data & AI, with a focus on practical adoption, governed data foundations, and tools that help teams use information well.
+Sam Edelstein works on enterprise Data & AI, with a focus on governed data foundations, useful AI workflows, and tools that help teams use information well.
 
 Current role:
 Senior Vice President, Data & AI at Insight Partners. Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.
@@ -30,7 +30,7 @@ Selected markers:
 - 90%+ AI adoption across enterprise functions
 - 40%+ of the organization actively building with AI
 - 12+ enterprise data sources integrated across cloud and on-prem systems
-- 1B+ rows unified into trusted, governed, accessible foundations
+- 1B+ rows unified into governed, accessible foundations
 - Experience connecting AI and data work across strategy, platform, governance, adoption, and delivery
 
 Core strengths:
@@ -43,7 +43,7 @@ Core strengths:
 - Data product and analytics leadership
 - Stakeholder communication
 - Team building and delivery rhythms
-- Change management for practical AI adoption
+- Change management for AI work
 
 Selected experience:
 Senior Vice President, Data & AI, Insight Partners, 2021-Present
@@ -56,10 +56,10 @@ Chief Data Officer, City of Syracuse, 2015-2020
 Built the city's first analytics office, launched DataCuse, authored the first open data policy, and led operational analytics programs with public-sector impact.
 
 Work scope:
-Work involving enterprise AI strategy, data foundations, governance, and practical adoption.
+Work involving enterprise AI strategy, data foundations, governance, data readiness, and useful AI workflows.
 
 Useful starting points:
 - Enterprise data and AI work
 - Data foundations
-- Practical AI adoption
+- Useful AI workflows
 - Public data background

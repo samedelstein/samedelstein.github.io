@@ -20,11 +20,11 @@ LinkedIn: https://www.linkedin.com/in/samedelstein
 GitHub: https://github.com/samedelstein
 Medium: https://medium.com/@samedelstein
 
-Current work includes enterprise Data & AI strategy, governed data foundations, practical AI adoption, data governance, data platform modernization, enablement, and useful internal tools across investment, HR, compliance, finance, and operations.
+Current work includes enterprise Data & AI strategy, governed data foundations, AI workflow design, data governance, data platform modernization, and useful internal tools across investment, HR, compliance, finance, and operations.
 
 Earlier public-sector work includes Syracuse open data, DataCuse, water main analytics, public analytics, public dashboards, teaching, and practical public data work.
 
-Relevant work themes include enterprise AI strategy, AI adoption, AI governance, data platform strategy, data product leadership, open data, public data, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, and APIs.
+Relevant work themes include enterprise AI strategy, useful AI workflows, AI governance, data readiness, data platform strategy, data product leadership, open data, public data, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, and APIs.
 
 Selected markers include 90%+ AI adoption across enterprise functions, 40%+ active AI builders, 12+ data sources integrated, and 1B+ rows unified into governed data foundations.
 

@@ -8,10 +8,10 @@ EMAIL;TYPE=INTERNET:sam.i.edelstein@gmail.com
 URL:https://samedelstein.com/
 URL;TYPE=Background:https://samedelstein.com/brief/
 URL;TYPE=Profile JSON:https://samedelstein.com/profile.json
-URL;TYPE=Resume:https://samedelstein.com/sam-edelstein-resume.pdf
+URL;TYPE=Resume:https://samedelstein.com/resume/
 URL;TYPE=LinkedIn:https://www.linkedin.com/in/samedelstein
 URL;TYPE=GitHub:https://github.com/samedelstein
 URL;TYPE=Medium:https://medium.com/@samedelstein
 ADR;TYPE=WORK:;;Syracuse;NY;;;United States
-NOTE:Enterprise Data & AI work focused on data foundations, AI adoption, governance, platforms, practical delivery, and public data background.
+NOTE:Enterprise Data & AI work focused on data foundations, useful AI workflows, governance, platforms, practical delivery, and public data background.
 END:VCARD
