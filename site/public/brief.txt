@@ -1,7 +1,7 @@
 Sam Edelstein - Enterprise Data & AI
 
 Website: https://samedelstein.com/
-Brief: https://samedelstein.com/brief/
+Background: https://samedelstein.com/brief/
 Structured profile JSON: https://samedelstein.com/profile.json
 Skills and tools and topics: https://samedelstein.com/skills/
 Selected work: https://samedelstein.com/proof/
