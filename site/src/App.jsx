@@ -158,18 +158,18 @@ function SectionHeader({ eyebrow, title, body }) {
 
 function App() {
   return (
-    <div className="min-h-screen bg-white font-sans text-[#061b31] selection:bg-indigo-200">
+    <div className="min-h-screen overflow-x-hidden bg-white font-sans text-[#061b31] selection:bg-indigo-200">
       <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/85 backdrop-blur-xl">
-        <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
-          <a href="#top" className="text-sm font-semibold tracking-normal text-[#061b31]">Sam Edelstein</a>
+        <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-5 sm:px-8">
+          <a href="#top" className="min-w-0 flex-none text-sm font-semibold tracking-normal text-[#061b31]">Sam Edelstein</a>
           <div className="hidden items-center gap-7 md:flex">
             {navItems.map(([label, href]) => (
               <a key={label} href={href} className="text-sm font-medium text-slate-500 transition hover:text-[#533afd]">{label}</a>
             ))}
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-none items-center gap-2">
             <a href="https://www.linkedin.com/in/samedelstein" {...externalLinkProps} aria-label="LinkedIn" className="hidden h-9 w-9 items-center justify-center rounded border border-slate-200 text-slate-500 transition hover:border-[#b9b9f9] hover:text-[#533afd] sm:inline-flex"><Linkedin className="h-4 w-4" /></a>
-            <a href={contactMailto} className="inline-flex h-9 items-center gap-2 rounded bg-[#533afd] px-3 text-sm font-medium text-white shadow-[rgba(50,50,93,0.25)_0px_18px_30px_-18px] transition hover:bg-[#4434d4]"><Mail className="h-4 w-4" /> Contact</a>
+            <a href={contactMailto} aria-label="Email Sam" className="inline-flex h-9 w-9 items-center justify-center gap-2 rounded bg-[#533afd] text-sm font-medium text-white shadow-[rgba(50,50,93,0.25)_0px_18px_30px_-18px] transition hover:bg-[#4434d4] sm:w-auto sm:px-3"><Mail className="h-4 w-4" /> <span className="hidden sm:inline">Contact</span></a>
           </div>
         </nav>
       </header>
@@ -177,16 +177,16 @@ function App() {
       <main id="top">
         <section className="relative isolate overflow-hidden">
           <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 md:py-24 lg:grid-cols-[minmax(0,1.12fr)_minmax(360px,0.88fr)] lg:items-center">
-            <div>
+            <div className="min-w-0">
               <div className="mb-7 flex flex-wrap gap-2">
                 <Pill>Enterprise Data & AI</Pill>
                 <Pill>Insight Partners</Pill>
                 <Pill>Syracuse, NY</Pill>
               </div>
-              <h1 className="max-w-5xl text-5xl font-light leading-[0.95] tracking-normal text-[#061b31] sm:text-6xl lg:text-7xl">
+              <h1 className="max-w-5xl text-4xl font-light leading-tight tracking-normal text-[#061b31] sm:text-6xl sm:leading-[0.95] lg:text-7xl">
                 Hi, I&apos;m Sam. I work on enterprise data and AI.
               </h1>
-              <p className="mt-7 max-w-3xl text-xl font-light leading-8 text-slate-600 sm:text-2xl sm:leading-9">
+              <p className="mt-7 max-w-3xl text-lg font-light leading-8 text-slate-600 sm:text-2xl sm:leading-9">
                 At Insight Partners, I work across investment, HR, compliance, finance, and operations on data foundations, AI workflow design, governance, and tools people actually use. Before that, I was Syracuse&apos;s first Chief Data Officer; that work still shapes how I think about public accountability, messy systems, and practical analytics.
               </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -195,7 +195,7 @@ function App() {
               </div>
             </div>
 
-            <aside className="rounded-lg border border-[#e5edf5] bg-white p-6 shadow-[rgba(50,50,93,0.16)_0px_22px_36px_-28px,rgba(0,0,0,0.08)_0px_12px_24px_-18px]">
+            <aside className="min-w-0 overflow-hidden rounded-lg border border-[#e5edf5] bg-white p-6 shadow-[rgba(50,50,93,0.16)_0px_22px_36px_-28px,rgba(0,0,0,0.08)_0px_12px_24px_-18px]">
               <div className="border-b border-[#e5edf5] pb-5">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#533afd]">Current and past work</p>
                 <p className="mt-2 text-base font-light leading-7 text-[#061b31]">Enterprise Data &amp; AI now; public data and city systems before that.</p>
