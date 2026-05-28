@@ -209,6 +209,7 @@ const App = () => {
     if (hash.startsWith('#/case-studies/')) return { page: 'case-study', slug: hash.replace('#/case-studies/', '') };
     if (hash.startsWith('#/case-studies')) return { page: 'case-studies' };
     if (hash.startsWith('#/resume')) return { page: 'resume' };
+    if (hash.startsWith('#/recruiter')) return { page: 'recruiter' };
     return { page: 'home' };
   });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -231,6 +232,7 @@ const App = () => {
       if (hash.startsWith('#/case-studies/')) return setRoute({ page: 'case-study', slug: hash.replace('#/case-studies/', '') });
       if (hash.startsWith('#/case-studies')) return setRoute({ page: 'case-studies' });
       if (hash.startsWith('#/resume')) return setRoute({ page: 'resume' });
+      if (hash.startsWith('#/recruiter')) return setRoute({ page: 'recruiter' });
       setRoute({ page: 'home' });
     };
     window.addEventListener('hashchange', handleHashChange);
@@ -332,7 +334,7 @@ const App = () => {
                     <div className="flex flex-wrap gap-3">
                       <a href="mailto:sam.i.edelstein@gmail.com?subject=Executive%20Data%20%26%20AI%20conversation&body=Hi%20Sam%2C%0A%0A" className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-slate-950 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:bg-blue-700 sm:w-auto"><Mail size={17} /><span>Email Sam</span></a>
                       <a href={resumePdfUrl} download className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><Download size={17} /><span>Download Resume</span></a>
-                      <a href="/recruiter-brief.txt" className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><FileText size={17} /><span>Recruiter Brief</span></a>
+                      <a href="#/recruiter" className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><FileText size={17} /><span>Recruiter Packet</span></a>
                       <button onClick={() => scrollToSection('case-studies-preview')} className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><ArrowUpRight size={17} /><span>See Proof</span></button>
                     </div>
                     <p className="mt-5 max-w-full break-words text-sm leading-relaxed text-slate-500 md:max-w-2xl">Open to selective executive conversations. Best fit: CDO, VP Data &amp; AI, Head of AI Enablement, and roles where platform, governance, adoption, and operating model design all matter.</p>
@@ -543,7 +545,8 @@ const App = () => {
                 <a href="mailto:sam.i.edelstein@gmail.com" className="text-center text-sm font-medium text-blue-100 underline-offset-4 hover:text-white hover:underline">sam.i.edelstein@gmail.com</a>
                 <a href="https://www.linkedin.com/in/samedelstein" {...externalLinkProps} className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Linkedin size={16} /><span>LinkedIn</span></a>
                 <a href={resumePdfUrl} download className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Download Resume</span></a>
-                <a href="/recruiter-brief.txt" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Recruiter Brief</span></a>
+                <a href="#/recruiter" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Recruiter Packet</span></a>
+                <a href="/recruiter-brief.txt" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><ExternalLink size={16} /><span>Plain Text Brief</span></a>
                 <a href="/sam-edelstein.vcf" download className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Download size={16} /><span>Save Contact</span></a>
                 <a href={resumeDocUrl} {...externalLinkProps} className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><ExternalLink size={16} /><span>Online Resume</span></a>
               </div>
@@ -584,6 +587,86 @@ const App = () => {
             <a href={resumePdfUrl} download className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-slate-950 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:bg-blue-700"><FileText size={18} /><span>Download PDF</span></a>
             <a href={resumeDocUrl} {...externalLinkProps} className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-slate-300 bg-slate-50 px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700"><ExternalLink size={18} /><span>View Online</span></a>
           </div>
+        </main>
+      )}
+
+      {route.page === 'recruiter' && (
+        <main className="mx-auto w-full max-w-[350px] px-5 pt-32 pb-24 sm:max-w-5xl md:px-6">
+          <section className="mb-10 border-y border-slate-200 py-10">
+            <span className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-700">Recruiter Packet</span>
+            <h1 className="mt-4 max-w-full break-words text-4xl font-semibold tracking-tight text-slate-950 md:max-w-4xl md:text-6xl">Sam Edelstein for executive Data &amp; AI leadership roles.</h1>
+            <p className="mt-5 max-w-full break-words text-lg leading-relaxed text-slate-600 md:max-w-3xl">A concise packet for recruiters, search partners, founders, operating partners, and executive teams evaluating CDO, VP Data &amp; AI, AI enablement, and data platform strategy mandates.</p>
+          </section>
+
+          <section className="grid grid-cols-1 gap-8 border-b border-slate-200 pb-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(300px,0.8fr)]">
+            <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
+              {targetRoles.map(([title, body]) => (
+                <div key={title} className="bg-slate-50 p-5">
+                  <h2 className="text-base font-semibold text-slate-950">{title}</h2>
+                  <p className="mt-3 break-words text-sm leading-relaxed text-slate-600">{body}</p>
+                </div>
+              ))}
+            </div>
+            <aside className="border border-slate-950 bg-slate-950 p-6 text-white">
+              <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">Current Mandate</p>
+              <p className="mt-4 break-words text-lg leading-relaxed text-slate-100">Senior Vice President, Data &amp; AI at Insight Partners. Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.</p>
+              <div className="mt-6 grid gap-3">
+                <a href="mailto:sam.i.edelstein@gmail.com?subject=Executive%20Data%20%26%20AI%20conversation&body=Hi%20Sam%2C%0A%0A" className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-950 transition-colors hover:bg-blue-100"><Mail size={16} /><span>Email Sam</span></a>
+                <a href={resumePdfUrl} download className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Download size={16} /><span>Resume PDF</span></a>
+                <a href="/recruiter-brief.txt" className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Plain Text Brief</span></a>
+                <a href="/sam-edelstein.vcf" download className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Download size={16} /><span>Save Contact</span></a>
+              </div>
+            </aside>
+          </section>
+
+          <section className="border-b border-slate-200 py-12">
+            <SectionTitle icon={<BarChart3 className="h-5 w-5" />} title="Proof Points" eyebrow="Fast Scan" compact />
+            <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-4">
+              {impactStats.map(([value, label]) => (
+                <div key={label} className="bg-white p-5">
+                  <div className="text-3xl font-semibold tracking-tight text-slate-950">{value}</div>
+                  <p className="mt-3 text-sm leading-relaxed text-slate-600">{label}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="grid grid-cols-1 gap-8 border-b border-slate-200 py-12 lg:grid-cols-2">
+            <div>
+              <SectionTitle icon={<CheckCircle2 className="h-5 w-5" />} title="Why Call" eyebrow="Recruiter Signals" compact />
+              <ul className="divide-y divide-slate-200 border border-slate-200 bg-slate-50">
+                {recruiterReasons.map((reason) => (
+                  <li key={reason} className="flex items-start gap-3 p-4">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-blue-700" />
+                    <span className="text-sm font-medium leading-relaxed text-slate-800">{reason}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <SectionTitle icon={<Briefcase className="h-5 w-5" />} title="Selected Records" eyebrow="Relevant Proof" compact />
+              <div className="divide-y divide-slate-200 border border-slate-200 bg-slate-50">
+                {featuredCaseStudies.map((study) => (
+                  <a key={study.slug} href={`#/case-studies/${study.slug}`} className="block p-5 transition-colors hover:bg-white">
+                    <h3 className="text-base font-semibold text-slate-950">{study.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-600">{study.blurb}</p>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="pt-12">
+            <SectionTitle icon={<Users className="h-5 w-5" />} title="Operating Range" eyebrow="Capabilities" compact />
+            <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-3">
+              {competencies.map(([title, body]) => (
+                <div key={title} className="bg-white p-5">
+                  <h3 className="text-sm font-bold uppercase tracking-[0.12em] text-slate-950">{title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-slate-600">{body}</p>
+                </div>
+              ))}
+            </div>
+          </section>
         </main>
       )}
 
