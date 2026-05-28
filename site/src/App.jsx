@@ -27,6 +27,7 @@ const navItems = [
   ['Record', '#record'],
   ['Work', '#work'],
   ['Writing', '#writing'],
+  ['Press', '/press/'],
   ['Background', '/brief/'],
   ['Contact', '#contact'],
 ];
