@@ -1,11 +1,11 @@
-﻿Sam Edelstein
-Executive Data & AI Leader
+Sam Edelstein
+Data & AI leader
 Syracuse, New York, United States
 Email: sam.i.edelstein@gmail.com
 LinkedIn: https://www.linkedin.com/in/samedelstein
 Website: https://samedelstein.com/
-Executive brief: https://samedelstein.com/executive-brief/
-Proof records: https://samedelstein.com/proof/
+Brief: https://samedelstein.com/executive-brief/
+Selected work: https://samedelstein.com/proof/
 Resume PDF: https://samedelstein.com/sam-edelstein-resume.pdf
 
 Target Roles
@@ -56,7 +56,7 @@ Core Strengths
 - Data platform modernization
 - Data governance and data quality
 - Data product and analytics leadership
-- Executive stakeholder management
+- Stakeholder communication
 - Team building and operating model design
 - Change management for practical AI adoption
 - Information delivery, data operations, and reliability
@@ -64,7 +64,7 @@ Core Strengths
 Platforms and Tools
 Snowflake, dbt, Azure, GenAI and RAG, MLOps, Python, SQL, APIs, data integration, analytics engineering, cloud data platforms.
 
-Selected Proof Records
+Selected Selected Work
 Enterprise AI Enablement at Scale
 - Led an enterprise AI enablement portfolio spanning operating model, infrastructure, governance, adoption, and applied workflows.
 - Defined a phased AI operating model, delivered prioritized use cases, and established a data readiness program and enablement playbook.
@@ -86,4 +86,4 @@ Onondaga County Public Library, President, Board of Trustees.
 Le Moyne College Madden School of Business, Advisory Board Member, Business Analytics.
 
 Best-Fit Scope
-Leadership work where enterprise AI strategy, trusted data foundations, operating model design, governance, and scaled adoption are central to the work.
+Work where enterprise AI strategy, data foundations, operating model design, governance, and scaled adoption are central to the work.

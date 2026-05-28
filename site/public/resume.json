@@ -1,11 +1,11 @@
-﻿{
+{
   "$schema": "https://jsonresume.org/schema",
   "basics": {
     "name": "Sam Edelstein",
-    "label": "Executive Data & AI Leader",
+    "label": "Data & AI leader",
     "email": "sam.i.edelstein@gmail.com",
     "url": "https://samedelstein.com/",
-    "summary": "Data & AI executive focused on turning AI ambition into operating capability. Leads enterprise AI strategy, executive AI transformation, governed data foundations, AI enablement, scaled adoption, and operating model design.",
+    "summary": "Data & AI executive focused on turning AI ambition into operating capability. Leads enterprise AI strategy, AI transformation, governed data foundations, AI enablement, scaled adoption, and operating model design.",
     "location": {
       "city": "Syracuse",
       "region": "New York",
@@ -58,7 +58,7 @@
       "url": "https://samedelstein.com/roles/executive-ai-transformation/"
     }
   ],
-  "bestFitScope": "Leadership work where enterprise AI strategy, trusted data foundations, operating model design, governance, and scaled adoption are central to the work.",
+  "bestFitScope": "Work where enterprise AI strategy, data foundations, operating model design, governance, and scaled adoption are central to the work.",
   "work": [
     {
       "name": "Insight Partners",
@@ -131,7 +131,7 @@
         "Data product leadership",
         "Team building",
         "Organizational transformation",
-        "Executive stakeholder management",
+        "Stakeholder communication",
         "Operating model design"
       ]
     },
@@ -171,7 +171,7 @@
     "12+ enterprise data sources integrated across cloud and on-prem systems.",
     "1B+ rows unified into trusted, governed, accessible foundations.",
     "Experience building AI and data operating models across strategy, platform, governance, adoption, and delivery.",
-    "Experience leading executive AI transformation from strategy through adoption, operating model design, and measurable business impact."
+    "Experience leading AI transformation from strategy through adoption, operating model design, and measurable business impact."
   ],
   "proofRecords": [
     {

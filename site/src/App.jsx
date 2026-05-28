@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import {
   Activity,
   ArrowUpRight,
@@ -32,7 +32,7 @@ const externalLinkProps = {
   rel: 'noopener noreferrer',
 };
 
-const executiveMailto = 'mailto:sam.i.edelstein@gmail.com?subject=Executive%20Data%20%26%20AI%20conversation&body=Hi%20Sam%2C%0A%0AI%27m%20reaching%20out%20about%20a%20Data%20%26%20AI%20leadership%20conversation.%0A%0A';
+const executiveMailto = 'mailto:sam.i.edelstein@gmail.com?subject=Data%20%26%20AI%20conversation&body=Hi%20Sam%2C%0A%0AI%27m%20reaching%20out%20about%20a%20Data%20%26%20AI%20leadership%20conversation.%0A%0A';
 
 const navItems = [
   { id: 'home', label: 'Overview', type: 'section' },
@@ -161,7 +161,7 @@ const experience = [
 ];
 
 const competencies = [
-  ['Leadership and Strategy', 'Enterprise AI strategy and roadmaps | Executive AI transformation | AI operating model design | AI enablement and adoption | Team building | Stakeholder management'],
+  ['Leadership and Strategy', 'Enterprise AI strategy and roadmaps | AI operating model design | AI enablement and adoption | Team building | Stakeholder communication'],
   ['Governance and Delivery', 'AI governance and risk | AI assurance | AI readiness | Data governance and quality | Data product leadership | Data ops and reliability'],
   ['Platforms and Tools', 'Snowflake | dbt | Azure | GenAI and RAG | MLOps | Python | SQL | APIs and data integration'],
 ];
@@ -593,15 +593,15 @@ const App = () => {
             <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-5 py-12 md:px-6 lg:grid-cols-[minmax(0,1.3fr)_minmax(280px,0.7fr)] lg:py-16">
               <div>
                 <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">Contact</p>
-                <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight md:text-5xl">Executive conversations about Data &amp; AI leadership.</h2>
-                <p className="mt-5 max-w-2xl leading-relaxed text-slate-300">I welcome thoughtful conversations about enterprise AI strategy, trusted data foundations, operating model design, and scaled adoption.</p>
+                <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight md:text-5xl">Conversations about data, AI, and useful public-minded technology.</h2>
+                <p className="mt-5 max-w-2xl leading-relaxed text-slate-300">I welcome thoughtful notes about data work, AI adoption, civic technology, libraries, teaching, and practical ways to make complex systems easier to use.</p>
               </div>
               <div className="grid content-start gap-3">
                 <a href={executiveMailto} className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-950 transition-colors hover:bg-blue-100"><Mail size={16} /><span>Email Sam</span></a>
                 <a href="mailto:sam.i.edelstein@gmail.com" className="text-center text-sm font-medium text-blue-100 underline-offset-4 hover:text-white hover:underline">sam.i.edelstein@gmail.com</a>
                 <a href="https://www.linkedin.com/in/samedelstein" {...externalLinkProps} className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Linkedin size={16} /><span>LinkedIn</span></a>
                 <a href={resumePdfUrl} download className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Download Resume</span></a>
-                <a href="/executive-brief/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Executive Brief</span></a>
+                <a href="/executive-brief/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Brief</span></a>
                 <a href="/roles/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Target size={16} /><span>Work Themes</span></a>
                 <a href="/skills/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Zap size={16} /><span>Skills</span></a>
                 <a href="/proof/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Award size={16} /><span>Selected Work</span></a>
@@ -653,9 +653,9 @@ const App = () => {
       {route.page === 'executive-brief' && (
         <main className="mx-auto w-full max-w-[350px] px-5 pt-32 pb-24 sm:max-w-5xl md:px-6">
           <section className="mb-10 border-y border-slate-200 py-10">
-            <span className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-700">Executive Brief</span>
-            <h1 className="mt-4 max-w-full break-words text-4xl font-semibold tracking-tight text-slate-950 md:max-w-4xl md:text-6xl">Sam Edelstein: executive Data &amp; AI leadership brief.</h1>
-            <p className="mt-5 max-w-full break-words text-lg leading-relaxed text-slate-600 md:max-w-3xl">A concise summary of operating themes, selected proof, working range, and contact details for Data &amp; AI conversations.</p>
+            <span className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-700">Brief</span>
+            <h1 className="mt-4 max-w-full break-words text-4xl font-semibold tracking-tight text-slate-950 md:max-w-4xl md:text-6xl">Sam Edelstein: Data &amp; AI brief.</h1>
+            <p className="mt-5 max-w-full break-words text-lg leading-relaxed text-slate-600 md:max-w-3xl">A concise summary of work themes, selected projects, background, and contact details.</p>
           </section>
 
           <section className="grid grid-cols-1 gap-8 border-b border-slate-200 pb-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(300px,0.8fr)]">

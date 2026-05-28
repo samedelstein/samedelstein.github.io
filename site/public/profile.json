@@ -1,10 +1,10 @@
-﻿{
+{
   "@context": "https://schema.org",
   "@type": "ProfilePage",
-  "name": "Sam Edelstein Executive Brief",
+  "name": "Sam Edelstein Brief",
   "url": "https://samedelstein.com/profile.json",
   "dateModified": "2026-05-28",
-  "description": "Structured executive brief for Sam Edelstein, an executive Data & AI leader focused on enterprise AI strategy, executive AI transformation, governed data foundations, AI enablement, scaled adoption, and operating model design.",
+  "description": "Structured brief for Sam Edelstein, an Data & AI leader focused on enterprise AI strategy, AI transformation, governed data foundations, AI enablement, scaled adoption, and operating model design.",
   "mainEntity": {
     "@type": "Person",
     "name": "Sam Edelstein",
@@ -17,7 +17,7 @@
       "https://samedelstein.com/sam-edelstein-resume.pdf",
       "https://samedelstein.com/resume.json"
     ],
-    "jobTitle": "Executive Data & AI Leader",
+    "jobTitle": "Data & AI leader",
     "worksFor": {
       "@type": "Organization",
       "name": "Insight Partners"
@@ -38,7 +38,7 @@
       "areaServed": [
         "United States",
         "New York",
-        "Distributed executive teams"
+        "Distributed teams"
       ],
       "availableLanguage": "English"
     },
@@ -65,12 +65,12 @@
     ],
     "hasOccupation": {
       "@type": "Occupation",
-      "name": "Executive Data and AI Leader",
+      "name": "Data and AI leader",
       "occupationLocation": {
         "@type": "Country",
         "name": "United States"
       },
-      "skills": "Enterprise AI strategy, executive AI transformation, AI governance, data platform modernization, AI enablement, data governance, executive operating model design, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, APIs"
+      "skills": "Enterprise AI strategy, AI transformation, AI governance, data platform modernization, AI enablement, data governance, executive operating model design, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, APIs"
     }
   },
   "workThemes": [
@@ -95,14 +95,14 @@
       "url": "https://samedelstein.com/roles/executive-ai-transformation/"
     }
   ],
-  "bestFitScope": "Leadership work where enterprise AI strategy, trusted data foundations, operating model design, governance, and scaled adoption are central to the work.",
+  "bestFitScope": "Work where enterprise AI strategy, data foundations, operating model design, governance, and scaled adoption are central to the work.",
   "leadershipSignals": [
     "90%+ AI adoption across enterprise functions.",
     "40%+ of the organization actively building with AI.",
     "12+ enterprise data sources integrated across cloud and on-prem systems.",
     "1B+ rows unified into trusted, governed, accessible foundations.",
     "Experience building AI and data operating models across strategy, platform, governance, adoption, and delivery.",
-    "Experience leading executive AI transformation from strategy through adoption, operating model design, and measurable business impact."
+    "Experience leading AI transformation from strategy through adoption, operating model design, and measurable business impact."
   ],
   "proofRecords": [
     {
@@ -124,10 +124,10 @@
   "contactActions": [
     {
       "name": "Email Sam",
-      "url": "mailto:sam.i.edelstein@gmail.com?subject=Executive%20Data%20%26%20AI%20conversation"
+      "url": "mailto:sam.i.edelstein@gmail.com?subject=Data%20%26%20AI%20conversation"
     },
     {
-      "name": "Executive Brief",
+      "name": "Brief",
       "url": "https://samedelstein.com/executive-brief/"
     },
     {

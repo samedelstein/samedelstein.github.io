@@ -1,15 +1,15 @@
-﻿BEGIN:VCARD
+BEGIN:VCARD
 VERSION:3.0
 FN:Sam Edelstein
 N:Edelstein;Sam;;;
-TITLE:Executive Data & AI Leader
+TITLE:Data & AI leader
 ORG:Insight Partners
 EMAIL;TYPE=INTERNET:sam.i.edelstein@gmail.com
 URL:https://samedelstein.com/
-URL;TYPE=Executive Brief:https://samedelstein.com/executive-brief/
+URL;TYPE=Brief:https://samedelstein.com/executive-brief/
 URL;TYPE=Executive Profile JSON:https://samedelstein.com/profile.json
 URL;TYPE=Resume:https://samedelstein.com/sam-edelstein-resume.pdf
 URL;TYPE=LinkedIn:https://www.linkedin.com/in/samedelstein
 ADR;TYPE=WORK:;;Syracuse;NY;;;United States
-NOTE:Executive Data & AI leader focused on trusted data foundations, applied AI operating models, responsible adoption, modern delivery platforms, and measurable operating change.
+NOTE:Data & AI leader focused on data foundations, AI adoption, governance, platforms, civic technology, and operating change.
 END:VCARD
