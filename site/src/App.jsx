@@ -111,7 +111,7 @@ const selectedWork = [
   {
     title: 'Enterprise AI in practice',
     body: 'Confidential enterprise work focused on making AI useful across real workflows while keeping data, controls, and delivery connected.',
-    href: '/proof/enterprise-ai-enablement-at-scale/',
+    href: '/proof/enterprise-ai-in-practice/',
   },
 ];
 

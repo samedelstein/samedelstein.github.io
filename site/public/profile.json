@@ -105,8 +105,8 @@
   "selectedWork": [
     {
       "name": "Enterprise AI in Practice",
-      "url": "https://samedelstein.com/proof/enterprise-ai-enablement-at-scale/",
-      "description": "Work on turning AI ideas into useful workflows across delivery approach, infrastructure, governance, data readiness, and applied use cases."
+      "url": "https://samedelstein.com/proof/enterprise-ai-in-practice/",
+      "description": "Work on turning AI ideas into useful workflows across data foundations, governance, delivery, and applied use cases."
     },
     {
       "name": "DataCuse: Open Data Platform",

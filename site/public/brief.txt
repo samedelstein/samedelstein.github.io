@@ -47,7 +47,7 @@ Core strengths:
 
 Selected experience:
 Senior Vice President, Data & AI, Insight Partners, 2021-Present
-Leads firm-wide Data & AI strategy, platform modernization, enablement, governance, and adoption across business functions.
+Leads firm-wide Data & AI strategy, platform modernization, governance, and useful internal tools across business functions.
 
 Senior Consultant, BlueGranite, 2020-2021
 Delivered Azure-based analytics modernization work for public and private sector clients.
