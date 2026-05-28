@@ -9,6 +9,22 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://samedelstein.com/proof/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samedelstein.com/proof/enterprise-ai-enablement-at-scale/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samedelstein.com/proof/datacuse-open-data-platform/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samedelstein.com/proof/predictive-water-main-analytics/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://samedelstein.com/about/</loc>
     <priority>0.7</priority>
   </url>

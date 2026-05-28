@@ -35,7 +35,7 @@ const externalLinkProps = {
 const navItems = [
   { id: 'home', label: 'Overview', type: 'section' },
   { id: 'work', label: 'Work', type: 'section' },
-  { id: 'case-studies', label: 'Proof', type: 'route' },
+  { id: 'case-studies', label: 'Proof', type: 'link', href: '/proof/' },
   { id: 'experience', label: 'Experience', type: 'section' },
   { id: 'writing', label: 'Writing', type: 'section' },
   { id: 'contact', label: 'Contact', type: 'section' },
@@ -285,7 +285,7 @@ const App = () => {
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => (item.type === 'route' ? navigateToHash('#/case-studies') : scrollToSection(item.id))}
+                onClick={() => (item.type === 'link' ? window.location.assign(item.href) : scrollToSection(item.id))}
                 className={`text-xs font-bold uppercase tracking-[0.12em] ${activeSection === item.id && route.page === 'home' ? 'text-blue-700' : 'text-slate-500 hover:text-slate-950'}`}
               >
                 {item.label}
@@ -312,7 +312,7 @@ const App = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-slate-200 bg-white px-6 py-4 space-y-3">
             {navItems.map((item) => (
-              <button key={item.id} onClick={() => (item.type === 'route' ? navigateToHash('#/case-studies') : scrollToSection(item.id))} className="block text-left w-full text-sm font-semibold text-slate-700 hover:text-blue-700">
+              <button key={item.id} onClick={() => (item.type === 'link' ? window.location.assign(item.href) : scrollToSection(item.id))} className="block text-left w-full text-sm font-semibold text-slate-700 hover:text-blue-700">
                 {item.label}
               </button>
             ))}
@@ -431,14 +431,14 @@ const App = () => {
             <section className="border-b border-slate-200 py-16">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <SectionTitle icon={<Code className="h-5 w-5" />} title="Proof Records" eyebrow="Selected Work" />
-                <button onClick={() => navigateToHash('#/case-studies')} className="inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">View all <ChevronRight size={16} /></button>
+                <a href="/proof/" className="inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">View all <ChevronRight size={16} /></a>
               </div>
               <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
                 {featuredCaseStudies.map((study) => (
                   <article key={study.slug} className="bg-slate-50 p-6">
                     <h3 className="text-xl font-semibold text-slate-950">{study.title}</h3>
                     <p className="mt-3 text-sm leading-relaxed text-slate-600">{study.blurb}</p>
-                    <a href={`#/case-studies/${study.slug}`} className="mt-6 inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">Read record <ArrowUpRight size={14} /></a>
+                    <a href={`/proof/${study.slug}/`} className="mt-6 inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">Read record <ArrowUpRight size={14} /></a>
                   </article>
                 ))}
               </div>
@@ -569,7 +569,7 @@ const App = () => {
               <div key={study.slug} className="bg-slate-50 p-6 transition-colors hover:bg-white">
                 <h2 className="text-xl font-semibold text-slate-950 mb-3">{study.title}</h2>
                 <p className="text-slate-600 mb-6 leading-relaxed text-sm">{study.blurb}</p>
-                <a href={`#/case-studies/${study.slug}`} className="inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">Read record <ArrowUpRight size={14} /></a>
+                <a href={`/proof/${study.slug}/`} className="inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">Read record <ArrowUpRight size={14} /></a>
               </div>
             ))}
           </div>
@@ -647,7 +647,7 @@ const App = () => {
               <SectionTitle icon={<Briefcase className="h-5 w-5" />} title="Selected Records" eyebrow="Relevant Proof" compact />
               <div className="divide-y divide-slate-200 border border-slate-200 bg-slate-50">
                 {featuredCaseStudies.map((study) => (
-                  <a key={study.slug} href={`#/case-studies/${study.slug}`} className="block p-5 transition-colors hover:bg-white">
+                <a key={study.slug} href={`/proof/${study.slug}/`} className="block p-5 transition-colors hover:bg-white">
                     <h3 className="text-base font-semibold text-slate-950">{study.title}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-slate-600">{study.blurb}</p>
                   </a>
@@ -675,7 +675,7 @@ const App = () => {
           {activeCaseStudy ? (
             <>
               <div className="mb-10 border-y border-slate-200 py-10">
-                <button onClick={() => navigateToHash('#/case-studies')} className="inline-flex items-center text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950"><ChevronRight size={16} className="rotate-180" /> Back to case studies</button>
+                <a href="/proof/" className="inline-flex items-center text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950"><ChevronRight size={16} className="rotate-180" /> Back to proof</a>
                 <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-slate-950 mt-4">{activeCaseStudy.title}</h1>
                 <p className="text-lg text-slate-600 mt-4 leading-relaxed">{activeCaseStudy.blurb}</p>
               </div>
@@ -694,7 +694,7 @@ const App = () => {
             <div className="border border-slate-200 bg-slate-50 p-8 text-center">
               <h1 className="text-2xl font-semibold text-slate-950 mb-2">Case study not found</h1>
               <p className="text-slate-600 mb-6">The requested case study could not be found.</p>
-              <a href="#/case-studies" className="text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">Back to case studies</a>
+              <a href="/proof/" className="text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">Back to proof</a>
             </div>
           )}
         </main>
