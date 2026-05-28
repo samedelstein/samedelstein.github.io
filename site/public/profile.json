@@ -16,8 +16,7 @@
       "https://medium.com/@samedelstein",
       "https://samedelstein.com/brief/",
       "https://samedelstein.com/contact/",
-      "https://samedelstein.com/sam-edelstein-resume.pdf",
-      "https://samedelstein.com/resume.json"
+      "https://samedelstein.com/resume/"
     ],
     "jobTitle": "Senior Vice President, Data & AI",
     "worksFor": {
@@ -160,12 +159,8 @@
       "url": "https://samedelstein.com/brief/"
     },
     {
-      "name": "Resume PDF",
-      "url": "https://samedelstein.com/sam-edelstein-resume.pdf"
-    },
-    {
-      "name": "Plain Text Resume",
-      "url": "https://samedelstein.com/sam-edelstein-resume.txt"
+      "name": "Resume Materials",
+      "url": "https://samedelstein.com/resume/"
     },
     {
       "name": "vCard",
