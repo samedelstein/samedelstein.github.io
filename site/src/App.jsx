@@ -37,17 +37,17 @@ const executiveMailto = 'mailto:sam.i.edelstein@gmail.com?subject=Executive%20Da
 const navItems = [
   { id: 'home', label: 'Overview', type: 'section' },
   { id: 'roles', label: 'Work', type: 'link', href: '/roles/' },
-  { id: 'skills', label: 'Skills', type: 'link', href: '/skills/' },
-  { id: 'case-studies', label: 'Proof', type: 'link', href: '/proof/' },
+  { id: 'case-studies', label: 'Projects', type: 'link', href: '/proof/' },
   { id: 'experience', label: 'Experience', type: 'section' },
+  { id: 'writing', label: 'Writing', type: 'section' },
   { id: 'contact', label: 'Contact', type: 'link', href: '/contact/' },
 ];
 
 const workOnItems = [
-  ['Data people can trust', 'Put governance, quality, access, and context close enough to the work that leaders can actually use it.'],
-  ['AI people actually use', 'Move past demos by pairing tools with workflow design, enablement, ownership, and practical guardrails.'],
-  ['Platforms that reduce friction', 'Shape the data, analytics, and integration layers that let teams move faster without losing control.'],
-  ['Change that shows up in operations', 'Connect strategy, delivery rhythm, adoption, and measurement so the work survives beyond launch.'],
+  ['Open data and transparency', 'Launched DataCuse and helped make city data easier for residents, reporters, researchers, and staff to use.'],
+  ['Analytics for public services', 'Worked on projects like smoke alarm outreach, infrastructure coordination, and water main risk modeling.'],
+  ['Enterprise data and AI', 'Lead data and AI work across investment, HR, compliance, finance, and operations at Insight Partners.'],
+  ['Teaching and civic work', 'Taught graduate courses at Syracuse University and serve on local library and analytics boards.'],
 ];
 
 const impactStats = [
@@ -59,52 +59,52 @@ const impactStats = [
 
 const leadershipFocus = [
   {
-    label: 'Data people can trust',
-    body: 'Make enterprise data usable, governed, and close enough to operations to shape decisions.',
-    href: '/roles/chief-data-officer/',
+    label: 'DataCuse',
+    body: "Syracuse's first open data program and public data portal.",
+    href: '/proof/datacuse-open-data-platform/',
   },
   {
-    label: 'AI people actually use',
-    body: 'Turn pilots into repeatable systems with ownership, training, guardrails, and delivery rhythm.',
-    href: '/roles/vp-data-ai/',
+    label: 'Water main analytics',
+    body: 'A data science project to better understand water main break risk.',
+    href: '/proof/predictive-water-main-analytics/',
   },
   {
-    label: 'Governance that travels',
-    body: 'Help teams use AI well through practical enablement, workflow design, and risk-aware rollout.',
-    href: '/roles/head-of-ai-enablement/',
+    label: 'Enterprise AI enablement',
+    body: 'Practical adoption, governance, and workflow work inside a global firm.',
+    href: '/proof/enterprise-ai-enablement-at-scale/',
   },
   {
-    label: 'Platforms that reduce friction',
-    body: 'Shape the data, analytics, and integration layers that let product and business teams move faster.',
-    href: '/roles/data-platform-strategy/',
+    label: 'Writing and teaching',
+    body: 'Notes, talks, and graduate teaching on data, visualization, and government.',
+    href: '#writing',
   },
   {
-    label: 'Change that shows up',
-    body: 'Connect strategy, platforms, governance, and adoption to outcomes people can see and manage.',
-    href: '/roles/executive-ai-transformation/',
+    label: 'Civic boards',
+    body: 'Library, museum, and business analytics board service in Central New York.',
+    href: '#experience',
   },
 ];
 
 const leadershipReasons = [
-  'AI strategy grounded in the work people actually do.',
-  'Data foundations built for trust, access, and reuse.',
-  'Adoption systems that combine products, platforms, and people.',
-  'Operating models that clarify ownership and speed up delivery.',
-  'Measurement that connects capability to visible outcomes.',
-  'Governance that manages risk without freezing useful work.',
+  "Built Syracuse's first analytics office and open data program.",
+  'Worked on civic analytics projects with visible public-service impact.',
+  'Led enterprise data and AI work in a complex investment firm environment.',
+  'Comfortable moving between strategy, technical teams, and nontechnical stakeholders.',
+  'Still close to the details: data quality, workflow, adoption, and communication.',
+  'Long-standing ties to Syracuse, public institutions, teaching, and civic boards.',
 ];
 
 const operatingPrinciples = [
-  ['AI adoption is an operating model problem first.', 'Tools matter, but durable adoption depends on ownership, workflow fit, governance, support, and the rhythm of delivery.'],
-  ['Governance should make good work easier.', 'The best controls clarify what teams can do, what needs review, and how to move responsibly without turning every decision into theater.'],
-  ['Data platforms fail when they sit too far from decisions.', 'A trusted foundation is not just storage. It is context, access, quality, lineage, and a product mindset around the decisions it supports.'],
-  ['The useful question is what changes on Monday morning.', 'AI and data work should eventually show up in operating cadence, decision quality, service levels, cost, speed, or risk reduction.'],
+  ['Start with the actual work.', 'The useful data and AI questions usually show up in service delivery, staff workflow, public reporting, compliance, finance, or other everyday operations.'],
+  ['Make things understandable.', 'Whether the audience is a department head, analyst, board member, or resident, the work gets better when people can see what is happening and why.'],
+  ['Build enough structure to keep going.', 'A good data program needs standards, governance, documentation, and ownership, but it also needs room for people to try things and learn.'],
+  ['Share what can be shared.', 'Open data, public writing, talks, and reusable analysis have been a through line in my work since Syracuse.'],
 ];
 
 const availabilitySignals = [
-  ['Work shape', 'Strategy, platform, governance, adoption, and AI transformation treated as one operating system.'],
-  ['Location', 'Syracuse / New York; experienced with distributed and hybrid executive teams.'],
-  ['Conversation', 'Useful for founder, operating partner, board, and executive team conversations.'],
+  ['Current work', 'Senior Vice President, Data & AI at Insight Partners.'],
+  ['Location', 'Syracuse / New York; used to working with distributed teams.'],
+  ['Also', 'Library board president, former adjunct professor, and longtime civic data person.'],
 ];
 
 const experience = [
@@ -356,23 +356,23 @@ const App = () => {
               <div className="grid min-w-0 grid-cols-1 lg:grid-cols-[minmax(0,1.16fr)_minmax(360px,0.84fr)] gap-10 lg:gap-14 items-stretch">
                 <div className="flex min-w-0 flex-col justify-between">
                   <div>
-                    <h1 className="max-w-full break-words text-4xl font-semibold leading-[0.98] tracking-tight text-slate-950 sm:text-5xl md:max-w-4xl md:text-7xl">AI becomes useful when the data, governance, workflows, and people systems are built together.</h1>
-                    <p className="mt-7 max-w-full break-words text-lg leading-relaxed text-slate-600 md:max-w-2xl md:text-xl">I work on the operating systems behind enterprise AI: trusted data foundations, practical adoption, governance that can travel, and measurable change in how teams make decisions.</p>
+                    <p className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">Hi, I&apos;m Sam.</p>
+                    <h1 className="max-w-full break-words text-4xl font-semibold leading-[0.98] tracking-tight text-slate-950 sm:text-5xl md:max-w-4xl md:text-7xl">I work on data, AI, and public-service-minded technology.</h1>
+                    <p className="mt-7 max-w-full break-words text-lg leading-relaxed text-slate-600 md:max-w-2xl md:text-xl">I am Senior Vice President, Data &amp; AI at Insight Partners. Before that, I was the City of Syracuse&apos;s first Chief Data Officer, where I helped launch DataCuse, built the city&apos;s first analytics office, and worked on projects from open data to water main risk.</p>
                   </div>
                   <div className="mt-10">
                     <div className="flex flex-wrap gap-3">
                       <a href={executiveMailto} className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-slate-950 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:bg-blue-700 sm:w-auto"><Mail size={17} /><span>Email Sam</span></a>
-                      <a href={resumePdfUrl} download className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><Download size={17} /><span>Download Resume</span></a>
-                      <a href="/executive-brief/" className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><FileText size={17} /><span>Executive Brief</span></a>
-                      <button onClick={() => scrollToSection('case-studies-preview')} className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><ArrowUpRight size={17} /><span>See Proof</span></button>
+                      <a href={resumePdfUrl} download className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><Download size={17} /><span>Resume</span></a>
+                      <button onClick={() => scrollToSection('work')} className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><ArrowUpRight size={17} /><span>My Work</span></button>
                     </div>
-                    <p className="mt-5 max-w-full break-words text-sm leading-relaxed text-slate-500 md:max-w-2xl">Current work spans enterprise AI strategy, data foundations, governance, enablement, and operating model design across investment, HR, compliance, finance, and operations.</p>
+                    <p className="mt-5 max-w-full break-words text-sm leading-relaxed text-slate-500 md:max-w-2xl">Syracuse, New York. Data and AI at work, civic technology, libraries, teaching, hiking, and the occasional local dataset rabbit hole.</p>
                   </div>
                 </div>
                 <div className="min-w-0 max-w-full border border-slate-950 bg-slate-950 text-white shadow-2xl shadow-slate-200">
                   <div className="border-b border-white/20 px-5 py-5">
-                    <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">The Work</p>
-                    <h2 className="mt-2 text-2xl font-semibold tracking-tight">Where hard AI programs usually get real</h2>
+                    <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">A Few Things</p>
+                    <h2 className="mt-2 text-2xl font-semibold tracking-tight">Some work I keep coming back to</h2>
                   </div>
                   <div className="divide-y divide-white/15">
                     {leadershipFocus.map((role) => (
@@ -402,7 +402,7 @@ const App = () => {
 
             <section className="grid grid-cols-1 gap-12 border-b border-slate-200 py-16 lg:grid-cols-[minmax(0,1.55fr)_minmax(300px,0.85fr)]">
               <div>
-                <SectionTitle icon={<Briefcase className="h-5 w-5" />} title="The Pattern" eyebrow="Leadership Snapshot" />
+                <SectionTitle icon={<Briefcase className="h-5 w-5" />} title="About My Work" eyebrow="Background" />
                 <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
                   {leadershipReasons.map((reason, index) => (
                     <div key={reason} className="bg-white p-5">
@@ -414,13 +414,13 @@ const App = () => {
                   ))}
                 </div>
                 <div className="mt-8 space-y-5 text-lg leading-relaxed text-slate-700">
-                  <p>I currently serve as Senior Vice President, Data &amp; AI at Insight Partners, where I lead firm-wide AI and data strategy across investment, HR, compliance, finance, and operations. My work focuses on the systems behind durable adoption: modern data platforms, practical AI workflows, governance, and change management.</p>
-                  <p>Previously, I was the City of Syracuse&apos;s first Chief Data Officer, where I built the city&apos;s first analytics office, launched DataCuse, authored the first open data policy, and led programs that improved public services, modernized operations, and generated millions in savings.</p>
+                  <p>I currently lead data and AI work at Insight Partners across investment, HR, compliance, finance, and operations. It is a mix of strategy, governance, platforms, workflow design, and helping people use new tools in practical ways.</p>
+                  <p>Earlier in my career, I worked in city government. That shaped a lot of how I think: make the work useful, explain it clearly, build trust, and remember that data systems are only valuable if they help people make better decisions.</p>
                 </div>
               </div>
               <aside className="space-y-6">
                 <section>
-                  <SectionTitle icon={<Target className="h-5 w-5" />} title="Executive Brief" eyebrow="Context" compact />
+                  <SectionTitle icon={<Target className="h-5 w-5" />} title="Short Version" eyebrow="Context" compact />
                   <div className="divide-y divide-slate-200 border border-slate-200 bg-slate-50">
                     {availabilitySignals.map(([title, body]) => (
                       <div key={title} className="p-5">
@@ -447,8 +447,8 @@ const App = () => {
             <section className="border-b border-slate-200 py-16">
               <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.4fr)]">
                 <div>
-                  <SectionTitle icon={<ShieldCheck className="h-5 w-5" />} title="How I Think" eyebrow="Operating Principles" />
-                  <p className="max-w-xl text-lg leading-relaxed text-slate-700">The common thread across public-sector analytics, enterprise AI adoption, governance, and platform work is not novelty. It is making complex systems usable enough, trusted enough, and well-owned enough to change how work happens.</p>
+                  <SectionTitle icon={<ShieldCheck className="h-5 w-5" />} title="A Few Notes" eyebrow="Point of View" />
+                  <p className="max-w-xl text-lg leading-relaxed text-slate-700">The older posts on this site were mostly me sharing things I built, datasets I was exploring, or ideas from city government. I still like that mode: plain language, useful work, and enough detail that someone else can follow along.</p>
                 </div>
                 <div className="divide-y divide-slate-200 border-y border-slate-200">
                   {operatingPrinciples.map(([title, body]) => (
@@ -462,7 +462,7 @@ const App = () => {
             </section>
 
             <section id="work" className="scroll-mt-24 border-b border-slate-200 py-16">
-              <SectionTitle icon={<Users className="h-5 w-5" />} title="The Work In Practice" eyebrow="Focus Areas" />
+              <SectionTitle icon={<Users className="h-5 w-5" />} title="My Work" eyebrow="Focus Areas" />
               <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
                 {workOnItems.map(([title, description], index) => (
                   <div key={title} className="bg-slate-50 p-6">
@@ -476,7 +476,7 @@ const App = () => {
 
             <section className="border-b border-slate-200 py-16">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-                <SectionTitle icon={<Code className="h-5 w-5" />} title="Evidence From The Work" eyebrow="Selected Work" />
+                <SectionTitle icon={<Code className="h-5 w-5" />} title="Selected Projects" eyebrow="Built Things" />
                 <a href="/proof/" className="inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">View all <ChevronRight size={16} /></a>
               </div>
               <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
