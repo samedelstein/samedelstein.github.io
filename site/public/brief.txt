@@ -5,6 +5,7 @@ Now: https://samedelstein.com/now/
 Background: https://samedelstein.com/brief/
 Structured profile JSON: https://samedelstein.com/profile.json
 Skills and tools and topics: https://samedelstein.com/skills/
+Humans.txt: https://samedelstein.com/humans.txt
 Selected work: https://samedelstein.com/proof/
 Writing: https://samedelstein.com/writing/
 Press and speaking: https://samedelstein.com/press/

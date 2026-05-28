@@ -11,6 +11,7 @@ Background: https://samedelstein.com/brief/
 Structured profile JSON: https://samedelstein.com/profile.json
 Skills and tools: https://samedelstein.com/skills/
 Background text: https://samedelstein.com/brief.txt
+Human-readable site file: https://samedelstein.com/humans.txt
 Selected work: https://samedelstein.com/proof/
 Writing: https://samedelstein.com/writing/
 Press and speaking: https://samedelstein.com/press/

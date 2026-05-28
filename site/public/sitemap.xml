@@ -71,6 +71,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://samedelstein.com/humans.txt</loc>
+    <lastmod>2026-05-28</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://samedelstein.com/profile.json</loc>
     <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
