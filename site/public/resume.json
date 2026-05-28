@@ -23,7 +23,7 @@
     "canonical": "https://samedelstein.com/resume.json",
     "website": "https://samedelstein.com/",
     "executiveBrief": "https://samedelstein.com/executive-brief/",
-    "proofRecords": "https://samedelstein.com/proof/",
+    "selectedWork": "https://samedelstein.com/proof/",
     "pressAndSpeaking": "https://samedelstein.com/press/",
     "contactPage": "https://samedelstein.com/contact/",
     "resumePdf": "https://samedelstein.com/sam-edelstein-resume.pdf",
@@ -58,7 +58,7 @@
       "url": "https://samedelstein.com/roles/executive-ai-transformation/"
     }
   ],
-  "bestFitScope": "Work where enterprise AI strategy, data foundations, operating model design, governance, and scaled adoption are central to the work.",
+  "workScope": "Work involving enterprise AI strategy, data foundations, operating model design, governance, and practical adoption.",
   "work": [
     {
       "name": "Insight Partners",
@@ -165,7 +165,7 @@
       ]
     }
   ],
-  "leadershipSignals": [
+  "workSignals": [
     "90%+ AI adoption across enterprise functions.",
     "40%+ of the organization actively building with AI.",
     "12+ enterprise data sources integrated across cloud and on-prem systems.",
@@ -173,7 +173,7 @@
     "Experience building AI and data operating models across strategy, platform, governance, adoption, and delivery.",
     "Experience leading AI adoption from strategy through adoption, operating model design, and measurable business impact."
   ],
-  "proofRecords": [
+  "selectedWork": [
     {
       "title": "Enterprise AI Enablement at Scale",
       "url": "https://samedelstein.com/proof/enterprise-ai-enablement-at-scale/",

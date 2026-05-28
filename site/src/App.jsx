@@ -67,7 +67,7 @@ const publicRecord = [
 
 const impactStats = [
   ['90%+', 'AI adoption across enterprise functions'],
-  ['1B+', 'rows unified into trusted data foundations'],
+  ['1B+', 'rows unified into governed data foundations'],
   ['Cross-functional', 'work across investment, HR, compliance, finance, and operations'],
   ['Public-sector', 'foundation from Syracuse open data, analytics, and service delivery work'],
 ];

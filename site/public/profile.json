@@ -4,7 +4,7 @@
   "name": "Sam Edelstein Brief",
   "url": "https://samedelstein.com/profile.json",
   "dateModified": "2026-05-28",
-  "description": "Structured brief for Sam Edelstein, an Data & AI leader focused on enterprise AI strategy, AI adoption, governed data foundations, AI enablement, scaled adoption, and operating model design.",
+  "description": "Structured brief for Sam Edelstein, a Data & AI leader focused on enterprise AI strategy, AI adoption, governed data foundations, AI enablement, scaled adoption, and operating model design.",
   "mainEntity": {
     "@type": "Person",
     "name": "Sam Edelstein",
@@ -43,7 +43,7 @@
       "availableLanguage": "English"
     },
     "knowsAbout": [
-      "Trusted data foundations",
+      "Governed data foundations",
       "Applied AI operating models",
       "Responsible AI adoption",
       "Enterprise AI strategy",
@@ -75,7 +75,7 @@
   },
   "workThemes": [
     {
-      "name": "Trusted Data Foundations",
+      "name": "Data and AI Foundations",
       "url": "https://samedelstein.com/roles/chief-data-officer/"
     },
     {
@@ -95,8 +95,8 @@
       "url": "https://samedelstein.com/roles/executive-ai-transformation/"
     }
   ],
-  "bestFitScope": "Work where enterprise AI strategy, data foundations, operating model design, governance, and scaled adoption are central to the work.",
-  "leadershipSignals": [
+  "workScope": "Work involving enterprise AI strategy, data foundations, operating model design, governance, and practical adoption.",
+  "workSignals": [
     "90%+ AI adoption across enterprise functions.",
     "40%+ of the organization actively building with AI.",
     "12+ enterprise data sources integrated across cloud and on-prem systems.",
@@ -104,7 +104,7 @@
     "Experience building AI and data operating models across strategy, platform, governance, adoption, and delivery.",
     "Experience leading AI adoption from strategy through adoption, operating model design, and measurable business impact."
   ],
-  "proofRecords": [
+  "selectedWork": [
     {
       "name": "Enterprise AI Enablement at Scale",
       "url": "https://samedelstein.com/proof/enterprise-ai-enablement-at-scale/",

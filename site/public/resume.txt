@@ -8,15 +8,15 @@ Brief: https://samedelstein.com/executive-brief/
 Selected work: https://samedelstein.com/proof/
 Resume PDF: https://samedelstein.com/sam-edelstein-resume.pdf
 
-Target Roles
+Focus Areas
 - Chief Data Officer
 - Applied AI operating models
 - Head of AI Enablement
 - Data Platform Strategy leader
 - Measurable operating change
 
-Executive Summary
-Data and AI work focused on practical adoption, governed data foundations, civic technology, and useful operating systems. Useful for work where AI strategy, trusted data, governance, adoption, platform modernization, and measurable business value all matter.
+Summary
+Data and AI work focused on practical adoption, governed data foundations, civic technology, and useful operating systems. Relevant work includes AI strategy, governed data foundations, adoption, platform modernization, and practical business value.
 
 Current Role
 Senior Vice President, Data & AI, Insight Partners, 2021-Present
@@ -85,5 +85,5 @@ Leadership and Service
 Onondaga County Public Library, President, Board of Trustees.
 Le Moyne College Madden School of Business, Advisory Board Member, Business Analytics.
 
-Best-Fit Scope
-Work where enterprise AI strategy, data foundations, operating model design, governance, and scaled adoption are central to the work.
+Work Scope
+Work involving enterprise AI strategy, data foundations, operating model design, governance, and practical adoption.

@@ -4,7 +4,7 @@ Website: https://samedelstein.com/
 Brief: https://samedelstein.com/executive-brief/
 Structured brief JSON: https://samedelstein.com/profile.json
 Work themes: https://samedelstein.com/roles/
-Trusted data foundations: https://samedelstein.com/roles/chief-data-officer/
+Governed data foundations: https://samedelstein.com/roles/chief-data-officer/
 Applied AI operating models: https://samedelstein.com/roles/vp-data-ai/
 Responsible adoption: https://samedelstein.com/roles/head-of-ai-enablement/
 Modern delivery platforms: https://samedelstein.com/roles/data-platform-strategy/
@@ -23,14 +23,14 @@ LinkedIn: https://www.linkedin.com/in/samedelstein
 Location: Syracuse, New York, United States
 
 Work themes:
-- Trusted data foundations
+- Governed data foundations
 - Applied AI operating models
 - Responsible adoption
 - Modern delivery platforms
 - Measurable operating change
 
 Positioning:
-Sam Edelstein is a Data & AI focused on making AI useful in real work. He leads enterprise AI strategy, AI adoption, governed data foundations, AI enablement, scaled adoption, and operating model design.
+Sam Edelstein works on Data & AI, with a focus on making AI useful in real work. He leads enterprise AI strategy, AI adoption, governed data foundations, AI enablement, scaled adoption, and operating model design.
 
 Current role:
 Senior Vice President, Data & AI at Insight Partners. Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.
@@ -65,5 +65,5 @@ Delivered Azure-based analytics modernization work for public and private sector
 Chief Data Officer, City of Syracuse, 2015-2020
 Built the city's first analytics office, launched DataCuse, authored the first open data policy, and led operational analytics programs with public-sector impact.
 
-Best-fit scope:
-Work where enterprise AI strategy, data foundations, operating model design, governance, and scaled adoption are central to the work.
+Work scope:
+Work involving enterprise AI strategy, data foundations, operating model design, governance, and practical adoption.

@@ -6,7 +6,7 @@ Primary site: https://samedelstein.com/
 Brief: https://samedelstein.com/executive-brief/
 Structured profile JSON: https://samedelstein.com/profile.json
 Work themes: https://samedelstein.com/roles/
-Trusted data foundations: https://samedelstein.com/roles/chief-data-officer/
+Governed data foundations: https://samedelstein.com/roles/chief-data-officer/
 Applied AI operating models: https://samedelstein.com/roles/vp-data-ai/
 Responsible adoption: https://samedelstein.com/roles/head-of-ai-enablement/
 Modern delivery platforms: https://samedelstein.com/roles/data-platform-strategy/
@@ -28,7 +28,7 @@ Work themes include open data, civic analytics, enterprise data and AI, data gov
 
 Relevant work themes include enterprise AI strategy, AI adoption, AI governance, data platform strategy, data product leadership, open data, civic technology, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, and APIs.
 
-Selected facts include 90%+ AI adoption across enterprise functions, 40%+ active AI builders, 12+ data sources integrated, and 1B+ rows unified into trusted data foundations.
+Selected facts include 90%+ AI adoption across enterprise functions, 40%+ active AI builders, 12+ data sources integrated, and 1B+ rows unified into governed data foundations.
 
 Selected work includes DataCuse: Open Data Platform, Predictive Water Main Analytics, and Enterprise AI Enablement at Scale.
 
