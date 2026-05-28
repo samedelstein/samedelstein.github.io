@@ -15,7 +15,6 @@ Press and speaking: https://samedelstein.com/press/
 Contact page: https://samedelstein.com/contact/
 Resume: https://samedelstein.com/sam-edelstein-resume.pdf
 Plain text resume: https://samedelstein.com/sam-edelstein-resume.txt
-Resume aliases: https://samedelstein.com/resume.pdf and https://samedelstein.com/resume.txt
 Structured resume JSON: https://samedelstein.com/resume.json
 vCard: https://samedelstein.com/sam-edelstein.vcf
 Contact: sam.i.edelstein@gmail.com
