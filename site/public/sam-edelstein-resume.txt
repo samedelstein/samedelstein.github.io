@@ -12,8 +12,8 @@ Focus Areas
 - Enterprise data and AI
 - Practical AI adoption
 - Governed data foundations
-- Civic technology background
-- Useful public-facing tools
+- Public data background
+- Useful public-minded tools
 
 Summary
 Data and AI work focused on practical adoption, governed data foundations, useful tools and workflows, and public data background. Relevant work includes AI strategy, governed data foundations, adoption, platform modernization, and practical business value.

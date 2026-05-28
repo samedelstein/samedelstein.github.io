@@ -20,8 +20,8 @@ Work themes:
 - Governed data foundations
 - Practical AI adoption
 - Enterprise data and AI
-- Civic technology background
-- Useful public-facing tools
+- Public data background
+- Useful public-minded tools
 
 Summary:
 Sam Edelstein works on enterprise Data & AI, with a focus on practical adoption, governed data foundations, and tools that help teams use information well.
