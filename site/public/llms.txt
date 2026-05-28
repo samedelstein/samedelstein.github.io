@@ -4,6 +4,7 @@ Sam Edelstein is a Data & AI executive focused on enterprise AI strategy, execut
 
 Primary site: https://samedelstein.com/
 Recruiter packet: https://samedelstein.com/recruiter/
+Structured recruiter packet JSON: https://samedelstein.com/recruiter.json
 Role fit: https://samedelstein.com/roles/
 Chief Data Officer role fit: https://samedelstein.com/roles/chief-data-officer/
 VP Data & AI role fit: https://samedelstein.com/roles/vp-data-ai/

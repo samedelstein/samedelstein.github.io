@@ -1,0 +1,146 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "name": "Sam Edelstein Recruiter Packet",
+  "url": "https://samedelstein.com/recruiter.json",
+  "dateModified": "2026-05-28",
+  "description": "Structured recruiter packet for Sam Edelstein, an executive Data & AI leader focused on enterprise AI strategy, executive AI transformation, governed data foundations, AI enablement, scaled adoption, and operating model design.",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Sam Edelstein",
+    "email": "mailto:sam.i.edelstein@gmail.com",
+    "url": "https://samedelstein.com/",
+    "sameAs": [
+      "https://www.linkedin.com/in/samedelstein",
+      "https://samedelstein.com/recruiter/",
+      "https://samedelstein.com/contact/",
+      "https://samedelstein.com/sam-edelstein-resume.pdf",
+      "https://samedelstein.com/resume.json"
+    ],
+    "jobTitle": "Executive Data & AI Leader",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Insight Partners"
+    },
+    "workLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Syracuse",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      }
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "executive search and recruiter outreach",
+      "email": "sam.i.edelstein@gmail.com",
+      "areaServed": [
+        "United States",
+        "New York",
+        "Remote-first executive mandates"
+      ],
+      "availableLanguage": "English"
+    },
+    "knowsAbout": [
+      "Chief Data Officer leadership",
+      "VP Data and AI leadership",
+      "Head of AI Enablement",
+      "Enterprise AI strategy",
+      "Executive AI transformation",
+      "AI operating model design",
+      "AI readiness and responsible adoption",
+      "AI governance",
+      "Data platform strategy",
+      "Data product leadership",
+      "Snowflake",
+      "dbt",
+      "Azure",
+      "Generative AI",
+      "Retrieval-augmented generation",
+      "MLOps",
+      "Python",
+      "SQL",
+      "APIs"
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Executive Data and AI Leader",
+      "occupationLocation": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "skills": "Enterprise AI strategy, executive AI transformation, AI governance, data platform modernization, AI enablement, data governance, executive operating model design, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, APIs"
+    }
+  },
+  "targetRoles": [
+    {
+      "name": "Chief Data Officer",
+      "url": "https://samedelstein.com/roles/chief-data-officer/"
+    },
+    {
+      "name": "VP / Head of Data & AI",
+      "url": "https://samedelstein.com/roles/vp-data-ai/"
+    },
+    {
+      "name": "Head of AI Enablement",
+      "url": "https://samedelstein.com/roles/head-of-ai-enablement/"
+    },
+    {
+      "name": "Data Platform Strategy Leader",
+      "url": "https://samedelstein.com/roles/data-platform-strategy/"
+    },
+    {
+      "name": "Executive AI Transformation Leader",
+      "url": "https://samedelstein.com/roles/executive-ai-transformation/"
+    }
+  ],
+  "bestFitMandate": "Executive roles where enterprise AI strategy, trusted data foundations, operating model design, governance, and scaled adoption are central to the work.",
+  "recruiterSignals": [
+    "90%+ AI adoption across enterprise functions.",
+    "40%+ of the organization actively building with AI.",
+    "12+ enterprise data sources integrated across cloud and on-prem systems.",
+    "1B+ rows unified into trusted, governed, accessible foundations.",
+    "Experience building AI and data operating models across strategy, platform, governance, adoption, and delivery.",
+    "Experience leading executive AI transformation from strategy through adoption, operating model design, and measurable business impact."
+  ],
+  "proofRecords": [
+    {
+      "name": "Enterprise AI Enablement at Scale",
+      "url": "https://samedelstein.com/proof/enterprise-ai-enablement-at-scale/",
+      "description": "Led an enterprise AI enablement portfolio spanning operating model, infrastructure, governance, adoption, and applied workflows."
+    },
+    {
+      "name": "DataCuse: Open Data Platform",
+      "url": "https://samedelstein.com/proof/datacuse-open-data-platform/",
+      "description": "Built Syracuse's first open data program, turning scattered civic data into a governed transparency and analytics capability."
+    },
+    {
+      "name": "Predictive Water Main Analytics",
+      "url": "https://samedelstein.com/proof/predictive-water-main-analytics/",
+      "description": "Translated machine learning research into an operational risk model for prioritizing aging water infrastructure."
+    }
+  ],
+  "contactActions": [
+    {
+      "name": "Email Sam",
+      "url": "mailto:sam.i.edelstein@gmail.com?subject=Executive%20Data%20%26%20AI%20conversation"
+    },
+    {
+      "name": "Recruiter Packet",
+      "url": "https://samedelstein.com/recruiter/"
+    },
+    {
+      "name": "Resume PDF",
+      "url": "https://samedelstein.com/sam-edelstein-resume.pdf"
+    },
+    {
+      "name": "ATS Resume Text",
+      "url": "https://samedelstein.com/sam-edelstein-resume.txt"
+    },
+    {
+      "name": "Contact Page",
+      "url": "https://samedelstein.com/contact/"
+    }
+  ]
+}
