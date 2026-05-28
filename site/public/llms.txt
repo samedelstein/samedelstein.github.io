@@ -6,6 +6,7 @@ Primary site: https://samedelstein.com/
 Recruiter packet: https://samedelstein.com/recruiter/
 Recruiter brief: https://samedelstein.com/recruiter-brief.txt
 Proof records: https://samedelstein.com/proof/
+Press and speaking: https://samedelstein.com/press/
 Resume: https://samedelstein.com/sam-edelstein-resume.pdf
 ATS resume text: https://samedelstein.com/sam-edelstein-resume.txt
 Contact: sam.i.edelstein@gmail.com
@@ -16,3 +17,5 @@ Best-fit roles include Chief Data Officer, VP / Head of Data & AI, Head of AI En
 Key proof points include 90%+ AI adoption across enterprise functions, 40%+ active AI builders, 12+ data sources integrated, and 1B+ rows unified into trusted data foundations.
 
 Selected proof records include Enterprise AI Enablement at Scale, DataCuse: Open Data Platform, and Predictive Water Main Analytics.
+
+Selected third-party validation includes Politico, GovTech, Syracuse.com, WRVO, New York State Local Government Innovation Conference, Smart Cities International Symposium, and MIT CDOIQ Symposium references.
