@@ -14,7 +14,7 @@
       "https://www.linkedin.com/in/samedelstein",
       "https://github.com/samedelstein",
       "https://medium.com/@samedelstein",
-      "https://samedelstein.com/executive-brief/",
+      "https://samedelstein.com/brief/",
       "https://samedelstein.com/contact/",
       "https://samedelstein.com/sam-edelstein-resume.pdf",
       "https://samedelstein.com/resume.json"
@@ -127,7 +127,7 @@
     },
     {
       "name": "Brief",
-      "url": "https://samedelstein.com/executive-brief/"
+      "url": "https://samedelstein.com/brief/"
     },
     {
       "name": "Resume PDF",

@@ -6,10 +6,10 @@ Current role: Senior Vice President, Data & AI at Insight Partners.
 Location: Syracuse, New York, United States.
 
 Primary site: https://samedelstein.com/
-Brief: https://samedelstein.com/executive-brief/
+Brief: https://samedelstein.com/brief/
 Structured profile JSON: https://samedelstein.com/profile.json
 Skills and tools: https://samedelstein.com/skills/
-Brief text: https://samedelstein.com/executive-brief.txt
+Brief text: https://samedelstein.com/brief.txt
 Selected work: https://samedelstein.com/proof/
 Press and speaking: https://samedelstein.com/press/
 Contact page: https://samedelstein.com/contact/
