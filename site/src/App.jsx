@@ -95,7 +95,7 @@ const recruiterReasons = [
 ];
 
 const availabilitySignals = [
-  ['Best fit', 'Executive Data & AI roles where strategy, platform, governance, and adoption all matter.'],
+  ['Best fit', 'Executive Data & AI roles where strategy, platform, governance, adoption, and AI transformation all matter.'],
   ['Location', 'Syracuse / New York; open to remote-first and selective hybrid executive mandates.'],
   ['Conversation', 'Recruiter, founder, operating partner, and executive team conversations are welcome.'],
 ];
@@ -360,7 +360,7 @@ const App = () => {
                       <a href="/recruiter/" className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><FileText size={17} /><span>Recruiter Packet</span></a>
                       <button onClick={() => scrollToSection('case-studies-preview')} className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><ArrowUpRight size={17} /><span>See Proof</span></button>
                     </div>
-                    <p className="mt-5 max-w-full break-words text-sm leading-relaxed text-slate-500 md:max-w-2xl">Open to selective executive conversations. Best fit: CDO, VP Data &amp; AI, Head of AI Enablement, and roles where platform, governance, adoption, and operating model design all matter.</p>
+                    <p className="mt-5 max-w-full break-words text-sm leading-relaxed text-slate-500 md:max-w-2xl">Open to selective executive conversations. Best fit: CDO, VP Data &amp; AI, Head of AI Enablement, AI transformation, and roles where platform, governance, adoption, and operating model design all matter.</p>
                   </div>
                 </div>
                 <div className="min-w-0 max-w-full border border-slate-950 bg-slate-950 text-white shadow-2xl shadow-slate-200">
@@ -621,7 +621,7 @@ const App = () => {
           <section className="mb-10 border-y border-slate-200 py-10">
             <span className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-700">Recruiter Packet</span>
             <h1 className="mt-4 max-w-full break-words text-4xl font-semibold tracking-tight text-slate-950 md:max-w-4xl md:text-6xl">Sam Edelstein for executive Data &amp; AI leadership roles.</h1>
-            <p className="mt-5 max-w-full break-words text-lg leading-relaxed text-slate-600 md:max-w-3xl">A concise packet for recruiters, search partners, founders, operating partners, and executive teams evaluating CDO, VP Data &amp; AI, AI enablement, and data platform strategy mandates.</p>
+            <p className="mt-5 max-w-full break-words text-lg leading-relaxed text-slate-600 md:max-w-3xl">A concise packet for recruiters, search partners, founders, operating partners, and executive teams evaluating CDO, VP Data &amp; AI, AI enablement, data platform strategy, and executive AI transformation mandates.</p>
           </section>
 
           <section className="grid grid-cols-1 gap-8 border-b border-slate-200 pb-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(300px,0.8fr)]">
