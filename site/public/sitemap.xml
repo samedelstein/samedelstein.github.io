@@ -96,6 +96,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://samedelstein.com/person.json</loc>
+    <lastmod>2026-05-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://samedelstein.com/sam-edelstein.vcf</loc>
     <lastmod>2026-05-28</lastmod>
     <priority>0.6</priority>

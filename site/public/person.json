@@ -1,0 +1,91 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sam Edelstein",
+  "url": "https://samedelstein.com/",
+  "email": "mailto:sam.i.edelstein@gmail.com",
+  "jobTitle": "Senior Vice President, Data & AI",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Insight Partners"
+  },
+  "workLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Syracuse",
+      "addressRegion": "NY",
+      "addressCountry": "US"
+    }
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Syracuse University"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/samedelstein",
+    "https://github.com/samedelstein",
+    "https://samedelstein.medium.com/",
+    "https://samedelstein.com/profile.json",
+    "https://samedelstein.com/resume.json",
+    "https://samedelstein.com/brief/",
+    "https://samedelstein.com/now/",
+    "https://samedelstein.com/proof/",
+    "https://samedelstein.com/writing/",
+    "https://samedelstein.com/press/",
+    "https://samedelstein.com/contact/"
+  ],
+  "knowsAbout": [
+    "Enterprise data and AI strategy",
+    "Governed data foundations",
+    "Useful AI workflows",
+    "AI workflow design",
+    "AI governance",
+    "AI readiness",
+    "Data platform modernization",
+    "Data governance",
+    "Data product leadership",
+    "Analytics leadership",
+    "Snowflake",
+    "dbt",
+    "Azure",
+    "Generative AI",
+    "Retrieval-augmented generation",
+    "MLOps",
+    "Python",
+    "SQL",
+    "APIs",
+    "Open data",
+    "Public data systems"
+  ],
+  "description": "Sam Edelstein works on enterprise data and AI at Insight Partners, with background in open data, analytics, and practical public data work.",
+  "subjectOf": [
+    {
+      "@type": "WebPage",
+      "name": "Sam Edelstein - Now",
+      "url": "https://samedelstein.com/now/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Sam Edelstein - Background",
+      "url": "https://samedelstein.com/brief/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Sam Edelstein - Selected Work",
+      "url": "https://samedelstein.com/proof/"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "Sam Edelstein Resume JSON",
+      "url": "https://samedelstein.com/resume.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "Sam Edelstein vCard",
+      "url": "https://samedelstein.com/sam-edelstein.vcf",
+      "encodingFormat": "text/vcard"
+    }
+  ]
+}

@@ -32,6 +32,7 @@
   "meta": {
     "canonical": "https://samedelstein.com/resume.json",
     "website": "https://samedelstein.com/",
+    "personJson": "https://samedelstein.com/person.json",
     "background": "https://samedelstein.com/brief/",
     "selectedWork": "https://samedelstein.com/proof/",
     "pressAndSpeaking": "https://samedelstein.com/press/",

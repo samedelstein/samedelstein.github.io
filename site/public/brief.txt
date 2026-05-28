@@ -4,6 +4,7 @@ Website: https://samedelstein.com/
 Now: https://samedelstein.com/now/
 Background: https://samedelstein.com/brief/
 Structured profile JSON: https://samedelstein.com/profile.json
+Person JSON-LD: https://samedelstein.com/person.json
 Skills and tools and topics: https://samedelstein.com/skills/
 Humans.txt: https://samedelstein.com/humans.txt
 Selected work: https://samedelstein.com/proof/

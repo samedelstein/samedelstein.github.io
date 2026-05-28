@@ -14,6 +14,7 @@
       "https://www.linkedin.com/in/samedelstein",
       "https://github.com/samedelstein",
       "https://samedelstein.medium.com/",
+      "https://samedelstein.com/person.json",
       "https://samedelstein.com/now/",
       "https://samedelstein.com/brief/",
       "https://samedelstein.com/writing/",
@@ -186,6 +187,10 @@
     {
       "name": "Background",
       "url": "https://samedelstein.com/brief/"
+    },
+    {
+      "name": "Person JSON-LD",
+      "url": "https://samedelstein.com/person.json"
     },
     {
       "name": "Now",
