@@ -60,3 +60,9 @@ Built the city's first analytics office, launched DataCuse, authored the first o
 
 Work scope:
 Work involving enterprise AI strategy, data foundations, governance, and practical adoption.
+
+Useful starting points:
+- Enterprise data and AI work
+- Data foundations
+- Practical AI adoption
+- Public data background
