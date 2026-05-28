@@ -16,6 +16,16 @@
         "network": "LinkedIn",
         "username": "samedelstein",
         "url": "https://www.linkedin.com/in/samedelstein"
+      },
+      {
+        "network": "GitHub",
+        "username": "samedelstein",
+        "url": "https://github.com/samedelstein"
+      },
+      {
+        "network": "Medium",
+        "username": "samedelstein",
+        "url": "https://medium.com/@samedelstein"
       }
     ]
   },
@@ -27,7 +37,8 @@
     "pressAndSpeaking": "https://samedelstein.com/press/",
     "contactPage": "https://samedelstein.com/contact/",
     "resumePdf": "https://samedelstein.com/sam-edelstein-resume.pdf",
-    "resumeText": "https://samedelstein.com/sam-edelstein-resume.txt"
+    "resumeText": "https://samedelstein.com/sam-edelstein-resume.txt",
+    "vCard": "https://samedelstein.com/sam-edelstein.vcf"
   },
   "workThemes": [
     "Governed data foundations",
