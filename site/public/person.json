@@ -34,6 +34,43 @@
     "@type": "CollegeOrUniversity",
     "name": "Syracuse University"
   },
+  "affiliation": [
+    {
+      "@type": "Organization",
+      "name": "Onondaga County Public Library"
+    },
+    {
+      "@type": "Organization",
+      "name": "Le Moyne College Madden School of Business"
+    }
+  ],
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Data and AI professional",
+    "occupationLocation": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "skills": [
+      "Enterprise data and AI strategy",
+      "AI workflow design",
+      "AI governance",
+      "Governed data foundations",
+      "Data platform modernization",
+      "Data governance",
+      "Data product leadership",
+      "Analytics leadership",
+      "Snowflake",
+      "dbt",
+      "Azure",
+      "Generative AI",
+      "Retrieval-augmented generation",
+      "MLOps",
+      "Python",
+      "SQL",
+      "APIs"
+    ]
+  },
   "sameAs": [
     "https://www.linkedin.com/in/samedelstein",
     "https://github.com/samedelstein",
@@ -91,6 +128,16 @@
       "url": "https://samedelstein.com/proof/"
     },
     {
+      "@type": "CollectionPage",
+      "name": "Sam Edelstein - Writing",
+      "url": "https://samedelstein.com/writing/"
+    },
+    {
+      "@type": "CollectionPage",
+      "name": "Sam Edelstein - Press and Speaking",
+      "url": "https://samedelstein.com/press/"
+    },
+    {
       "@type": "DigitalDocument",
       "name": "Sam Edelstein Structured Profile",
       "url": "https://samedelstein.com/profile.json",
@@ -119,6 +166,18 @@
       "name": "Sam Edelstein vCard",
       "url": "https://samedelstein.com/sam-edelstein.vcf",
       "encodingFormat": "text/vcard"
+    },
+    {
+      "@type": "Article",
+      "name": "What's Missing in AI + BI: The Case for Bi-Directional Interfaces",
+      "publisher": "Medium",
+      "url": "https://samedelstein.medium.com/whats-missing-in-ai-bi-the-case-for-bi-directional-interfaces-bcba1849b8a4"
+    },
+    {
+      "@type": "Article",
+      "name": "Syracuse Turns To Data to Fix Its Faulty Water System",
+      "publisher": "Politico",
+      "url": "https://www.politico.com/magazine/story/2017/04/20/syracuse-infrastructure-water-system-pipe-breaks-215054"
     }
   ]
 }
