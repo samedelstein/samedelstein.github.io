@@ -4,6 +4,7 @@ Website: https://samedelstein.com/
 Recruiter packet: https://samedelstein.com/recruiter/
 Proof records: https://samedelstein.com/proof/
 Press and speaking: https://samedelstein.com/press/
+Contact page: https://samedelstein.com/contact/
 Resume: https://samedelstein.com/sam-edelstein-resume.pdf
 ATS resume text: https://samedelstein.com/sam-edelstein-resume.txt
 Email: sam.i.edelstein@gmail.com
