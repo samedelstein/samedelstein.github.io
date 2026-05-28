@@ -7,9 +7,7 @@ Skills and tools and topics: https://samedelstein.com/skills/
 Selected work: https://samedelstein.com/proof/
 Press and speaking: https://samedelstein.com/press/
 Contact page: https://samedelstein.com/contact/
-Resume: https://samedelstein.com/sam-edelstein-resume.pdf
-Plain text resume: https://samedelstein.com/sam-edelstein-resume.txt
-Structured resume JSON: https://samedelstein.com/resume.json
+Resume materials: https://samedelstein.com/resume/
 vCard: https://samedelstein.com/sam-edelstein.vcf
 Email: sam.i.edelstein@gmail.com
 LinkedIn: https://www.linkedin.com/in/samedelstein

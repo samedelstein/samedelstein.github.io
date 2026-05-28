@@ -13,16 +13,14 @@ Background text: https://samedelstein.com/brief.txt
 Selected work: https://samedelstein.com/proof/
 Press and speaking: https://samedelstein.com/press/
 Contact page: https://samedelstein.com/contact/
-Resume: https://samedelstein.com/sam-edelstein-resume.pdf
-Plain text resume: https://samedelstein.com/sam-edelstein-resume.txt
-Structured resume JSON: https://samedelstein.com/resume.json
+Resume materials: https://samedelstein.com/resume/
 vCard: https://samedelstein.com/sam-edelstein.vcf
 Contact: sam.i.edelstein@gmail.com
 LinkedIn: https://www.linkedin.com/in/samedelstein
 GitHub: https://github.com/samedelstein
 Medium: https://medium.com/@samedelstein
 
-Current work includes enterprise Data & AI strategy, governed data foundations, practical AI adoption, data governance, data platform modernization, enablement, and useful internal tools.
+Current work includes enterprise Data & AI strategy, governed data foundations, practical AI adoption, data governance, data platform modernization, enablement, and useful internal tools across investment, HR, compliance, finance, and operations.
 
 Earlier public-sector work includes Syracuse open data, DataCuse, water main analytics, public analytics, public dashboards, teaching, and public data work.
 
