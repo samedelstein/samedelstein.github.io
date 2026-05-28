@@ -1,19 +1,19 @@
 ﻿# Sam Edelstein
 
-Sam Edelstein is a Data & AI executive focused on enterprise AI strategy, executive AI transformation, governed data foundations, scaled adoption, and operating model design.
+Sam Edelstein works on data, AI, civic technology, open data, analytics, and public-service-minded technology from Syracuse, New York.
 
 Primary site: https://samedelstein.com/
-Executive brief: https://samedelstein.com/executive-brief/
-Structured executive brief JSON: https://samedelstein.com/profile.json
+Brief: https://samedelstein.com/executive-brief/
+Structured profile JSON: https://samedelstein.com/profile.json
 Work themes: https://samedelstein.com/roles/
 Trusted data foundations: https://samedelstein.com/roles/chief-data-officer/
 Applied AI operating models: https://samedelstein.com/roles/vp-data-ai/
 Responsible adoption: https://samedelstein.com/roles/head-of-ai-enablement/
 Modern delivery platforms: https://samedelstein.com/roles/data-platform-strategy/
 Measurable operating change: https://samedelstein.com/roles/executive-ai-transformation/
-Skills and keyword fit: https://samedelstein.com/skills/
-Executive brief: https://samedelstein.com/executive-brief.txt
-Proof records: https://samedelstein.com/proof/
+Skills and tools: https://samedelstein.com/skills/
+Brief text: https://samedelstein.com/executive-brief.txt
+Selected work: https://samedelstein.com/proof/
 Press and speaking: https://samedelstein.com/press/
 Contact page: https://samedelstein.com/contact/
 Resume: https://samedelstein.com/sam-edelstein-resume.pdf
@@ -24,12 +24,12 @@ vCard: https://samedelstein.com/sam-edelstein.vcf
 Contact: sam.i.edelstein@gmail.com
 LinkedIn: https://www.linkedin.com/in/samedelstein
 
-Work themes include trusted data foundations, applied AI operating models, responsible adoption, modern delivery platforms, and measurable operating change.
+Work themes include open data, civic analytics, enterprise data and AI, data governance, AI adoption, teaching, and civic technology.
 
-Relevant work themes include enterprise AI strategy, executive AI transformation, AI operating model design, AI readiness, responsible AI adoption, AI governance, data platform strategy, data product leadership, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, and APIs.
+Relevant work themes include enterprise AI strategy, AI adoption, AI governance, data platform strategy, data product leadership, open data, civic technology, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, and APIs.
 
-Key proof points include 90%+ AI adoption across enterprise functions, 40%+ active AI builders, 12+ data sources integrated, and 1B+ rows unified into trusted data foundations.
+Selected facts include 90%+ AI adoption across enterprise functions, 40%+ active AI builders, 12+ data sources integrated, and 1B+ rows unified into trusted data foundations.
 
-Selected proof records include Enterprise AI Enablement at Scale, DataCuse: Open Data Platform, and Predictive Water Main Analytics.
+Selected work includes DataCuse: Open Data Platform, Predictive Water Main Analytics, and Enterprise AI Enablement at Scale.
 
 Selected third-party validation includes Politico, GovTech, Syracuse.com, WRVO, New York State Local Government Innovation Conference, Smart Cities International Symposium, and MIT CDOIQ Symposium references.

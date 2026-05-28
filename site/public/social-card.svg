@@ -1,29 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">Sam Edelstein - Data and AI Executive</title>
-  <desc id="desc">Social preview card for Sam Edelstein's executive Data and AI leadership website.</desc>
+  <title id="title">Sam Edelstein - Data, AI, and Civic Technology</title>
+  <desc id="desc">Social preview card for Sam Edelstein's personal website.</desc>
   <rect width="1200" height="630" fill="#ffffff"/>
   <rect x="48" y="48" width="1104" height="534" fill="#f8fafc" stroke="#dbe3ef" stroke-width="2"/>
   <rect x="780" y="48" width="372" height="534" fill="#020617"/>
   <text x="92" y="125" fill="#1d4ed8" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="5">SAM EDELSTEIN</text>
-  <text x="92" y="225" fill="#020617" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="700">Data &amp; AI</text>
-  <text x="92" y="310" fill="#020617" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="700">Executive</text>
-  <text x="92" y="382" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="30">Enterprise AI strategy, governed data,</text>
-  <text x="92" y="422" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="30">responsible adoption, operating change.</text>
+  <text x="92" y="225" fill="#020617" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700">Data, AI,</text>
+  <text x="92" y="297" fill="#020617" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700">and civic</text>
+  <text x="92" y="369" fill="#020617" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700">technology</text>
+  <text x="92" y="442" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="30">Open data, analytics, AI adoption,</text>
+  <text x="92" y="480" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="30">libraries, teaching, and Syracuse.</text>
   <g fill="#020617">
-    <rect x="92" y="492" width="110" height="54" rx="6"/>
-    <rect x="218" y="492" width="126" height="54" rx="6"/>
-    <rect x="360" y="492" width="132" height="54" rx="6"/>
-    <rect x="508" y="492" width="150" height="54" rx="6"/>
+    <rect x="92" y="518" width="110" height="46" rx="0"/>
+    <rect x="218" y="518" width="100" height="46" rx="0"/>
+    <rect x="336" y="518" width="128" height="46" rx="0"/>
+    <rect x="482" y="518" width="176" height="46" rx="0"/>
   </g>
-  <text x="119" y="527" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">DATA</text>
-  <text x="245" y="527" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">AI OPS</text>
-  <text x="386" y="527" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">ADOPT</text>
-  <text x="535" y="527" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">CHANGE</text>
-  <text x="830" y="142" fill="#bfdbfe" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="4">OPERATING PROOF</text>
+  <text x="114" y="548" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">DATA</text>
+  <text x="240" y="548" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">AI</text>
+  <text x="358" y="548" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">CIVIC</text>
+  <text x="504" y="548" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">SYRACUSE</text>
+  <text x="830" y="142" fill="#bfdbfe" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="4">SELECTED WORK</text>
   <line x1="830" y1="178" x2="1102" y2="178" stroke="#334155" stroke-width="2"/>
-  <text x="830" y="238" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">90%+ AI adoption</text>
-  <text x="830" y="300" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">1B+ rows unified</text>
-  <text x="830" y="362" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Trusted systems</text>
+  <text x="830" y="238" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">DataCuse</text>
+  <text x="830" y="300" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Water analytics</text>
+  <text x="830" y="362" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Enterprise AI</text>
   <line x1="830" y1="414" x2="1102" y2="414" stroke="#334155" stroke-width="2"/>
   <text x="830" y="470" fill="#dbeafe" font-family="Arial, Helvetica, sans-serif" font-size="25">samedelstein.com</text>
 </svg>
