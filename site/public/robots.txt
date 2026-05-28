@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://samedelstein.com/sitemap.xml

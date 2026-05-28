@@ -1,0 +1,50 @@
+Sam Edelstein - Executive Data & AI Leader
+
+Website: https://samedelstein.com/
+Resume: https://samedelstein.com/sam-edelstein-resume.pdf
+Email: sam.i.edelstein@gmail.com
+LinkedIn: https://www.linkedin.com/in/samedelstein
+Location: Syracuse, New York, United States
+
+Target roles:
+- Chief Data Officer
+- VP / Head of Data & AI
+- Head of AI Enablement
+- Data Platform Strategy leader
+- Executive AI transformation leader
+
+Positioning:
+Sam Edelstein is a Data & AI executive focused on turning AI ambition into operating capability. He leads enterprise AI strategy, governed data foundations, AI enablement, scaled adoption, and operating model design.
+
+Current role:
+Senior Vice President, Data & AI at Insight Partners. Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.
+
+Recruiter signals:
+- 90%+ AI adoption across enterprise functions
+- 40%+ of the organization actively building with AI
+- 12+ enterprise data sources integrated across cloud and on-prem systems
+- 1B+ rows unified into trusted, governed, accessible foundations
+- Experience building AI and data operating models across strategy, platform, governance, adoption, and delivery
+
+Core strengths:
+- Enterprise AI strategy and roadmaps
+- AI governance, assurance, and adoption
+- Data platform modernization
+- Data governance and quality
+- Data product and analytics leadership
+- Executive stakeholder management
+- Team building and operating model design
+- Change management for practical AI adoption
+
+Selected experience:
+Senior Vice President, Data & AI, Insight Partners, 2021-Present
+Leads firm-wide Data & AI strategy, platform modernization, enablement, governance, and adoption across business functions.
+
+Senior Consultant, BlueGranite, 2020-2021
+Delivered Azure-based analytics modernization work for public and private sector clients.
+
+Chief Data Officer, City of Syracuse, 2015-2020
+Built the city's first analytics office, launched DataCuse, authored the first open data policy, and led operational analytics programs with public-sector impact.
+
+Best-fit mandate:
+Executive roles where enterprise AI strategy, trusted data foundations, operating model design, governance, and scaled adoption are central to the work.
