@@ -75,24 +75,19 @@
   },
   "workThemes": [
     {
-      "name": "Data and AI Foundations",
-      "url": "https://samedelstein.com/roles/chief-data-officer/"
+      "name": "Governed data foundations"
     },
     {
-      "name": "Applied AI Operating Models",
-      "url": "https://samedelstein.com/roles/vp-data-ai/"
+      "name": "Applied AI operating models"
     },
     {
-      "name": "Responsible Adoption",
-      "url": "https://samedelstein.com/roles/head-of-ai-enablement/"
+      "name": "Responsible adoption"
     },
     {
-      "name": "Modern Delivery Platforms",
-      "url": "https://samedelstein.com/roles/data-platform-strategy/"
+      "name": "Modern delivery platforms"
     },
     {
-      "name": "Measurable Operating Change",
-      "url": "https://samedelstein.com/roles/executive-ai-transformation/"
+      "name": "Measurable operating change"
     }
   ],
   "workScope": "Work involving enterprise AI strategy, data foundations, operating model design, governance, and practical adoption.",

@@ -5,12 +5,6 @@ Sam Edelstein works on enterprise data and AI, with a public-sector foundation i
 Primary site: https://samedelstein.com/
 Brief: https://samedelstein.com/executive-brief/
 Structured profile JSON: https://samedelstein.com/profile.json
-Work themes: https://samedelstein.com/roles/
-Governed data foundations: https://samedelstein.com/roles/chief-data-officer/
-Applied AI operating models: https://samedelstein.com/roles/vp-data-ai/
-Responsible adoption: https://samedelstein.com/roles/head-of-ai-enablement/
-Modern delivery platforms: https://samedelstein.com/roles/data-platform-strategy/
-Operating change: https://samedelstein.com/roles/executive-ai-transformation/
 Skills and tools: https://samedelstein.com/skills/
 Brief text: https://samedelstein.com/executive-brief.txt
 Selected work: https://samedelstein.com/proof/
@@ -32,4 +26,4 @@ Selected facts include 90%+ AI adoption across enterprise functions, 40%+ active
 
 Selected work includes DataCuse: Open Data Platform, Predictive Water Main Analytics, and Enterprise AI Enablement at Scale.
 
-Selected third-party validation includes Politico, GovTech, Syracuse.com, WRVO, New York State Local Government Innovation Conference, Smart Cities International Symposium, and MIT CDOIQ Symposium references.
+Selected public references include Politico, GovTech, Syracuse.com, WRVO, New York State Local Government Innovation Conference, Smart Cities International Symposium, and MIT CDOIQ Symposium references.

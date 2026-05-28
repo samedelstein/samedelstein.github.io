@@ -3,12 +3,6 @@ Sam Edelstein - Enterprise Data & AI
 Website: https://samedelstein.com/
 Brief: https://samedelstein.com/executive-brief/
 Structured profile JSON: https://samedelstein.com/profile.json
-Work themes: https://samedelstein.com/roles/
-Governed data foundations: https://samedelstein.com/roles/chief-data-officer/
-Applied AI operating models: https://samedelstein.com/roles/vp-data-ai/
-Responsible adoption: https://samedelstein.com/roles/head-of-ai-enablement/
-Modern delivery platforms: https://samedelstein.com/roles/data-platform-strategy/
-Measurable operating change: https://samedelstein.com/roles/executive-ai-transformation/
 Skills and tools and topics: https://samedelstein.com/skills/
 Selected work: https://samedelstein.com/proof/
 Press and speaking: https://samedelstein.com/press/
