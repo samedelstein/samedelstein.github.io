@@ -59,27 +59,27 @@ const impactStats = [
 
 const leadershipFocus = [
   {
-    label: 'Trusted Data Foundations',
+    label: 'Trusted data foundations',
     body: 'Make enterprise data usable, governed, and close enough to operations to shape decisions.',
     href: '/roles/chief-data-officer/',
   },
   {
-    label: 'Applied AI Operating Models',
+    label: 'Applied AI operating models',
     body: 'Turn pilots into repeatable systems with ownership, training, guardrails, and delivery rhythm.',
     href: '/roles/vp-data-ai/',
   },
   {
-    label: 'Responsible Adoption',
+    label: 'Responsible adoption',
     body: 'Help teams use AI well through practical enablement, workflow design, and risk-aware rollout.',
     href: '/roles/head-of-ai-enablement/',
   },
   {
-    label: 'Modern Delivery Platforms',
+    label: 'Modern delivery platforms',
     body: 'Shape the data, analytics, and integration layers that let product and business teams move faster.',
     href: '/roles/data-platform-strategy/',
   },
   {
-    label: 'Measurable Operating Change',
+    label: 'Measurable operating change',
     body: 'Connect strategy, platforms, governance, and adoption to outcomes people can see and manage.',
     href: '/roles/executive-ai-transformation/',
   },
@@ -365,7 +365,7 @@ const App = () => {
                 <div className="min-w-0 max-w-full border border-slate-950 bg-slate-950 text-white shadow-2xl shadow-slate-200">
                   <div className="border-b border-white/20 px-5 py-5">
                     <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">Operating Themes</p>
-                    <h2 className="mt-2 text-2xl font-semibold tracking-tight">The work behind durable AI adoption</h2>
+                    <h2 className="mt-2 text-2xl font-semibold tracking-tight">Where the work tends to concentrate</h2>
                   </div>
                   <div className="divide-y divide-white/15">
                     {leadershipFocus.map((role) => (
