@@ -31,12 +31,12 @@
   },
   "workThemes": [
     "Governed data foundations",
-    "Applied AI operating models",
-    "Responsible adoption",
-    "Modern delivery platforms",
-    "Measurable operating change"
+    "Practical AI adoption",
+    "Enterprise data and AI",
+    "Civic technology background",
+    "Useful public-facing tools"
   ],
-  "workScope": "Work involving enterprise AI strategy, data foundations, operating model design, governance, and practical adoption.",
+  "workScope": "Work involving enterprise AI strategy, data foundations, governance, and practical adoption.",
   "work": [
     {
       "name": "Insight Partners",
@@ -44,7 +44,7 @@
       "startDate": "2021",
       "summary": "Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.",
       "highlights": [
-        "Builds enterprise AI and data operating models connecting platform, governance, delivery, and adoption.",
+        "Builds enterprise AI and data systems connecting platform, governance, delivery, and adoption.",
         "Scales practical AI workflows and self-service access across business functions.",
         "Leads teams spanning analytics, engineering, and data product execution."
       ]
@@ -101,8 +101,8 @@
       "name": "Leadership and Strategy",
       "keywords": [
         "Enterprise AI strategy",
-        "Measurable operating change",
-        "AI operating model design",
+        "Practical adoption",
+        "Enterprise data and AI",
         "AI enablement",
         "AI adoption",
         "AI readiness",
@@ -110,7 +110,7 @@
         "Team building",
         "Organizational transformation",
         "Stakeholder communication",
-        "Operating model design"
+        "Delivery rhythms"
       ]
     },
     {
@@ -148,8 +148,8 @@
     "40%+ of the organization actively building with AI.",
     "12+ enterprise data sources integrated across cloud and on-prem systems.",
     "1B+ rows unified into trusted, governed, accessible foundations.",
-    "Experience building AI and data operating models across strategy, platform, governance, adoption, and delivery.",
-    "Experience leading AI adoption from strategy through adoption, operating model design, and measurable business impact."
+    "Experience connecting AI and data work across strategy, platform, governance, adoption, and delivery.",
+    "Experience leading AI adoption from strategy through adoption, governance, and measurable business impact."
   ],
   "selectedWork": [
     {

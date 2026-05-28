@@ -18,35 +18,34 @@ Location: Syracuse, New York, United States
 
 Work themes:
 - Governed data foundations
-- Applied AI operating models
-- Responsible adoption
-- Modern delivery platforms
-- Measurable operating change
+- Practical AI adoption
+- Enterprise data and AI
+- Civic technology background
+- Useful public-facing tools
 
-Positioning:
-Sam Edelstein works on Data & AI, with a focus on making AI useful in real work. He leads enterprise AI strategy, AI adoption, governed data foundations, AI enablement, scaled adoption, and operating model design.
+Summary:
+Sam Edelstein works on enterprise Data & AI, with a focus on practical adoption, governed data foundations, and tools that help teams use information well.
 
 Current role:
 Senior Vice President, Data & AI at Insight Partners. Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.
 
-Leadership signals:
+Selected markers:
 - 90%+ AI adoption across enterprise functions
 - 40%+ of the organization actively building with AI
 - 12+ enterprise data sources integrated across cloud and on-prem systems
 - 1B+ rows unified into trusted, governed, accessible foundations
-- Experience building AI and data operating models across strategy, platform, governance, adoption, and delivery
+- Experience connecting AI and data work across strategy, platform, governance, adoption, and delivery
 
 Core strengths:
 - Enterprise AI strategy and roadmaps
 - AI adoption
-- AI operating model design
 - AI readiness and responsible adoption
 - AI governance, assurance, and adoption
 - Data platform modernization
 - Data governance and quality
 - Data product and analytics leadership
 - Stakeholder communication
-- Team building and operating model design
+- Team building and delivery rhythms
 - Change management for practical AI adoption
 
 Selected experience:
@@ -60,4 +59,4 @@ Chief Data Officer, City of Syracuse, 2015-2020
 Built the city's first analytics office, launched DataCuse, authored the first open data policy, and led operational analytics programs with public-sector impact.
 
 Work scope:
-Work involving enterprise AI strategy, data foundations, operating model design, governance, and practical adoption.
+Work involving enterprise AI strategy, data foundations, governance, and practical adoption.

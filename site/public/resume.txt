@@ -9,11 +9,11 @@ Selected work: https://samedelstein.com/proof/
 Resume PDF: https://samedelstein.com/sam-edelstein-resume.pdf
 
 Focus Areas
-- Chief Data Officer
-- Applied AI operating models
-- Head of AI Enablement
-- Data Platform Strategy leader
-- Measurable operating change
+- Enterprise data and AI
+- Practical AI adoption
+- Governed data foundations
+- Civic technology background
+- Useful public-facing tools
 
 Summary
 Data and AI work focused on practical adoption, governed data foundations, civic technology, and useful operating systems. Relevant work includes AI strategy, governed data foundations, adoption, platform modernization, and practical business value.
@@ -21,7 +21,7 @@ Data and AI work focused on practical adoption, governed data foundations, civic
 Current Role
 Senior Vice President, Data & AI, Insight Partners, 2021-Present
 - Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.
-- Builds enterprise AI and data operating models connecting platform, governance, delivery, and adoption.
+- Builds enterprise AI and data systems connecting platform, governance, delivery, and adoption.
 - Scales practical AI workflows and self-service access across business functions.
 - Leads teams spanning analytics, engineering, and data product execution.
 
@@ -47,7 +47,7 @@ Selected Markers
 - 40%+ of the organization actively building with AI.
 - 12+ enterprise data sources integrated across cloud and on-prem systems.
 - 1B+ rows unified into trusted, governed, accessible foundations.
-- Experience building AI and data operating models across strategy, platform, governance, adoption, and delivery.
+- Experience connecting AI and data work across strategy, platform, governance, adoption, and delivery.
 
 Core Strengths
 - Enterprise AI strategy and roadmaps
@@ -57,7 +57,7 @@ Core Strengths
 - Data governance and data quality
 - Data product and analytics leadership
 - Stakeholder communication
-- Team building and operating model design
+- Team building and delivery rhythms
 - Change management for practical AI adoption
 - Information delivery, data operations, and reliability
 
@@ -86,4 +86,4 @@ Onondaga County Public Library, President, Board of Trustees.
 Le Moyne College Madden School of Business, Advisory Board Member, Business Analytics.
 
 Work Scope
-Work involving enterprise AI strategy, data foundations, operating model design, governance, and practical adoption.
+Work involving enterprise AI strategy, data foundations, governance, and practical adoption.
