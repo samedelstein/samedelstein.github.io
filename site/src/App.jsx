@@ -78,6 +78,11 @@ const targetRoles = [
     body: 'Design modern data foundations that are secure, governed, and built for AI.',
     href: '/roles/data-platform-strategy/',
   },
+  {
+    label: 'Executive AI Transformation',
+    body: 'Move AI strategy into governed adoption, operating models, and measurable business impact.',
+    href: '/roles/executive-ai-transformation/',
+  },
 ];
 
 const recruiterReasons = [
