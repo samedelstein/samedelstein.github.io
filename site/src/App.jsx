@@ -36,7 +36,7 @@ const publicRecord = [
   {
     label: 'Current role',
     title: 'Senior Vice President, Data & AI at Insight Partners',
-    body: 'Current work spans data foundations, AI enablement, governance, and practical tools across investment, HR, compliance, finance, and operations.',
+    body: 'Current work spans data foundations, AI workflow design, governance, and practical tools across investment, HR, compliance, finance, and operations.',
     href: 'https://www.linkedin.com/in/samedelstein',
     source: 'LinkedIn',
     icon: <BriefcaseIcon />,
