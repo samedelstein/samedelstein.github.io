@@ -161,7 +161,7 @@ const caseStudies = [
     role: 'Led the data inventory, defined governance standards, and coordinated stakeholder alignment across city agencies.',
     shipped: ['Launched a Socrata-based open data portal.', 'Published a standardized data dictionary and intake workflow.', "Established the city's first open data policy."],
     impact: ['Enabled public visibility into city operations.', 'Improved cross-department analytics.', 'Created a durable foundation for civic technology partnerships.'],
-    links: [{ label: 'GovTech Coverage', url: 'https://www.govtech.com/civic/Whats-New-in-Civic-Tech-07272017.html' }],
+    links: [{ label: 'GovTech Coverage', url: 'https://www.govtech.com/civic/whats-new-in-civic-tech-07272017.html' }],
   },
   {
     slug: 'predictive-water-main-analytics',
@@ -189,7 +189,7 @@ const pressLinks = [
   { title: 'Mayor Miner names new employees of Syracuse innovation office', outlet: 'Syracuse.com', url: 'https://www.syracuse.com/news/index.ssf/2015/05/mayor_miner_announces_four_new_hires_for_syracuse_innovation_team.html' },
   { title: 'Syracuse firefighters to get smoke detectors into high-risk homes', outlet: 'Syracuse.com', url: 'https://www.syracuse.com/news/index.ssf/2017/01/syracuse_fire_department_takes_data-driven_approach_to_getting_smoke_detectors_i.html' },
   { title: 'How Mathematicians in Chicago Are Stopping Water Leaks in Syracuse', outlet: 'Politico', url: 'https://www.politico.com/magazine/story/2017/04/20/syracuse-infrastructure-water-system-pipe-breaks-215054' },
-  { title: 'Open data comes to Syracuse', outlet: 'WRVO', url: 'https://www.wrvo.org/post/open-data-comes-syracuse' },
+  { title: 'Open data comes to Syracuse', outlet: 'WRVO', url: 'https://www.wrvo.org/politics-and-government/2017-07-27/open-data-comes-to-syracuse' },
 ];
 
 const speakingLinks = [
@@ -200,7 +200,7 @@ const speakingLinks = [
 
 const blogPosts = [
   { title: 'What it Means to be AI-Ready', date: 'April 2025', link: 'https://samedelstein.medium.com/what-it-means-to-be-ai-ready-data-access-interoperability-and-the-future-of-software-part-1-a9abc8e0d03c', excerpt: 'Exploring data access, interoperability, and the future of software in the age of reasoning models.' },
-  { title: '5 Years Later: How Generative AI Could Have Helped My CDO Work', date: 'January 2025', link: 'https://samedelstein.medium.com/5-years-later-how-generative-ai-could-or-couldnt-have-helped-my-chief-data-officer-work-1234567890ab', excerpt: "Lessons learned from city-wide data coordination and reflecting on modern AI's potential in local government." },
+  { title: '5 Years Later: How Generative AI Could Have Helped My CDO Work', date: 'January 2025', link: 'https://samedelstein.medium.com/5-years-later-how-generative-ai-could-or-couldnt-have-helped-my-chief-data-officer-work-86cd3b6dfbe9', excerpt: "Lessons learned from city-wide data coordination and reflecting on modern AI's potential in local government." },
 ];
 
 const leadershipRoles = [
