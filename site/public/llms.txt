@@ -11,6 +11,7 @@ Contact page: https://samedelstein.com/contact/
 Resume: https://samedelstein.com/sam-edelstein-resume.pdf
 ATS resume text: https://samedelstein.com/sam-edelstein-resume.txt
 Short resume aliases: https://samedelstein.com/resume.pdf and https://samedelstein.com/resume.txt
+Structured resume JSON: https://samedelstein.com/resume.json
 Contact: sam.i.edelstein@gmail.com
 LinkedIn: https://www.linkedin.com/in/samedelstein
 
