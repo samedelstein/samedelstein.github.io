@@ -22,7 +22,7 @@ Structured resume JSON: https://samedelstein.com/resume.json
 Contact: sam.i.edelstein@gmail.com
 LinkedIn: https://www.linkedin.com/in/samedelstein
 
-Best-fit roles include Chief Data Officer, VP / Head of Data & AI, Head of AI Enablement, and Data Platform Strategy leader.
+Best-fit roles include Chief Data Officer, VP / Head of Data & AI, Head of AI Enablement, Data Platform Strategy leader, and Executive AI transformation leader.
 
 Key proof points include 90%+ AI adoption across enterprise functions, 40%+ active AI builders, 12+ data sources integrated, and 1B+ rows unified into trusted data foundations.
 
