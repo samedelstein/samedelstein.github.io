@@ -1,32 +1,32 @@
-# Sam Edelstein
+﻿# Sam Edelstein
 
 Sam Edelstein is a Data & AI executive focused on enterprise AI strategy, executive AI transformation, governed data foundations, scaled adoption, and operating model design.
 
 Primary site: https://samedelstein.com/
-Recruiter packet: https://samedelstein.com/recruiter/
-Structured recruiter packet JSON: https://samedelstein.com/recruiter.json
-Role fit: https://samedelstein.com/roles/
-Chief Data Officer role fit: https://samedelstein.com/roles/chief-data-officer/
-VP Data & AI role fit: https://samedelstein.com/roles/vp-data-ai/
-Head of AI Enablement role fit: https://samedelstein.com/roles/head-of-ai-enablement/
-Data Platform Strategy role fit: https://samedelstein.com/roles/data-platform-strategy/
-Executive AI Transformation role fit: https://samedelstein.com/roles/executive-ai-transformation/
+Executive brief: https://samedelstein.com/executive-brief/
+Structured executive brief JSON: https://samedelstein.com/profile.json
+Leadership focus: https://samedelstein.com/roles/
+Chief Data Officer leadership focus: https://samedelstein.com/roles/chief-data-officer/
+VP Data & AI leadership focus: https://samedelstein.com/roles/vp-data-ai/
+Head of AI Enablement leadership focus: https://samedelstein.com/roles/head-of-ai-enablement/
+Data Platform Strategy leadership focus: https://samedelstein.com/roles/data-platform-strategy/
+Executive AI Transformation leadership focus: https://samedelstein.com/roles/executive-ai-transformation/
 Skills and keyword fit: https://samedelstein.com/skills/
-Recruiter brief: https://samedelstein.com/recruiter-brief.txt
+Executive brief: https://samedelstein.com/executive-brief.txt
 Proof records: https://samedelstein.com/proof/
 Press and speaking: https://samedelstein.com/press/
 Contact page: https://samedelstein.com/contact/
 Resume: https://samedelstein.com/sam-edelstein-resume.pdf
-ATS resume text: https://samedelstein.com/sam-edelstein-resume.txt
-Short resume aliases: https://samedelstein.com/resume.pdf and https://samedelstein.com/resume.txt
+Plain text resume: https://samedelstein.com/sam-edelstein-resume.txt
+Resume aliases: https://samedelstein.com/resume.pdf and https://samedelstein.com/resume.txt
 Structured resume JSON: https://samedelstein.com/resume.json
 vCard: https://samedelstein.com/sam-edelstein.vcf
 Contact: sam.i.edelstein@gmail.com
 LinkedIn: https://www.linkedin.com/in/samedelstein
 
-Best-fit roles include Chief Data Officer, VP / Head of Data & AI, Head of AI Enablement, Data Platform Strategy leader, and Executive AI transformation leader.
+Leadership focus includes Chief Data Officer, VP / Head of Data & AI, Head of AI Enablement, Data Platform Strategy leader, and Executive AI transformation leader.
 
-Relevant recruiter sourcing terms include enterprise AI strategy, executive AI transformation, AI operating model design, AI readiness, responsible AI adoption, AI governance, data platform strategy, data product leadership, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, and APIs.
+Relevant leadership focus terms include enterprise AI strategy, executive AI transformation, AI operating model design, AI readiness, responsible AI adoption, AI governance, data platform strategy, data product leadership, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, and APIs.
 
 Key proof points include 90%+ AI adoption across enterprise functions, 40%+ active AI builders, 12+ data sources integrated, and 1B+ rows unified into trusted data foundations.
 

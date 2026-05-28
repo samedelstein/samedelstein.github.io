@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "https://jsonresume.org/schema",
   "basics": {
     "name": "Sam Edelstein",
@@ -22,14 +22,14 @@
   "meta": {
     "canonical": "https://samedelstein.com/resume.json",
     "website": "https://samedelstein.com/",
-    "recruiterPacket": "https://samedelstein.com/recruiter/",
+    "executiveBrief": "https://samedelstein.com/executive-brief/",
     "proofRecords": "https://samedelstein.com/proof/",
     "pressAndSpeaking": "https://samedelstein.com/press/",
     "contactPage": "https://samedelstein.com/contact/",
     "resumePdf": "https://samedelstein.com/sam-edelstein-resume.pdf",
     "resumeText": "https://samedelstein.com/sam-edelstein-resume.txt"
   },
-  "targetRoles": [
+  "leadershipFocus": [
     "Chief Data Officer",
     "VP / Head of Data & AI",
     "Head of AI Enablement",
@@ -58,7 +58,7 @@
       "url": "https://samedelstein.com/roles/executive-ai-transformation/"
     }
   ],
-  "bestFitMandate": "Executive roles where enterprise AI strategy, trusted data foundations, operating model design, governance, and scaled adoption are central to the work.",
+  "bestFitScope": "Leadership work where enterprise AI strategy, trusted data foundations, operating model design, governance, and scaled adoption are central to the work.",
   "work": [
     {
       "name": "Insight Partners",
@@ -165,7 +165,7 @@
       ]
     }
   ],
-  "recruiterSignals": [
+  "leadershipSignals": [
     "90%+ AI adoption across enterprise functions.",
     "40%+ of the organization actively building with AI.",
     "12+ enterprise data sources integrated across cloud and on-prem systems.",

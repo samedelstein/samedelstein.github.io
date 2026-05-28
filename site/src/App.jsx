@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+﻿import React, { useEffect, useMemo, useState } from 'react';
 import {
   Activity,
   ArrowUpRight,
@@ -32,11 +32,11 @@ const externalLinkProps = {
   rel: 'noopener noreferrer',
 };
 
-const executiveMailto = 'mailto:sam.i.edelstein@gmail.com?subject=Executive%20Data%20%26%20AI%20conversation&body=Hi%20Sam%2C%0A%0AI%27m%20reaching%20out%20about%20an%20executive%20Data%20%26%20AI%20opportunity.%0A%0ACompany%3A%20%0AMandate%3A%20%0AReporting%20line%3A%20%0ALocation%20model%3A%20%0ACompensation%20range%3A%20%0ATiming%3A%20%0A%0A';
+const executiveMailto = 'mailto:sam.i.edelstein@gmail.com?subject=Executive%20Data%20%26%20AI%20conversation&body=Hi%20Sam%2C%0A%0AI%27m%20reaching%20out%20about%20a%20Data%20%26%20AI%20leadership%20conversation.%0A%0A';
 
 const navItems = [
   { id: 'home', label: 'Overview', type: 'section' },
-  { id: 'roles', label: 'Roles', type: 'link', href: '/roles/' },
+  { id: 'roles', label: 'Focus', type: 'link', href: '/roles/' },
   { id: 'skills', label: 'Skills', type: 'link', href: '/skills/' },
   { id: 'case-studies', label: 'Proof', type: 'link', href: '/proof/' },
   { id: 'experience', label: 'Experience', type: 'section' },
@@ -57,7 +57,7 @@ const impactStats = [
   ['1B+', 'rows unified into trusted, governed, accessible foundations'],
 ];
 
-const targetRoles = [
+const leadershipFocus = [
   {
     label: 'Chief Data Officer',
     body: 'Own enterprise data strategy, governance, and measurable business value.',
@@ -85,7 +85,7 @@ const targetRoles = [
   },
 ];
 
-const recruiterReasons = [
+const leadershipReasons = [
   'Enterprise AI strategy aligned to business outcomes.',
   'Governed data foundations that scale with trust.',
   'Adoption at scale through products, platforms, and people.',
@@ -95,9 +95,9 @@ const recruiterReasons = [
 ];
 
 const availabilitySignals = [
-  ['Best fit', 'Executive Data & AI roles where strategy, platform, governance, adoption, and AI transformation all matter.'],
-  ['Location', 'Syracuse / New York; open to remote-first and selective hybrid executive mandates.'],
-  ['Conversation', 'Recruiter, founder, operating partner, and executive team conversations are welcome.'],
+  ['Best fit', 'Work where strategy, platform, governance, adoption, and AI transformation all matter.'],
+  ['Location', 'Syracuse / New York; experienced with distributed and hybrid executive teams.'],
+  ['Conversation', 'Useful for founder, operating partner, board, and executive team conversations.'],
 ];
 
 const experience = [
@@ -232,7 +232,7 @@ const App = () => {
     if (hash.startsWith('#/case-studies/')) return { page: 'case-study', slug: hash.replace('#/case-studies/', '') };
     if (hash.startsWith('#/case-studies')) return { page: 'case-studies' };
     if (hash.startsWith('#/resume')) return { page: 'resume' };
-    if (hash.startsWith('#/recruiter')) return { page: 'recruiter' };
+    if (hash.startsWith('#/executive-brief')) return { page: 'executive-brief' };
     return { page: 'home' };
   });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -255,7 +255,7 @@ const App = () => {
       if (hash.startsWith('#/case-studies/')) return setRoute({ page: 'case-study', slug: hash.replace('#/case-studies/', '') });
       if (hash.startsWith('#/case-studies')) return setRoute({ page: 'case-studies' });
       if (hash.startsWith('#/resume')) return setRoute({ page: 'resume' });
-      if (hash.startsWith('#/recruiter')) return setRoute({ page: 'recruiter' });
+      if (hash.startsWith('#/executive-brief')) return setRoute({ page: 'executive-brief' });
       setRoute({ page: 'home' });
     };
     window.addEventListener('hashchange', handleHashChange);
@@ -357,19 +357,19 @@ const App = () => {
                     <div className="flex flex-wrap gap-3">
                       <a href={executiveMailto} className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-slate-950 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:bg-blue-700 sm:w-auto"><Mail size={17} /><span>Email Sam</span></a>
                       <a href={resumePdfUrl} download className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><Download size={17} /><span>Download Resume</span></a>
-                      <a href="/recruiter/" className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><FileText size={17} /><span>Recruiter Packet</span></a>
+                      <a href="/executive-brief/" className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><FileText size={17} /><span>Executive Brief</span></a>
                       <button onClick={() => scrollToSection('case-studies-preview')} className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-900 transition-colors hover:border-blue-700 hover:text-blue-700 sm:w-auto"><ArrowUpRight size={17} /><span>See Proof</span></button>
                     </div>
-                    <p className="mt-5 max-w-full break-words text-sm leading-relaxed text-slate-500 md:max-w-2xl">Open to selective executive conversations. Best fit: CDO, VP Data &amp; AI, Head of AI Enablement, AI transformation, and roles where platform, governance, adoption, and operating model design all matter.</p>
+                    <p className="mt-5 max-w-full break-words text-sm leading-relaxed text-slate-500 md:max-w-2xl">Current focus: enterprise AI strategy, data foundations, governance, adoption, and operating model design for teams turning AI into durable capability.</p>
                   </div>
                 </div>
                 <div className="min-w-0 max-w-full border border-slate-950 bg-slate-950 text-white shadow-2xl shadow-slate-200">
                   <div className="border-b border-white/20 px-5 py-5">
                     <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">Executive fit</p>
-                    <h2 className="mt-2 text-2xl font-semibold tracking-tight">Roles recruiters should call about</h2>
+                    <h2 className="mt-2 text-2xl font-semibold tracking-tight">Leadership work I focus on</h2>
                   </div>
                   <div className="divide-y divide-white/15">
-                    {targetRoles.map((role) => (
+                    {leadershipFocus.map((role) => (
                       <a key={role.label} href={role.href} className="grid grid-cols-[46px_minmax(0,1fr)] gap-4 px-5 py-5 transition-colors hover:bg-white/5">
                         <span className="flex h-10 w-10 items-center justify-center rounded-md border border-white/15 text-blue-200"><Target size={18} /></span>
                         <div className="min-w-0">
@@ -396,9 +396,9 @@ const App = () => {
 
             <section className="grid grid-cols-1 gap-12 border-b border-slate-200 py-16 lg:grid-cols-[minmax(0,1.55fr)_minmax(300px,0.85fr)]">
               <div>
-                <SectionTitle icon={<Briefcase className="h-5 w-5" />} title="Why Recruiters Call" eyebrow="Hiring Snapshot" />
+                <SectionTitle icon={<Briefcase className="h-5 w-5" />} title="Why Teams Call" eyebrow="Leadership Snapshot" />
                 <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
-                  {recruiterReasons.map((reason, index) => (
+                  {leadershipReasons.map((reason, index) => (
                     <div key={reason} className="bg-white p-5">
                       <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-md bg-blue-50 text-blue-700">
                         {[<Building2 key="0" />, <ShieldCheck key="1" />, <Network key="2" />, <Users key="3" />, <BarChart3 key="4" />, <CheckCircle2 key="5" />][index]}
@@ -414,7 +414,7 @@ const App = () => {
               </div>
               <aside className="space-y-6">
                 <section>
-                  <SectionTitle icon={<Target className="h-5 w-5" />} title="Search Brief" eyebrow="Recruiter Notes" compact />
+                  <SectionTitle icon={<Target className="h-5 w-5" />} title="Executive Brief" eyebrow="Context" compact />
                   <div className="divide-y divide-slate-200 border border-slate-200 bg-slate-50">
                     {availabilitySignals.map(([title, body]) => (
                       <div key={title} className="p-5">
@@ -561,18 +561,18 @@ const App = () => {
               <div>
                 <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">Contact</p>
                 <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight md:text-5xl">Executive conversations about Data &amp; AI leadership.</h2>
-                <p className="mt-5 max-w-2xl leading-relaxed text-slate-300">I&apos;m interested in roles and conversations where enterprise AI strategy, trusted data foundations, operating model design, and scaled adoption are central to the mandate.</p>
+              <p className="mt-5 max-w-2xl leading-relaxed text-slate-300">I welcome thoughtful conversations about enterprise AI strategy, trusted data foundations, operating model design, and scaled adoption.</p>
               </div>
               <div className="grid content-start gap-3">
                 <a href={executiveMailto} className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-950 transition-colors hover:bg-blue-100"><Mail size={16} /><span>Email Sam</span></a>
                 <a href="mailto:sam.i.edelstein@gmail.com" className="text-center text-sm font-medium text-blue-100 underline-offset-4 hover:text-white hover:underline">sam.i.edelstein@gmail.com</a>
                 <a href="https://www.linkedin.com/in/samedelstein" {...externalLinkProps} className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Linkedin size={16} /><span>LinkedIn</span></a>
                 <a href={resumePdfUrl} download className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Download Resume</span></a>
-                <a href="/recruiter/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Recruiter Packet</span></a>
-                <a href="/roles/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Target size={16} /><span>Role Fit</span></a>
+                <a href="/executive-brief/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Executive Brief</span></a>
+                <a href="/roles/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Target size={16} /><span>Leadership Focus</span></a>
                 <a href="/skills/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Zap size={16} /><span>Skills</span></a>
                 <a href="/proof/" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Award size={16} /><span>Proof</span></a>
-                <a href="/recruiter-brief.txt" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><ExternalLink size={16} /><span>Plain Text Brief</span></a>
+                <a href="/executive-brief.txt" className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><ExternalLink size={16} /><span>Plain Text Brief</span></a>
                 <a href="/sam-edelstein.vcf" download className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Download size={16} /><span>Save Contact</span></a>
                 <a href={resumeDocUrl} {...externalLinkProps} className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><ExternalLink size={16} /><span>Online Resume</span></a>
               </div>
@@ -617,17 +617,17 @@ const App = () => {
         </main>
       )}
 
-      {route.page === 'recruiter' && (
+      {route.page === 'executive-brief' && (
         <main className="mx-auto w-full max-w-[350px] px-5 pt-32 pb-24 sm:max-w-5xl md:px-6">
           <section className="mb-10 border-y border-slate-200 py-10">
-            <span className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-700">Recruiter Packet</span>
-            <h1 className="mt-4 max-w-full break-words text-4xl font-semibold tracking-tight text-slate-950 md:max-w-4xl md:text-6xl">Sam Edelstein for executive Data &amp; AI leadership roles.</h1>
-            <p className="mt-5 max-w-full break-words text-lg leading-relaxed text-slate-600 md:max-w-3xl">A concise packet for recruiters, search partners, founders, operating partners, and executive teams evaluating CDO, VP Data &amp; AI, AI enablement, data platform strategy, and executive AI transformation mandates.</p>
+            <span className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-700">Executive Brief</span>
+            <h1 className="mt-4 max-w-full break-words text-4xl font-semibold tracking-tight text-slate-950 md:max-w-4xl md:text-6xl">Sam Edelstein: executive Data &amp; AI leadership brief.</h1>
+            <p className="mt-5 max-w-full break-words text-lg leading-relaxed text-slate-600 md:max-w-3xl">A concise summary of leadership focus, selected proof, operating range, and contact details for Data &amp; AI conversations.</p>
           </section>
 
           <section className="grid grid-cols-1 gap-8 border-b border-slate-200 pb-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(300px,0.8fr)]">
             <div className="grid grid-cols-1 gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
-              {targetRoles.map((role) => (
+              {leadershipFocus.map((role) => (
                 <a key={role.label} href={role.href} className="bg-slate-50 p-5 transition-colors hover:bg-white">
                   <h2 className="text-base font-semibold text-slate-950">{role.label}</h2>
                   <p className="mt-3 break-words text-sm leading-relaxed text-slate-600">{role.body}</p>
@@ -635,12 +635,12 @@ const App = () => {
               ))}
             </div>
             <aside className="border border-slate-950 bg-slate-950 p-6 text-white">
-              <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">Current Mandate</p>
+              <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-blue-200">Current Scope</p>
               <p className="mt-4 break-words text-lg leading-relaxed text-slate-100">Senior Vice President, Data &amp; AI at Insight Partners. Leads firm-wide AI and data strategy across investment, HR, compliance, finance, and operations.</p>
               <div className="mt-6 grid gap-3">
                 <a href={executiveMailto} className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-white px-5 text-sm font-bold uppercase tracking-[0.08em] text-slate-950 transition-colors hover:bg-blue-100"><Mail size={16} /><span>Email Sam</span></a>
                 <a href={resumePdfUrl} download className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Download size={16} /><span>Resume PDF</span></a>
-                <a href="/recruiter-brief.txt" className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Plain Text Brief</span></a>
+                <a href="/executive-brief.txt" className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><FileText size={16} /><span>Plain Text Brief</span></a>
                 <a href="/sam-edelstein.vcf" download className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/30 px-5 text-sm font-bold uppercase tracking-[0.08em] text-white transition-colors hover:border-white"><Download size={16} /><span>Save Contact</span></a>
               </div>
             </aside>
@@ -660,9 +660,9 @@ const App = () => {
 
           <section className="grid grid-cols-1 gap-8 border-b border-slate-200 py-12 lg:grid-cols-2">
             <div>
-              <SectionTitle icon={<CheckCircle2 className="h-5 w-5" />} title="Why Call" eyebrow="Recruiter Signals" compact />
+              <SectionTitle icon={<CheckCircle2 className="h-5 w-5" />} title="Why Connect" eyebrow="Leadership Signals" compact />
               <ul className="divide-y divide-slate-200 border border-slate-200 bg-slate-50">
-                {recruiterReasons.map((reason) => (
+                {leadershipReasons.map((reason) => (
                   <li key={reason} className="flex items-start gap-3 p-4">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-blue-700" />
                     <span className="text-sm font-medium leading-relaxed text-slate-800">{reason}</span>
@@ -713,7 +713,7 @@ const App = () => {
                 <div className="py-7"><h2 className="text-xl font-semibold mb-2">Impact</h2><ul className="list-disc list-inside text-slate-600 space-y-2">{activeCaseStudy.impact.map((item) => <li key={item}>{item}</li>)}</ul></div>
                 <div>
                   <h2 className="text-xl font-semibold mb-2 pt-7">Links</h2>
-                  {activeCaseStudy.links.length > 0 ? <ul className="space-y-2 pb-7">{activeCaseStudy.links.map((link) => <li key={link.url}><a href={link.url} {...externalLinkProps} className="inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">{link.label} <ArrowUpRight size={14} /></a></li>)}</ul> : <p className="text-slate-600 pb-7">Details available in conversation.</p>}
+                  {activeCaseStudy.links.length > 0 ? <ul className="space-y-2 pb-7">{activeCaseStudy.links.map((link) => <li key={link.url}><a href={link.url} {...externalLinkProps} className="inline-flex items-center gap-1 text-sm font-bold uppercase tracking-[0.08em] text-blue-700 hover:text-slate-950">{link.label} <ArrowUpRight size={14} /></a></li>)}</ul> : <p className="text-slate-600 pb-7">Details helpful in conversation.</p>}
                 </div>
               </div>
             </>

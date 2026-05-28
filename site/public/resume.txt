@@ -1,10 +1,10 @@
-Sam Edelstein
+﻿Sam Edelstein
 Executive Data & AI Leader
 Syracuse, New York, United States
 Email: sam.i.edelstein@gmail.com
 LinkedIn: https://www.linkedin.com/in/samedelstein
 Website: https://samedelstein.com/
-Recruiter packet: https://samedelstein.com/recruiter/
+Executive brief: https://samedelstein.com/executive-brief/
 Proof records: https://samedelstein.com/proof/
 Resume PDF: https://samedelstein.com/sam-edelstein-resume.pdf
 
@@ -16,7 +16,7 @@ Target Roles
 - Executive AI transformation leader
 
 Executive Summary
-Data & AI executive focused on turning AI ambition into operating capability. Leads enterprise AI strategy, governed data foundations, AI enablement, scaled adoption, and operating model design. Best fit for executive mandates where AI strategy, trusted data, governance, adoption, platform modernization, and measurable business value all matter.
+Data & AI executive focused on turning AI ambition into operating capability. Leads enterprise AI strategy, governed data foundations, AI enablement, scaled adoption, and operating model design. Best fit for executive scopes where AI strategy, trusted data, governance, adoption, platform modernization, and measurable business value all matter.
 
 Current Role
 Senior Vice President, Data & AI, Insight Partners, 2021-Present
@@ -42,7 +42,7 @@ Adjunct Professor and Earlier Roles, Syracuse University and prior organizations
 - Taught graduate courses in data-driven government, data visualization, and data science.
 - Brought public-sector, academic, and operational perspectives into applied analytics work.
 
-Recruiter Signals
+Leadership Signals
 - 90%+ AI adoption across enterprise functions.
 - 40%+ of the organization actively building with AI.
 - 12+ enterprise data sources integrated across cloud and on-prem systems.
@@ -85,5 +85,5 @@ Leadership and Service
 Onondaga County Public Library, President, Board of Trustees.
 Le Moyne College Madden School of Business, Advisory Board Member, Business Analytics.
 
-Best-Fit Mandate
-Executive roles where enterprise AI strategy, trusted data foundations, operating model design, governance, and scaled adoption are central to the work.
+Best-Fit Scope
+Leadership work where enterprise AI strategy, trusted data foundations, operating model design, governance, and scaled adoption are central to the work.
