@@ -49,10 +49,10 @@ const publicRecord = [
   },
   {
     label: 'Coverage',
-    title: 'First CDO heading from Syracuse to private sector',
-    body: 'Government Technology covered the public-sector data arc and described the work as broader than a neat technical category.',
-    href: 'https://www.govtech.com/people/Syracuse-Data-Chief-Sam-Edelstein-to-Depart-City-Service.html',
-    source: 'Government Technology',
+    title: 'Water main analytics in Syracuse',
+    body: 'Politico covered the Syracuse water main work and the effort to use data science on aging infrastructure.',
+    href: 'https://www.politico.com/magazine/story/2017/04/20/syracuse-infrastructure-water-system-pipe-breaks-215054',
+    source: 'Politico',
     icon: <ShieldCheck className="h-5 w-5" />,
   },
   {
@@ -233,7 +233,7 @@ function App() {
           <SectionHeader
             eyebrow="Public record"
             title="A few links behind the work."
-            body="Some of the public trail: first-party profiles, Syracuse University Libraries, Government Technology, Google Scholar, GitHub, Medium, and this site."
+            body="Some of the public trail: first-party profiles, Syracuse University Libraries, Politico, Google Scholar, GitHub, Medium, and this site."
           />
           <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-[#e5edf5] bg-[#e5edf5] lg:grid-cols-4">
             {publicRecord.map((item) => (
