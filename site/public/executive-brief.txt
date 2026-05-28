@@ -40,7 +40,7 @@ Core strengths:
 - Enterprise AI strategy and roadmaps
 - AI adoption
 - AI readiness and responsible adoption
-- AI governance, assurance, and adoption
+- AI governance, assurance, and risk-aware adoption
 - Data platform modernization
 - Data governance and quality
 - Data product and analytics leadership

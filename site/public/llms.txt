@@ -2,6 +2,9 @@
 
 Sam Edelstein works on enterprise data and AI, with a public-sector foundation in open data, analytics, and civic technology.
 
+Current role: Senior Vice President, Data & AI at Insight Partners.
+Location: Syracuse, New York, United States.
+
 Primary site: https://samedelstein.com/
 Brief: https://samedelstein.com/executive-brief/
 Structured profile JSON: https://samedelstein.com/profile.json
@@ -17,12 +20,16 @@ Structured resume JSON: https://samedelstein.com/resume.json
 vCard: https://samedelstein.com/sam-edelstein.vcf
 Contact: sam.i.edelstein@gmail.com
 LinkedIn: https://www.linkedin.com/in/samedelstein
+GitHub: https://github.com/samedelstein
+Medium: https://medium.com/@samedelstein
 
-Work themes include enterprise data and AI, data governance, AI adoption, open data, civic analytics, teaching, and civic technology.
+Current work includes enterprise Data & AI strategy, governed data foundations, practical AI adoption, data governance, data platform modernization, enablement, and useful internal tools.
+
+Earlier public-sector work includes Syracuse open data, DataCuse, water main analytics, civic analytics, public dashboards, teaching, and civic technology.
 
 Relevant work themes include enterprise AI strategy, AI adoption, AI governance, data platform strategy, data product leadership, open data, civic technology, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, and APIs.
 
-Selected facts include 90%+ AI adoption across enterprise functions, 40%+ active AI builders, 12+ data sources integrated, and 1B+ rows unified into governed data foundations.
+Selected markers include 90%+ AI adoption across enterprise functions, 40%+ active AI builders, 12+ data sources integrated, and 1B+ rows unified into governed data foundations.
 
 Selected work includes DataCuse: Open Data Platform, Predictive Water Main Analytics, and Enterprise AI Enablement at Scale.
 
