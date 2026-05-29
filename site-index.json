@@ -1,0 +1,72 @@
+{
+  "name": "Sam Edelstein",
+  "url": "https://samedelstein.com/",
+  "description": "A compact index of Sam Edelstein's current site, profile data, selected work, writing, contact details, and resume materials.",
+  "dateModified": "2026-05-28",
+  "profile": {
+    "homepage": "https://samedelstein.com/",
+    "personJson": "https://samedelstein.com/person.json",
+    "profileJson": "https://samedelstein.com/profile.json",
+    "llmsTxt": "https://samedelstein.com/llms.txt",
+    "humansTxt": "https://samedelstein.com/humans.txt",
+    "vCard": "https://samedelstein.com/sam-edelstein.vcf"
+  },
+  "pages": [
+    {
+      "name": "Now",
+      "url": "https://samedelstein.com/now/",
+      "about": "Current focus and recurring questions."
+    },
+    {
+      "name": "Selected Work",
+      "url": "https://samedelstein.com/proof/",
+      "about": "Selected work across enterprise AI, open data, and analytics."
+    },
+    {
+      "name": "Writing",
+      "url": "https://samedelstein.com/writing/",
+      "about": "Selected writing on AI, data, and practical tools."
+    },
+    {
+      "name": "Press and Speaking",
+      "url": "https://samedelstein.com/press/",
+      "about": "Selected coverage and public references."
+    },
+    {
+      "name": "Contact",
+      "url": "https://samedelstein.com/contact/",
+      "about": "Contact details and useful starting points."
+    },
+    {
+      "name": "Resume",
+      "url": "https://samedelstein.com/resume/",
+      "about": "Resume page and downloadable artifacts."
+    }
+  ],
+  "selectedWork": [
+    {
+      "name": "AI in Practice",
+      "url": "https://samedelstein.com/proof/enterprise-ai-in-practice/"
+    },
+    {
+      "name": "DataCuse: Open Data Platform",
+      "url": "https://samedelstein.com/proof/datacuse-open-data-platform/"
+    },
+    {
+      "name": "Predictive Water Main Analytics",
+      "url": "https://samedelstein.com/proof/predictive-water-main-analytics/"
+    }
+  ],
+  "resume": {
+    "page": "https://samedelstein.com/resume/",
+    "json": "https://samedelstein.com/resume.json",
+    "pdf": "https://samedelstein.com/sam-edelstein-resume.pdf",
+    "text": "https://samedelstein.com/sam-edelstein-resume.txt"
+  },
+  "contact": {
+    "page": "https://samedelstein.com/contact/",
+    "email": "sam.i.edelstein@gmail.com",
+    "vCard": "https://samedelstein.com/sam-edelstein.vcf",
+    "linkedin": "https://www.linkedin.com/in/samedelstein"
+  }
+}

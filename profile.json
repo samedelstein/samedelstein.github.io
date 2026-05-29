@@ -1,0 +1,229 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "name": "Sam Edelstein Profile",
+  "url": "https://samedelstein.com/profile.json",
+  "dateModified": "2026-05-28",
+  "description": "Structured profile for Sam Edelstein, focused on enterprise Data & AI work at Insight Partners, governed data foundations, useful AI workflows, and public data background.",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://samedelstein.com/#sam-edelstein",
+    "name": "Sam Edelstein",
+    "email": "mailto:sam.i.edelstein@gmail.com",
+    "url": "https://samedelstein.com/",
+    "sameAs": [
+      "https://www.linkedin.com/in/samedelstein",
+      "https://github.com/samedelstein",
+      "https://samedelstein.medium.com/",
+      "https://samedelstein.com/person.json",
+      "https://samedelstein.com/site-index.json",
+      "https://samedelstein.com/now/",
+      "https://samedelstein.com/writing/",
+      "https://samedelstein.com/contact/",
+      "https://samedelstein.com/resume/"
+    ],
+    "jobTitle": "Senior Vice President, Data & AI",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Insight Partners"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Syracuse University"
+    },
+    "workLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Syracuse",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      }
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "professional contact",
+      "email": "sam.i.edelstein@gmail.com",
+      "areaServed": [
+        "United States",
+        "New York",
+        "Distributed teams"
+      ],
+      "availableLanguage": "English"
+    },
+    "knowsAbout": [
+      "Governed data foundations",
+      "Useful AI workflows",
+      "Enterprise data and AI strategy",
+      "Useful public-minded tools",
+      "AI readiness",
+      "AI governance",
+      "Data platform strategy",
+      "Data product leadership",
+      "Snowflake",
+      "dbt",
+      "Azure",
+      "Generative AI",
+      "Retrieval-augmented generation",
+      "MLOps",
+      "Python",
+      "SQL",
+      "APIs"
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Data and AI professional",
+      "occupationLocation": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "skills": "Enterprise data and AI strategy, AI workflow design, AI governance, data platform modernization, data governance, data readiness, Snowflake, dbt, Azure, GenAI, RAG, MLOps, Python, SQL, APIs"
+    }
+  },
+  "workThemes": [
+    {
+      "name": "Governed data foundations"
+    },
+    {
+      "name": "Useful AI workflows"
+    },
+    {
+      "name": "AI readiness"
+    },
+    {
+      "name": "Enterprise data and AI"
+    },
+    {
+      "name": "Useful public-minded tools"
+    }
+  ],
+  "workScope": "Work involving enterprise data and AI strategy, data foundations, governance, data readiness, adoption, and useful AI workflows.",
+  "now": {
+    "url": "https://samedelstein.com/now/",
+    "description": "Current focus: enterprise data and AI at Insight Partners, plus public data, Syracuse, libraries, and small tools that make messy information easier to use."
+  },
+  "workSignals": [
+    "90%+ AI use across enterprise functions.",
+    "40%+ of the organization actively building with AI.",
+    "12+ enterprise data sources integrated across cloud and on-prem systems.",
+    "1B+ rows unified into governed, accessible data foundations.",
+    "Experience connecting AI and data work across strategy, platform, governance, adoption, use, and delivery.",
+    "Experience connecting AI ideas to data readiness, governance, delivery, and real workflows."
+  ],
+  "selectedWork": [
+    {
+      "name": "AI in Practice",
+      "url": "https://samedelstein.com/proof/enterprise-ai-in-practice/",
+      "description": "Work on turning enterprise AI ideas into useful workflows across data foundations, governance, adoption, delivery, and applied use cases."
+    },
+    {
+      "name": "DataCuse: Open Data Platform",
+      "url": "https://samedelstein.com/proof/datacuse-open-data-platform/",
+      "description": "Built Syracuse's first open data program, turning scattered public data into a governed transparency and analytics capability."
+    },
+    {
+      "name": "Predictive Water Main Analytics",
+      "url": "https://samedelstein.com/proof/predictive-water-main-analytics/",
+      "description": "Translated machine learning research into an operational risk model for prioritizing aging water infrastructure."
+    }
+  ],
+  "selectedWriting": [
+    {
+      "@type": "Article",
+      "name": "What's Missing in AI + BI: The Case for Bi-Directional Interfaces",
+      "publisher": "Medium",
+      "url": "https://samedelstein.medium.com/whats-missing-in-ai-bi-the-case-for-bi-directional-interfaces-bcba1849b8a4",
+      "about": "AI interfaces, BI tools, structured data exploration, and persistent data workflows."
+    },
+    {
+      "@type": "Article",
+      "name": "How I Use Voice Recordings and AI to Draft Proposals, Posts, and Work Through Ideas",
+      "publisher": "Medium",
+      "url": "https://samedelstein.medium.com/how-i-use-voice-recordings-and-ai-to-draft-proposals-posts-and-work-through-ideas-f1ed8e94e835",
+      "about": "Personal workflow for using voice notes and AI to turn loose thinking into structured writing."
+    },
+    {
+      "@type": "Article",
+      "name": "What It Means to Be AI-Ready: Data Access, Interoperability, and the Future of Software",
+      "publisher": "Medium",
+      "url": "https://samedelstein.medium.com/what-it-means-to-be-ai-ready-data-access-interoperability-and-the-future-of-software-part-1-a9abc8e0d03c",
+      "about": "Data access, interoperability, and software design for AI-ready organizations."
+    }
+  ],
+  "subjectOf": [
+    {
+      "@type": "Article",
+      "name": "Syracuse Turns To Data to Fix Its Faulty Water System",
+      "publisher": "Politico",
+      "url": "https://www.politico.com/magazine/story/2017/04/20/syracuse-infrastructure-water-system-pipe-breaks-215054",
+      "about": "Predictive water main analytics and public infrastructure work in Syracuse."
+    },
+    {
+      "@type": "Article",
+      "name": "GovTech open data coverage",
+      "publisher": "Government Technology",
+      "url": "https://www.govtech.com/civic/Whats-New-in-Civic-Tech-07272017.html",
+      "about": "Syracuse open data work and DataCuse."
+    },
+    {
+      "@type": "Article",
+      "name": "Open data comes to Syracuse",
+      "publisher": "WRVO",
+      "url": "https://www.wrvo.org/politics-and-government/2017-07-27/open-data-comes-to-syracuse",
+      "about": "Syracuse open data policy and portal work."
+    },
+    {
+      "@type": "WebPage",
+      "name": "Local Government Innovation Award Winners",
+      "publisher": "New York Department of State",
+      "url": "https://dos.ny.gov/news/nys-secretary-state-rosado-announces-local-government-innovation-award-winners",
+      "about": "Recognition for Syracuse local government innovation work."
+    }
+  ],
+  "contactActions": [
+    {
+      "name": "Email Sam",
+      "url": "mailto:sam.i.edelstein@gmail.com?subject=Data%20%26%20AI%20conversation"
+    },
+    {
+      "name": "Person JSON-LD",
+      "url": "https://samedelstein.com/person.json"
+    },
+    {
+      "name": "Site Index JSON",
+      "url": "https://samedelstein.com/site-index.json"
+    },
+    {
+      "name": "Now",
+      "url": "https://samedelstein.com/now/"
+    },
+    {
+      "name": "Resume Materials",
+      "url": "https://samedelstein.com/resume/"
+    },
+    {
+      "name": "Resume PDF",
+      "url": "https://samedelstein.com/sam-edelstein-resume.pdf"
+    },
+    {
+      "name": "Resume Text",
+      "url": "https://samedelstein.com/sam-edelstein-resume.txt"
+    },
+    {
+      "name": "Humans.txt",
+      "url": "https://samedelstein.com/humans.txt"
+    },
+    {
+      "name": "Writing",
+      "url": "https://samedelstein.com/writing/"
+    },
+    {
+      "name": "vCard",
+      "url": "https://samedelstein.com/sam-edelstein.vcf"
+    },
+    {
+      "name": "Contact",
+      "url": "https://samedelstein.com/contact/"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "name": "Sam Edelstein",
+  "short_name": "Sam Edelstein",
+  "description": "Enterprise data and AI work, data foundations, useful AI workflows, and selected public data background.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "minimal-ui",
+  "background_color": "#ffffff",
+  "theme_color": "#020617",
+  "shortcuts": [
+    {
+      "name": "Now",
+      "short_name": "Now",
+      "description": "What Sam Edelstein is working on and thinking about now.",
+      "url": "/now/",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Contact Sam Edelstein.",
+      "url": "/contact/",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Selected Work",
+      "short_name": "Work",
+      "description": "Selected Data & AI work and public data projects.",
+      "url": "/proof/",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Writing",
+      "short_name": "Writing",
+      "description": "Selected writing on AI, data, and practical tools.",
+      "url": "/writing/",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Resume",
+      "short_name": "Resume",
+      "description": "Resume and background materials.",
+      "url": "/resume/",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

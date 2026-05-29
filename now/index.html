@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="application-name" content="Sam Edelstein" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020617" />
+    <meta
+      name="description"
+      content="What Sam Edelstein is working on now: enterprise data and AI, practical tools, public data, Syracuse, and notes on useful systems."
+    />
+    <link rel="canonical" href="https://samedelstein.com/now/" />
+    <link rel="alternate" type="application/json" href="https://samedelstein.com/profile.json" />
+    <link rel="alternate" type="application/ld+json" href="https://samedelstein.com/person.json" />
+    <link rel="alternate" type="text/vcard" href="https://samedelstein.com/sam-edelstein.vcf" />
+    <link rel="author" href="https://www.linkedin.com/in/samedelstein" />
+    <link rel="me" href="https://www.linkedin.com/in/samedelstein" />
+    <link rel="me" href="https://github.com/samedelstein" />
+    <link rel="me" href="https://samedelstein.medium.com/" />
+    <meta property="og:title" content="Sam Edelstein | Now" />
+    <meta
+      property="og:description"
+      content="Current work and questions around enterprise data, AI, practical tools, public data, and Syracuse."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://samedelstein.com/now/" />
+    <meta property="og:image" content="https://samedelstein.com/social-card.png" />
+    <meta property="og:image:alt" content="Sam Edelstein personal site preview for enterprise data and AI work." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sam Edelstein | Now" />
+    <meta
+      name="twitter:description"
+      content="Current work and questions around enterprise data, AI, practical tools, public data, and Syracuse."
+    />
+    <meta name="twitter:image" content="https://samedelstein.com/social-card.png" />
+    <meta name="twitter:image:alt" content="Sam Edelstein personal site preview for enterprise data and AI work." />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "name": "Sam Edelstein | Now",
+        "url": "https://samedelstein.com/now/",
+        "dateModified": "2026-05-28",
+        "description": "What Sam Edelstein is working on now: enterprise data and AI, practical tools, public data, Syracuse, and notes on useful systems.",
+        "about": {
+          "@type": "Person",
+          "@id": "https://samedelstein.com/#sam-edelstein",
+          "name": "Sam Edelstein",
+          "email": "mailto:sam.i.edelstein@gmail.com",
+          "url": "https://samedelstein.com/",
+          "jobTitle": "Senior Vice President, Data & AI",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Insight Partners"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/samedelstein",
+            "https://github.com/samedelstein",
+            "https://samedelstein.medium.com/",
+            "https://samedelstein.com/profile.json",
+            "https://samedelstein.com/person.json"
+          ],
+          "knowsAbout": [
+            "Enterprise data and AI",
+            "Data foundations",
+            "AI workflow design",
+            "Data governance",
+            "Public data",
+            "Useful tools"
+          ]
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "name": "Current focus",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Enterprise data and AI at Insight Partners" },
+            { "@type": "ListItem", "position": 2, "name": "Practical AI workflows and governed data foundations" },
+            { "@type": "ListItem", "position": 3, "name": "Public data, libraries, Syracuse, and small useful tools" }
+          ]
+        }
+      }
+    </script>
+    <title>Sam Edelstein | Now</title>
+    <style>
+      :root {
+        --ink: #020617;
+        --muted: #475569;
+        --line: #dbe3ef;
+        --soft: #f8fafc;
+        --blue: #1d4ed8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #ffffff;
+        color: var(--ink);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.58;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .wrap {
+        width: calc(100% - 40px);
+        max-width: 1040px;
+        margin: 0 auto;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+      }
+
+      nav {
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .brand {
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .navlinks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .navlink {
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      main {
+        padding: 64px 0 72px;
+      }
+
+      .hero {
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        padding: 48px 0;
+      }
+
+      .eyebrow {
+        margin: 0 0 18px;
+        color: var(--blue);
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 900px;
+        margin: 0;
+        font-size: 64px;
+        line-height: 1.02;
+        letter-spacing: 0;
+      }
+
+      .lead {
+        max-width: 760px;
+        margin: 22px 0 0;
+        color: var(--muted);
+        font-size: 19px;
+      }
+
+      .section {
+        border-bottom: 1px solid var(--line);
+        padding: 48px 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+        gap: 48px;
+        align-items: start;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 30px;
+        line-height: 1.18;
+      }
+
+      p {
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 18px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      li {
+        border-top: 1px solid var(--line);
+        padding: 14px 0;
+        color: var(--muted);
+      }
+
+      li:first-child {
+        border-top: 0;
+      }
+
+      .panel {
+        border: 1px solid var(--line);
+        background: var(--soft);
+        padding: 26px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .button {
+        display: inline-flex;
+        min-height: 44px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 9px 13px;
+        color: var(--blue);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      .button.primary {
+        border-color: var(--ink);
+        background: var(--ink);
+        color: #ffffff;
+      }
+
+      @media (max-width: 760px) {
+        .wrap {
+          width: calc(100vw - 48px);
+          max-width: 320px;
+          margin-left: 24px;
+          margin-right: auto;
+        }
+
+        nav {
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 18px 0;
+        }
+
+        h1 {
+          font-size: 40px;
+          line-height: 1.04;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+          gap: 28px;
+        }
+
+        .button {
+          width: 100%;
+        }
+      }
+
+      :root {
+        --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      body {
+        font-family: var(--font-sans);
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-weight: 300;
+      }</style>
+  </head>
+  <body>
+    <header>
+      <nav class="wrap">
+        <a class="brand" href="/">Sam Edelstein</a>
+        <div class="navlinks">
+          <a class="navlink" href="/proof/">Work</a>
+          <a class="navlink" href="/writing/">Writing</a>
+          <a class="navlink" href="/contact/">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="wrap">
+          <p class="eyebrow">Now</p>
+          <h1>What I am working on and thinking about now.</h1>
+          <p class="lead">Most of my day-to-day work is enterprise data and AI at Insight Partners. Around the edges, I still follow public data, Syracuse, libraries, and small tools that make messy information easier to use.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap grid">
+          <div>
+            <p class="eyebrow">Current focus</p>
+            <h2>Enterprise data and AI, close to the work.</h2>
+            <p>At Insight Partners, I work across investment, HR, compliance, finance, and operations on data foundations, AI workflow design, governance, and tools people actually use.</p>
+            <p>I am most interested in the practical middle: where good data, usable systems, judgment, and organizational habits meet.</p>
+          </div>
+          <div class="panel">
+            <p class="eyebrow">Recurring questions</p>
+            <ul>
+              <li>What would make this decision easier to understand?</li>
+              <li>Where is the workflow actually breaking down?</li>
+              <li>What data needs to be trusted before AI is useful here?</li>
+              <li>What can be made public, reusable, or easier for the next person?</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap grid">
+          <div>
+            <p class="eyebrow">Still in the background</p>
+            <h2>Public data, place, and practical institutions.</h2>
+            <p>I am not doing public-sector data work day to day anymore, but the Syracuse work still matters to how I think. Systems should be understandable. Data should help people make better choices. Public institutions deserve practical tools, not just dashboards.</p>
+          </div>
+          <div>
+            <p class="eyebrow">Good starting points</p>
+            <ul>
+              <li><a href="/proof/">A few projects I am proud of</a></li>
+              <li><a href="/writing/">Notes on AI, data, and practical tools</a></li>
+              <li><a href="/press/">Press and public references</a></li>
+            </ul>
+            <div class="actions">
+              <a class="button primary" href="mailto:sam.i.edelstein@gmail.com?subject=Data%20%26%20AI%20conversation">Email Sam</a>
+              <a class="button" href="/contact/">Contact</a>
+              <a class="button" href="/sam-edelstein.vcf">Save Contact</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

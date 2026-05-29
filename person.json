@@ -1,0 +1,205 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://samedelstein.com/#sam-edelstein",
+  "name": "Sam Edelstein",
+  "url": "https://samedelstein.com/",
+  "email": "mailto:sam.i.edelstein@gmail.com",
+  "jobTitle": "Senior Vice President, Data & AI",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "professional contact",
+    "email": "sam.i.edelstein@gmail.com",
+    "areaServed": [
+      "United States",
+      "New York",
+      "Distributed teams"
+    ],
+    "availableLanguage": "English"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Insight Partners"
+  },
+  "workLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Syracuse",
+      "addressRegion": "NY",
+      "addressCountry": "US"
+    }
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Syracuse University"
+  },
+  "affiliation": [
+    {
+      "@type": "Organization",
+      "name": "Onondaga County Public Library"
+    },
+    {
+      "@type": "Organization",
+      "name": "Le Moyne College Madden School of Business"
+    }
+  ],
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Data and AI professional",
+    "occupationLocation": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "skills": [
+      "Enterprise data and AI strategy",
+      "AI workflow design",
+      "AI governance",
+      "Governed data foundations",
+      "Data platform modernization",
+      "Data governance",
+      "Data product leadership",
+      "Analytics leadership",
+      "Snowflake",
+      "dbt",
+      "Azure",
+      "Generative AI",
+      "Retrieval-augmented generation",
+      "MLOps",
+      "Python",
+      "SQL",
+      "APIs"
+    ]
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/samedelstein",
+    "https://github.com/samedelstein",
+    "https://samedelstein.medium.com/",
+    "https://samedelstein.com/profile.json",
+    "https://samedelstein.com/site-index.json",
+    "https://samedelstein.com/resume.json",
+    "https://samedelstein.com/sam-edelstein.vcf",
+    "https://samedelstein.com/sam-edelstein-resume.pdf",
+    "https://samedelstein.com/sam-edelstein-resume.txt",
+    "https://samedelstein.com/now/",
+    "https://samedelstein.com/proof/",
+    "https://samedelstein.com/proof/enterprise-ai-in-practice/",
+    "https://samedelstein.com/proof/datacuse-open-data-platform/",
+    "https://samedelstein.com/proof/predictive-water-main-analytics/",
+    "https://samedelstein.com/writing/",
+    "https://samedelstein.com/press/",
+    "https://samedelstein.com/contact/"
+  ],
+  "knowsAbout": [
+    "Enterprise data and AI strategy",
+    "Governed data foundations",
+    "Useful AI workflows",
+    "AI workflow design",
+    "AI governance",
+    "AI readiness",
+    "Data platform modernization",
+    "Data governance",
+    "Data product leadership",
+    "Analytics leadership",
+    "Snowflake",
+    "dbt",
+    "Azure",
+    "Generative AI",
+    "Retrieval-augmented generation",
+    "MLOps",
+    "Python",
+    "SQL",
+    "APIs",
+    "Open data",
+    "Public data systems"
+  ],
+  "description": "Sam Edelstein works on enterprise data and AI at Insight Partners, with background in open data, analytics, and practical public data work.",
+  "subjectOf": [
+    {
+      "@type": "WebPage",
+      "name": "Sam Edelstein - Now",
+      "url": "https://samedelstein.com/now/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI in Practice",
+      "url": "https://samedelstein.com/proof/enterprise-ai-in-practice/",
+      "description": "Work on turning enterprise AI ideas into useful workflows across data foundations, governance, adoption, delivery, and applied use cases."
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "DataCuse: Open Data Platform",
+      "url": "https://samedelstein.com/proof/datacuse-open-data-platform/",
+      "description": "Built Syracuse's first open data program, turning scattered public data into a governed transparency and analytics capability."
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Predictive Water Main Analytics",
+      "url": "https://samedelstein.com/proof/predictive-water-main-analytics/",
+      "description": "Translated machine learning research into an operational risk model for prioritizing aging water infrastructure."
+    },
+    {
+      "@type": "WebPage",
+      "name": "Sam Edelstein - Selected Work",
+      "url": "https://samedelstein.com/proof/"
+    },
+    {
+      "@type": "CollectionPage",
+      "name": "Sam Edelstein - Writing",
+      "url": "https://samedelstein.com/writing/"
+    },
+    {
+      "@type": "CollectionPage",
+      "name": "Sam Edelstein - Press and Speaking",
+      "url": "https://samedelstein.com/press/"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "Sam Edelstein Structured Profile",
+      "url": "https://samedelstein.com/profile.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "Sam Edelstein Site Index",
+      "url": "https://samedelstein.com/site-index.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "Sam Edelstein Resume JSON",
+      "url": "https://samedelstein.com/resume.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "Sam Edelstein Resume PDF",
+      "url": "https://samedelstein.com/sam-edelstein-resume.pdf",
+      "encodingFormat": "application/pdf"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "Sam Edelstein Resume Text",
+      "url": "https://samedelstein.com/sam-edelstein-resume.txt",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "Sam Edelstein vCard",
+      "url": "https://samedelstein.com/sam-edelstein.vcf",
+      "encodingFormat": "text/vcard"
+    },
+    {
+      "@type": "Article",
+      "name": "What's Missing in AI + BI: The Case for Bi-Directional Interfaces",
+      "publisher": "Medium",
+      "url": "https://samedelstein.medium.com/whats-missing-in-ai-bi-the-case-for-bi-directional-interfaces-bcba1849b8a4"
+    },
+    {
+      "@type": "Article",
+      "name": "Syracuse Turns To Data to Fix Its Faulty Water System",
+      "publisher": "Politico",
+      "url": "https://www.politico.com/magazine/story/2017/04/20/syracuse-infrastructure-water-system-pipe-breaks-215054"
+    }
+  ]
+}

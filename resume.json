@@ -1,0 +1,212 @@
+{
+  "$schema": "https://jsonresume.org/schema",
+  "basics": {
+    "name": "Sam Edelstein",
+    "label": "Enterprise Data & AI",
+    "email": "sam.i.edelstein@gmail.com",
+    "url": "https://samedelstein.com/",
+    "summary": "Data and AI work focused on governed data foundations, useful AI workflows, practical tools, and public data background.",
+    "location": {
+      "city": "Syracuse",
+      "region": "New York",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "samedelstein",
+        "url": "https://www.linkedin.com/in/samedelstein"
+      },
+      {
+        "network": "GitHub",
+        "username": "samedelstein",
+        "url": "https://github.com/samedelstein"
+      },
+      {
+        "network": "Medium",
+        "username": "samedelstein",
+        "url": "https://samedelstein.medium.com/"
+      }
+    ]
+  },
+  "meta": {
+    "canonical": "https://samedelstein.com/resume.json",
+    "website": "https://samedelstein.com/",
+    "personJson": "https://samedelstein.com/person.json",
+    "siteIndex": "https://samedelstein.com/site-index.json",
+    "background": "https://samedelstein.com/brief/",
+    "selectedWork": "https://samedelstein.com/proof/",
+    "pressAndSpeaking": "https://samedelstein.com/press/",
+    "contactPage": "https://samedelstein.com/contact/",
+    "resumePdf": "https://samedelstein.com/sam-edelstein-resume.pdf",
+    "resumeText": "https://samedelstein.com/sam-edelstein-resume.txt",
+    "now": "https://samedelstein.com/now/",
+    "tools": "https://samedelstein.com/skills/",
+    "vCard": "https://samedelstein.com/sam-edelstein.vcf"
+  },
+  "workThemes": [
+    "Governed data foundations",
+    "Useful AI workflows",
+    "Enterprise data and AI",
+    "Public data background",
+    "Useful public-minded tools"
+  ],
+  "workScope": "Work involving enterprise data and AI strategy, data foundations, governance, data readiness, adoption, and useful AI workflows.",
+  "work": [
+    {
+      "name": "Insight Partners",
+      "position": "Senior Vice President, Data & AI",
+      "startDate": "2021",
+      "summary": "Works across investment, HR, compliance, finance, and operations on data foundations, AI workflows, tools, and governance.",
+      "highlights": [
+        "Builds data and AI systems connecting platform, governance, adoption, delivery, and use.",
+        "Scales practical AI workflows and self-service access across business functions.",
+        "Leads teams spanning analytics, engineering, and data product execution."
+      ]
+    },
+    {
+      "name": "BlueGranite",
+      "position": "Senior Consultant",
+      "startDate": "2020",
+      "endDate": "2021",
+      "summary": "Delivered Azure-based analytics modernization work for public and private sector clients.",
+      "highlights": [
+        "Modernized analytics stacks and cloud data workflows for client programs.",
+        "Led stakeholder-facing implementation work across data engineering and BI delivery."
+      ]
+    },
+    {
+      "name": "City of Syracuse",
+      "position": "Chief Data Officer",
+      "startDate": "2015",
+      "endDate": "2020",
+      "summary": "Built the city's first analytics office, launched DataCuse, authored the first open data policy, and led operational analytics programs with public-sector impact.",
+      "highlights": [
+        "Built the city's first analytics office and durable data practices.",
+        "Launched DataCuse, the city's first open data portal.",
+        "Authored the city's first open data policy.",
+        "Delivered predictive infrastructure and transparency programs with measurable public-sector impact.",
+        "Established durable data practices across departments and public-facing products."
+      ]
+    },
+    {
+      "name": "Syracuse University and prior organizations",
+      "position": "Adjunct Professor and Earlier Roles",
+      "summary": "Taught graduate courses and held earlier roles in higher education, communications, and research.",
+      "highlights": [
+        "Taught graduate courses in data-driven government, data visualization, and data science.",
+        "Brought public-sector, academic, and operational perspectives into applied analytics work."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Syracuse University",
+      "studyType": "Master of Science",
+      "area": "Information Management, Data Science focus"
+    },
+    {
+      "institution": "Syracuse University",
+      "studyType": "Bachelor of Arts",
+      "area": "Economics and Policy Studies"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Leadership and Strategy",
+      "keywords": [
+        "Enterprise data and AI strategy",
+        "AI workflow design",
+        "Enterprise data and AI",
+        "AI use",
+        "AI readiness",
+        "Data product leadership",
+        "Team building",
+        "Organizational transformation",
+        "Stakeholder communication",
+        "Delivery rhythms"
+      ]
+    },
+    {
+      "name": "Governance and Delivery",
+      "keywords": [
+        "AI governance",
+        "AI assurance",
+        "AI risk management",
+        "Responsible AI use",
+        "Data governance",
+        "Data quality",
+        "Information delivery",
+        "Data operations",
+        "Reliability"
+      ]
+    },
+    {
+      "name": "Platforms and Tools",
+      "keywords": [
+        "Snowflake",
+        "dbt",
+        "Azure",
+        "GenAI",
+        "RAG",
+        "MLOps",
+        "Python",
+        "SQL",
+        "APIs",
+        "Data integration"
+      ]
+    }
+  ],
+  "workSignals": [
+    "90%+ AI use across enterprise functions.",
+    "40%+ of the organization actively building with AI.",
+    "12+ enterprise data sources integrated across cloud and on-prem systems.",
+    "1B+ rows unified into governed, accessible data foundations.",
+    "Experience connecting AI and data work across strategy, platform, governance, adoption, use, and delivery.",
+    "Experience connecting AI ideas to data readiness, governance, delivery, and real workflows."
+  ],
+  "selectedWork": [
+    {
+      "title": "AI in Practice",
+      "url": "https://samedelstein.com/proof/enterprise-ai-in-practice/",
+      "summary": "Work on turning enterprise AI ideas into useful workflows across data foundations, governance, adoption, delivery, and applied use cases."
+    },
+    {
+      "title": "DataCuse: Open Data Platform",
+      "url": "https://samedelstein.com/proof/datacuse-open-data-platform/",
+      "summary": "Built Syracuse's first open data program, turning scattered public data into a governed transparency and analytics capability."
+    },
+    {
+      "title": "Predictive Water Main Analytics",
+      "url": "https://samedelstein.com/proof/predictive-water-main-analytics/",
+      "summary": "Translated machine learning research into an operational risk model for prioritizing aging water infrastructure."
+    }
+  ],
+  "selectedWriting": [
+    {
+      "title": "What's Missing in AI + BI",
+      "url": "https://samedelstein.medium.com/whats-missing-in-ai-bi-the-case-for-bi-directional-interfaces-bcba1849b8a4",
+      "summary": "A note on connecting chat interfaces with structured data exploration and BI workflows."
+    },
+    {
+      "title": "How I Use Voice Recordings and AI",
+      "url": "https://samedelstein.medium.com/how-i-use-voice-recordings-and-ai-to-draft-proposals-posts-and-work-through-ideas-f1ed8e94e835",
+      "summary": "A practical workflow for turning voice notes into structured proposals, posts, and thinking."
+    },
+    {
+      "title": "What it Means to be AI-Ready",
+      "url": "https://samedelstein.medium.com/what-it-means-to-be-ai-ready-data-access-interoperability-and-the-future-of-software-part-1-a9abc8e0d03c",
+      "summary": "A note on data access, interoperability, and software design for AI-ready work."
+    }
+  ],
+  "leadership": [
+    {
+      "organization": "Onondaga County Public Library",
+      "role": "President, Board of Trustees"
+    },
+    {
+      "organization": "Le Moyne College Madden School of Business",
+      "role": "Advisory Board Member, Business Analytics"
+    }
+  ]
+}
