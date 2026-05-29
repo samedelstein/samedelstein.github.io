@@ -4,6 +4,7 @@ import {
   BookOpen,
   Building2,
   CheckCircle2,
+  Database,
   FileText,
   Github,
   Landmark,
