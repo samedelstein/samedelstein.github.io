@@ -18,7 +18,6 @@
       "https://samedelstein.com/person.json",
       "https://samedelstein.com/site-index.json",
       "https://samedelstein.com/now/",
-      "https://samedelstein.com/brief/",
       "https://samedelstein.com/writing/",
       "https://samedelstein.com/contact/",
       "https://samedelstein.com/resume/"
@@ -185,10 +184,6 @@
     {
       "name": "Email Sam",
       "url": "mailto:sam.i.edelstein@gmail.com?subject=Data%20%26%20AI%20conversation"
-    },
-    {
-      "name": "Background",
-      "url": "https://samedelstein.com/brief/"
     },
     {
       "name": "Person JSON-LD",

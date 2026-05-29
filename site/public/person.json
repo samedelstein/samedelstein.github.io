@@ -81,9 +81,7 @@
     "https://samedelstein.com/sam-edelstein.vcf",
     "https://samedelstein.com/sam-edelstein-resume.pdf",
     "https://samedelstein.com/sam-edelstein-resume.txt",
-    "https://samedelstein.com/brief/",
     "https://samedelstein.com/now/",
-    "https://samedelstein.com/skills/",
     "https://samedelstein.com/proof/",
     "https://samedelstein.com/proof/enterprise-ai-in-practice/",
     "https://samedelstein.com/proof/datacuse-open-data-platform/",
@@ -121,16 +119,6 @@
       "@type": "WebPage",
       "name": "Sam Edelstein - Now",
       "url": "https://samedelstein.com/now/"
-    },
-    {
-      "@type": "WebPage",
-      "name": "Sam Edelstein - Background",
-      "url": "https://samedelstein.com/brief/"
-    },
-    {
-      "@type": "WebPage",
-      "name": "Sam Edelstein - Tools and Vocabulary",
-      "url": "https://samedelstein.com/skills/"
     },
     {
       "@type": "CreativeWork",

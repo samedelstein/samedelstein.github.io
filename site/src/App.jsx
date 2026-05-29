@@ -4,7 +4,6 @@ import {
   BookOpen,
   Building2,
   CheckCircle2,
-  Database,
   FileText,
   Github,
   Landmark,
@@ -26,10 +25,8 @@ const contactMailto = 'mailto:sam.i.edelstein@gmail.com?subject=Data%20%26%20AI%
 const navItems = [
   ['Now', '/now/'],
   ['Work', '#work'],
-  ['Tools', '/skills/'],
   ['Writing', '/writing/'],
   ['Press', '/press/'],
-  ['Background', '/brief/'],
   ['Contact', '#contact'],
 ];
 
@@ -356,9 +353,7 @@ function App() {
           <div className="flex flex-col gap-3 sm:flex-row">
             <a href={contactMailto} className="inline-flex h-12 items-center justify-center gap-2 rounded bg-[#533afd] px-5 text-base font-medium text-white transition hover:bg-[#4434d4]"><Mail className="h-4 w-4" /> Email Sam</a>
             <a href="/now/" className="inline-flex h-12 items-center justify-center gap-2 rounded border border-[#b9b9f9] bg-white px-5 text-base font-medium text-[#533afd] transition hover:bg-indigo-50"><Sparkles className="h-4 w-4" /> Now</a>
-            <a href="/brief/" className="inline-flex h-12 items-center justify-center gap-2 rounded border border-[#b9b9f9] bg-white px-5 text-base font-medium text-[#533afd] transition hover:bg-indigo-50"><FileText className="h-4 w-4" /> Background</a>
             <a href="/resume/" className="inline-flex h-12 items-center justify-center gap-2 rounded border border-[#b9b9f9] bg-white px-5 text-base font-medium text-[#533afd] transition hover:bg-indigo-50"><FileText className="h-4 w-4" /> Resume</a>
-            <a href="/skills/" className="inline-flex h-12 items-center justify-center gap-2 rounded border border-[#b9b9f9] bg-white px-5 text-base font-medium text-[#533afd] transition hover:bg-indigo-50"><Database className="h-4 w-4" /> Tools</a>
             <a href="/sam-edelstein.vcf" className="inline-flex h-12 items-center justify-center gap-2 rounded border border-[#b9b9f9] bg-white px-5 text-base font-medium text-[#533afd] transition hover:bg-indigo-50"><FileText className="h-4 w-4" /> Save Contact</a>
             <a href="https://www.linkedin.com/in/samedelstein" {...externalLinkProps} className="inline-flex h-12 items-center justify-center gap-2 rounded border border-[#b9b9f9] bg-white px-5 text-base font-medium text-[#533afd] transition hover:bg-indigo-50"><Linkedin className="h-4 w-4" /> LinkedIn</a>
             <a href="https://github.com/samedelstein" {...externalLinkProps} className="inline-flex h-12 items-center justify-center gap-2 rounded border border-[#b9b9f9] bg-white px-5 text-base font-medium text-[#533afd] transition hover:bg-indigo-50"><Github className="h-4 w-4" /> GitHub</a>

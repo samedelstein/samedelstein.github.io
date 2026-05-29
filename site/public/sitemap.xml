@@ -11,16 +11,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://samedelstein.com/brief/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://samedelstein.com/skills/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://samedelstein.com/proof/</loc>
     <lastmod>2026-05-28</lastmod>
     <priority>0.8</priority>
@@ -79,11 +69,6 @@
     <loc>https://samedelstein.com/sam-edelstein-resume.txt</loc>
     <lastmod>2026-05-28</lastmod>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://samedelstein.com/brief.txt</loc>
-    <lastmod>2026-05-28</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://samedelstein.com/humans.txt</loc>
