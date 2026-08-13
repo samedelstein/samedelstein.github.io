@@ -1,89 +1,24 @@
-Sam Edelstein
-Enterprise Data & AI
-Syracuse, New York, United States
-Email: sam.i.edelstein@gmail.com
-LinkedIn: https://www.linkedin.com/in/samedelstein
-Website: https://samedelstein.com/
-Background: https://samedelstein.com/brief/
-Selected work: https://samedelstein.com/proof/
-Resume PDF: https://samedelstein.com/sam-edelstein-resume.pdf
+SAM EDELSTEIN
+Data, AI & Technology
+Syracuse, New York | sam.i.edelstein@gmail.com | samedelstein.com
 
-Focus Areas
-- Enterprise data and AI
-- Useful AI workflows
-- Governed data foundations
-- Public data background
-- Useful public-minded tools
+Data and AI leader with experience across enterprise, government, and consulting. I work at the intersection of emerging technology and real organizational problems: deciding what is worth doing and helping turn it into something that works.
 
-Summary
-Data and AI work focused on governed data foundations, useful AI workflows, practical tools, and public data background. Relevant work includes data and AI strategy, governed data foundations, data readiness, platform modernization, and useful delivery.
+EXPERIENCE
 
-Current Role
-Senior Vice President, Data & AI, Insight Partners, 2021-Present
-- Works across investment, HR, compliance, finance, and operations on data foundations, AI workflows, tools, and governance.
-- Builds data and AI systems connecting platform, governance, adoption, delivery, and use.
-- Scales practical AI workflows and self-service access across business functions.
-- Leads teams spanning analytics, engineering, and data product execution.
+Insight Partners | Senior Vice President, Data & AI | 2021–Present
+Leads high-level Data & AI work, with a focus on responsible adoption and organizational capability building.
 
-Selected Experience
-Senior Consultant, BlueGranite, 2020-2021
-- Delivered Azure-based analytics modernization work for public and private sector clients.
-- Modernized analytics stacks and cloud data workflows for client programs.
-- Led stakeholder-facing implementation work across data engineering and BI delivery.
+City of Syracuse | Chief Data Officer | 2015–2020
+Built the city’s first analytics office, helped establish the open-data program, and led applied analytics projects for city services and infrastructure.
 
-Chief Data Officer, City of Syracuse, 2015-2020
-- Built the city's first analytics office and durable data practices.
-- Launched DataCuse, the city's first open data portal.
-- Authored the city's first open data policy.
-- Delivered predictive infrastructure and transparency programs with measurable public-sector impact.
-- Established durable data practices across departments and public-facing products.
+BlueGranite | Senior Consultant | 2020–2021
+Delivered analytics modernization work for public- and private-sector clients.
 
-Adjunct Professor and Earlier Roles, Syracuse University and prior organizations
-- Taught graduate courses in data-driven government, data visualization, and data science.
-- Brought public-sector, academic, and operational perspectives into applied analytics work.
+EDUCATION
+Syracuse University | M.S., Information Management
+Syracuse University | B.A., Economics and Policy Studies
 
-Selected Markers
-- 90%+ AI use across enterprise functions.
-- 40%+ of the organization actively building with AI.
-- 12+ enterprise data sources integrated across cloud and on-prem systems.
-- 1B+ rows unified into governed, accessible data foundations.
-- Experience connecting AI and data work across strategy, platform, governance, adoption, use, and delivery.
-
-Core Strengths
-- Enterprise data and AI roadmaps
-- AI workflow design
-- AI governance, assurance, and risk management
-- Data platform modernization
-- Data governance and data quality
-- Data product and analytics leadership
-- Stakeholder communication
-- Team building and delivery rhythms
-- Change management for practical AI use
-- Information delivery, data operations, and reliability
-
-Platforms and Tools
-Snowflake, dbt, Azure, GenAI and RAG, MLOps, Python, SQL, APIs, data integration, analytics engineering, cloud data platforms.
-
-Selected Work
-AI in Practice
-- Work on turning enterprise AI ideas into useful workflows across data foundations, governance, adoption, delivery, and applied use cases.
-- Defined a phased delivery approach, delivered prioritized use cases, and established data readiness materials and a delivery playbook.
-
-DataCuse: Open Data Platform
-- Built Syracuse's first open data program, turning scattered public data into a governed transparency and analytics capability.
-- Launched a Socrata-based open data portal, published a standardized data dictionary and intake workflow, and established the city's first open data policy.
-
-Predictive Water Main Analytics
-- Translated machine learning research into an operational risk model for prioritizing aging water infrastructure.
-- Defined the operational problem, provided municipal data, and aligned outputs with field crews.
-
-Education
-Syracuse University, Master of Science in Information Management, Data Science focus.
-Syracuse University, Bachelor of Arts in Economics and Policy Studies.
-
-Leadership and Service
-Onondaga County Public Library, President, Board of Trustees.
-Le Moyne College Madden School of Business, Advisory Board Member, Business Analytics.
-
-Work Scope
-Work involving enterprise data and AI strategy, data foundations, governance, data readiness, adoption, and useful AI workflows.
+COMMUNITY LEADERSHIP
+President, Board of Trustees, Onondaga County Public Library
+Advisory Board Member, Business Analytics, Le Moyne College Madden School of Business

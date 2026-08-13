@@ -1,26 +1,11 @@
-/* TEAM */
+Sam Edelstein
+https://samedelstein.com/
 
-Name: Sam Edelstein
-Site: https://samedelstein.com/
-Now: https://samedelstein.com/now/
-Location: Syracuse, New York, United States
-Current work: Senior Vice President, Data & AI at Insight Partners
+Sam uses data, AI, and technology to make complicated organizations work better. He is Senior Vice President, Data & AI at Insight Partners and previously served as Syracuse's first Chief Data Officer.
 
-/* ABOUT */
-
-Sam works on enterprise data and AI, with a focus on governed data foundations, useful AI workflows, and tools that help teams use information well.
-
-Current work spans investment, HR, compliance, finance, and operations. Earlier public-sector work includes Syracuse open data, DataCuse, water main analytics, teaching, and public board service.
-
-/* START HERE */
-
-Background: https://samedelstein.com/brief/
-Selected work: https://samedelstein.com/proof/
-Tools and vocabulary: https://samedelstein.com/skills/
-Writing: https://samedelstein.com/writing/
-Press and speaking: https://samedelstein.com/press/
-Contact: https://samedelstein.com/contact/
-AI-readable profile: https://samedelstein.com/llms.txt
-Structured profile: https://samedelstein.com/profile.json
-Person JSON-LD: https://samedelstein.com/person.json
-Site index: https://samedelstein.com/site-index.json
+Start here:
+- Work: https://samedelstein.com/proof/
+- Writing: https://samedelstein.com/writing/
+- Now: https://samedelstein.com/now/
+- About: https://samedelstein.com/about/
+- Contact: https://samedelstein.com/contact/

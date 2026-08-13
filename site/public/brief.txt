@@ -1,78 +1,9 @@
-Sam Edelstein - Enterprise Data & AI
+SAM EDELSTEIN
+Data, AI & Technology
 
-Website: https://samedelstein.com/
-Now: https://samedelstein.com/now/
-Background: https://samedelstein.com/brief/
-Structured profile JSON: https://samedelstein.com/profile.json
-Person JSON-LD: https://samedelstein.com/person.json
-Site index JSON: https://samedelstein.com/site-index.json
-Skills and tools and topics: https://samedelstein.com/skills/
-Humans.txt: https://samedelstein.com/humans.txt
+Sam uses data, AI, and technology to make complicated organizations work better. He leads Data & AI work at Insight Partners and previously served as Syracuse's first Chief Data Officer.
+
 Selected work: https://samedelstein.com/proof/
 Writing: https://samedelstein.com/writing/
-Press and speaking: https://samedelstein.com/press/
-Contact page: https://samedelstein.com/contact/
-Resume materials: https://samedelstein.com/resume/
-vCard: https://samedelstein.com/sam-edelstein.vcf
-Email: sam.i.edelstein@gmail.com
-LinkedIn: https://www.linkedin.com/in/samedelstein
-Location: Syracuse, New York, United States
-
-Work themes:
-- Governed data foundations
-- Useful AI workflows
-- Enterprise data and AI
-- Public data background
-- Useful public-minded tools
-
-Summary:
-Sam Edelstein works on enterprise Data & AI, with a focus on governed data foundations, useful AI workflows, and tools that help teams use information well. Before that, he worked on public data, analytics, and city systems in Syracuse.
-
-Now:
-Most day-to-day work is enterprise Data & AI at Insight Partners. Around the edges, Sam still follows public data, Syracuse, libraries, and small tools that make messy information easier to use.
-
-Current role:
-Senior Vice President, Data & AI at Insight Partners. Current work spans investment, HR, compliance, finance, and operations: the data foundations, AI workflows, tools, and governance that help teams use information well.
-
-Selected markers:
-- 90%+ AI use across enterprise functions
-- 40%+ of the organization actively building with AI
-- 12+ enterprise data sources integrated across cloud and on-prem systems
-- 1B+ rows unified into governed, accessible foundations
-- Experience connecting AI and data work across strategy, platform, governance, adoption, use, and delivery
-
-Core strengths:
-- Enterprise data and AI roadmaps
-- AI use
-- AI readiness and responsible use
-- AI governance, assurance, and risk-aware use
-- Data platform modernization
-- Data governance and quality
-- Data product and analytics leadership
-- Stakeholder communication
-- Team building and delivery rhythms
-- Change management for AI work
-
-Selected experience:
-Senior Vice President, Data & AI, Insight Partners, 2021-Present
-Leads firm-wide Data & AI strategy, platform modernization, governance, and useful internal tools across business functions.
-
-Senior Consultant, BlueGranite, 2020-2021
-Delivered Azure-based analytics modernization work for public and private sector clients.
-
-Chief Data Officer, City of Syracuse, 2015-2020
-Built the city's first analytics office, launched DataCuse, authored the first open data policy, and led operational analytics programs with public-sector impact.
-
-Work scope:
-Work involving enterprise data and AI strategy, data foundations, governance, data readiness, adoption, and useful AI workflows.
-
-Selected writing:
-- What's Missing in AI + BI: https://samedelstein.medium.com/whats-missing-in-ai-bi-the-case-for-bi-directional-interfaces-bcba1849b8a4
-- How I Use Voice Recordings and AI: https://samedelstein.medium.com/how-i-use-voice-recordings-and-ai-to-draft-proposals-posts-and-work-through-ideas-f1ed8e94e835
-- What It Means to Be AI-Ready: https://samedelstein.medium.com/what-it-means-to-be-ai-ready-data-access-interoperability-and-the-future-of-software-part-1-a9abc8e0d03c
-
-Useful starting points:
-- Enterprise data and AI work
-- Data foundations
-- Useful AI workflows
-- Public data background
+Now: https://samedelstein.com/now/
+Contact: sam.i.edelstein@gmail.com
