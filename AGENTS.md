@@ -1,46 +1,45 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-The active site lives in `site/`, a Vite + React app styled with Tailwind. Main application code is in `site/src/`, with the homepage and routed views currently defined in `site/src/App.jsx`. Static assets for the React app live in `site/public/`.
+The active site lives in `site/`. Vite builds a static, semantic HTML homepage from `site/index.html`, with shared styles in `site/public/site.css`. Static assets and preserved public routes also live in `site/public/`. The site intentionally uses no client-side framework or JavaScript.
 
-The repo root also contains older Jekyll/static site content such as `_posts/`, `_layouts/`, `_includes/`, `about.html`, and `resume/`. Treat those files as legacy unless a task explicitly targets them. Shared images and PDFs used by older pages live under `assets/`, `img/`, and `resume/`.
+The repository root also contains older Jekyll/static content such as `_posts/`, `_layouts/`, `_includes/`, `about.html`, and `resume/`. Treat those files as legacy unless a task explicitly targets them. Shared images and PDFs used by older pages live under `assets/`, `img/`, and `resume/`.
 
 ## Build, Test, and Development Commands
 Run commands from `site/` unless noted otherwise.
 
 - `npm.cmd install`: install dependencies.
-- `npm.cmd run dev`: start the local Vite dev server.
+- `npm.cmd run dev`: start the local Vite development server.
 - `npm.cmd run build`: create a production build in `site/dist/`.
 - `npm.cmd run preview`: preview the production build locally.
-- `npm.cmd run lint`: run ESLint on the React app.
-
-Example:
-```powershell
-cd site
-npm.cmd run dev
-```
 
 ## Coding Style & Naming Conventions
-Use 2-space indentation in JSX, JS, JSON, and Markdown. Prefer functional React components and keep page content in small data arrays when it improves readability. Use `PascalCase` for components, `camelCase` for variables and functions, and kebab-case for branch names.
+Use 2-space indentation in HTML, CSS, JSON, and Markdown. Prefer semantic HTML and straightforward CSS over adding a client-side framework. Use kebab-case for CSS classes and branch names.
 
-Keep copy changes ASCII where practical, and check for mojibake before committing. Use Tailwind utilities already present in `App.jsx` instead of adding one-off CSS unless a reusable style is needed.
+Keep copy changes ASCII where practical, and check for mojibake before committing. Preserve the homepage's intentionally simple portrait-and-text structure unless a task explicitly requests a broader redesign.
 
 ## Testing Guidelines
-There is no formal test suite yet. Minimum validation for UI changes is:
-- `npm.cmd run build`
-- `npm.cmd run lint`
-- manual review in the local Vite preview
+There is no formal test suite. Minimum validation for UI changes is:
 
-If you add tests later, place them under `site/src/` near the related component and use `*.test.jsx`.
+- `npm.cmd run build`
+- manual desktop and mobile review in the local Vite preview
+- broken-image and horizontal-overflow checks
 
 ## Commit & Pull Request Guidelines
-Recent commits use short, imperative messages such as `Refine leadership profile copy` and `Add selected impact section to homepage`. Follow that style: one clear action per commit.
+Use short, imperative commit messages with one clear action per commit.
 
-PRs should include:
-- a short summary of user-facing changes
-- screenshots or a preview link for UI work
-- confirmation that `npm.cmd run build` succeeded
-- any notes about whether changes affect `site/` only or legacy root-level pages
+PRs should include a short summary of user-facing changes, screenshots or a preview link for UI work, confirmation that the production build succeeded, and whether changes affect `site/` only or legacy root-level pages.
 
 ## Contributor Notes
-Prefer editing `site/src/App.jsx` for homepage and route content unless a broader refactor is requested. Do not delete or rewrite legacy root files unless the task explicitly includes them.
+Edit `site/index.html` for homepage content and `site/public/site.css` for shared styles. Do not delete or rewrite legacy root files or preserved routes in `site/public/` unless the task explicitly includes them.
+
+## Product and Editorial Rules
+SamEdelstein.com is a personal site: understated, specific, curious, and useful. It is not a consulting site, executive-marketing site, or online resume.
+
+Write in Sam's natural first-person voice. Prefer clear observations, questions, and stories over generic executive language. Avoid claims such as "transformational leader," "visionary," "thought leader," "world-class," "cutting-edge," "results-driven," and "best-in-class."
+
+Treat Insight Partners information as private by default. Approved public facts are that Sam is Senior Vice President, Data & AI, leads Data & AI work at Insight Partners, and has reached 90%+ monthly active enterprise generative-AI adoption. Do not infer or expose internal workflows, architecture, datasets, systems, staffing, budgets, vendor decisions, investment processes, or confidential use cases. When unsure, omit or abstract the detail.
+
+Never invent facts, metrics, technologies, dates, titles, responsibilities, quotes, external links, or project screenshots. Use only real repository artifacts.
+
+Prefer whitespace, clear typography, real artifacts, accessible semantics, fast loading, and minimal dependencies. Avoid generic AI imagery, startup gradients, capability grids, metric dashboards, excessive cards, decorative animation, and technology-logo walls. Preserve useful existing URLs, metadata, and legacy public content unless a task explicitly covers their migration.
